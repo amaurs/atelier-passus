@@ -1,0 +1,8 @@
+
+default export {[[{"src":"image", "text":"Some Text"},
+  {"src":"boissy", "text":"Some Text"},
+  {"src":"image", "text":"Some Text"},
+  {"src":"image", "text":"Some Text"}],
+ [{"src":"image", "text":"Some Text"},
+  {"src":"image", "text":"Some Text"},
+  {"src":"image", "text":"Some Text"}]] };
