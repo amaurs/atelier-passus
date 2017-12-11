@@ -1,78 +1,131 @@
-@media only screen 
-and (max-width : 320px)
-{
-/* Add Your CSS Styling Here */
-}
-
-@media only screen 
-and (min-device-width : 321px) 
-and (max-device-width : 1024px) 
-{   
-/* Add Your CSS Styling Here */
-}
-
-@media only screen 
-and (min-width : 1025px) 
-{
-  .Cell {
-    display: inline-block;
-    position: relative;
-    width:18%;
-    padding: 10px;
-    margin: 0;
-    float:right;
-  }
-  
-  .Cell img {
-    width:100%;
-  }
-  
-  .Cell .text {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: opacity .5s;
-    background: rgba(255, 255, 255, 1);
-    color: #fff;
-    padding: 15px;
-    margin: 0;
-    white-space: pre-line;
-    text-align: right;
-  }
-  
-  .Cell p {
-    font-size: 1em;
-    position:absolute;
-    bottom:0;
-    right:0;
-    margin: 15px;
-    border: 0px solid #ff0000;
-  }
-  
-  .hover {
-    display: block;
-  }
-  
-  .Cell:hover .text {
-    opacity: 1;
-    color: black;
-    bottom: 0;
-    text-transform: uppercase;
-  }
-
-}
-
-
-
 .Grid {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
   overflow: overlay;
 }
+
+.Cell {
+  display: inline-block;
+  position: relative;
+  width:17%;
+  padding: 10px;
+  margin: 0;
+  float:right;
+}
+.Cell img {
+  width:100%;
+}
+.Cell .text {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .5s;
+  background: rgba(255, 255, 255, 1);
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  white-space: pre-line;
+  text-align: right;
+}
+.Cell p {
+  font-size: 1em;
+  position:absolute;
+  bottom:0;
+  right:0;
+  margin: 15px;
+  border: 0px solid #ff0000;
+  text-transform: uppercase;
+  color: black;
+}
+.hover {
+  display: block;
+}
+.Cell:hover .text {
+  opacity: 1;
+}
+
+@media only screen 
+and (max-width: 768px)
+{   
+  .Cell {
+    display: inline-block;
+
+    width:100%;
+    padding: 0px;
+    margin: 0;
+    
+  }
+  .Cell img {
+    position: relative;
+    width:45%;
+    float: right;
+  }
+  .Cell .text {
+    opacity: 1;
+    position: relative; 
+    width:45%;
+    float: left;
+  }
+  .Cell p {
+    font-size: 1.5em;
+    position:relative;
+    float:right;
+    margin: 15px;
+    border: 0px solid #ff0000;
+    text-transform: uppercase;
+  }
+
+}
+
+@media only screen 
+and (max-width : 414px)
+{
+  .Grid {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    overflow: overlay;
+  }
+  .Cell {
+    display: inline-block;
+    position: relative;
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+    float:right;
+  }
+  .Cell img {
+    width:100%;
+  }
+  .Cell .text {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.15);;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    float: right;
+    padding:0;
+  }
+  .Cell p {
+    color:white;
+    position:absolute;
+    bottom:0;
+    right:0;
+  }
+}
+
+
+
+
+
+
 
 
 
