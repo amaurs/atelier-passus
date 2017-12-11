@@ -7,10 +7,10 @@ class Info extends Component {
 
 
     render() {
-
+        console.log(this.props.info.info.images[this.props.image]);
         let headers = this.props.info.info.headers.map((h, index) => <h3 key={index}>{h}</h3>);
         let paragraphs = this.props.info.info.paragraphs.map((p, index) => <p key={index}>{p}</p>);
-        let images = this.props.info.info.images.map((p, index) => <a className="thumbnail" key={index}>{index + 1}</a>);
+        let images = this.props.info.info.images.map((p, index) => <button className="thumbnail" key={index} onClick={()=>this.props.onClick(index)}>{index + 1}</button>);
         return  <div className="Info-container">
                    <div className="Info-text">
                         <h1>{this.props.info.info.title}</h1>
@@ -19,7 +19,7 @@ class Info extends Component {
                         {images}
                    </div>
                    <div className="Info-image">
-                        <img src={assets.boissy1}/>
+                        <img src={assets[this.props.info.info.images[this.props.image]]}/>
                    </div>
                 </div>;
     }

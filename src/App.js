@@ -17,12 +17,18 @@ class App extends Component {
     
     this.state = {
       selected: null,
+      image: 0,
     }
     this.handleClick = this.handleClick.bind(this);
+    this.handleTumbnail = this.handleTumbnail.bind(this);
   }
 
-  handleClick(who){
+  handleClick(who) {
     this.setState({selected:who});
+  }
+
+  handleTumbnail(id) {
+    this.setState({image:id});
   }
 
   getObjectFromSrc(src){
@@ -40,7 +46,7 @@ class App extends Component {
   render() {
     let content = null;
     if (this.state.selected) {
-        content = <Info info={this.getObjectFromSrc(this.state.selected)} />;
+        content = <Info info={this.getObjectFromSrc(this.state.selected)} image={this.state.image} onClick={this.handleTumbnail}/>;
     } else {
         content = <Grid grid={infoArray} onClick={this.handleClick}/>;
     }
