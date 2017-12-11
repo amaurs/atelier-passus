@@ -1,0 +1,23 @@
+.Info-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Info-text{
+  margin:0;
+  padding: 10px;
+  width:30%;
+  float:left;
+}
+.Info-image {
+  width:60%;
+  float:right;
+}
+
+.thumbnail {
+  border: 1px solid;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+}

@@ -28,8 +28,21 @@ import sema from './images/sema.jpg';
 import senal from './images/senal.jpg';
 import senderos from './images/senderos.jpg';
 import tension from './images/tension.jpg';
-import test from './images/test.jpg';
 import xucu from './images/xucu.jpg';
+
+
+import boissy1 from './images/boissy/boissy1.jpg';
+import boissy2 from './images/boissy/boissy2.jpg';
+import boissy3 from './images/boissy/boissy3.jpg';
+import boissy4 from './images/boissy/boissy4.jpg';
+import boissy5 from './images/boissy/boissy5.jpg';
+import boissy6 from './images/boissy/boissy6.jpg';
+import boissy7 from './images/boissy/boissy7.jpg';
+import boissy8 from './images/boissy/boissy8.jpg';
+import boissy9 from './images/boissy/boissy9.jpg';
+import boissy10 from './images/boissy/boissy10.jpg';
+import boissy11 from './images/boissy/boissy11.jpg';
+import boissy12 from './images/boissy/boissy12.jpg';
 
 export default {
     boissy,
@@ -62,6 +75,17 @@ export default {
     senal,
     senderos,
     tension,
-    test,
-    xucu
+    xucu,
+    boissy1,
+    boissy2,
+    boissy3,
+    boissy4,
+    boissy5,
+    boissy6,
+    boissy7,
+    boissy8,
+    boissy9,
+    boissy10,
+    boissy11,
+    boissy12,
 };
