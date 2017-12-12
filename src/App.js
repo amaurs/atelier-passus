@@ -17,17 +17,17 @@ class App extends Component {
     
     this.state = {
       selected: null,
-      image: 0,
+      image: 10,
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleTumbnail = this.handleTumbnail.bind(this);
   }
 
-  handleClick(who) {
+  handleClick(who){
     this.setState({selected:who});
   }
 
-  handleTumbnail(id) {
+  handleTumbnail(id){
     this.setState({image:id});
   }
 
