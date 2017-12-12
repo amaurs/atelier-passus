@@ -65,6 +65,7 @@ class App extends Component {
           <Switch>
             <PropsRoute exact path='/' component={Grid} grid={infoArray} onClick={this.handleClick}/>
             <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} image={this.state.image} onClick={this.handleTumbnail}/>
+            <PropsRoute path='/casa30' component={Info} info={this.getObjectFromSrc("casa30")} image={this.state.image} onClick={this.handleTumbnail}/>
           </Switch>
         </div>
     );

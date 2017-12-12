@@ -44,6 +44,19 @@ import boissy10 from './images/boissy/boissy10.jpg';
 import boissy11 from './images/boissy/boissy11.jpg';
 import boissy12 from './images/boissy/boissy12.jpg';
 
+import casa301 from './images/casa30/142-1.jpg';
+import casa3010 from './images/casa30/142-10.jpg';
+import casa3011 from './images/casa30/142-11.jpg';
+import casa3012 from './images/casa30/142-12.jpg';
+import casa302 from './images/casa30/142-2.jpg';
+import casa303 from './images/casa30/142-3.jpg';
+import casa304 from './images/casa30/142-4.jpg';
+import casa305 from './images/casa30/142-5.jpg';
+import casa306 from './images/casa30/142-6.jpg';
+import casa307 from './images/casa30/142-7.jpg';
+import casa308 from './images/casa30/142-8.jpg';
+import casa309 from './images/casa30/142-9.jpg';
+
 export default {
     boissy,
     casa30,
@@ -88,4 +101,16 @@ export default {
     boissy10,
     boissy11,
     boissy12,
+    casa301,
+    casa3010,
+    casa3011,
+    casa3012,
+    casa302,
+    casa303,
+    casa304,
+    casa305,
+    casa306,
+    casa307,
+    casa308,
+    casa309,
 };

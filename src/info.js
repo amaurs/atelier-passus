@@ -4,10 +4,12 @@ import assets from './assets.js';
 
 class Info extends Component {
 
-
+    handleClick() {
+      this.props.history.push('/')
+    }
 
     render() {
-        console.log(this.props.info.info.images[this.props.image]);
+        console.log(this.props);
         let n = this.props.info.info.images.length;
         let headers = this.props.info.info.headers.map((h, index) => <h3 key={index}>{h}</h3>);
         let paragraphs = this.props.info.info.paragraphs.map((p, index) => <p key={index}>{p}</p>);
@@ -17,7 +19,7 @@ class Info extends Component {
                         <img src={assets[this.props.info.info.images[this.props.image]]}/>
                         <ul className="Info-nav">
                           <li><button className="thumbnail" onClick={()=>this.props.onClick(((this.props.image - 1) % n + n) % n)}>&lt;&lt;</button></li>
-                          <li><button className="thumbnail" onClick={()=>this.props.onReturn(null)}>Gallery</button></li>
+                          <li><button className="thumbnail" onClick={()=>this.handleClick()}>Gallery</button></li>
                           <li><button className="thumbnail" onClick={()=>this.props.onClick((this.props.image + 1) % n)}>&gt;&gt;</button></li>
                         </ul>
                    </div>
