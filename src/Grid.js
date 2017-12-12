@@ -4,9 +4,14 @@ import assets from './assets.js';
 
 class Grid extends Component {
 
+    handleClick(path) {
+      this.props.history.push('/' + path)
+    }
+
     render() {
+        console.log(this.props);
         const items = this.props.grid.map((square, index) => 
-                <Cell key={index} image={square.src} text={square.text} onClick={()=>this.props.onClick(square.src)}/>
+                <Cell key={index} image={square.src} text={square.text} onClick={()=>this.handleClick(square.src)}/>
                 
             );
 

@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Grid from './Grid.js';
 import Header from './Header.js';
 import Info from './Info.js';
-import logo from './logo.svg';
-import image from './images/test.jpg';
-
 import text from './text.js';
 import './App.css';
 
 const infoArray = text.info;
+
+const renderMergedProps = (component, ...rest) => {
+  const finalProps = Object.assign({}, ...rest);
+  return (
+    React.createElement(component, finalProps)
+  );
+}
+
+const PropsRoute = ({ component, ...rest }) => {
+  return (
+    <Route {...rest} render={routeProps => {
+      return renderMergedProps(component, routeProps, rest);
+    }}/>
+  );
+}
 
 class App extends Component {
 
@@ -16,8 +29,7 @@ class App extends Component {
     super(props);
     
     this.state = {
-      selected: null,
-      image: 10,
+      image: 0,
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleTumbnail = this.handleTumbnail.bind(this);
@@ -43,20 +55,18 @@ class App extends Component {
     return obj;
   }
 
+
+
+
   render() {
-    let content = null;
-    if (this.state.selected) {
-        content = <Info info={this.getObjectFromSrc(this.state.selected)} image={this.state.image} onClick={this.handleTumbnail}/>;
-    } else {
-        content = <Grid grid={infoArray} onClick={this.handleClick}/>;
-    }
-
     return (
-
-      <div>
-        <Header />
-        {content}
-      </div>
+        <div>
+          <Header />
+          <Switch>
+            <PropsRoute exact path='/' component={Grid} grid={infoArray} onClick={this.handleClick}/>
+            <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} image={this.state.image} onClick={this.handleTumbnail}/>
+          </Switch>
+        </div>
     );
   }
 }
