@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Grid from './Grid.js';
 import Header from './Header.js';
-import Info from './info.js';
+import Info from './Info.js';
 import text from './text.js';
 import './App.css';
 
@@ -11,7 +11,10 @@ const infoArray = text.info;
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
   return (
-    React.createElement(component, finalProps)
+    <div>
+        {React.createElement(Header, finalProps)}
+        {React.createElement(component, finalProps)}
+    </div>
   );
 }
 
@@ -33,6 +36,7 @@ class App extends Component {
     }
   }
 
+
   getObjectFromSrc(src){
     let obj = null;
     infoArray.forEach(function(element){
@@ -43,13 +47,9 @@ class App extends Component {
     return obj;
   }
 
-
-
-
   render() {
     return (
         <div>
-          <Header />
           <Switch>
             <PropsRoute exact path='/' component={Grid} grid={infoArray} onClick={this.handleClick}/>
             <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} />

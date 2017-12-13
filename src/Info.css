@@ -1,3 +1,5 @@
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+
 .Info-container {
   width: 90%;
   margin-left: 5%;
@@ -37,6 +39,23 @@
   width: 33%;
   text-transform: uppercase;
 }
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  font-size: 2em;
+  padding: 60px 15px;
+}
+.image-gallery-left-nav {
+  left:-30px;
+}
+.image-gallery-right-nav {
+  right:-30px;
+}
+
+.image-gallery-left-nav:hover::before,
+  .image-gallery-right-nav:hover::before {
+    color: black;
+  }
 
 button:active {
   border-style: none;
@@ -94,6 +113,12 @@ and (max-width: 768px)
 
   .Info-nav button {
     background-color:white;
+  }
+  .image-gallery-left-nav {
+    display:none;
+  }
+  .image-gallery-right-nav {
+    display:none;
   }
 }
 
