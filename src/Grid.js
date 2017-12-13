@@ -22,7 +22,7 @@ class Grid extends Component {
 
 function Cell(props) {
     return (
-        <div className="Cell" onClick={()=>props.onClick()}><img className="hover" src={assets[props.image]}/><div className="text"><p>{props.text}</p></div></div>
+        <div className="Cell" onClick={()=>props.onClick()}><img alt="" className="hover" src={assets[props.image]}/><div className="text"><p>{props.text}</p></div></div>
     );
 }
 

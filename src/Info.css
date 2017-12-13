@@ -4,13 +4,13 @@
   margin-right: 5%;
 }
 
-.Info-text-container{
+.Info-text-container {
   margin:0;
   width:30%;
   float:left;
 }
 
-.Info-text{
+.Info-text {
   width:250px;
 }
 
@@ -18,7 +18,7 @@
   width:60%;
   float:right;
 }
-.Info-image img{
+.Info-image img {
   width:100%;
 }
 
@@ -27,7 +27,7 @@
   padding:0;
 }
 
-.Info-nav li{
+.Info-nav li {
   display:inline;
 }
 
@@ -68,7 +68,7 @@ button:focus {
 @media only screen 
 and (max-width: 768px)
 { 
-  .Info-text{
+  .Info-text {
     margin:0;
     width:100%;
     float:right;
@@ -82,14 +82,18 @@ and (max-width: 768px)
     display: none;
   }
 
-  .Info-text-container{
+  .Info-text-container {
     margin:0;
     width:100%;
     float:left;
   }
   
-  .Info-text{
+  .Info-text {
     width:100%;
+  }
+
+  .Info-nav button {
+    background-color:white;
   }
 }
 

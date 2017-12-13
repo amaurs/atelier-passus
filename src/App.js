@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Grid from './Grid.js';
 import Header from './Header.js';
-import Info from './Info.js';
+import Info from './info.js';
 import text from './text.js';
 import './App.css';
 
@@ -31,23 +31,11 @@ class App extends Component {
     this.state = {
       image: 0,
     }
-    this.handleClick = this.handleClick.bind(this);
-    this.handleTumbnail = this.handleTumbnail.bind(this);
-  }
-
-  handleClick(who){
-    this.setState({selected:who});
-  }
-
-  handleTumbnail(id){
-    this.setState({image:id});
   }
 
   getObjectFromSrc(src){
     let obj = null;
     infoArray.forEach(function(element){
-        console.log(element.src);
-        console.log();
         if(element.src === src) {
             obj = element
         }
@@ -64,8 +52,8 @@ class App extends Component {
           <Header />
           <Switch>
             <PropsRoute exact path='/' component={Grid} grid={infoArray} onClick={this.handleClick}/>
-            <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} image={this.state.image} onClick={this.handleTumbnail}/>
-            <PropsRoute path='/casa30' component={Info} info={this.getObjectFromSrc("casa30")} image={this.state.image} onClick={this.handleTumbnail}/>
+            <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} />
+            <PropsRoute path='/casa30' component={Info} info={this.getObjectFromSrc("casa30")} />
           </Switch>
         </div>
     );
