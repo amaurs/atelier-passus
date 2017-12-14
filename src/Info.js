@@ -20,6 +20,7 @@ class Info extends Component {
     }
     handleTumbnail(id){
       this.setState({image:id});
+      this.imageGallery.slideToIndex(id);
     }
 
     handleOnSlide(index) {
@@ -35,7 +36,7 @@ class Info extends Component {
         
         return  <div className="Info-container">
                    <div className="Info-image">
-                        <ImageGallery items={images} showThumbnails={false} showPlayButton={false} showBullets={false} showFullscreenButton={false} onSlide={this.handleOnSlide}/>
+                        <ImageGallery ref={imageGallery => this.imageGallery = imageGallery} items={images} showThumbnails={false} showPlayButton={false} showBullets={false} showFullscreenButton={false} onSlide={this.handleOnSlide}/>
                    </div>
                    <div className="Info-text-container">
                         <div className="Info-text">
