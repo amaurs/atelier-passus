@@ -54,6 +54,12 @@ class App extends Component {
             <PropsRoute exact path='/' component={Grid} grid={infoArray} onClick={this.handleClick}/>
             <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} />
             <PropsRoute path='/casa30' component={Info} info={this.getObjectFromSrc("casa30")} />
+            <PropsRoute path='/castillo' component={Info} info={this.getObjectFromSrc("castillo")} />
+            <PropsRoute path='/colodion' component={Info} info={this.getObjectFromSrc("colodion")} />
+            <PropsRoute path='/espita' component={Info} info={this.getObjectFromSrc("espita")} />
+            <PropsRoute path='/herakles' component={Info} info={this.getObjectFromSrc("herakles")} />
+            <PropsRoute path='/hualemnah' component={Info} info={this.getObjectFromSrc("hualemnah")} />
+            <PropsRoute path='/instrucciones' component={Info} info={this.getObjectFromSrc("instrucciones")} />
           </Switch>
         </div>
     );
