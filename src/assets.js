@@ -325,8 +325,11 @@ import xucu08 from './images/xucu/xucu08.jpg';
 import xucu09 from './images/xucu/xucu09.jpg';
 import xucu10 from './images/xucu/xucu10.jpg';
 
+import easterImage from './images/buni.gif';
+
 
 export default {
+    easterImage,
     boissy,
     casa30,
     castillo,

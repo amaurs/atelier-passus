@@ -5,6 +5,7 @@ import Header from './Header.js';
 import Info from './Info.js';
 import text from './text.js';
 import './App.css';
+import assets from './assets.js';
 
 import keydown, { ALL_KEYS } from 'react-keydown';
 
@@ -30,6 +31,18 @@ const PropsRoute = ({ component, ...rest }) => {
   );
 }
 
+function EasterEgg(props){
+  let easterStyle = {
+    WebkitTransform: 'translateX(' + props.pos + 'px)',
+    MozTransform: 'translateX(' +props.pos + 'px)'
+  };
+
+
+  console.log(props);
+    return (
+        <div className="EasterEgg" style={easterStyle}><img alt="" src={assets[props.image]}/></div>
+    );
+}
 
 class App extends Component {
 
@@ -39,6 +52,8 @@ class App extends Component {
     this.state = {
       image: 0,
       index:0,
+      isLoggedIn: false,
+      pos:0,
     }
   }
 
@@ -51,12 +66,28 @@ class App extends Component {
     let obj = null;
     infoArray.forEach(function(element){
         if(element.src === src) {
-            obj = element
+            obj = element;
         }
     });
     return obj;
   }
 
+  tick(){
+    let pos = this.state.pos;
+    let container = document.body;
+    console.log(container.offsetHeight);
+    let width = container.offsetWidth;
+
+    pos = pos + 3;
+    this.setState({pos:pos});
+
+    if(pos > width) {
+      clearInterval(this.timerID);
+      this.setState({isLoggedIn: false});
+      this.setState({pos:0});
+    }
+    console.log(pos);
+  }
 
   add(event){
     let codes = [38,38,40,40,37,39,37,39,65,66];
@@ -66,8 +97,14 @@ class App extends Component {
     if(codes[index] === event.keyCode){
       index = index + 1;
       this.setState({index:index});
-      if(!(index < codes.lenght)){
+      if(!(index < codes.length)){
         console.log("Unlocked!");
+        this.setState({index:0});
+        this.setState({isLoggedIn: true});
+        this.timerID = setInterval(
+            () => this.tick(), 
+            17
+        );
       }
     }
     else {
@@ -76,7 +113,18 @@ class App extends Component {
 
   }
 
+  
+
+
+
   render() {
+    const isLoggedIn = this.state.isLoggedIn;
+    let easterEgg = null;
+
+    if (isLoggedIn) {
+      let pos = this.state.pos;
+      easterEgg =  <EasterEgg image={"easterImage"} pos={pos}/>
+    }
     return (
         <div tabIndex="0" onKeyDown={(d) => this.add(d)}>
           <Switch >
@@ -104,9 +152,14 @@ class App extends Component {
             <PropsRoute path='/tension' component={Info} info={this.getObjectFromSrc("tension")} />
             <PropsRoute path='/xucu' component={Info} info={this.getObjectFromSrc("xucu")} />
           </Switch>
+
+          {easterEgg}
+        
         </div>
     );
   }
 }
+
+
 
 export default App;
