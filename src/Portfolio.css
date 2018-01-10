@@ -1,0 +1,54 @@
+.Portfolio-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Portfolio-text-container {
+  margin:0;
+  width:30%;
+  float:left;
+}
+
+.Portfolio-text {
+  width:250px;
+}
+
+.Portfolio-player-containter {
+  width:60%;
+  float: right;
+}
+
+.Portfolio-wrapper {
+  
+  width: 100%;
+  height: 100%;
+}
+.Portfolio-player {
+
+}
+
+@media only screen 
+and (max-width: 768px)
+{ 
+  .Portfolio-text {
+    margin:0;
+    width:100%;
+    float:right;
+  }
+  
+
+  .Portfolio-player-containter {
+    width:100%;
+    float: right;
+  }
+
+  .Portfolio-text-container {
+    margin:0;
+    width:100%;
+    float:left;
+  }
+  .Portfolio-text {
+    width:100%;
+  }
+}
