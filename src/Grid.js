@@ -14,7 +14,7 @@ class Grid extends Component {
     render() {
         console.log(this.props);
         const items = this.props.grid.map((square, index) => 
-                <Cell key={index} image={square.src} text={square.text} onClick={()=>this.handleClick(square.src)}/>
+                <Cell key={index} image={square.src} text={square.card} onClick={()=>this.handleClick(square.src)}/>
                 
             );
 
