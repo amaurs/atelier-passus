@@ -7,8 +7,6 @@ class Header extends Component {
 
     constructor(props) {
         super(props);
-        console.log("Props:"  + props);
-        console.log(props);
         this.handleClick = this.handleClick.bind(this);
     }
 

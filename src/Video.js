@@ -4,8 +4,11 @@ import './Video.css';
 
 class Video extends Component {
     render() {
-        let headers = this.props.info.info.headers.map((h, index) => <h3 key={index}>{h}</h3>);
-        let paragraphs = this.props.info.info.paragraphs.map((p, index) => <p key={index}>{p}</p>);
+        console.log(this.props);
+        let headers = this.props.info.info.headers.map(
+          (h, index) => <h3 key={index}>{this.props.t(h)}</h3>);
+        let paragraphs = this.props.info.info.paragraphs.map(
+          (p, index) => <p key={index}>{this.props.t(p)}</p>);
         
         let style = {
           'paddingTop': this.props.info.info.aspect + "%"
@@ -26,7 +29,7 @@ class Video extends Component {
                    </div>
                    <div className="Video-text-container">
                         <div className="Video-text">
-                          <h1>{this.props.info.info.title}</h1>
+                          <h1>{this.props.t(this.props.info.info.title)}</h1>
                           {headers}
                           {paragraphs}
                         </div>

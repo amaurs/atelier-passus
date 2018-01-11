@@ -6,7 +6,6 @@ import assets from './assets.js';
 class Info extends Component {
     constructor(props) {
         super(props);
-        
         this.state = {
             image: 0,
         }
@@ -28,8 +27,10 @@ class Info extends Component {
     }
 
     render() {
-        let headers = this.props.info.info.headers.map((h, index) => <h3> key={index}>{h}</h3>);
-        let paragraphs = this.props.info.info.paragraphs.map((p, index) => <p key={index}>{p}</p>);
+        let headers = this.props.info.info.headers.map(
+             (h, index) => <h3 key={index}>{this.props.t(h)}</h3>);
+        let paragraphs = this.props.info.info.paragraphs.map(
+             (p, index) => <p key={index}>{this.props.t(p)}</p>);
         let images = [];
         this.props.info.info.images.forEach(function(image){images.push({original:assets[image]});});
         let imageThumbnails = this.props.info.info.images.map((p, index) => <button className={ "Info-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>);

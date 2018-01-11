@@ -7,14 +7,11 @@ class Grid extends Component {
     handleClick(path) {
       this.props.history.push('/' + path)
     }
-    add(){
-      console.log("Hellos");
-      
-    }
+
     render() {
         console.log(this.props);
         const items = this.props.grid.map((square, index) => 
-                <Cell key={index} image={square.src} text={square.card} onClick={()=>this.handleClick(square.src)}/>
+                <Cell key={index} image={square.src} text={this.props.t(square.card)} onClick={()=>this.handleClick(square.src)}/>
                 
             );
 

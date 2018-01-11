@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { translate, Trans } from 'react-i18next';
+import { translate } from 'react-i18next';
 import Grid from './Grid.js';
 import Header from './Header.js';
 import RenderHelper from './RenderHelper.js';
@@ -48,7 +48,46 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    
+    /**
+    text.info.forEach(function(obj){
+      console.log("\"" + obj.src + "-card\":\"" + obj.card + "\",");
+      console.log("\"" + obj.src + "-title\":\"" + obj.info.title + "\",");
+      obj.info.headers.forEach(function(header, index){
+          console.log("\"" + obj.src + "-header" + "" + index + "\":\"" + header + "\",");
+      });
+      obj.info.paragraphs.forEach(function(paragraph, index){
+          console.log("\"" + obj.src + "-paragraph" + "" + index + "\":\"" + paragraph + "\",");
+      });
+    });
+
+
+    text.info.forEach(function(obj){
+      console.log("{src:\"" + obj.src + "\",");
+      console.log(" type:\"" + obj.type + "\",");
+      console.log(" card:\"" + obj.src + "-card\",");
+      console.log(" info:{title:\"" + obj.src + "-title\",");
+      console.log("       headers:[");
+      obj.info.headers.forEach(function(header, index){
+          console.log("               \"" + obj.src + "-header" + index + "\",");
+      });
+      console.log("               ],");
+      console.log("       paragraphs:[");
+      obj.info.paragraphs.forEach(function(paragraph, index){
+          console.log("               \"" + obj.src + "-paragraph" + index + "\",");
+      });
+      console.log("               ],");
+      if(obj.info.images) {
+        console.log("       images:[");
+        obj.info.images.forEach(function(image, index){
+          console.log("               \"" + image + "\",");
+        });
+        console.log("               ]}},");
+      }
+      if(obj.info.url) {
+        console.log("       url:\""+obj.info.url+"\"}},");
+      }
+    });
+    **/
     this.state = {
       image: 0,
       index:0,
@@ -136,35 +175,34 @@ class App extends Component {
     }
     return (
         <div className="App-container" tabIndex="0" onKeyDown={(d) => this.add(d)}>
-          <p>{t("hello")}</p>
           <Switch >
-            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage}/>
-            <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} />
-            <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} />
-            <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} />
-            <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} />
-            <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} />
-            <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} />
-            <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} />
-            <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} />
-            <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} />
-            <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} />
-            <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} />
-            <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} />
-            <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} />
-            <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} />
-            <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} />
-            <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} />
-            <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} />
-            <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} />
-            <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} />
-            <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} />
-            <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} />
-            <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} />
-            <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} />   
-            <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} />
-            <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} />
-            <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} />
+            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage} t={t} />
+            <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
+            <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
+            <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
+            <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} t={t} />
+            <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} t={t} />
+            <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} t={t} />
+            <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
+            <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} t={t} />
+            <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} t={t} />
+            <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} t={t} />
+            <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} t={t} />
+            <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} t={t} />
+            <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} t={t} />
+            <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} t={t} />
+            <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
+            <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} t={t} />
+            <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} t={t} />
+            <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} t={t} />
+            <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
+            <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} t={t} />
+            <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} t={t} />
+            <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} t={t} />
+            <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} t={t} />   
+            <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
+            <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} t={t} />
+            <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} t={t} />
           </Switch>
 
           {easterEgg}
