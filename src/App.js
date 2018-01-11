@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { translate, Trans } from 'react-i18next';
 import Grid from './Grid.js';
 import Header from './Header.js';
 import RenderHelper from './RenderHelper.js';
@@ -119,6 +120,13 @@ class App extends Component {
 
 
   render() {
+    console.log("this.props");
+    console.log(this.props);
+    const { t, i18n } = this.props;
+    const changeLanguage = (lng) => {
+      console.log("Language changed to " + lng);
+      i18n.changeLanguage(lng);
+    }
     const isLoggedIn = this.state.isLoggedIn;
     let easterEgg = null;
 
@@ -128,8 +136,9 @@ class App extends Component {
     }
     return (
         <div className="App-container" tabIndex="0" onKeyDown={(d) => this.add(d)}>
+          <p>{t("hello")}</p>
           <Switch >
-            <PropsRoute exact path='/' component={Grid} grid={infoArray} />
+            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage}/>
             <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} />
             <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} />
             <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} />
@@ -168,4 +177,4 @@ class App extends Component {
 
 
 
-export default App;
+export default translate('translations')(App);

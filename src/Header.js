@@ -7,6 +7,8 @@ class Header extends Component {
 
     constructor(props) {
         super(props);
+        console.log("Props:"  + props);
+        console.log(props);
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -15,7 +17,11 @@ class Header extends Component {
     }
 
     render() {
-        return  <div className="Header"><img alt="" src={logo} onClick={this.handleClick}/></div>;
+        return  <div className="Header">
+                    <button onClick={() => this.props.changeLanguage('es')}>es</button>
+                    <button onClick={() => this.props.changeLanguage('fr')}>fr</button>
+                    <img alt="" src={logo} onClick={this.handleClick}/>
+                </div>;
     }
 
 }
