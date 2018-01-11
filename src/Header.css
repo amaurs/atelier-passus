@@ -6,3 +6,10 @@
   float:right;
   margin-right: 100px;
 }
+
+.Header button{
+  padding: 0;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+}

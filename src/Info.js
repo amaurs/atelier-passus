@@ -41,7 +41,7 @@ class Info extends Component {
                    </div>
                    <div className="Info-text-container">
                         <div className="Info-text">
-                          <h1>{this.props.info.info.title}</h1>
+                          <h1>{this.props.t(this.props.info.info.title)}</h1>
                           {headers}
                           {paragraphs}
                           <div id="Info-shortcut">

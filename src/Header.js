@@ -17,6 +17,7 @@ class Header extends Component {
     render() {
         return  <div className="Header">
                     <button onClick={() => this.props.changeLanguage('es')}>es</button>
+                    <span>/</span>
                     <button onClick={() => this.props.changeLanguage('fr')}>fr</button>
                     <img alt="" src={logo} onClick={this.handleClick}/>
                 </div>;

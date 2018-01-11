@@ -4,7 +4,6 @@ import './Video.css';
 
 class Video extends Component {
     render() {
-        console.log(this.props);
         let headers = this.props.info.info.headers.map(
           (h, index) => <h3 key={index}>{this.props.t(h)}</h3>);
         let paragraphs = this.props.info.info.paragraphs.map(
