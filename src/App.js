@@ -176,7 +176,7 @@ class App extends Component {
     return (
         <div className="App-container" tabIndex="0" onKeyDown={(d) => this.add(d)}>
           <Switch >
-            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage} changeLanguage={changeLanguage} t={t} />
+            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage} t={t} />
             <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} changeLanguage={changeLanguage} t={t} />
             <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} changeLanguage={changeLanguage} t={t} />
             <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} changeLanguage={changeLanguage} t={t} />
