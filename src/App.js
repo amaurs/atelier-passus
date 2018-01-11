@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Grid from './Grid.js';
 import Header from './Header.js';
-import Info from './Info.js';
+import RenderHelper from './RenderHelper.js';
 import text from './text.js';
 import './App.css';
 import assets from './assets.js';
 
-import keydown, { ALL_KEYS } from 'react-keydown';
-
-
-
 const infoArray = text.info;
+
+
+
 
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
@@ -101,6 +100,8 @@ class App extends Component {
         console.log("Unlocked!");
         this.setState({index:0});
         this.setState({isLoggedIn: true});
+        clearInterval(this.timerID);
+        this.setState({pos:0});
         this.timerID = setInterval(
             () => this.tick(), 
             17
@@ -126,31 +127,35 @@ class App extends Component {
       easterEgg =  <EasterEgg image={"easterImage"} pos={pos}/>
     }
     return (
-        <div tabIndex="0" onKeyDown={(d) => this.add(d)}>
+        <div className="App-container" tabIndex="0" onKeyDown={(d) => this.add(d)}>
           <Switch >
             <PropsRoute exact path='/' component={Grid} grid={infoArray} />
-            <PropsRoute path='/boissy' component={Info} info={this.getObjectFromSrc("boissy")} />
-            <PropsRoute path='/casa30' component={Info} info={this.getObjectFromSrc("casa30")} />
-            <PropsRoute path='/castillo' component={Info} info={this.getObjectFromSrc("castillo")} />
-            <PropsRoute path='/colodion' component={Info} info={this.getObjectFromSrc("colodion")} />
-            <PropsRoute path='/espita' component={Info} info={this.getObjectFromSrc("espita")} />
-            <PropsRoute path='/herakles' component={Info} info={this.getObjectFromSrc("herakles")} />
-            <PropsRoute path='/hualemnah' component={Info} info={this.getObjectFromSrc("hualemnah")} />
-            <PropsRoute path='/instrucciones' component={Info} info={this.getObjectFromSrc("instrucciones")} />
-            <PropsRoute path='/invisible' component={Info} info={this.getObjectFromSrc("invisible")} />
-            <PropsRoute path='/kancaba' component={Info} info={this.getObjectFromSrc("kancaba")} />
-            <PropsRoute path='/laredo' component={Info} info={this.getObjectFromSrc("laredo")} />
-            <PropsRoute path='/liliane' component={Info} info={this.getObjectFromSrc("liliane")} />
-            <PropsRoute path='/ciclos' component={Info} info={this.getObjectFromSrc("ciclos")} />
-            <PropsRoute path='/mata' component={Info} info={this.getObjectFromSrc("mata")} />
-            <PropsRoute path='/mazatlan' component={Info} info={this.getObjectFromSrc("mazatlan")} />
-            <PropsRoute path='/media' component={Info} info={this.getObjectFromSrc("media")} />
-            <PropsRoute path='/mipiedra' component={Info} info={this.getObjectFromSrc("mipiedra")} />
-            <PropsRoute path='/num5' component={Info} info={this.getObjectFromSrc("num5")} />
-            <PropsRoute path='/onora' component={Info} info={this.getObjectFromSrc("onora")} />
-            <PropsRoute path='/paisajesonoro' component={Info} info={this.getObjectFromSrc("paisajesonoro")} />
-            <PropsRoute path='/tension' component={Info} info={this.getObjectFromSrc("tension")} />
-            <PropsRoute path='/xucu' component={Info} info={this.getObjectFromSrc("xucu")} />
+            <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} />
+            <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} />
+            <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} />
+            <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} />
+            <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} />
+            <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} />
+            <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} />
+            <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} />
+            <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} />
+            <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} />
+            <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} />
+            <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} />
+            <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} />
+            <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} />
+            <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} />
+            <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} />
+            <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} />
+            <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} />
+            <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} />
+            <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} />
+            <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} />
+            <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} />
+            <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} />   
+            <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} />
+            <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} />
+            <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} />
           </Switch>
 
           {easterEgg}
@@ -159,6 +164,7 @@ class App extends Component {
     );
   }
 }
+
 
 
 

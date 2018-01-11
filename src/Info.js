@@ -28,7 +28,7 @@ class Info extends Component {
     }
 
     render() {
-        let headers = this.props.info.info.headers.map((h, index) => <h3 key={index}>{h}</h3>);
+        let headers = this.props.info.info.headers.map((h, index) => <h3> key={index}>{h}</h3>);
         let paragraphs = this.props.info.info.paragraphs.map((p, index) => <p key={index}>{p}</p>);
         let images = [];
         this.props.info.info.images.forEach(function(image){images.push({original:assets[image]});});

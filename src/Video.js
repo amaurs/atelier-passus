@@ -8,7 +8,7 @@ class Video extends Component {
         let paragraphs = this.props.info.info.paragraphs.map((p, index) => <p key={index}>{p}</p>);
         
         let style = {
-          'padding-top': this.props.info.info.aspect + "%"
+          'paddingTop': this.props.info.info.aspect + "%"
         }
 
         return  <div className="Video-container">
