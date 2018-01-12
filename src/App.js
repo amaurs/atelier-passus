@@ -48,6 +48,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+    console.log(process.env.PUBLIC_URL);
     /**
     text.info.forEach(function(obj){
       console.log("\"" + obj.src + "-card\":\"" + obj.card + "\",");

@@ -183,66 +183,23 @@ import mata05 from './images/mata/mata05.jpg';
 import mata06 from './images/mata/mata06.jpg';
 import mata07 from './images/mata/mata07.jpg';
 import mata08 from './images/mata/mata08.jpg';
-import mata09 from './images/mata/mata09.jpg';
 
-import mazatlan01 from './images/mazatlan/mazatlan01.jpg';
-import mazatlan02 from './images/mazatlan/mazatlan02.jpg';
-import mazatlan03 from './images/mazatlan/mazatlan03.jpg';
-import mazatlan04 from './images/mazatlan/mazatlan04.jpg';
-import mazatlan05 from './images/mazatlan/mazatlan05.jpg';
-import mazatlan06 from './images/mazatlan/mazatlan06.jpg';
-import mazatlan07 from './images/mazatlan/mazatlan07.jpg';
-import mazatlan08 from './images/mazatlan/mazatlan08.jpg';
-import mazatlan09 from './images/mazatlan/mazatlan09.jpg';
-import mazatlan10 from './images/mazatlan/mazatlan10.jpg';
-import mazatlan11 from './images/mazatlan/mazatlan11.jpg';
-import mazatlan12 from './images/mazatlan/mazatlan12.jpg';
-import mazatlan13 from './images/mazatlan/mazatlan13.jpg';
-import mazatlan14 from './images/mazatlan/mazatlan14.jpg';
-import mazatlan15 from './images/mazatlan/mazatlan15.jpg';
-import mazatlan16 from './images/mazatlan/mazatlan16.jpg';
-import mazatlan17 from './images/mazatlan/mazatlan17.jpg';
-import mazatlan18 from './images/mazatlan/mazatlan18.jpg';
-import mazatlan19 from './images/mazatlan/mazatlan19.jpg';
-import mazatlan20 from './images/mazatlan/mazatlan20.jpg';
-import mazatlan21 from './images/mazatlan/mazatlan21.jpg';
-import mazatlan22 from './images/mazatlan/mazatlan22.jpg';
-import mazatlan23 from './images/mazatlan/mazatlan23.jpg';
-import mazatlan24 from './images/mazatlan/mazatlan24.jpg';
-import mazatlan25 from './images/mazatlan/mazatlan25.jpg';
-import mazatlan26 from './images/mazatlan/mazatlan26.jpg';
-import mazatlan27 from './images/mazatlan/mazatlan27.jpg';
-import mazatlan28 from './images/mazatlan/mazatlan28.jpg';
-import mazatlan29 from './images/mazatlan/mazatlan29.jpg';
-import mazatlan30 from './images/mazatlan/mazatlan30.jpg';
-import mazatlan31 from './images/mazatlan/mazatlan31.jpg';
-import mazatlan32 from './images/mazatlan/mazatlan32.jpg';
-import mazatlan33 from './images/mazatlan/mazatlan33.jpg';
-import mazatlan34 from './images/mazatlan/mazatlan34.jpg';
-import mazatlan35 from './images/mazatlan/mazatlan35.jpg';
-import mazatlan36 from './images/mazatlan/mazatlan36.jpg';
-import mazatlan37 from './images/mazatlan/mazatlan37.jpg';
-import mazatlan38 from './images/mazatlan/mazatlan38.jpg';
-import mazatlan39 from './images/mazatlan/mazatlan39.jpg';
-import mazatlan40 from './images/mazatlan/mazatlan40.jpg';
-import mazatlan41 from './images/mazatlan/mazatlan41.jpg';
-import mazatlan42 from './images/mazatlan/mazatlan42.jpg';
-import mazatlan43 from './images/mazatlan/mazatlan43.jpg';
-import mazatlan44 from './images/mazatlan/mazatlan44.jpg';
-import mazatlan45 from './images/mazatlan/mazatlan45.jpg';
-import mazatlan46 from './images/mazatlan/mazatlan46.jpg';
-import mazatlan47 from './images/mazatlan/mazatlan47.jpg';
-import mazatlan48 from './images/mazatlan/mazatlan48.jpg';
-import mazatlan49 from './images/mazatlan/mazatlan49.jpg';
-import mazatlan50 from './images/mazatlan/mazatlan50.jpg';
-import mazatlan51 from './images/mazatlan/mazatlan51.jpg';
-import mazatlan52 from './images/mazatlan/mazatlan52.jpg';
-import mazatlan53 from './images/mazatlan/mazatlan53.jpg';
-import mazatlan54 from './images/mazatlan/mazatlan54.jpg';
-import mazatlan55 from './images/mazatlan/mazatlan55.jpg';
-import mazatlan56 from './images/mazatlan/mazatlan56.jpg';
-import mazatlan57 from './images/mazatlan/mazatlan57.jpg';
-import mazatlan58 from './images/mazatlan/mazatlan58.jpg';
+import mazatlan01 from './images/mazatlan/mazatlan001.jpg';
+import mazatlan02 from './images/mazatlan/mazatlan002.jpg';
+import mazatlan03 from './images/mazatlan/mazatlan003.jpg';
+import mazatlan04 from './images/mazatlan/mazatlan004.jpg';
+import mazatlan05 from './images/mazatlan/mazatlan005.jpg';
+import mazatlan06 from './images/mazatlan/mazatlan006.jpg';
+import mazatlan07 from './images/mazatlan/mazatlan007.jpg';
+import mazatlan08 from './images/mazatlan/mazatlan008.jpg';
+import mazatlan09 from './images/mazatlan/mazatlan009.jpg';
+import mazatlan10 from './images/mazatlan/mazatlan010.jpg';
+import mazatlan11 from './images/mazatlan/mazatlan011.jpg';
+import mazatlan12 from './images/mazatlan/mazatlan012.jpg';
+import mazatlan13 from './images/mazatlan/mazatlan013.jpg';
+import mazatlan14 from './images/mazatlan/mazatlan014.jpg';
+import mazatlan15 from './images/mazatlan/mazatlan015.jpg';
+import mazatlan16 from './images/mazatlan/mazatlan016.jpg';
 
 import media01 from './images/media/media01.jpg';
 import media02 from './images/media/media02.jpg';
@@ -500,7 +457,6 @@ mata05,
 mata06,
 mata07,
 mata08,
-mata09,
 mazatlan01,
 mazatlan02,
 mazatlan03,
@@ -517,48 +473,6 @@ mazatlan13,
 mazatlan14,
 mazatlan15,
 mazatlan16,
-mazatlan17,
-mazatlan18,
-mazatlan19,
-mazatlan20,
-mazatlan21,
-mazatlan22,
-mazatlan23,
-mazatlan24,
-mazatlan25,
-mazatlan26,
-mazatlan27,
-mazatlan28,
-mazatlan29,
-mazatlan30,
-mazatlan31,
-mazatlan32,
-mazatlan33,
-mazatlan34,
-mazatlan35,
-mazatlan36,
-mazatlan37,
-mazatlan38,
-mazatlan39,
-mazatlan40,
-mazatlan41,
-mazatlan42,
-mazatlan43,
-mazatlan44,
-mazatlan45,
-mazatlan46,
-mazatlan47,
-mazatlan48,
-mazatlan49,
-mazatlan50,
-mazatlan51,
-mazatlan52,
-mazatlan53,
-mazatlan54,
-mazatlan55,
-mazatlan56,
-mazatlan57,
-mazatlan58,
 media01,
 media02,
 media03,
