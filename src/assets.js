@@ -79,21 +79,14 @@ import colodion7 from './images/colodion/colodion7.jpg';
 import colodion8 from './images/colodion/colodion8.jpg';
 import colodion9 from './images/colodion/colodion9.jpg';
 
-import espita01 from './images/espita/espita01.jpg';
-import espita02 from './images/espita/espita02.jpg';
-import espita03 from './images/espita/espita03.jpg';
-import espita04 from './images/espita/espita04.jpg';
-import espita05 from './images/espita/espita05.jpg';
-import espita06 from './images/espita/espita06.jpg';
-import espita07 from './images/espita/espita07.jpg';
-import espita08 from './images/espita/espita08.jpg';
-import espita09 from './images/espita/espita09.jpg';
-import espita10 from './images/espita/espita10.jpg';
-import espita11 from './images/espita/espita11.jpg';
-import espita12 from './images/espita/espita12.jpg';
-import espita13 from './images/espita/espita13.jpg';
-import espita14 from './images/espita/espita14.jpg';
-import espita15 from './images/espita/espita15.jpg';
+import espita01 from './images/espita/espita001.jpg';
+import espita02 from './images/espita/espita002.jpg';
+import espita03 from './images/espita/espita003.jpg';
+import espita04 from './images/espita/espita004.jpg';
+import espita05 from './images/espita/espita005.jpg';
+import espita06 from './images/espita/espita006.jpg';
+import espita07 from './images/espita/espita007.jpg';
+import espita08 from './images/espita/espita008.jpg';
 
 import herakles01 from './images/herakles/herakles01.jpg';
 import herakles02 from './images/herakles/herakles02.jpg';
@@ -140,32 +133,18 @@ import kancaba06 from './images/kancaba/kancaba06.jpg';
 import kancaba07 from './images/kancaba/kancaba07.jpg';
 import kancaba08 from './images/kancaba/kancaba08.jpg';
 
-import laredo01 from './images/laredo/laredo01.jpg';
-import laredo02 from './images/laredo/laredo02.jpg';
-import laredo03 from './images/laredo/laredo03.jpg';
-import laredo04 from './images/laredo/laredo04.jpg';
-import laredo05 from './images/laredo/laredo05.jpg';
-import laredo06 from './images/laredo/laredo06.jpg';
-import laredo07 from './images/laredo/laredo07.jpg';
-import laredo08 from './images/laredo/laredo08.jpg';
-import laredo09 from './images/laredo/laredo09.jpg';
-import laredo10 from './images/laredo/laredo10.jpg';
-import laredo11 from './images/laredo/laredo11.jpg';
-import laredo12 from './images/laredo/laredo12.jpg';
-import laredo13 from './images/laredo/laredo13.jpg';
-import laredo14 from './images/laredo/laredo14.jpg';
-import laredo15 from './images/laredo/laredo15.jpg';
-import laredo16 from './images/laredo/laredo16.jpg';
-import laredo17 from './images/laredo/laredo17.jpg';
-import laredo18 from './images/laredo/laredo18.jpg';
-import laredo19 from './images/laredo/laredo19.jpg';
-import laredo20 from './images/laredo/laredo20.jpg';
-import laredo21 from './images/laredo/laredo21.jpg';
-import laredo22 from './images/laredo/laredo22.jpg';
-import laredo23 from './images/laredo/laredo23.jpg';
-import laredo24 from './images/laredo/laredo24.jpg';
-import laredo25 from './images/laredo/laredo25.jpg';
-import laredo26 from './images/laredo/laredo26.jpg';
+import laredo01 from './images/laredo/laredo001.jpg';
+import laredo02 from './images/laredo/laredo002.jpg';
+import laredo03 from './images/laredo/laredo003.jpg';
+import laredo04 from './images/laredo/laredo004.jpg';
+import laredo05 from './images/laredo/laredo005.jpg';
+import laredo06 from './images/laredo/laredo006.jpg';
+import laredo07 from './images/laredo/laredo007.jpg';
+import laredo08 from './images/laredo/laredo008.jpg';
+import laredo09 from './images/laredo/laredo009.jpg';
+import laredo10 from './images/laredo/laredo010.jpg';
+import laredo11 from './images/laredo/laredo011.jpg';
+import laredo12 from './images/laredo/laredo012.jpg';
 
 import liliane01 from './images/liliane/liliane01.jpg';
 import liliane02 from './images/liliane/liliane02.jpg';
@@ -370,13 +349,6 @@ export default {
     espita06,
     espita07,
     espita08,
-    espita09,
-    espita10,
-    espita11,
-    espita12,
-    espita13,
-    espita14,
-    espita15,
     herakles01,
     herakles02,
     herakles03,
@@ -429,20 +401,6 @@ laredo09,
 laredo10,
 laredo11,
 laredo12,
-laredo13,
-laredo14,
-laredo15,
-laredo16,
-laredo17,
-laredo18,
-laredo19,
-laredo20,
-laredo21,
-laredo22,
-laredo23,
-laredo24,
-laredo25,
-laredo26,
 liliane01,
 liliane02,
 liliane03,
