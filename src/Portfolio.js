@@ -33,9 +33,7 @@ class Iframe extends Component {
   render() { 
     console.log(this.props.iframe);
     return (
-        <div>
-            <div dangerouslySetInnerHTML={ {__html: this.props.iframe} } />
-        </div>
+            <div className="iframe-wrapper" dangerouslySetInnerHTML={ {__html: this.props.iframe} } />
     );
   }
 }

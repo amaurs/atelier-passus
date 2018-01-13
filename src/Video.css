@@ -1,13 +1,14 @@
 .Video-container {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .Video-text-container {
   margin:0;
   width:30%;
   float:left;
+  margin-top: 125px;
 }
 
 .Video-text {
@@ -17,6 +18,7 @@
 .Video-player-containter {
   width:60%;
   float: right;
+  margin-top: 225px;
 }
 
 .Video-wrapper {

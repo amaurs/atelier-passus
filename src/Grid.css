@@ -1,8 +1,9 @@
 .Grid {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
   overflow: overlay;
+  padding-top: 125px;
 }
 
 .Cell {

@@ -1,25 +1,29 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 .Info-container {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .Info-text-container {
   margin:0;
   width:30%;
   float:left;
+  margin-top: 125px;
+}
+
+.Info-image {
+  width:60%;
+  float:right;
+  margin-top: 225px;
 }
 
 .Info-text {
   width:250px;
 }
 
-.Info-image {
-  width:60%;
-  float:right;
-}
+
 .Info-image img {
   width:100%;
 }
@@ -42,16 +46,25 @@
 
 .image-gallery-left-nav,
 .image-gallery-right-nav {
-  font-size: 2em;
-  padding: 60px 15px;
+  font-size: 0em;
+
+  padding: 0;
+  height:100%;
+  width: 50%;
 }
 .image-gallery-left-nav {
-  left:-30px;
+  left:0px;
 }
 .image-gallery-right-nav {
-  right:-30px;
+  right:0px;
+}
+.image-gallery-left-nav:hover{
+  cursor: w-resize;
 }
 
+.image-gallery-right-nav:hover{
+  cursor: e-resize;
+}
 .image-gallery-left-nav:hover::before,
   .image-gallery-right-nav:hover::before {
     color: black;
