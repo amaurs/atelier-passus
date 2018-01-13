@@ -1,0 +1,32 @@
+.Plain-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Plain-text-container {
+  margin:0;
+  width:30%;
+  float:left;
+}
+
+.Plain-text {
+  width:250px;
+}
+
+
+@media only screen 
+and (max-width: 768px)
+{ 
+  .Plain-text {
+    margin:0;
+    width:100%;
+    float:right;
+  }
+
+  .Plain-text-container {
+    margin:0;
+    width:100%;
+    float:left;
+  }
+}

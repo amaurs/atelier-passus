@@ -619,4 +619,30 @@ const info = [{src:"boissy",
                              "xucu07",
                              ]}},];
 
-export default { info };
+const plain = [{src:"contact",
+               type:"plain",
+               info:{title:"contact-title",
+                     headers:[
+                             ],
+                     paragraphs:[
+                             "contact-paragraph0",
+                             "contact-paragraph1",
+                             "contact-paragraph2",
+                             ]}},
+               {src:"about",
+               type:"plain",
+               info:{title:"",
+                     headers:[
+                             ],
+                     paragraphs:[
+                             "about-paragraph0",
+                             "about-paragraph1",
+                             "about-paragraph2",
+                             "about-paragraph3",
+                             "about-paragraph4",
+                             "about-paragraph5",
+                             "about-paragraph6",
+                             ]}},];
+
+
+export default { info, plain };

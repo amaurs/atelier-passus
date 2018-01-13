@@ -9,6 +9,7 @@ import './App.css';
 import assets from './assets.js';
 
 const infoArray = text.info;
+const plainArray = text.plain;
 
 
 
@@ -112,6 +113,16 @@ class App extends Component {
     return obj;
   }
 
+  getObjectFromPlainSrc(src){
+    let obj = null;
+    plainArray.forEach(function(element){
+        if(element.src === src) {
+            obj = element;
+        }
+    });
+    return obj;
+  }
+
   tick(){
     let pos = this.state.pos;
     let container = document.body;
@@ -204,6 +215,9 @@ class App extends Component {
             <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} changeLanguage={changeLanguage} t={t} />
             <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} changeLanguage={changeLanguage} t={t} />
             <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} changeLanguage={changeLanguage} t={t} />
+            <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} changeLanguage={changeLanguage} t={t} />
+            <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} changeLanguage={changeLanguage} t={t} />
+            <PropsRoute component={RenderHelper} changeLanguage={changeLanguage} t={t} />
           </Switch>
 
           {easterEgg}
