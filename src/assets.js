@@ -31,18 +31,18 @@ import tension from './images/tension.jpg';
 import xucu from './images/xucu.jpg';
 
 
-import boissy1 from './images/boissy/boissy1.jpg';
-import boissy2 from './images/boissy/boissy2.jpg';
-import boissy3 from './images/boissy/boissy3.jpg';
-import boissy4 from './images/boissy/boissy4.jpg';
-import boissy5 from './images/boissy/boissy5.jpg';
-import boissy6 from './images/boissy/boissy6.jpg';
-import boissy7 from './images/boissy/boissy7.jpg';
-import boissy8 from './images/boissy/boissy8.jpg';
-import boissy9 from './images/boissy/boissy9.jpg';
-import boissy10 from './images/boissy/boissy10.jpg';
-import boissy11 from './images/boissy/boissy11.jpg';
-import boissy12 from './images/boissy/boissy12.jpg';
+import boissy1 from './images/boissy/boissy001.jpg';
+import boissy2 from './images/boissy/boissy002.jpg';
+import boissy3 from './images/boissy/boissy003.jpg';
+import boissy4 from './images/boissy/boissy004.jpg';
+import boissy5 from './images/boissy/boissy005.jpg';
+import boissy6 from './images/boissy/boissy006.jpg';
+import boissy7 from './images/boissy/boissy007.jpg';
+import boissy8 from './images/boissy/boissy008.jpg';
+import boissy9 from './images/boissy/boissy009.jpg';
+import boissy10 from './images/boissy/boissy010.jpg';
+import boissy11 from './images/boissy/boissy011.jpg';
+import boissy12 from './images/boissy/boissy012.jpg';
 
 import casa301 from './images/casa30/1425001.jpg';
 import casa302 from './images/casa30/1425002.jpg';
@@ -92,21 +92,19 @@ import herakles05 from './images/herakles/herakles05.jpg';
 import herakles06 from './images/herakles/herakles06.jpg';
 import herakles07 from './images/herakles/herakles07.jpg';
 
-import hualemnah01 from './images/hualemnah/hualemnah01.jpg';
-import hualemnah02 from './images/hualemnah/hualemnah02.jpg';
-import hualemnah03 from './images/hualemnah/hualemnah03.jpg';
-import hualemnah04 from './images/hualemnah/hualemnah04.jpg';
-import hualemnah05 from './images/hualemnah/hualemnah05.jpg';
-import hualemnah06 from './images/hualemnah/hualemnah06.jpg';
-import hualemnah07 from './images/hualemnah/hualemnah07.jpg';
-import hualemnah08 from './images/hualemnah/hualemnah08.jpg';
-import hualemnah09 from './images/hualemnah/hualemnah09.jpg';
-import hualemnah10 from './images/hualemnah/hualemnah10.jpg';
-import hualemnah11 from './images/hualemnah/hualemnah11.jpg';
-import hualemnah12 from './images/hualemnah/hualemnah12.jpg';
-import hualemnah13 from './images/hualemnah/hualemnah13.jpg';
-import hualemnah14 from './images/hualemnah/hualemnah14.jpg';
-import hualemnah15 from './images/hualemnah/hualemnah15.jpg';
+import hualemnah01 from './images/hualemnah/hualemnah001.jpg';
+import hualemnah02 from './images/hualemnah/hualemnah002.jpg';
+import hualemnah03 from './images/hualemnah/hualemnah003.jpg';
+import hualemnah04 from './images/hualemnah/hualemnah004.jpg';
+import hualemnah05 from './images/hualemnah/hualemnah005.jpg';
+import hualemnah06 from './images/hualemnah/hualemnah006.jpg';
+import hualemnah07 from './images/hualemnah/hualemnah007.jpg';
+import hualemnah08 from './images/hualemnah/hualemnah008.jpg';
+import hualemnah09 from './images/hualemnah/hualemnah009.jpg';
+import hualemnah10 from './images/hualemnah/hualemnah010.jpg';
+import hualemnah11 from './images/hualemnah/hualemnah011.jpg';
+import hualemnah12 from './images/hualemnah/hualemnah012.jpg';
+import hualemnah13 from './images/hualemnah/hualemnah013.jpg';
 
 import instrucciones01 from './images/instrucciones/instrucciones01.jpg';
 import instrucciones02 from './images/instrucciones/instrucciones02.jpg';
@@ -142,11 +140,9 @@ import laredo10 from './images/laredo/laredo010.jpg';
 import laredo11 from './images/laredo/laredo011.jpg';
 import laredo12 from './images/laredo/laredo012.jpg';
 
-import liliane01 from './images/liliane/liliane01.jpg';
-import liliane02 from './images/liliane/liliane02.jpg';
-import liliane03 from './images/liliane/liliane03.jpg';
-import liliane04 from './images/liliane/liliane04.jpg';
-import liliane05 from './images/liliane/liliane05.jpg';
+import liliane01 from './images/liliane/liliane001.jpg';
+import liliane02 from './images/liliane/liliane002.jpg';
+import liliane03 from './images/liliane/liliane003.jpg';
 
 import ciclos01 from './images/ciclos/ciclos01.jpg';
 
@@ -224,38 +220,33 @@ import num518 from './images/num5/num518.jpg';
 import num519 from './images/num5/num519.jpg';
 import num520 from './images/num5/num520.jpg';
 
-import onora01 from './images/onora/onora01.jpg';
-import onora02 from './images/onora/onora02.jpg';
-import onora03 from './images/onora/onora03.jpg';
-import onora04 from './images/onora/onora04.jpg';
-import onora05 from './images/onora/onora05.jpg';
-import onora06 from './images/onora/onora06.jpg';
-import onora07 from './images/onora/onora07.jpg';
-import onora08 from './images/onora/onora08.jpg';
-import onora09 from './images/onora/onora09.jpg';
-import onora10 from './images/onora/onora10.jpg';
-import onora11 from './images/onora/onora11.jpg';
-import onora12 from './images/onora/onora12.jpg';
-import onora13 from './images/onora/onora13.jpg';
-import onora14 from './images/onora/onora14.jpg';
-import onora15 from './images/onora/onora15.jpg';
-import onora16 from './images/onora/onora16.jpg';
+import onora01 from './images/onora/onora001.jpg';
+import onora02 from './images/onora/onora002.jpg';
+import onora03 from './images/onora/onora003.jpg';
+import onora04 from './images/onora/onora004.jpg';
+import onora05 from './images/onora/onora005.jpg';
+import onora06 from './images/onora/onora006.jpg';
+import onora07 from './images/onora/onora007.jpg';
+import onora08 from './images/onora/onora008.jpg';
+import onora09 from './images/onora/onora009.jpg';
+import onora10 from './images/onora/onora010.jpg';
+import onora11 from './images/onora/onora011.jpg';
+import onora12 from './images/onora/onora012.jpg';
+import onora13 from './images/onora/onora013.jpg';
+import onora14 from './images/onora/onora014.jpg';
 
 import paisajesonoro01 from './images/paisajesonoro/paisajesonoro01.jpg';
 
 import tension01 from './images/tension/tension01.jpg';
 import tension02 from './images/tension/tension02.jpg';
 
-import xucu01 from './images/xucu/xucu01.jpg';
-import xucu02 from './images/xucu/xucu02.jpg';
-import xucu03 from './images/xucu/xucu03.jpg';
-import xucu04 from './images/xucu/xucu04.jpg';
-import xucu05 from './images/xucu/xucu05.jpg';
-import xucu06 from './images/xucu/xucu06.jpg';
-import xucu07 from './images/xucu/xucu07.jpg';
-import xucu08 from './images/xucu/xucu08.jpg';
-import xucu09 from './images/xucu/xucu09.jpg';
-import xucu10 from './images/xucu/xucu10.jpg';
+import xucu01 from './images/xucu/xucu001.jpg';
+import xucu02 from './images/xucu/xucu002.jpg';
+import xucu03 from './images/xucu/xucu003.jpg';
+import xucu04 from './images/xucu/xucu004.jpg';
+import xucu05 from './images/xucu/xucu005.jpg';
+import xucu06 from './images/xucu/xucu006.jpg';
+import xucu07 from './images/xucu/xucu007.jpg';
 
 import easterImage from './images/buni.gif';
 
@@ -361,8 +352,6 @@ export default {
     hualemnah11,
     hualemnah12,
     hualemnah13,
-    hualemnah14,
-    hualemnah15,
     instrucciones01,
     instrucciones02,
     instrucciones03,
@@ -396,8 +385,6 @@ laredo12,
 liliane01,
 liliane02,
 liliane03,
-liliane04,
-liliane05,
 ciclos01,
 mata01,
 mata02,
@@ -482,8 +469,6 @@ onora11,
 onora12,
 onora13,
 onora14,
-onora15,
-onora16,
 paisajesonoro01,
 tension01,
 tension02,
@@ -494,7 +479,4 @@ xucu04,
 xucu05,
 xucu06,
 xucu07,
-xucu08,
-xucu09,
-xucu10,
 };
