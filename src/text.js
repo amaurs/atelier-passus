@@ -621,7 +621,7 @@ const info = [{src:"boissy",
 
 const plain = [{src:"contact",
                type:"plain",
-               info:{title:"contact-title",
+               info:{title:"",
                      headers:[
                              ],
                      paragraphs:[

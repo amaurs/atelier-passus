@@ -14,7 +14,14 @@
   float:right;
 }
 .Cell img {
+  opacity: 1;
   width:100%;
+
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 .Cell .text {
   opacity: 0;
@@ -23,13 +30,18 @@
   right: 0;
   bottom: 0;
   left: 0;
-  transition: opacity .5s;
   background: rgba(255, 255, 255, 1);
   color: #fff;
   padding: 15px;
   margin: 0;
   white-space: pre-line;
   text-align: right;
+
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 .Cell p {
   font-size: 1em;
@@ -44,6 +56,10 @@
 .hover {
   display: block;
 }
+.Cell:hover img {
+  opacity: 0;
+}
+
 .Cell:hover .text {
   opacity: 1;
 }
@@ -60,6 +76,7 @@ and (max-width: 768px)
     
   }
   .Cell img {
+    opacity: 1;
     position: relative;
     width:45%;
     float: right;
@@ -99,6 +116,7 @@ and (max-width : 414px)
     float:right;
   }
   .Cell img {
+    opacity: 1;
     width:100%;
   }
   .Cell .text {

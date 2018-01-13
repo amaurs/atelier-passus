@@ -10,11 +10,9 @@ class Plain extends Component {
         return  (
                 <div className="Plain-container">
                    <div className="Plain-text-container">
-                        <div className="Plain-text">
-                          <h1>{this.props.t(this.props.info.info.title)}</h1>
-                          {headers}
-                          {paragraphs}
-                        </div>
+                      <h1>{this.props.t(this.props.info.info.title)}</h1>
+                      {headers}
+                      {paragraphs}
                    </div>
                 </div>
                 );

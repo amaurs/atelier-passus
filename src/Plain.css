@@ -1,18 +1,12 @@
-.Plain-container {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
 .Plain-text-container {
-  margin:0;
-  width:30%;
+  margin-left:5%;
+  width:60%;
+  height:60%;
   float:left;
+  padding-left: 0;
 }
 
-.Plain-text {
-  width:250px;
-}
 
 
 @media only screen 
