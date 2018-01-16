@@ -100,7 +100,4 @@ function Portfolio(props) {
            </div>
 }
 
-
-
-
 export default RenderHelper;
