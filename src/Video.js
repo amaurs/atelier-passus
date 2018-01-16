@@ -5,9 +5,9 @@ import './Video.css';
 class Video extends Component {
     render() {
         let headers = this.props.info.info.headers.map(
-          (h, index) => <h3 key={index}>{this.props.t(h)}</h3>);
+             (h, index) => <h3 key={index} className="header">{this.props.t(h)}</h3>);
         let paragraphs = this.props.info.info.paragraphs.map(
-          (p, index) => <p key={index}>{this.props.t(p)}</p>);
+             (p, index) => <p key={index} className="paragraph">{this.props.t(p)}</p>);
         
         let style = {
           'paddingTop': this.props.info.info.aspect + "%"

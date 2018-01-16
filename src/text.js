@@ -642,7 +642,12 @@ const plain = [{src:"contact",
                              "about-paragraph4",
                              "about-paragraph5",
                              "about-paragraph6",
-                             ]}},];
+                             ]}},
+              {src:"four-oh-four",
+               type:"plain",
+               info:{title:"four-oh-four",
+                     headers:["four-oh-four-header0"],
+                     paragraphs:[]}},];
 
 
 export default { info, plain };

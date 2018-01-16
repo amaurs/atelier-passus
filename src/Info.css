@@ -1,29 +1,42 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 .Info-container {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 125px;
+  margin-left: 175px;
+  margin-right: 175px;
 }
 
 .Info-text-container {
-  margin:0;
-  width:30%;
-  float:left;
-  
+  margin: 0px;
+  width: 30%;
+  float: left;
+  margin-top: 125px;
 }
 
 .Info-image {
-  width:60%;
+  width:650px;
   float:right;
   margin-top: 225px;
 }
 
 .Info-text {
-  width:250px;
+  width:200px;
 }
 
+.Info-text .title{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Info-text .header{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Info-text .paragraph{
+  font-size: 14px;
+}
 
 .Info-image img {
   width:100%;
@@ -38,46 +51,20 @@
   display:inline;
 }
 
-.Info-nav button {
-  border:none;
-  height:25px;
-  width: 33%;
-  text-transform: uppercase;
-}
+
 
 .image-gallery-left-nav,
 .image-gallery-right-nav {
   font-size: 0em;
-
   padding: 0;
   height:100%;
   width: 50%;
 }
-.image-gallery-left-nav {
-  left:0px;
+.image-gallery-left-nav:hover {
+  cursor: help;
 }
-.image-gallery-right-nav {
-  right:0px;
-}
-.image-gallery-left-nav:hover{
-  cursor: w-resize;
-}
-
-.image-gallery-left-nav:hover{
-  cursor: e-resize;
-}
-.image-gallery-left-nav:hover::before,
-  .image-gallery-right-nav:hover::before {
-    color: black;
-  }
-
-button:active {
-  border-style: none;
-  outline: none;
-}
-
-button:focus {
-  outline:0;
+.image-gallery-left-nav:hover {
+  cursor: url('./images/right.png'), auto;
 }
 
 
@@ -101,6 +88,17 @@ button:focus {
 @media only screen 
 and (max-width: 768px)
 { 
+  .Info-text-container {
+    margin:0;
+    width:100%;
+    float:left;
+  }
+  .Info-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .Info-text {
     margin:0;
     width:100%;
@@ -110,6 +108,7 @@ and (max-width: 768px)
   .Info-image {
     width:100%;
     float:left;
+    margin-top: 70px;
   }
   #Info-shortcut {
     display: none;
@@ -124,7 +123,6 @@ and (max-width: 768px)
   .Info-text {
     width:100%;
   }
-
   .Info-nav button {
     background-color:white;
   }

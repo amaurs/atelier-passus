@@ -1,25 +1,12 @@
 .Header{
   width:100%;
   margin-top: 0;
-  height: 100px;
+  height: 125px;
   position: fixed;
-  background-color: #ccc;
   z-index: 10;
-}
-/**
-.scrolling {
-  position: fixed;
-  -webkit-box-shadow: 0px 3px 1px 0px rgba(50, 50, 50, 0.1);
-  -moz-box-shadow:    0px 3px 1px 0px rgba(50, 50, 50, 0.1);
-  box-shadow:         0px 3px 1px 0px rgba(50, 50, 50, 0.1);
-  z-index: 10;
+
 }
 
-.non-scrolling {
-  position: relative;
-  
-}
-**/
 .Header img{
   float:right;
   
@@ -27,8 +14,10 @@
 }
 
 .Header ul{
+  width:150px;
   list-style-type: none;
-  margin-left:5%;
+  margin-left:25px;
+  margin-top:25px;
   padding-left:0;
 }
 
@@ -50,8 +39,10 @@
   width:50px;
   height:50px;
   float:right;
-  margin-right: 5%;
+  margin-top: 25px;
+  margin-right: 25px;
 }
+
 
 .Header a{
   color: #000;
@@ -71,14 +62,26 @@
   float: left;
 }
 .fr {
-    margin-top: 50%;
-    float: right;
+  margin-top: 50%;
+  float: right;
 }
 
 .active {
   text-decoration: underline !important;
 }
 
+
+@media only screen 
+and (max-width: 768px)
+{
+  .Header{
+    background-color: white;
+  }
+  .Header .language{
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
 
 @media only screen 
 and (max-width : 414px)

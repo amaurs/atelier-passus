@@ -3,6 +3,7 @@
 }
 .App-container {
   outline:none;
+  margin-top: 0px;
 }
 
 .App-logo {

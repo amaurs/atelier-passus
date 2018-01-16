@@ -28,9 +28,9 @@ class Info extends Component {
 
     render() {
         let headers = this.props.info.info.headers.map(
-             (h, index) => <h3 key={index}>{this.props.t(h)}</h3>);
+             (h, index) => <h3 key={index} className="header">{this.props.t(h)}</h3>);
         let paragraphs = this.props.info.info.paragraphs.map(
-             (p, index) => <p key={index}>{this.props.t(p)}</p>);
+             (p, index) => <p key={index} className="paragraph">{this.props.t(p)}</p>);
         let images = [];
         this.props.info.info.images.forEach(function(image){images.push({original:assets[image]});});
         let imageThumbnails = this.props.info.info.images.map((p, index) => <button className={ "Info-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>);
@@ -41,7 +41,7 @@ class Info extends Component {
                    </div>
                    <div className="Info-text-container">
                         <div className="Info-text">
-                          <h1>{this.props.t(this.props.info.info.title)}</h1>
+                          <h1 className="title">{this.props.t(this.props.info.info.title)}</h1>
                           {headers}
                           {paragraphs}
                           <div id="Info-shortcut">

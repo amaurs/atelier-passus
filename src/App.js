@@ -236,7 +236,7 @@ class App extends Component {
             <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
             <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
             <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute component={RenderHelper} changeLanguage={changeLanguage} t={t} />
+            <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} changeLanguage={changeLanguage} t={t} language={this.state.language} />
           </Switch>
 
           {easterEgg}

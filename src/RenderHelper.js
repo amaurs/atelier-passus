@@ -17,9 +17,7 @@ function RenderHelper(props){
     } else if(type === "plain"){
       return <Plain info={props.info} changeLanguage={props.changeLanguage} t={props.t} />
     }
-  } else {
-    return <div><p>{props.t("four-oh-four")}</p></div>
-  }
+  } 
 
 }
 
