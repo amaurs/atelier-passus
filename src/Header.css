@@ -1,9 +1,25 @@
 .Header{
   width:100%;
-  margin-top: 30px;
+  margin-top: 0;
   height: 100px;
   position: fixed;
+  background-color: #ccc;
+  z-index: 10;
 }
+/**
+.scrolling {
+  position: fixed;
+  -webkit-box-shadow: 0px 3px 1px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow:    0px 3px 1px 0px rgba(50, 50, 50, 0.1);
+  box-shadow:         0px 3px 1px 0px rgba(50, 50, 50, 0.1);
+  z-index: 10;
+}
+
+.non-scrolling {
+  position: relative;
+  
+}
+**/
 .Header img{
   float:right;
   
@@ -62,3 +78,24 @@
 .active {
   text-decoration: underline !important;
 }
+
+
+@media only screen 
+and (max-width : 414px)
+{ 
+  .Header {
+    height: 70px;
+  }
+  .Header li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 0px;
+  }
+  .Header .company{
+    display: none;
+  }
+}
+

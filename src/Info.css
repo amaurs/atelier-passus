@@ -4,13 +4,14 @@
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 125px;
 }
 
 .Info-text-container {
   margin:0;
   width:30%;
   float:left;
-  margin-top: 125px;
+  
 }
 
 .Info-image {
@@ -62,7 +63,7 @@
   cursor: w-resize;
 }
 
-.image-gallery-right-nav:hover{
+.image-gallery-left-nav:hover{
   cursor: e-resize;
 }
 .image-gallery-left-nav:hover::before,

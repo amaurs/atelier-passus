@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import logo from './images/logo.gif';
+//import logo from './images/logo.gif';
 
 
 class Header extends Component {
@@ -16,7 +16,7 @@ class Header extends Component {
     }
 
     render() {
-        return  <div className="Header">
+        return  <div className={"Header " + (this.props.scrolling?"scrolling":"non-scrolling")}>
                     <div className="language">
                       <button className={this.props.language === "es"?"active es":"es"} onClick={() => this.props.changeLanguage('es')}>es</button>
                       <button className={this.props.language === "fr"?"active fr":"fr"} onClick={() => this.props.changeLanguage('fr')}>fr</button>

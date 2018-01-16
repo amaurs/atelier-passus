@@ -97,6 +97,7 @@ class App extends Component {
       isLoggedIn: false,
       pos:0,
       language:this.props.i18n.language,
+      scrolling: false,
     }
   }
 
@@ -104,6 +105,24 @@ class App extends Component {
     console.log("The event was launched.");
   }
 
+  componentDidMount() {
+    window.addEventListener("keydown", this.add.bind(this));
+    window.addEventListener("scroll", this.handleScroll.bind(this));
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this.add.bind(this));
+    window.removeEventListener("scroll", this.handleScroll.bind(this));
+  }
+  handleScroll(event) {
+      if (window.scrollY === 0 && this.state.scrolling === true) {
+          this.setState({scrolling: false});
+      }
+      else if (window.scrollY !== 0 && this.state.scrolling !== true) {
+          this.setState({scrolling: true});
+      }
+      console.log(this.state.scrolling);
+  }
 
   getObjectFromSrc(src){
     let obj = null;
@@ -186,9 +205,9 @@ class App extends Component {
       easterEgg =  <EasterEgg image={"easterImage"} pos={pos}/>
     }
     return (
-        <div className="App-container" tabIndex="0" onKeyDown={(d) => this.add(d)}>
+        <div className="App-container" >
           <Switch >
-            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
+            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage} t={t} language={this.state.language} scrolling={this.state.scrolling}/>
             <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
             <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
             <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
