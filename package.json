@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://amaurs.com/atelier",
   "dependencies": {
+    "bulma": "^0.6.2",
     "i18next": "^10.2.2",
     "i18next-browser-languagedetector": "^2.1.0",
     "i18next-xhr-backend": "^1.5.1",
