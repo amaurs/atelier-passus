@@ -58,9 +58,9 @@ class RenderHelper extends Component {
           content = <Portfolio iframe={iframe}  />
         } 
 
-        return  <div className="RenderHelper-container">
+        return  <div className="container">
                    {content}
-                   <div className="RenderHelper-text-container">
+                   <div className="container">
                         <div className="RenderHelper-text">
                           <h1 className="title">{this.props.t(this.props.info.info.title)}</h1>
                           {headers}
@@ -76,7 +76,7 @@ class RenderHelper extends Component {
 
 function Video(props) {
 
-    return <div className="Video-player-container">
+    return <div className="container">
              <div className="Video-wrapper" style={props.style}>
                <ReactPlayer 
                  className="Video-player"
@@ -93,7 +93,7 @@ function Video(props) {
 function Portfolio(props) {
 
 
-    return <div className="Portfolio-container">
+    return <div className="container">
              <div className="Portfolio-player-containter">
                <div className="iframe-wrapper" dangerouslySetInnerHTML={ {__html: props.iframe} } />
              </div>

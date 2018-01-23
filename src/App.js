@@ -18,7 +18,6 @@ const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
   return (
     <div>
-        {React.createElement(Header, finalProps)}
         {React.createElement(component, finalProps)}
     </div>
   );
@@ -38,8 +37,6 @@ function EasterEgg(props){
     MozTransform: 'translateX(' +props.pos + 'px)'
   };
 
-
-  console.log(props);
     return (
         <div className="EasterEgg" style={easterStyle}><img alt="" src={assets[props.image]}/></div>
     );
@@ -49,48 +46,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props.i18n);
-    console.log(process.env.PUBLIC_URL);
-    /**
-    text.info.forEach(function(obj){
-      console.log("\"" + obj.src + "-card\":\"" + obj.card + "\",");
-      console.log("\"" + obj.src + "-title\":\"" + obj.info.title + "\",");
-      obj.info.headers.forEach(function(header, index){
-          console.log("\"" + obj.src + "-header" + "" + index + "\":\"" + header + "\",");
-      });
-      obj.info.paragraphs.forEach(function(paragraph, index){
-          console.log("\"" + obj.src + "-paragraph" + "" + index + "\":\"" + paragraph + "\",");
-      });
-    });
 
-
-    text.info.forEach(function(obj){
-      console.log("{src:\"" + obj.src + "\",");
-      console.log(" type:\"" + obj.type + "\",");
-      console.log(" card:\"" + obj.src + "-card\",");
-      console.log(" info:{title:\"" + obj.src + "-title\",");
-      console.log("       headers:[");
-      obj.info.headers.forEach(function(header, index){
-          console.log("               \"" + obj.src + "-header" + index + "\",");
-      });
-      console.log("               ],");
-      console.log("       paragraphs:[");
-      obj.info.paragraphs.forEach(function(paragraph, index){
-          console.log("               \"" + obj.src + "-paragraph" + index + "\",");
-      });
-      console.log("               ],");
-      if(obj.info.images) {
-        console.log("       images:[");
-        obj.info.images.forEach(function(image, index){
-          console.log("               \"" + image + "\",");
-        });
-        console.log("               ]}},");
-      }
-      if(obj.info.url) {
-        console.log("       url:\""+obj.info.url+"\"}},");
-      }
-    });
-    **/
     this.state = {
       image: 0,
       index:0,
@@ -98,11 +54,17 @@ class App extends Component {
       pos:0,
       language:this.props.i18n.language,
       scrolling: false,
+      active:false,
     }
   }
 
   handleKeys(ev){
     console.log("The event was launched.");
+  }
+
+  handleMenu(){
+    const isActive = this.state.active;
+    this.setState({active: !isActive});
   }
 
   componentDidMount() {
@@ -205,42 +167,51 @@ class App extends Component {
       easterEgg =  <EasterEgg image={"easterImage"} pos={pos}/>
     }
     return (
-        <div className="App-container" >
-          <Switch >
-            <PropsRoute exact path='/' component={Grid} grid={infoArray} changeLanguage={changeLanguage} t={t} language={this.state.language} scrolling={this.state.scrolling}/>
-            <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>   
-            <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} changeLanguage={changeLanguage} t={t} language={this.state.language}/>
-            <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} changeLanguage={changeLanguage} t={t} language={this.state.language} />
+        <div >
+          <Header t={t} language={this.state.language} scrolling={this.state.scrolling} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
+          <Switch>
+            <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} scrolling={this.state.scrolling} />
+            <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
+            <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
+            <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
+            <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} t={t} />
+            <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} t={t} />
+            <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} t={t} />
+            <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
+            <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} t={t} />
+            <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} t={t} />
+            <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} t={t} />
+            <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} t={t} />
+            <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} t={t} />
+            <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} t={t} />
+            <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} t={t} />
+            <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
+            <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} t={t} />
+            <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} t={t} />
+            <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} t={t} />
+            <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
+            <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} t={t} />
+            <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} t={t} />
+            <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} t={t} />
+            <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} t={t} />
+            <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
+            <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} t={t} />
+            <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} t={t} />
+            <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
+            <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
+            <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
           </Switch>
 
           {easterEgg}
-        
+          <footer className="footer">
+            <div className="container">
+              <div className="content has-text-centered is-white">
+                <p>
+                  <strong>Atelier-Passus</strong>
+                </p>
+              </div>
+            </div>
+          </footer>
         </div>
     );
   }
