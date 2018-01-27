@@ -7,7 +7,6 @@ class Grid extends Component {
     handleClick(path) {
       this.props.history.push('/' + path)
     }
-
     render() {
         console.log(this.props);
         const items = this.props.grid.map((square, index) => 
@@ -17,7 +16,6 @@ class Grid extends Component {
 
         return  <div className="is-medium is-fluid columns is-multiline" >{items} </div>
     }
-
 }
 
 function Cell(props) {
