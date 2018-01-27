@@ -168,50 +168,51 @@ class App extends Component {
     }
     return (
         <div >
-          <Header t={t} language={this.state.language} scrolling={this.state.scrolling} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
-          <Switch>
-            <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} scrolling={this.state.scrolling} />
-            <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
-            <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
-            <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
-            <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} t={t} />
-            <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} t={t} />
-            <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} t={t} />
-            <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
-            <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} t={t} />
-            <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} t={t} />
-            <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} t={t} />
-            <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} t={t} />
-            <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} t={t} />
-            <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} t={t} />
-            <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} t={t} />
-            <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
-            <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} t={t} />
-            <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} t={t} />
-            <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} t={t} />
-            <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
-            <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} t={t} />
-            <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} t={t} />
-            <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} t={t} />
-            <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} t={t} />
-            <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
-            <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} t={t} />
-            <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} t={t} />
-            <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
-            <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
-            <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
-          </Switch>
-
-          {easterEgg}
-          <footer className="footer">
+          <Header t={t} language={this.state.language} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
+          <div className="hero-body">
+            <Switch>
+              <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} />
+              <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
+              <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
+              <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
+              <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} t={t} />
+              <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} t={t} />
+              <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} t={t} />
+              <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
+              <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} t={t} />
+              <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} t={t} />
+              <PropsRoute path='/invisible' component={RenderHelper} info={this.getObjectFromSrc("invisible")} t={t} />
+              <PropsRoute path='/kancaba' component={RenderHelper} info={this.getObjectFromSrc("kancaba")} t={t} />
+              <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} t={t} />
+              <PropsRoute path='/liliane' component={RenderHelper} info={this.getObjectFromSrc("liliane")} t={t} />
+              <PropsRoute path='/mata' component={RenderHelper} info={this.getObjectFromSrc("mata")} t={t} />
+              <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
+              <PropsRoute path='/media' component={RenderHelper} info={this.getObjectFromSrc("media")} t={t} />
+              <PropsRoute path='/mipiedra' component={RenderHelper} info={this.getObjectFromSrc("mipiedra")} t={t} />
+              <PropsRoute path='/num5' component={RenderHelper} info={this.getObjectFromSrc("num5")} t={t} />
+              <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
+              <PropsRoute path='/pdm' component={RenderHelper} info={this.getObjectFromSrc("pdm")} t={t} />
+              <PropsRoute path='/paisajesonoro' component={RenderHelper} info={this.getObjectFromSrc("paisajesonoro")} t={t} />
+              <PropsRoute path='/plan' component={RenderHelper} info={this.getObjectFromSrc("plan")} t={t} />
+              <PropsRoute path='/senderos' component={RenderHelper} info={this.getObjectFromSrc("senderos")} t={t} />
+              <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
+              <PropsRoute path='/tension' component={RenderHelper} info={this.getObjectFromSrc("tension")} t={t} />
+              <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} t={t} />
+              <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
+              <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
+              <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
+            </Switch>
+          </div>
+          <footer className="hero-foot">
             <div className="container">
-              <div className="content has-text-centered is-white">
+              <div className="tabs is-centered">
                 <p>
-                  <strong>Atelier-Passus</strong>
+                  <strong>Atelier-Passus</strong><br/> Tokio 84-5, Juarez, Mexico, 06600.
                 </p>
               </div>
             </div>
           </footer>
+          {easterEgg}
         </div>
     );
   }

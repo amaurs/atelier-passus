@@ -15,15 +15,15 @@ class Grid extends Component {
                 
             );
 
-        return  <div className="section is-medium is-fluid columns is-multiline" >{items} </div>
+        return  <div className="is-medium is-fluid columns is-multiline" >{items} </div>
     }
 
 }
 
 function Cell(props) {
     return (
-        <div className="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd" onClick={()=>props.onClick()}>
-          <figure className="image is-150x150">
+        <div className="column is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen is-one-fifth-fullhd" onClick={()=>props.onClick()}>
+          <figure className="image is-square">
             <img alt="" src={assets[props.image]}/>
           </figure>
           <div className="">

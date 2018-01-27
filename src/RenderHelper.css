@@ -64,11 +64,10 @@
 }
 
 .Video-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width:60%;
+  float: right;
+  margin-top: 100px;
+  z-index: 10;
 }
 
 .Portfolio-player-containter {
@@ -82,8 +81,8 @@
   width: 100%;
   height: 100%;
 }
-.iframe-wrapper {
-  height: 500px;
+.Iframe-wrapper {
+
 }
 
 
