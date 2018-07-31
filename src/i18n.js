@@ -3,7 +3,10 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import XHR from 'i18next-xhr-backend';
 
 const options = {
-  fallbackLng: 'en',
+
+  lng: "es",
+
+  fallbackLng: 'fr',
 
   // have a common namespace used around the full app
   ns: ['translations'],

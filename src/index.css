@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lekton');
 
+@font-face {
+  font-family: 'Whitney';
+  src: local('Whitney'), url(./fonts/whitney_bold.ttf) format('tff');
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lekton', sans-serif !important;
+  height: 100%;
+  font-family: 'Whitney', sans-serif !important;
 }

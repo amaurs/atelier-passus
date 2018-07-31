@@ -1,0 +1,21 @@
+.cell {
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+.cell figure {
+  overflow: hidden;
+}
+
+.cell img {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+.is-showing {
+  opacity: 1;
+}
+
+.cell img:hover {
+  transform: scale(1);
+}

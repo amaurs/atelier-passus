@@ -8,6 +8,7 @@ class Header extends Component {
 
     handleClick(language) {
       this.props.handleMenu();
+      console.log("Language is: " + language);
       if(language === "es"){
         this.props.changeLanguage("fr");
       } else if(language === "fr"){
@@ -18,7 +19,7 @@ class Header extends Component {
 
     render() {
         return <div className="hero-head">
-                 <nav className="navbar is-transparent">
+                 <nav className="navbar is-fixed-top">
                    <div className="navbar-brand">
                      <img className="attelier-on-top" src={logo} alt="Atelier Passus"  />
                      <div className={"navbar-burger attelier-on-top " + (this.props.active?" is-active":"")} data-target="atelier-menu" onClick={()=>this.props.handleMenu()}>
@@ -39,6 +40,10 @@ class Header extends Component {
                      </div>
                    </div>
                  </nav>
+                 <div id="title" className="hero-head" style={{height: this.props.height +"px"}}>
+                    <div className="logo">
+                </div>  
+          </div>
                </div>
     }
 

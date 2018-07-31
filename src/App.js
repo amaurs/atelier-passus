@@ -5,8 +5,11 @@ import Grid from './Grid.js';
 import Header from './Header.js';
 import RenderHelper from './RenderHelper.js';
 import text from './text.js';
+import logo from './images/logo-full.gif';
 import './App.css';
 import assets from './assets.js';
+import intro from './images/quilt.mp4';
+import ReactPlayer from 'react-player';
 
 const infoArray = text.info;
 const plainArray = text.plain;
@@ -47,16 +50,30 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    console.log(this.props.i18n);
+
     this.state = {
       image: 0,
-      index:0,
+      index: 0,
       isLoggedIn: false,
-      pos:0,
-      language:this.props.i18n.language,
-      scrolling: false,
-      active:false,
+      pos: 0,
+      language: this.props.i18n.language,
+      showGrid: false,
+      active: false,
+      width: 0,
+      height: 0,
     }
   }
+
+
+  updateDimensions(){
+    let update_width  = window.innerWidth;
+    let update_height = window.innerHeight;
+    this.setState({ width: update_width, height: update_height });
+    console.log("width: " + this.state.width);
+    console.log("height: " + this.state.height);
+  }
+
 
   handleKeys(ev){
     console.log("The event was launched.");
@@ -68,22 +85,23 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
     window.addEventListener("keydown", this.add.bind(this));
     window.addEventListener("scroll", this.handleScroll.bind(this));
   }
   
   componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
     window.removeEventListener("keydown", this.add.bind(this));
     window.removeEventListener("scroll", this.handleScroll.bind(this));
   }
   handleScroll(event) {
-      if (window.scrollY === 0 && this.state.scrolling === true) {
-          this.setState({scrolling: false});
-      }
-      else if (window.scrollY !== 0 && this.state.scrolling !== true) {
-          this.setState({scrolling: true});
-      }
-      console.log(this.state.scrolling);
+    if(this.state.height < window.scrollY){
+      this.setState({showGrid: true});
+    } else {
+      this.setState({showGrid: false});
+    }
   }
 
   getObjectFromSrc(src){
@@ -150,12 +168,8 @@ class App extends Component {
   }
 
   render() {
-    console.log("this.props");
-    console.log(this.props);
     const { t, i18n } = this.props;
-    console.log(i18n.language);
     const changeLanguage = (lng) => {
-      console.log("Language changed to " + lng);
       i18n.changeLanguage(lng);
       this.setState({language:lng});
     }
@@ -170,8 +184,9 @@ class App extends Component {
         <div >
           <Header t={t} language={this.state.language} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
           <div className="hero-body">
+            
             <Switch>
-              <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} />
+              <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height}/>
               <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
               <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
               <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
