@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lekton');
 
 @font-face {
-  font-family: 'Whitney';
-  src: local('Whitney'), url(./fonts/whitney_bold.ttf) format('tff');
+  font-family: 'whitney_book';
+  src: local('whitney_book'), url(./fonts/whitney_book.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'whitney_bold';
+  src: local('whitney_bold'), url(./fonts/whitney_bold.ttf) format('truetype');
 }
 
 
@@ -10,5 +16,5 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Whitney', sans-serif !important;
+  font-family: 'whitney_book', sans-serif !important;
 }

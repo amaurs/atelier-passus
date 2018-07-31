@@ -2,20 +2,17 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
+import Hero from './Hero.js';
 import Header from './Header.js';
 import RenderHelper from './RenderHelper.js';
 import text from './text.js';
 import logo from './images/logo-full.gif';
 import './App.css';
 import assets from './assets.js';
-import intro from './images/quilt.mp4';
 import ReactPlayer from 'react-player';
 
 const infoArray = text.info;
 const plainArray = text.plain;
-
-
-
 
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
@@ -39,19 +36,16 @@ function EasterEgg(props){
     WebkitTransform: 'translateX(' + props.pos + 'px)',
     MozTransform: 'translateX(' +props.pos + 'px)'
   };
-
-    return (
-        <div className="EasterEgg" style={easterStyle}><img alt="" src={assets[props.image]}/></div>
-    );
+  return (
+      <div className="EasterEgg" style={easterStyle}><img alt="" src={assets[props.image]}/></div>
+  );
 }
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-
     console.log(this.props.i18n);
-
     this.state = {
       image: 0,
       index: 0,
@@ -65,7 +59,6 @@ class App extends Component {
     }
   }
 
-
   updateDimensions(){
     let update_width  = window.innerWidth;
     let update_height = window.innerHeight;
@@ -74,8 +67,7 @@ class App extends Component {
     console.log("height: " + this.state.height);
   }
 
-
-  handleKeys(ev){
+  handleKeys(event){
     console.log("The event was launched.");
   }
 
@@ -164,7 +156,6 @@ class App extends Component {
     else {
       this.setState({index:0});
     }
-
   }
 
   render() {
@@ -186,13 +177,14 @@ class App extends Component {
           <div className="hero-body">
             
             <Switch>
-              <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height}/>
+              <PropsRoute exact path='/' component={Hero} t={t} />
               <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
               <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
               <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
               <PropsRoute path='/ciclos' component={RenderHelper} info={this.getObjectFromSrc("ciclos")} t={t} />
               <PropsRoute path='/colodion' component={RenderHelper} info={this.getObjectFromSrc("colodion")} t={t} />
               <PropsRoute path='/espita' component={RenderHelper} info={this.getObjectFromSrc("espita")} t={t} />
+              <PropsRoute path='/femaria' component={RenderHelper} info={this.getObjectFromSrc("femaria")} t={t} />
               <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
               <PropsRoute path='/hualemnah' component={RenderHelper} info={this.getObjectFromSrc("hualemnah")} t={t} />
               <PropsRoute path='/instrucciones' component={RenderHelper} info={this.getObjectFromSrc("instrucciones")} t={t} />
@@ -215,7 +207,9 @@ class App extends Component {
               <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} t={t} />
               <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
               <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
+              <PropsRoute path='/projects' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height}/>
               <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
+
             </Switch>
           </div>
           <footer className="hero-foot">

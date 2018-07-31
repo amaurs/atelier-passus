@@ -8,7 +8,7 @@
 }
 
 .cell img {
-  transform: scale(1.1);
+  transform: scale(1.3);
   transition: all 1s ease-in-out;
 }
 

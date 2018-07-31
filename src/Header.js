@@ -30,10 +30,10 @@ class Header extends Component {
                    </div>
                    <div id="atelier-menu " className={"navbar-menu attelier-menu" + (this.props.active?" is-active":"")} >
                      <div className="navbar-start has-text-centered">
-                       <NavLink className="navbar-item" to="/" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink>
+                       <NavLink className="navbar-item" to="/projects" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink>
                        <NavLink className="navbar-item" to="/about" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}</NavLink>
                        <NavLink className="navbar-item" to="/contact" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("contact")}</NavLink>
-                       <a className="navbar-item" onClick={() => this.handleClick(this.props.language)}>{this.props.t("language")}</a>
+                       <span className="navbar-item"><a  onClick={() => this.handleClick("fr")}>es</a>/<a onClick={() => this.handleClick("es")}>fr</a></span>
                      </div>
                      <div className="navbar-end">
                        
