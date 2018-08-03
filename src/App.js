@@ -3,10 +3,11 @@ import { Switch, Route } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
 import Hero from './Hero.js';
-import Header from './Header.js';
+import Menu from './Menu.js';
+import Hamburger from './Hamburger.js';
 import RenderHelper from './RenderHelper.js';
 import text from './text.js';
-import logo from './images/logo-full.gif';
+import logo from './logo.svg';
 import './App.css';
 import assets from './assets.js';
 import ReactPlayer from 'react-player';
@@ -72,6 +73,8 @@ class App extends Component {
   }
 
   handleMenu(){
+    console.log("The button was pressed.");
+    console.log(this.state.active);
     const isActive = this.state.active;
     this.setState({active: !isActive});
   }
@@ -173,11 +176,12 @@ class App extends Component {
     }
     return (
         <div >
-          <Header t={t} language={this.state.language} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
-          <div className="hero-body">
-            
+          <Menu t={t} language={this.state.language} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
+          <Hamburger onClick={e => this.handleMenu()} isActive={this.state.active}/>
+          <div>
             <Switch>
-              <PropsRoute exact path='/' component={Hero} t={t} />
+              <PropsRoute exact path='/' component={Hero} t={t} language={this.state.language} height={this.state.height} />
+              <PropsRoute path='/projects' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
               <PropsRoute path='/boissy' component={RenderHelper} info={this.getObjectFromSrc("boissy")} t={t} />
               <PropsRoute path='/casa30' component={RenderHelper} info={this.getObjectFromSrc("casa30")} t={t} />
               <PropsRoute path='/castillo' component={RenderHelper} info={this.getObjectFromSrc("castillo")} t={t} />
@@ -207,7 +211,6 @@ class App extends Component {
               <PropsRoute path='/xucu' component={RenderHelper} info={this.getObjectFromSrc("xucu")} t={t} />
               <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
               <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
-              <PropsRoute path='/projects' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height}/>
               <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
 
             </Switch>

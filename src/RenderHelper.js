@@ -62,19 +62,17 @@ class RenderHelper extends Component {
                          dangerouslySetInnerHTML={ {__html: iframe} } />
         } 
 
-        return  <div className="container">
-                   <div className="columns is-vcentered">
-                     <div className="column is-7 is-offset-1">
-                       {content}
-                     </div>
-                     <div className="column is-3 is-offset-1">
-                       <h1 className="title is-2">{this.props.t(this.props.info.info.title)}</h1>
-                       {headers}
-                       {paragraphs}
-                       {imageThumbnails}
-                     </div>
-                   </div>
-                </div>;
+        return <div>
+                 <div>
+                   {content}
+                 </div>
+                 <div>
+                   <h1>{this.props.t(this.props.info.info.title)}</h1>
+                   {headers}
+                   {paragraphs}
+                   {imageThumbnails}
+                 </div>
+               </div>;
     }
 }
 

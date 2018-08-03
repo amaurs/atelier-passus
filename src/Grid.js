@@ -14,7 +14,7 @@ class Grid extends Component {
                 
             );
 
-        return  <div className="is-medium is-fluid columns is-multiline" >{items} </div>
+        return  <section>{items}</section>
     }
 }
 
