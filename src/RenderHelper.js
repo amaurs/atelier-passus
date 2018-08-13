@@ -63,7 +63,7 @@ class RenderHelper extends Component {
         } 
 
         return <div>
-                 <div>
+                 <div className="RenderHelper-container">
                    {content}
                  </div>
                  <div>

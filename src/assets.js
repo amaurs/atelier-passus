@@ -121,10 +121,10 @@ import laredo14 from './images2/laredo/14.jpg';
 import laredo15 from './images2/laredo/15.jpg';
 import laredo16 from './images2/laredo/16.jpg';
 
-import liliane1 from './images2/li-liane/1.jpg';
-import liliane2 from './images2/li-liane/2.jpg';
-import liliane3 from './images2/li-liane/3.jpg';
-import liliane4 from './images2/li-liane/4.jpg';
+import liLiane1 from './images2/li-liane/1.jpg';
+import liLiane2 from './images2/li-liane/2.jpg';
+import liLiane3 from './images2/li-liane/3.jpg';
+import liLiane4 from './images2/li-liane/4.jpg';
 
 import mantonegro1 from './images2/mantonegro/1.jpg';
 import mantonegro2 from './images2/mantonegro/2.jpg';
@@ -328,10 +328,10 @@ laredo14,
 laredo15,
 laredo16,
 
-liliane1,
-liliane2,
-liliane3,
-liliane4,
+liLiane1,
+liLiane2,
+liLiane3,
+liLiane4,
 
 mantonegro1,
 mantonegro2,
