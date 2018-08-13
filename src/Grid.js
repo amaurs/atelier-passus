@@ -22,7 +22,7 @@ function Cell(props) {
     return (
         <div className={"cell column is-one-third-tablet is-one-quarter-desktop is-one-fifth-widescreen is-one-fifth-fullhd" + (props.show?" is-showing":"")} onClick={()=>props.onClick()}>
           <figure className="image is-square">
-            <img alt="" src={assets[props.image]}/>
+            <img className="Grid-image" src={assets[props.image]}/>
           </figure>
           <div className="">
             <p>{props.text}</p>

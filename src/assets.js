@@ -1,437 +1,410 @@
-import boissy from './images/boissy.jpg';
-import casa30 from './images/casa30.jpg';
-import castillo from './images/castillo.jpg';
-import colodion from './images/colodion.jpg';
-import espita from './images/espita.jpg';
-import femaria from './images/femaria.jpg';
-import herakles from './images/herakles.jpg';
-import hualemnah from './images/hualemnah.jpg';
-import instrucciones from './images/instrucciones.jpg';
-import invisible from './images/invisible.jpg';
-import kancaba from './images/kancaba.jpg';
-import lamor from './images/lamor.jpg';
-import laredo from './images/laredo.jpg';
-import liliane from './images/liliane.jpg';
-import ciclos from './images/ciclos.jpg';
-import mata from './images/mata.jpg';
-import mazatlan from './images/mazatlan.jpg';
-import media from './images/media.jpg';
-import mipiedra from './images/mipiedra.jpg';
-import mort from './images/mort.jpg';
-import myrte from './images/myrte.jpg';
-import nazas from './images/nazas.jpg';
-import num5 from './images/num5.jpg';
-import onora from './images/onora.jpg';
-import paisajesonoro from './images/paisajesonoro.jpg';
-import pdm from './images/pdm.jpg';
-import plan from './images/plan.jpg';
-import sema from './images/sema.jpg';
-import senal from './images/senal.jpg';
-import senderos from './images/senderos.jpg';
-import tension from './images/tension.jpg';
-import xucu from './images/xucu.jpg';
+import arbolesDeVida from './images2/iconos/ARBOLES-DE-VIDA.jpg';
+import aube from './images2/iconos/AUBE.jpg';
+import casaFemaria from './images2/iconos/CASA-FEMARIA.jpg';
+import cinco from './images2/iconos/CINCO.jpg';
+import colodionNum13 from './images2/iconos/COLODION-NUM.13.jpg';
+import elAlofonoDeLaVida from './images2/iconos/EL-ALOFONO-DE-LA-VIDA.jpg';
+import elCicloDeLaPiel from './images2/iconos/LOS-CICLOS-DE-LA-PIEL.jpg';
+import herakles from './images2/iconos/HERAKLES.jpg';
+import instruccionesParaUnArquitecto from './images2/iconos/INSTRUCCIONES-PARA-UN-ARQUITECTO.jpg';
+import invencibleInvisible from './images2/iconos/INVENCIBLE-INVISIBLE.jpg';
+import liLiane from './images2/iconos/LI-LIANE.jpg';
+import mantonegro from './images2/iconos/MANTONEGRO.jpg';
+import mazatlan from './images2/iconos/MAZATLAN.jpg';
+import miPiedraMiCamino from './images2/iconos/MI-PIEDRA-MI-CAMINO.jpg';
+import ph4 from './images2/iconos/PH4.jpg';
+import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
+import sema from './images2/iconos/SEMA.jpg';
 
 
-import boissy1 from './images/boissy/boissy001.jpg';
-import boissy2 from './images/boissy/boissy002.jpg';
-import boissy3 from './images/boissy/boissy003.jpg';
-import boissy4 from './images/boissy/boissy004.jpg';
-import boissy5 from './images/boissy/boissy005.jpg';
-import boissy6 from './images/boissy/boissy006.jpg';
-import boissy7 from './images/boissy/boissy007.jpg';
-import boissy8 from './images/boissy/boissy008.jpg';
-import boissy9 from './images/boissy/boissy009.jpg';
-import boissy10 from './images/boissy/boissy010.jpg';
-import boissy11 from './images/boissy/boissy011.jpg';
-import boissy12 from './images/boissy/boissy012.jpg';
+import arbolesDeVida1 from './images2/arboles-de-vida/1.jpg';
+import arbolesDeVida2 from './images2/arboles-de-vida/2.jpg';
+import arbolesDeVida3 from './images2/arboles-de-vida/3.jpg';
+import arbolesDeVida4 from './images2/arboles-de-vida/4.jpg';
+import arbolesDeVida5 from './images2/arboles-de-vida/5.jpg';
 
-import casa301 from './images/casa30/1425001.jpg';
-import casa302 from './images/casa30/1425002.jpg';
-import casa303 from './images/casa30/1425003.jpg';
-import casa304 from './images/casa30/1425004.jpg';
-import casa305 from './images/casa30/1425005.jpg';
-import casa306 from './images/casa30/1425006.jpg';
-import casa307 from './images/casa30/1425007.jpg';
-import casa308 from './images/casa30/1425008.jpg';
+import aube1 from './images2/aube/1.jpg';
+import aube2 from './images2/aube/2.jpg';
+import aube3 from './images2/aube/3.jpg';
+import aube4 from './images2/aube/4.jpg';
 
-import castillo1 from './images/castillo/castillo001.jpg';
-import castillo2 from './images/castillo/castillo002.jpg';
-import castillo3 from './images/castillo/castillo003.jpg';
-import castillo4 from './images/castillo/castillo004.jpg';
-import castillo5 from './images/castillo/castillo005.jpg';
-import castillo6 from './images/castillo/castillo006.jpg';
-import castillo7 from './images/castillo/castillo007.jpg';
+import belaBartok1 from './images2/bela-bartok/1.jpg';
+import belaBartok2 from './images2/bela-bartok/2.jpg';
+import belaBartok3 from './images2/bela-bartok/3.jpg';
+import belaBartok4 from './images2/bela-bartok/4.jpg';
+import belaBartok5 from './images2/bela-bartok/5.jpg';
+import belaBartok6 from './images2/bela-bartok/6.jpg';
+import belaBartok7 from './images2/bela-bartok/7.jpg';
+import belaBartok8 from './images2/bela-bartok/8.jpg';
+import belaBartok9 from './images2/bela-bartok/9.jpg';
 
-import colodion1 from './images/colodion/colodion001.jpg';
-import colodion2 from './images/colodion/colodion002.jpg';
-import colodion3 from './images/colodion/colodion003.jpg';
-import colodion4 from './images/colodion/colodion004.jpg';
-import colodion5 from './images/colodion/colodion005.jpg';
-import colodion6 from './images/colodion/colodion006.jpg';
+import casaFemaria1 from './images2/casa-femaria/1.jpg';
+import casaFemaria2 from './images2/casa-femaria/2.jpg';
+import casaFemaria3 from './images2/casa-femaria/3.jpg';
+import casaFemaria4 from './images2/casa-femaria/4.jpg';
+import casaFemaria5 from './images2/casa-femaria/5.jpg';
+import casaFemaria6 from './images2/casa-femaria/6.jpg';
+import casaFemaria7 from './images2/casa-femaria/7.jpg';
+import casaFemaria8 from './images2/casa-femaria/8.jpg';
+import casaFemaria9 from './images2/casa-femaria/9.jpg';
 
-import espita01 from './images/espita/espita001.jpg';
-import espita02 from './images/espita/espita002.jpg';
-import espita03 from './images/espita/espita003.jpg';
-import espita04 from './images/espita/espita004.jpg';
-import espita05 from './images/espita/espita005.jpg';
-import espita06 from './images/espita/espita006.jpg';
-import espita07 from './images/espita/espita007.jpg';
-import espita08 from './images/espita/espita008.jpg';
+import cinco1 from './images2/cinco/1.jpg';
+import cinco2 from './images2/cinco/2.jpg';
+import cinco3 from './images2/cinco/3.jpg';
+import cinco4 from './images2/cinco/4.jpg';
+import cinco5 from './images2/cinco/5.jpg';
+import cinco6 from './images2/cinco/6.jpg';
+import cinco7 from './images2/cinco/7.jpg';
 
-import femaria01 from './images/femaria/femaria001.jpg';
-import femaria02 from './images/femaria/femaria002.jpg';
-import femaria03 from './images/femaria/femaria003.jpg';
-import femaria04 from './images/femaria/femaria004.jpg';
-import femaria05 from './images/femaria/femaria005.jpg';
-import femaria06 from './images/femaria/femaria006.jpg';
-import femaria07 from './images/femaria/femaria007.jpg';
+import colodionNum131 from './images2/colodion-num-13/1.jpg';
+import colodionNum132 from './images2/colodion-num-13/2.jpg';
+import colodionNum133 from './images2/colodion-num-13/3.jpg';
+import colodionNum134 from './images2/colodion-num-13/4.jpg';
+import colodionNum135 from './images2/colodion-num-13/5.jpg';
+import colodionNum136 from './images2/colodion-num-13/6.jpg';
+import colodionNum137 from './images2/colodion-num-13/7.jpg';
+import colodionNum138 from './images2/colodion-num-13/8.jpg';
+import colodionNum139 from './images2/colodion-num-13/9.jpg';
+import colodionNum1310 from './images2/colodion-num-13/10.jpg';
+import colodionNum1311 from './images2/colodion-num-13/11.jpg';
+import colodionNum1312 from './images2/colodion-num-13/12.jpg';
 
-import herakles01 from './images/herakles/herakles001.jpg';
-import herakles02 from './images/herakles/herakles002.jpg';
-import herakles03 from './images/herakles/herakles003.jpg';
-import herakles04 from './images/herakles/herakles004.jpg';
-import herakles05 from './images/herakles/herakles005.jpg';
+import elAlofonoDeLaVida1 from './images2/el-alofono-de-la-vida/1.jpg';
+import elAlofonoDeLaVida2 from './images2/el-alofono-de-la-vida/2.jpg';
+import elAlofonoDeLaVida3 from './images2/el-alofono-de-la-vida/3.jpg';
+import elAlofonoDeLaVida4 from './images2/el-alofono-de-la-vida/4.jpg';
+import elAlofonoDeLaVida5 from './images2/el-alofono-de-la-vida/5.jpg';
+import elAlofonoDeLaVida6 from './images2/el-alofono-de-la-vida/6.jpg';
+import elAlofonoDeLaVida7 from './images2/el-alofono-de-la-vida/7.jpg';
+import elAlofonoDeLaVida8 from './images2/el-alofono-de-la-vida/8.jpg';
+import elAlofonoDeLaVida9 from './images2/el-alofono-de-la-vida/9.jpg';
 
-import hualemnah01 from './images/hualemnah/hualemnah001.jpg';
-import hualemnah02 from './images/hualemnah/hualemnah002.jpg';
-import hualemnah03 from './images/hualemnah/hualemnah003.jpg';
-import hualemnah04 from './images/hualemnah/hualemnah004.jpg';
-import hualemnah05 from './images/hualemnah/hualemnah005.jpg';
-import hualemnah06 from './images/hualemnah/hualemnah006.jpg';
-import hualemnah07 from './images/hualemnah/hualemnah007.jpg';
-import hualemnah08 from './images/hualemnah/hualemnah008.jpg';
-import hualemnah09 from './images/hualemnah/hualemnah009.jpg';
-import hualemnah10 from './images/hualemnah/hualemnah010.jpg';
-import hualemnah11 from './images/hualemnah/hualemnah011.jpg';
-import hualemnah12 from './images/hualemnah/hualemnah012.jpg';
-import hualemnah13 from './images/hualemnah/hualemnah013.jpg';
+import herakles1 from './images2/herakles/1.jpg';
+import herakles2 from './images2/herakles/2.jpg';
+import herakles3 from './images2/herakles/3.jpg';
+import herakles4 from './images2/herakles/4.jpg';
+import herakles5 from './images2/herakles/5.jpg';
+import herakles6 from './images2/herakles/6.jpg';
 
-import instrucciones01 from './images/instrucciones/instrucciones01.jpg';
-import instrucciones02 from './images/instrucciones/instrucciones02.jpg';
-import instrucciones03 from './images/instrucciones/instrucciones03.jpg';
-import instrucciones04 from './images/instrucciones/instrucciones04.jpg';
-import instrucciones05 from './images/instrucciones/instrucciones05.jpg';
-import instrucciones06 from './images/instrucciones/instrucciones06.jpg';
-import instrucciones07 from './images/instrucciones/instrucciones07.jpg';
+import instruccionesParaUnArquitecto1 from './images2/instrucciones-para-un-arquitecto/1.jpg';
+import instruccionesParaUnArquitecto2 from './images2/instrucciones-para-un-arquitecto/2.jpg';
+import instruccionesParaUnArquitecto3 from './images2/instrucciones-para-un-arquitecto/3.jpg';
+import instruccionesParaUnArquitecto4 from './images2/instrucciones-para-un-arquitecto/4.jpg';
+import instruccionesParaUnArquitecto5 from './images2/instrucciones-para-un-arquitecto/5.jpg';
+import instruccionesParaUnArquitecto6 from './images2/instrucciones-para-un-arquitecto/6.jpg';
+import instruccionesParaUnArquitecto7 from './images2/instrucciones-para-un-arquitecto/7.jpg';
+import instruccionesParaUnArquitecto8 from './images2/instrucciones-para-un-arquitecto/8.jpg';
+import instruccionesParaUnArquitecto9 from './images2/instrucciones-para-un-arquitecto/9.jpg';
+import instruccionesParaUnArquitecto10 from './images2/instrucciones-para-un-arquitecto/10.jpg';
+import instruccionesParaUnArquitecto11 from './images2/instrucciones-para-un-arquitecto/11.jpg';
+import instruccionesParaUnArquitecto12 from './images2/instrucciones-para-un-arquitecto/12.jpg';
 
-import invisible01 from './images/invisible/invisible01.jpg';
-import invisible02 from './images/invisible/invisible02.jpg';
-import invisible03 from './images/invisible/invisible03.jpg';
+import invencibleInvisible1 from './images2/invencible-invisible/1.jpg';
+import invencibleInvisible2 from './images2/invencible-invisible/2.jpg';
+import invencibleInvisible3 from './images2/invencible-invisible/3.jpg';
+import invencibleInvisible4 from './images2/invencible-invisible/4.jpg';
 
-import kancaba01 from './images/kancaba/kancaba001.jpg';
-import kancaba02 from './images/kancaba/kancaba002.jpg';
-import kancaba03 from './images/kancaba/kancaba003.jpg';
-import kancaba04 from './images/kancaba/kancaba004.jpg';
-import kancaba05 from './images/kancaba/kancaba005.jpg';
+import laredo1 from './images2/laredo/1.jpg';
+import laredo2 from './images2/laredo/2.jpg';
+import laredo3 from './images2/laredo/3.jpg';
+import laredo4 from './images2/laredo/4.jpg';
+import laredo5 from './images2/laredo/5.jpg';
+import laredo6 from './images2/laredo/6.jpg';
+import laredo7 from './images2/laredo/7.jpg';
+import laredo8 from './images2/laredo/8.jpg';
+import laredo9 from './images2/laredo/9.jpg';
+import laredo10 from './images2/laredo/10.jpg';
+import laredo11 from './images2/laredo/11.jpg';
+import laredo12 from './images2/laredo/12.jpg';
+import laredo13 from './images2/laredo/13.jpg';
+import laredo14 from './images2/laredo/14.jpg';
+import laredo15 from './images2/laredo/15.jpg';
+import laredo16 from './images2/laredo/16.jpg';
 
-import laredo01 from './images/laredo/laredo001.jpg';
-import laredo02 from './images/laredo/laredo002.jpg';
-import laredo03 from './images/laredo/laredo003.jpg';
-import laredo04 from './images/laredo/laredo004.jpg';
-import laredo05 from './images/laredo/laredo005.jpg';
-import laredo06 from './images/laredo/laredo006.jpg';
-import laredo07 from './images/laredo/laredo007.jpg';
-import laredo08 from './images/laredo/laredo008.jpg';
-import laredo09 from './images/laredo/laredo009.jpg';
-import laredo10 from './images/laredo/laredo010.jpg';
-import laredo11 from './images/laredo/laredo011.jpg';
-import laredo12 from './images/laredo/laredo012.jpg';
+import liliane1 from './images2/li-liane/1.jpg';
+import liliane2 from './images2/li-liane/2.jpg';
+import liliane3 from './images2/li-liane/3.jpg';
+import liliane4 from './images2/li-liane/4.jpg';
 
-import liliane01 from './images/liliane/liliane001.jpg';
-import liliane02 from './images/liliane/liliane002.jpg';
-import liliane03 from './images/liliane/liliane003.jpg';
+import mantonegro1 from './images2/mantonegro/1.jpg';
+import mantonegro2 from './images2/mantonegro/2.jpg';
+import mantonegro3 from './images2/mantonegro/3.jpg';
+import mantonegro4 from './images2/mantonegro/4.jpg';
+import mantonegro5 from './images2/mantonegro/5.jpg';
+import mantonegro6 from './images2/mantonegro/6.jpg';
+import mantonegro7 from './images2/mantonegro/7.jpg';
+import mantonegro8 from './images2/mantonegro/8.jpg';
+import mantonegro9 from './images2/mantonegro/9.jpg';
 
-import ciclos01 from './images/ciclos/ciclos01.jpg';
+import mazatlan1 from './images2/mazatlan/1.jpg';
+import mazatlan2 from './images2/mazatlan/2.jpg';
+import mazatlan3 from './images2/mazatlan/3.jpg';
+import mazatlan4 from './images2/mazatlan/4.jpg';
+import mazatlan5 from './images2/mazatlan/5.jpg';
+import mazatlan6 from './images2/mazatlan/6.jpg';
+import mazatlan7 from './images2/mazatlan/7.jpg';
+import mazatlan8 from './images2/mazatlan/8.jpg';
+import mazatlan9 from './images2/mazatlan/9.jpg';
+import mazatlan10 from './images2/mazatlan/10.jpg';
+import mazatlan11 from './images2/mazatlan/11.jpg';
+import mazatlan12 from './images2/mazatlan/12.jpg';
+import mazatlan13 from './images2/mazatlan/13.jpg';
+import mazatlan14 from './images2/mazatlan/14.jpg';
+import mazatlan15 from './images2/mazatlan/15.jpg';
 
-import mata01 from './images/mata/mata01.jpg';
-import mata02 from './images/mata/mata02.jpg';
-import mata03 from './images/mata/mata03.jpg';
-import mata04 from './images/mata/mata04.jpg';
-import mata05 from './images/mata/mata05.jpg';
-import mata06 from './images/mata/mata06.jpg';
-import mata07 from './images/mata/mata07.jpg';
-import mata08 from './images/mata/mata08.jpg';
+import miPiedraMiCamino1 from './images2/mi-piedra-mi-camino/1.jpg';
+import miPiedraMiCamino2 from './images2/mi-piedra-mi-camino/2.jpg';
+import miPiedraMiCamino3 from './images2/mi-piedra-mi-camino/3.jpg';
+import miPiedraMiCamino4 from './images2/mi-piedra-mi-camino/4.jpg';
+import miPiedraMiCamino5 from './images2/mi-piedra-mi-camino/5.jpg';
+import miPiedraMiCamino6 from './images2/mi-piedra-mi-camino/6.jpg';
+import miPiedraMiCamino7 from './images2/mi-piedra-mi-camino/7.jpg';
 
-import mazatlan01 from './images/mazatlan/mazatlan001.jpg';
-import mazatlan02 from './images/mazatlan/mazatlan002.jpg';
-import mazatlan03 from './images/mazatlan/mazatlan003.jpg';
-import mazatlan04 from './images/mazatlan/mazatlan004.jpg';
-import mazatlan05 from './images/mazatlan/mazatlan005.jpg';
-import mazatlan06 from './images/mazatlan/mazatlan006.jpg';
-import mazatlan07 from './images/mazatlan/mazatlan007.jpg';
-import mazatlan08 from './images/mazatlan/mazatlan008.jpg';
-import mazatlan09 from './images/mazatlan/mazatlan009.jpg';
-import mazatlan10 from './images/mazatlan/mazatlan010.jpg';
-import mazatlan11 from './images/mazatlan/mazatlan011.jpg';
-import mazatlan12 from './images/mazatlan/mazatlan012.jpg';
-import mazatlan13 from './images/mazatlan/mazatlan013.jpg';
-import mazatlan14 from './images/mazatlan/mazatlan014.jpg';
-import mazatlan15 from './images/mazatlan/mazatlan015.jpg';
-import mazatlan16 from './images/mazatlan/mazatlan016.jpg';
+import onora1 from './images2/onora/1.jpg';
+import onora2 from './images2/onora/2.jpg';
+import onora3 from './images2/onora/3.jpg';
+import onora4 from './images2/onora/4.jpg';
+import onora5 from './images2/onora/5.jpg';
+import onora6 from './images2/onora/6.jpg';
+import onora7 from './images2/onora/7.jpg';
+import onora8 from './images2/onora/8.jpg';
 
-import media01 from './images/media/media001.jpg';
-import media02 from './images/media/media002.jpg';
-import media03 from './images/media/media003.jpg';
-import media04 from './images/media/media004.jpg';
-import media05 from './images/media/media005.jpg';
-import media06 from './images/media/media006.jpg';
-import media07 from './images/media/media007.jpg';
-import media08 from './images/media/media008.jpg';
+import ph41 from './images2/ph4/1.jpg';
+import ph42 from './images2/ph4/2.jpg';
+import ph43 from './images2/ph4/3.jpg';
+import ph44 from './images2/ph4/4.jpg';
+import ph45 from './images2/ph4/5.jpg';
+import ph46 from './images2/ph4/6.jpg';
+import ph47 from './images2/ph4/7.jpg';
+import ph48 from './images2/ph4/8.jpg';
+import ph49 from './images2/ph4/9.jpg';
+import ph410 from './images2/ph4/10.jpg';
+import ph411 from './images2/ph4/11.jpg';
+import ph412 from './images2/ph4/12.jpg';
+import ph413 from './images2/ph4/13.jpg';
+import ph414 from './images2/ph4/14.jpg';
 
-import mipiedra01 from './images/mipiedra/mipiedra001.jpg';
-import mipiedra02 from './images/mipiedra/mipiedra002.jpg';
-import mipiedra03 from './images/mipiedra/mipiedra003.jpg';
-import mipiedra04 from './images/mipiedra/mipiedra004.jpg';
-import mipiedra05 from './images/mipiedra/mipiedra005.jpg';
+import rompehueso1 from './images2/rompehueso/1.jpg';
+import rompehueso2 from './images2/rompehueso/2.jpg';
+import rompehueso3 from './images2/rompehueso/3.jpg';
+import rompehueso4 from './images2/rompehueso/4.jpg';
+import rompehueso5 from './images2/rompehueso/5.jpg';
 
-import num501 from './images/num5/num5001.jpg';
-import num502 from './images/num5/num5002.jpg';
-import num503 from './images/num5/num5003.jpg';
-import num504 from './images/num5/num5004.jpg';
-import num505 from './images/num5/num5005.jpg';
-import num506 from './images/num5/num5006.jpg';
-import num507 from './images/num5/num5007.jpg';
-import num508 from './images/num5/num5008.jpg';
-import num509 from './images/num5/num5009.jpg';
-import num510 from './images/num5/num5010.jpg';
-import num511 from './images/num5/num5011.jpg';
-import num512 from './images/num5/num5012.jpg';
-import num513 from './images/num5/num5013.jpg';
-
-import onora01 from './images/onora/onora001.jpg';
-import onora02 from './images/onora/onora002.jpg';
-import onora03 from './images/onora/onora003.jpg';
-import onora04 from './images/onora/onora004.jpg';
-import onora05 from './images/onora/onora005.jpg';
-import onora06 from './images/onora/onora006.jpg';
-import onora07 from './images/onora/onora007.jpg';
-import onora08 from './images/onora/onora008.jpg';
-import onora09 from './images/onora/onora009.jpg';
-import onora10 from './images/onora/onora010.jpg';
-import onora11 from './images/onora/onora011.jpg';
-import onora12 from './images/onora/onora012.jpg';
-import onora13 from './images/onora/onora013.jpg';
-import onora14 from './images/onora/onora014.jpg';
-
-import paisajesonoro01 from './images/paisajesonoro/paisajesonoro01.jpg';
-
-import tension01 from './images/tension/tension001.jpg';
-import tension02 from './images/tension/tension002.jpg';
-
-import xucu01 from './images/xucu/xucu001.jpg';
-import xucu02 from './images/xucu/xucu002.jpg';
-import xucu03 from './images/xucu/xucu003.jpg';
-import xucu04 from './images/xucu/xucu004.jpg';
-import xucu05 from './images/xucu/xucu005.jpg';
-import xucu06 from './images/xucu/xucu006.jpg';
-import xucu07 from './images/xucu/xucu007.jpg';
+import sema1 from './images2/sema/1.jpg';
+import sema2 from './images2/sema/2.jpg';
+import sema3 from './images2/sema/3.jpg';
+import sema4 from './images2/sema/4.jpg';
+import sema5 from './images2/sema/5.jpg';
+import sema6 from './images2/sema/6.jpg';
+import sema7 from './images2/sema/7.jpg';
+import sema8 from './images2/sema/8.jpg';
+import sema9 from './images2/sema/9.jpg';
+import sema10 from './images2/sema/10.jpg';
 
 import easterImage from './images/buni.gif';
 
 
 export default {
-    easterImage,
-    boissy,
-    casa30,
-    castillo,
-    colodion,
-    espita,
-    femaria,
-    herakles,
-    hualemnah,
-    instrucciones,
-    invisible,
-    kancaba,
-    lamor,
-    laredo,
-    liliane,
-    ciclos,
-    mata,
-    mazatlan,
-    media,
-    mipiedra,
-    mort,
-    myrte,
-    nazas,
-    num5,
-    onora,
-    paisajesonoro,
-    pdm,
-    plan,
-    sema,
-    senal,
-    senderos,
-    tension,
-    xucu,
-    boissy1,
-    boissy2,
-    boissy3,
-    boissy4,
-    boissy5,
-    boissy6,
-    boissy7,
-    boissy8,
-    boissy9,
-    boissy10,
-    boissy11,
-    boissy12,
-    casa301,
-    casa302,
-    casa303,
-    casa304,
-    casa305,
-    casa306,
-    casa307,
-    casa308,
-    castillo1,
-    castillo2,
-    castillo3,
-    castillo4,
-    castillo5,
-    castillo6,
-    castillo7,
-    colodion1,
-    colodion2,
-    colodion3,
-    colodion4,
-    colodion5,
-    colodion6,
-    espita01,
-    espita02,
-    espita03,
-    espita04,
-    espita05,
-    espita06,
-    espita07,
-    espita08,
-    femaria01,
-    femaria02,
-    femaria03,
-    femaria04,
-    femaria05,
-    femaria06,
-    femaria07,
-    herakles01,
-    herakles02,
-    herakles03,
-    herakles04,
-    herakles05,
-    hualemnah01,
-    hualemnah02,
-    hualemnah03,
-    hualemnah04,
-    hualemnah05,
-    hualemnah06,
-    hualemnah07,
-    hualemnah08,
-    hualemnah09,
-    hualemnah10,
-    hualemnah11,
-    hualemnah12,
-    hualemnah13,
-    instrucciones01,
-    instrucciones02,
-    instrucciones03,
-    instrucciones04,
-    instrucciones05,
-    instrucciones06,
-    instrucciones07,
-    invisible01,
-    invisible02,
-    invisible03,
-    kancaba01,
-    kancaba02,
-    kancaba03,
-    kancaba04,
-    kancaba05,
-    laredo01,
-    laredo02,
-    laredo03,
-    laredo04,
-    laredo05,
-    laredo06,
-    laredo07,
-    laredo08,
-    laredo09,
-    laredo10,
-    laredo11,
-    laredo12,
-    liliane01,
-    liliane02,
-    liliane03,
-    ciclos01,
-    mata01,
-    mata02,
-    mata03,
-    mata04,
-    mata05,
-    mata06,
-    mata07,
-    mata08,
-    mazatlan01,
-    mazatlan02,
-    mazatlan03,
-    mazatlan04,
-    mazatlan05,
-    mazatlan06,
-    mazatlan07,
-    mazatlan08,
-    mazatlan09,
-    mazatlan10,
-    mazatlan11,
-    mazatlan12,
-    mazatlan13,
-    mazatlan14,
-    mazatlan15,
-    mazatlan16,
-    media01,
-    media02,
-    media03,
-    media04,
-    media05,
-    media06,
-    media07,
-    media08,
-    mipiedra01,
-    mipiedra02,
-    mipiedra03,
-    mipiedra04,
-    mipiedra05,
-    num501,
-    num502,
-    num503,
-    num504,
-    num505,
-    num506,
-    num507,
-    num508,
-    num509,
-    num510,
-    num511,
-    num512,
-    num513,
-    onora01,
-    onora02,
-    onora03,
-    onora04,
-    onora05,
-    onora06,
-    onora07,
-    onora08,
-    onora09,
-    onora10,
-    onora11,
-    onora12,
-    onora13,
-    onora14,
-    paisajesonoro01,
-    tension01,
-    tension02,
-    xucu01,
-    xucu02,
-    xucu03,
-    xucu04,
-    xucu05,
-    xucu06,
-    xucu07,
+easterImage,
+arbolesDeVida,
+aube,
+casaFemaria,
+cinco,
+colodionNum13,
+elAlofonoDeLaVida,
+elCicloDeLaPiel,
+herakles,
+instruccionesParaUnArquitecto,
+invencibleInvisible,
+liLiane,
+mantonegro,
+mazatlan,
+miPiedraMiCamino,
+ph4,
+rompehueso,
+sema,
+
+arbolesDeVida1,
+arbolesDeVida2,
+arbolesDeVida3,
+arbolesDeVida4,
+arbolesDeVida5,
+
+aube1,
+aube2,
+aube3,
+aube4,
+
+belaBartok1,
+belaBartok2,
+belaBartok3,
+belaBartok4,
+belaBartok5,
+belaBartok6,
+belaBartok7,
+belaBartok8,
+belaBartok9,
+
+casaFemaria1,
+casaFemaria2,
+casaFemaria3,
+casaFemaria4,
+casaFemaria5,
+casaFemaria6,
+casaFemaria7,
+casaFemaria8,
+casaFemaria9,
+
+cinco1,
+cinco2,
+cinco3,
+cinco4,
+cinco5,
+cinco6,
+cinco7,
+
+colodionNum131,
+colodionNum132,
+colodionNum133,
+colodionNum134,
+colodionNum135,
+colodionNum136,
+colodionNum137,
+colodionNum138,
+colodionNum139,
+colodionNum1310,
+colodionNum1311,
+colodionNum1312,
+
+elAlofonoDeLaVida1,
+elAlofonoDeLaVida2,
+elAlofonoDeLaVida3,
+elAlofonoDeLaVida4,
+elAlofonoDeLaVida5,
+elAlofonoDeLaVida6,
+elAlofonoDeLaVida7,
+elAlofonoDeLaVida8,
+elAlofonoDeLaVida9,
+
+herakles1,
+herakles2,
+herakles3,
+herakles4,
+herakles5,
+herakles6,
+
+instruccionesParaUnArquitecto1,
+instruccionesParaUnArquitecto2,
+instruccionesParaUnArquitecto3,
+instruccionesParaUnArquitecto4,
+instruccionesParaUnArquitecto5,
+instruccionesParaUnArquitecto6,
+instruccionesParaUnArquitecto7,
+instruccionesParaUnArquitecto8,
+instruccionesParaUnArquitecto9,
+instruccionesParaUnArquitecto10,
+instruccionesParaUnArquitecto11,
+instruccionesParaUnArquitecto12,
+
+invencibleInvisible1,
+invencibleInvisible2,
+invencibleInvisible3,
+invencibleInvisible4,
+
+laredo1,
+laredo2,
+laredo3,
+laredo4,
+laredo5,
+laredo6,
+laredo7,
+laredo8,
+laredo9,
+laredo10,
+laredo11,
+laredo12,
+laredo13,
+laredo14,
+laredo15,
+laredo16,
+
+liliane1,
+liliane2,
+liliane3,
+liliane4,
+
+mantonegro1,
+mantonegro2,
+mantonegro3,
+mantonegro4,
+mantonegro5,
+mantonegro6,
+mantonegro7,
+mantonegro8,
+mantonegro9,
+
+mazatlan1,
+mazatlan2,
+mazatlan3,
+mazatlan4,
+mazatlan5,
+mazatlan6,
+mazatlan7,
+mazatlan8,
+mazatlan9,
+mazatlan10,
+mazatlan11,
+mazatlan12,
+mazatlan13,
+mazatlan14,
+mazatlan15,
+
+miPiedraMiCamino1,
+miPiedraMiCamino2,
+miPiedraMiCamino3,
+miPiedraMiCamino4,
+miPiedraMiCamino5,
+miPiedraMiCamino6,
+miPiedraMiCamino7,
+
+onora1,
+onora2,
+onora3,
+onora4,
+onora5,
+onora6,
+onora7,
+onora8,
+
+ph41,
+ph42,
+ph43,
+ph44,
+ph45,
+ph46,
+ph47,
+ph48,
+ph49,
+ph410,
+ph411,
+ph412,
+ph413,
+ph414,
+
+rompehueso1,
+rompehueso2,
+rompehueso3,
+rompehueso4,
+rompehueso5,
+
+sema1,
+sema2,
+sema3,
+sema4,
+sema5,
+sema6,
+sema7,
+sema8,
+sema9,
+sema10,
 };
