@@ -1,5 +1,6 @@
 import arbolesDeVida from './images2/iconos/ARBOLES-DE-VIDA.jpg';
 import aube from './images2/iconos/AUBE.jpg';
+import belaBartok from './images2/iconos/BELA-BARTOK.jpg';
 import casaFemaria from './images2/iconos/CASA-FEMARIA.jpg';
 import cinco from './images2/iconos/CINCO.jpg';
 import colodionNum13 from './images2/iconos/COLODION-NUM.13.jpg';
@@ -8,10 +9,12 @@ import elCicloDeLaPiel from './images2/iconos/LOS-CICLOS-DE-LA-PIEL.jpg';
 import herakles from './images2/iconos/HERAKLES.jpg';
 import instruccionesParaUnArquitecto from './images2/iconos/INSTRUCCIONES-PARA-UN-ARQUITECTO.jpg';
 import invencibleInvisible from './images2/iconos/INVENCIBLE-INVISIBLE.jpg';
+import laredo from './images2/iconos/LAREDO.jpg';
 import liLiane from './images2/iconos/LI-LIANE.jpg';
 import mantonegro from './images2/iconos/MANTONEGRO.jpg';
 import mazatlan from './images2/iconos/MAZATLAN.jpg';
 import miPiedraMiCamino from './images2/iconos/MI-PIEDRA-MI-CAMINO.jpg';
+import onora from './images2/iconos/ONORA.jpg';
 import ph4 from './images2/iconos/PH4.jpg';
 import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
 import sema from './images2/iconos/SEMA.jpg';
@@ -208,6 +211,7 @@ export default {
 easterImage,
 arbolesDeVida,
 aube,
+belaBartok,
 casaFemaria,
 cinco,
 colodionNum13,
@@ -216,10 +220,12 @@ elCicloDeLaPiel,
 herakles,
 instruccionesParaUnArquitecto,
 invencibleInvisible,
+laredo,
 liLiane,
 mantonegro,
 mazatlan,
 miPiedraMiCamino,
+onora,
 ph4,
 rompehueso,
 sema,

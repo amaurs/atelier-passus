@@ -184,6 +184,7 @@ class App extends Component {
               <PropsRoute path='/projects' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
               <PropsRoute path='/arbolesDeVida' component={RenderHelper} info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
               <PropsRoute path='/aube' component={RenderHelper} info={this.getObjectFromSrc("aube")} t={t} />
+              <PropsRoute path='/belaBartok' component={RenderHelper} info={this.getObjectFromSrc("belaBartok")} t={t} />
               <PropsRoute path='/casaFemaria' component={RenderHelper} info={this.getObjectFromSrc("casaFemaria")} t={t} />
               <PropsRoute path='/cinco' component={RenderHelper} info={this.getObjectFromSrc("cinco")} t={t} />
               <PropsRoute path='/colodionNum13' component={RenderHelper} info={this.getObjectFromSrc("colodionNum13")} t={t} />
@@ -191,10 +192,12 @@ class App extends Component {
               <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
               <PropsRoute path='/instruccionesParaUnArquitecto' component={RenderHelper} info={this.getObjectFromSrc("instruccionesParaUnArquitecto")} t={t} />
               <PropsRoute path='/invencibleInvisible' component={RenderHelper} info={this.getObjectFromSrc("invencibleInvisible")} t={t} />
+              <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} t={t} />
               <PropsRoute path='/liLiane' component={RenderHelper} info={this.getObjectFromSrc("liLiane")} t={t} />
               <PropsRoute path='/mantonegro' component={RenderHelper} info={this.getObjectFromSrc("mantonegro")} t={t} />
               <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
               <PropsRoute path='/miPiedraMiCamino' component={RenderHelper} info={this.getObjectFromSrc("miPiedraMiCamino")} t={t} />
+              <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
               <PropsRoute path='/ph4' component={RenderHelper} info={this.getObjectFromSrc("ph4")} t={t} />
               <PropsRoute path='/rompehueso' component={RenderHelper} info={this.getObjectFromSrc("rompehueso")} t={t} />
               <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
