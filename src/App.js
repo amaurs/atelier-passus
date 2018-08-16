@@ -198,7 +198,7 @@ class App extends Component {
               <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
               <PropsRoute path='/miPiedraMiCamino' component={RenderHelper} info={this.getObjectFromSrc("miPiedraMiCamino")} t={t} />
               <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
-              <PropsRoute path='/ph4' component={RenderHelper} info={this.getObjectFromSrc("ph4")} t={t} />
+              <PropsRoute path='/pentHouse4' component={RenderHelper} info={this.getObjectFromSrc("pentHouse4")} t={t} />
               <PropsRoute path='/rompehueso' component={RenderHelper} info={this.getObjectFromSrc("rompehueso")} t={t} />
               <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
               <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />

@@ -15,7 +15,7 @@ import mantonegro from './images2/iconos/MANTONEGRO.jpg';
 import mazatlan from './images2/iconos/MAZATLAN.jpg';
 import miPiedraMiCamino from './images2/iconos/MI-PIEDRA-MI-CAMINO.jpg';
 import onora from './images2/iconos/ONORA.jpg';
-import ph4 from './images2/iconos/PH4.jpg';
+import pentHouse4 from './images2/iconos/PH4.jpg';
 import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
 import sema from './images2/iconos/SEMA.jpg';
 
@@ -172,20 +172,20 @@ import onora6 from './images2/onora/6.jpg';
 import onora7 from './images2/onora/7.jpg';
 import onora8 from './images2/onora/8.jpg';
 
-import ph41 from './images2/ph4/1.jpg';
-import ph42 from './images2/ph4/2.jpg';
-import ph43 from './images2/ph4/3.jpg';
-import ph44 from './images2/ph4/4.jpg';
-import ph45 from './images2/ph4/5.jpg';
-import ph46 from './images2/ph4/6.jpg';
-import ph47 from './images2/ph4/7.jpg';
-import ph48 from './images2/ph4/8.jpg';
-import ph49 from './images2/ph4/9.jpg';
-import ph410 from './images2/ph4/10.jpg';
-import ph411 from './images2/ph4/11.jpg';
-import ph412 from './images2/ph4/12.jpg';
-import ph413 from './images2/ph4/13.jpg';
-import ph414 from './images2/ph4/14.jpg';
+import pentHouse41 from './images2/pentHouse4/1.jpg';
+import pentHouse42 from './images2/pentHouse4/2.jpg';
+import pentHouse43 from './images2/pentHouse4/3.jpg';
+import pentHouse44 from './images2/pentHouse4/4.jpg';
+import pentHouse45 from './images2/pentHouse4/5.jpg';
+import pentHouse46 from './images2/pentHouse4/6.jpg';
+import pentHouse47 from './images2/pentHouse4/7.jpg';
+import pentHouse48 from './images2/pentHouse4/8.jpg';
+import pentHouse49 from './images2/pentHouse4/9.jpg';
+import pentHouse410 from './images2/pentHouse4/10.jpg';
+import pentHouse411 from './images2/pentHouse4/11.jpg';
+import pentHouse412 from './images2/pentHouse4/12.jpg';
+import pentHouse413 from './images2/pentHouse4/13.jpg';
+import pentHouse414 from './images2/pentHouse4/14.jpg';
 
 import rompehueso1 from './images2/rompehueso/1.jpg';
 import rompehueso2 from './images2/rompehueso/2.jpg';
@@ -226,7 +226,7 @@ mantonegro,
 mazatlan,
 miPiedraMiCamino,
 onora,
-ph4,
+pentHouse4,
 rompehueso,
 sema,
 
@@ -382,20 +382,20 @@ onora6,
 onora7,
 onora8,
 
-ph41,
-ph42,
-ph43,
-ph44,
-ph45,
-ph46,
-ph47,
-ph48,
-ph49,
-ph410,
-ph411,
-ph412,
-ph413,
-ph414,
+pentHouse41,
+pentHouse42,
+pentHouse43,
+pentHouse44,
+pentHouse45,
+pentHouse46,
+pentHouse47,
+pentHouse48,
+pentHouse49,
+pentHouse410,
+pentHouse411,
+pentHouse412,
+pentHouse413,
+pentHouse414,
 
 rompehueso1,
 rompehueso2,
