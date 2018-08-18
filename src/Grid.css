@@ -1,4 +1,39 @@
-.Grid-image {
-  width:250px;
-  height:250px;
+
+.Grid {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
+.Grid-cell {
+  background-color: white;
+}
+
+.Grid-cell img {
+  display: block;
+  margin: 1rem;
+}
+
+.Grid-responsive-image {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .Grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .Grid-cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Grid-cell {
+    width: calc(100% / 3 - 2rem);
+  }
+}
+
+
