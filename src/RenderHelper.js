@@ -62,11 +62,11 @@ class RenderHelper extends Component {
                          dangerouslySetInnerHTML={ {__html: iframe} } />
         } 
 
-        return <div>
+        return <div className="RenderHelper">
                  <div className="RenderHelper-container">
                    {content}
                  </div>
-                 <div>
+                 <div className="RenderHelper-aside">
                    <h1>{this.props.t(this.props.info.info.title)}</h1>
                    {headers}
                    {paragraphs}

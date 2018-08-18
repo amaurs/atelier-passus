@@ -1,6 +1,17 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
+.RenderHelper {
+  width: 100%;
+  display: inline;
+}
+
 .RenderHelper-container {
-  height: 100%;
+  width: 70%;
+  float: left;
+}
+
+.RenderHelper-aside {
+  width: 30%;
+  float: right;
 }
 

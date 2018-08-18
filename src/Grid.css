@@ -1,18 +1,17 @@
 
 .Grid {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  box-sizing: border-box;
+  max-width: 80%;
+  background-color: gray;
 }
 
 .Grid-cell {
   background-color: white;
+  margin: 1rem;
 }
 
 .Grid-cell img {
   display: block;
-  margin: 1rem;
+  
 }
 
 .Grid-responsive-image {
