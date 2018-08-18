@@ -12,7 +12,9 @@ import './App.css';
 import assets from './assets.js';
 import ReactPlayer from 'react-player';
 
+
 const infoArray = text.info2;
+
 const plainArray = text.plain;
 
 const renderMergedProps = (component, ...rest) => {

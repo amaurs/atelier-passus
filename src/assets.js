@@ -204,10 +204,12 @@ import sema8 from './images2/sema/8.jpg';
 import sema9 from './images2/sema/9.jpg';
 import sema10 from './images2/sema/10.jpg';
 
+
 import easterImage from './images/buni.gif';
 
 
 export default {
+
 easterImage,
 arbolesDeVida,
 aube,
@@ -413,4 +415,5 @@ sema7,
 sema8,
 sema9,
 sema10,
+
 };

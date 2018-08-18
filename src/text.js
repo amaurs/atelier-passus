@@ -1,3 +1,4 @@
+
 const info2 = [{src:"arbolesDeVida",
                 type:"gallery",
                 card:"arbolesDeVidaCard",
@@ -1196,4 +1197,6 @@ const plain = [{src:"contact",
                      paragraphs:[]}},];
 
 
+
 export default { info, info2, plain };
+

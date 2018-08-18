@@ -14,6 +14,7 @@ class Grid extends Component {
                 
             );
 
+
         return  <section  className="Grid">{items}</section>
     }
 }
