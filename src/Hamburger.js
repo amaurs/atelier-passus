@@ -8,7 +8,6 @@ export default class Hamburger extends Component {
     }
 
     render() {
-        console.log(this.props.isActive);
         return <div onClick={this.props.onClick} className={"Hamburger-icon" + (this.props.isActive?" active":"")}>
                  <div className="Hamburger-hamburger"></div>
                </div>

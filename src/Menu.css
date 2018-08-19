@@ -1,21 +1,22 @@
 .Menu {
   position: fixed;
-  width: 50vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
   right: 0;
   top:0;
   bottom:0;
   background: black;
-  height:100vh;
-  transform:translateX(50vw);
   transition: .5s;
+  width: 100vw;
+  transform:translateX(100vw);
+  
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .Menu.active {
   transform: translateX(0);
-}
-
-.Menu ul {
-  text-decoration:none;
 }
 
 .Menu-item {
@@ -28,7 +29,6 @@
 }
 
 .Menu-item:hover {
-  
   color: black;
   background: white;
 }

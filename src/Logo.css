@@ -1,0 +1,18 @@
+.Logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 50;
+  transition: 2s;
+}
+
+.Logo img {
+  max-height: 100%;
+}
+
+.Logo.active img{
+  filter: invert(1);
+}

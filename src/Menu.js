@@ -20,12 +20,10 @@ class Menu extends Component {
 
     render() {
         return <aside className={"Menu" + (this.props.isActive?" active":"")}>
-                  <ul>
-                    <li><NavLink className="Menu-item" to="/" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink></li>
-                    <li><NavLink className="Menu-item" to="/about" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}</NavLink></li>
-                    <li><NavLink className="Menu-item" to="/contact" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("contact")}</NavLink></li>
-                    <li><span><a className="Menu-item" onClick={() => this.handleClick("fr")}>es</a> / <a className="Menu-item" onClick={() => this.handleClick("es")}>fr</a></span></li>
-                  </ul>
+                 <NavLink className="Menu-item" to="/" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink>
+                 <NavLink className="Menu-item" to="/about" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}</NavLink>
+                 <NavLink className="Menu-item" to="/contact" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("contact")}</NavLink>
+                 <span><a className="Menu-item" onClick={() => this.handleClick("fr")}>es</a> / <a className="Menu-item" onClick={() => this.handleClick("es")}>fr</a></span>
                </aside>
     }
 
