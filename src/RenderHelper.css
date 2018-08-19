@@ -1,7 +1,7 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 .RenderHelper {
-  height: calc(100vh - 200px);
+  
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 100%;
@@ -37,6 +37,7 @@
 
 @media screen and (min-width: 1000px) {
   .RenderHelper {
+    height: calc(100vh - 200px);
     grid-template-columns: 70% 30%;
     grid-template-rows: 100%;
     grid-template-areas: "left" "right";

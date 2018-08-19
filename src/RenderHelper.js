@@ -3,7 +3,7 @@ import './RenderHelper.css';
 import assets from './assets.js';
 import ReactPlayer from 'react-player';
 import ImageGallery from 'react-image-gallery';
-
+import Swipeable from 'react-swipeable';
 
 class RenderHelper extends Component {
     constructor(props) {
@@ -27,6 +27,30 @@ class RenderHelper extends Component {
 
     handleOnSlide(index) {
       this.setState({image:index});
+    }
+
+    swiping(e, deltaX, deltaY, absX, absY, velocity) {
+      console.log("You're Swiping...", e, deltaX, deltaY, absX, absY, velocity)
+    }
+  
+    swipingLeft(e, absX) {
+      console.log("You're Swiping to the Left...", e, absX)
+      let index = this.state.image;
+      this.setState({image:index - 1});
+    }
+
+    swipingRight(e, absX) {
+      console.log("You're Swiping to the Left...", e, absX)
+      let index = this.state.image;
+      this.setState({image:index + 1});
+    }
+  
+    swiped(e, deltaX, deltaY, isFlick, velocity) {
+      console.log("You Swiped...", e, deltaX, deltaY, isFlick, velocity)
+    }
+  
+    swipedUp(e, deltaY, isFlick) {
+      console.log("You Swiped Up...", e, deltaY, isFlick)
     }
 
     render() {
@@ -70,9 +94,15 @@ class RenderHelper extends Component {
         }
 
         return <div className="RenderHelper">
-                 <div className="RenderHelper-container">
+                 <Swipeable
+                      onSwiping={this.swiping.bind(this)}
+                      onSwipingLeft={this.swipingLeft.bind(this)}
+                      onSwipingRight={this.swipingRight.bind(this)}
+                      onSwiped={this.swiped.bind(this)}
+                      onSwipedUp={this.swipedUp.bind(this)} 
+                      className="RenderHelper-container">
                    {content}
-                 </div>
+                 </Swipeable>
                  <div className="RenderHelper-aside">
                    <h1>{this.props.t(this.props.info.info.title)}</h1>
                    {headers}
