@@ -12,7 +12,11 @@ class Grid extends Component {
     render() {
         console.log(this.props);
         const items = this.props.grid.map((square, index) => 
-                <Cell key={index} image={square.src} show={this.props.show} text={this.props.t(square.card)} onClick={()=>this.handleClick(square.src)}/>
+                <Cell key={index} 
+                      image={square.src} 
+                      show={this.props.show} 
+                      text={this.props.t(square.card)} 
+                      onClick={()=>this.handleClick(square.src)}/>
                 
             );
 
@@ -28,7 +32,9 @@ class Grid extends Component {
 function Cell(props) {
     return (
         <div className="Grid-cell" onClick={()=>props.onClick()}>
-          <img className="Grid-responsive-image" src={assets[props.image]}/>
+          <img alt="" 
+               className="Grid-responsive-image" 
+              src={assets[props.image]}/>
           <p>{props.text}</p>
         </div>
     );

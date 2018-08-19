@@ -13,6 +13,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  z-index: 50;
 }
 
 .Menu.active {
@@ -32,3 +33,12 @@
   color: black;
   background: white;
 }
+
+@media screen and (min-width: 600px) {
+  .Menu {
+    width: 50vw;
+    transform:translateX(50vw);
+  }
+}
+
+

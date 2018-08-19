@@ -7,14 +7,10 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 import RenderHelper from './RenderHelper.js';
 import text from './text.js';
-import logo from './logo.svg';
 import './App.css';
 import assets from './assets.js';
-import ReactPlayer from 'react-player';
-
 
 const infoArray = text.info2;
-
 const plainArray = text.plain;
 
 const renderMergedProps = (component, ...rest) => {
@@ -175,7 +171,7 @@ class App extends Component {
       easterEgg =  <EasterEgg image={"easterImage"} pos={pos}/>
     }
     return (
-        <div className="Body">
+        <div className={"Body" + (this.state.active?" active":"")}>
           <Menu t={t} 
                 language={this.state.language} 
                 changeLanguage={changeLanguage} 
@@ -187,7 +183,7 @@ class App extends Component {
                   isActive={this.state.active} 
                   handleMenu={this.handleMenu.bind(this)}
                   />
-          <div className="Content">
+          <div className={"Content"}>
             <Switch>
               <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
               <PropsRoute path='/arbolesDeVida' component={RenderHelper} info={this.getObjectFromSrc("arbolesDeVida")} t={t} />

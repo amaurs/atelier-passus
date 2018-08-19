@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Menu.css';
 
-import Hamburger from './Hamburger.js';
-import logo from './logo.svg';
-
-
 class Menu extends Component {
 
     handleClick(language) {

@@ -6,6 +6,7 @@
                        "main"
                        "footer";
 }
+
 .EasterEgg {
   position: fixed;
   bottom: 0;
@@ -26,3 +27,27 @@
 .Footer {
   grid-area: footer;
 }
+
+.Body.active {
+  overflow: hidden;
+  position: fixed;
+}
+
+@media screen and (min-width: 600px) {
+  .Body.active {
+    overflow: scroll;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Grid-cell {
+    width: calc(100% / 3 - 2rem);
+  }
+}
+
+
+
+
+
+

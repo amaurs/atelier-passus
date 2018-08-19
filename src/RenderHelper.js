@@ -53,7 +53,7 @@ class RenderHelper extends Component {
           let images = [];
           this.props.info.info.images.forEach(function(image){images.push({original:assets[image]});});
           content = <ImageGallery ref={imageGallery => this.imageGallery = imageGallery} items={images} showThumbnails={false} showPlayButton={false} showBullets={false} showFullscreenButton={false} onSlide={this.handleOnSlide}/>
-          imageThumbnails = <div id="RenderHelper-shortcut">
+          imageThumbnails = <div className="RenderHelper-shortcut">
                               {this.props.info.info.images.map((p, index) => <button className={ "RenderHelper-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>)}
                             </div>
         } else if(type === "portfolio"){

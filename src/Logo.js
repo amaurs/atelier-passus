@@ -3,11 +3,6 @@ import './Logo.css';
 import logo from './logo.svg';
 
 export default class Logo extends Component {
-
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div className={"Logo" + (this.props.isActive?" active":"")} >

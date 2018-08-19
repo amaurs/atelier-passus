@@ -13,6 +13,8 @@
   max-height: 100%;
 }
 
-.Logo.active img{
-  filter: invert(1);
+@media screen and (max-width: 600px) {
+  .Logo.active img{
+    filter: invert(1);
+  }
 }
