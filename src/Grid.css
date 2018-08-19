@@ -1,7 +1,7 @@
 
 .Grid {
-  max-width: 80%;
-  background-color: gray;
+  width: 100%;
+  background-color: green;
 }
 
 .Grid-cell {

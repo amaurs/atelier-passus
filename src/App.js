@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
-import Hero from './Hero.js';
 import Menu from './Menu.js';
-import Hamburger from './Hamburger.js';
+import Header from './Header.js';
+import Footer from './Footer.js';
 import RenderHelper from './RenderHelper.js';
 import text from './text.js';
 import logo from './logo.svg';
@@ -20,9 +20,7 @@ const plainArray = text.plain;
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
   return (
-    <div>
-        {React.createElement(component, finalProps)}
-    </div>
+    React.createElement(component, finalProps)
   );
 }
 
@@ -178,12 +176,20 @@ class App extends Component {
     }
     return (
         <div >
-          <Menu t={t} language={this.state.language} changeLanguage={changeLanguage} active={this.state.active} handleMenu={this.handleMenu.bind(this)} />
-          <Hamburger onClick={e => this.handleMenu()} isActive={this.state.active}/>
-          <div>
+          <Menu t={t} 
+                language={this.state.language} 
+                changeLanguage={changeLanguage} 
+                isActive={this.state.active} 
+                handleMenu={this.handleMenu.bind(this)} 
+                />
+          <Header t={t} 
+                  language={this.state.language} 
+                  isActive={this.state.active} 
+                  handleMenu={this.handleMenu.bind(this)}
+                  />
+          <div className="Content">
             <Switch>
-              <PropsRoute exact path='/' component={Hero} t={t} language={this.state.language} height={this.state.height} />
-              <PropsRoute path='/projects' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
+              <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
               <PropsRoute path='/arbolesDeVida' component={RenderHelper} info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
               <PropsRoute path='/aube' component={RenderHelper} info={this.getObjectFromSrc("aube")} t={t} />
               <PropsRoute path='/belaBartok' component={RenderHelper} info={this.getObjectFromSrc("belaBartok")} t={t} />
@@ -206,18 +212,9 @@ class App extends Component {
               <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
               <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
               <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
-
             </Switch>
           </div>
-          <footer className="hero-foot">
-            <div className="container">
-              <div className="tabs is-centered">
-                <p>
-                  <strong>Atelier-Passus</strong><br/> Tokio 84-5, Juarez, Mexico, 06600.
-                </p>
-              </div>
-            </div>
-          </footer>
+          <Footer />
           {easterEgg}
         </div>
     );

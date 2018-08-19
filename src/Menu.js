@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Menu.css';
-import Hamburger from './Hamburger.js'
+
+import Hamburger from './Hamburger.js';
 import logo from './logo.svg';
 
 
-class Header extends Component {
+class Menu extends Component {
 
     handleClick(language) {
       this.props.handleMenu();
@@ -18,16 +19,16 @@ class Header extends Component {
     }
 
     render() {
-        return <div className={"Menu" + (this.props.active?" active":"")}>
+        return <aside className={"Menu" + (this.props.isActive?" active":"")}>
                   <ul>
-                    <li><NavLink className="Menu-item" to="/projects" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink></li>
+                    <li><NavLink className="Menu-item" to="/" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink></li>
                     <li><NavLink className="Menu-item" to="/about" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}</NavLink></li>
                     <li><NavLink className="Menu-item" to="/contact" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("contact")}</NavLink></li>
                     <li><span><a className="Menu-item" onClick={() => this.handleClick("fr")}>es</a> / <a className="Menu-item" onClick={() => this.handleClick("es")}>fr</a></span></li>
                   </ul>
-               </div>
+               </aside>
     }
 
 }
 
-export default Header;
+export default Menu;
