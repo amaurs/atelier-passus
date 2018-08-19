@@ -175,7 +175,7 @@ class App extends Component {
       easterEgg =  <EasterEgg image={"easterImage"} pos={pos}/>
     }
     return (
-        <div >
+        <div className="Body">
           <Menu t={t} 
                 language={this.state.language} 
                 changeLanguage={changeLanguage} 

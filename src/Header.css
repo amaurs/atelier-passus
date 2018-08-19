@@ -1,4 +1,7 @@
 .Header {
-  height: 200px;
   background-color: red;
+}
+
+.Header-logo {
+  max-height: 100%;
 }
