@@ -22,7 +22,7 @@ class RenderHelper extends Component {
 
     handleTumbnail(id){
       this.setState({image:id});
-      this.imageGallery.slideToIndex(id);
+      //this.imageGallery.slideToIndex(id);
     }
 
     handleOnSlide(index) {
@@ -62,6 +62,8 @@ class RenderHelper extends Component {
                                   showFullscreenButton={false} 
                                   lazyLoad={true} 
                                   onSlide={this.handleOnSlide}/>
+          let current = this.props.info.info.images[this.state.image];
+          content = <img src={assets[current]} />
           imageThumbnails = <div className="RenderHelper-shortcut">
                               {this.props.info.info.images.map((p, index) => <button className={ "RenderHelper-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>)}
                             </div>
