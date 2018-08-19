@@ -5,13 +5,14 @@ import Grid from './Grid.js';
 import Menu from './Menu.js';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import Us from './Us.js';
+import Lost from './Lost.js';
 import RenderHelper from './RenderHelper.js';
 import text from './text.js';
 import './App.css';
 import assets from './assets.js';
 
 const infoArray = text.info2;
-const plainArray = text.plain;
 
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
@@ -98,16 +99,6 @@ class App extends Component {
   getObjectFromSrc(src){
     let obj = null;
     infoArray.forEach(function(element){
-        if(element.src === src) {
-            obj = element;
-        }
-    });
-    return obj;
-  }
-
-  getObjectFromPlainSrc(src){
-    let obj = null;
-    plainArray.forEach(function(element){
         if(element.src === src) {
             obj = element;
         }
@@ -205,12 +196,11 @@ class App extends Component {
               <PropsRoute path='/pentHouse4' component={RenderHelper} info={this.getObjectFromSrc("pentHouse4")} t={t} />
               <PropsRoute path='/rompehueso' component={RenderHelper} info={this.getObjectFromSrc("rompehueso")} t={t} />
               <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
-              <PropsRoute path='/about' component={RenderHelper} info={this.getObjectFromPlainSrc("about")} t={t} />
-              <PropsRoute path='/contact' component={RenderHelper} info={this.getObjectFromPlainSrc("contact")} t={t} />
-              <PropsRoute component={RenderHelper} info={this.getObjectFromPlainSrc("four-oh-four")} t={t} />
+              <PropsRoute path='/about' component={Us} t={t} />
+              <PropsRoute component={Lost} t={t} />
             </Switch>
           </div>
-          <Footer />
+          <Footer t={t}/>
           {easterEgg}
         </div>
     );

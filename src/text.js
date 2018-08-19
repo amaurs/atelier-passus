@@ -1166,37 +1166,6 @@ const info = [{src:"boissy",
                              "xucu07",
                              ]}},];
 
-const plain = [{src:"contact",
-               type:"plain",
-               info:{title:"",
-                     headers:[
-                             ],
-                     paragraphs:[
-                             "contact-paragraph0",
-                             "contact-paragraph1",
-                             "contact-paragraph2",
-                             ]}},
-               {src:"about",
-               type:"plain",
-               info:{title:"",
-                     headers:[
-                             ],
-                     paragraphs:[
-                             "about-paragraph0",
-                             "about-paragraph1",
-                             "about-paragraph2",
-                             "about-paragraph3",
-                             "about-paragraph4",
-                             "about-paragraph5",
-                             "about-paragraph6",
-                             ]}},
-              {src:"four-oh-four",
-               type:"plain",
-               info:{title:"four-oh-four",
-                     headers:["four-oh-four-header0"],
-                     paragraphs:[]}},];
 
-
-
-export default { info, info2, plain };
+export default { info, info2 };
 

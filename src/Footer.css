@@ -1,3 +1,7 @@
 .Footer {
   background-color: yellow;
 }
+
+.Footer p{
+ margin:3px;
+}

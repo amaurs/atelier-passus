@@ -51,16 +51,21 @@ class RenderHelper extends Component {
                                  /></div>
         } else if(type === "gallery"){
           let images = [];
-          this.props.info.info.images.forEach(function(image){images.push({original:assets[image]});});
-          content = <ImageGallery ref={imageGallery => this.imageGallery = imageGallery} items={images} showThumbnails={false} showPlayButton={false} showBullets={false} showFullscreenButton={false} onSlide={this.handleOnSlide}/>
+          this.props.info.info.images.forEach(function(image){images.push(
+            {original:assets[image]}
+            );});
+          content = <ImageGallery ref={imageGallery => this.imageGallery = imageGallery} 
+                                  items={images} 
+                                  showThumbnails={false} 
+                                  showPlayButton={false} 
+                                  showBullets={false} 
+                                  showFullscreenButton={false} 
+                                  lazyLoad={true} 
+                                  onSlide={this.handleOnSlide}/>
           imageThumbnails = <div className="RenderHelper-shortcut">
                               {this.props.info.info.images.map((p, index) => <button className={ "RenderHelper-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>)}
                             </div>
-        } else if(type === "portfolio"){
-          const iframe = '<iframe src="https://e.issuu.com/issuu-reader3-embed-files/1448/iframe-embed.html?identifier=26qpn9wmxd0z&amp;hostUrl=http%3A%2F%2Fwww.atelier-passus.com%2Fsema.html&amp;hostReferrer=http%3A%2F%2Fwww.atelier-passus.com%2Fproyectos.html&amp;embedType=script#0/35802022" style="border:none;width:100%;height:100%;" title="issuu.com" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" msallowfullscree=""></iframe>';
-          content = <div className="Iframe-wrapper" 
-                         dangerouslySetInnerHTML={ {__html: iframe} } />
-        } 
+        }
 
         return <div className="RenderHelper">
                  <div className="RenderHelper-container">
