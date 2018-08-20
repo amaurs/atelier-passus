@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import './RenderHelper.css';
 import assets from './assets.js';
 import ReactPlayer from 'react-player';
-import ImageGallery from 'react-image-gallery';
+//import ImageGallery from 'react-image-gallery';
 import Swipeable from 'react-swipeable';
+
+const LEFT = -1;
+const RIGHT = 1;
 
 class RenderHelper extends Component {
     constructor(props) {
@@ -34,23 +37,39 @@ class RenderHelper extends Component {
     }
   
     swipingLeft(e, absX) {
-      console.log("You're Swiping to the Left...", e, absX)
+      //console.log("You're Swiping to the Left...", e, absX)
       let index = this.state.image;
-      this.setState({image:index - 1});
+      let size = this.props.info.info.images.length;
+      let current = (index + 1) % size;
+      this.setState({image: current});
     }
 
     swipingRight(e, absX) {
-      console.log("You're Swiping to the Left...", e, absX)
+      //console.log("You're Swiping to the Left...", e, absX)
       let index = this.state.image;
-      this.setState({image:index + 1});
+      let size = this.props.info.info.images.length;
+      let current = (index - 1) % size;
+      this.setState({image: current});
     }
   
-    swiped(e, deltaX, deltaY, isFlick, velocity) {
-      console.log("You Swiped...", e, deltaX, deltaY, isFlick, velocity)
+    swiped(direction) {
+      console.log("You Swiped...", direction);
+
+      const currentIndex = this.state.image + direction;
+      const size = this.props.info.info.images.length;
+      let finalIndex;
+      if (currentIndex >= size) {
+        finalIndex = 0;
+      } else if (currentIndex < 0) {
+        finalIndex = size - 1
+      } else {
+        finalIndex = currentIndex;
+      }
+      this.setState({ image: finalIndex });
     }
   
     swipedUp(e, deltaY, isFlick) {
-      console.log("You Swiped Up...", e, deltaY, isFlick)
+      console.log("You Swiped Up...", deltaY, isFlick)
     }
 
     render() {
@@ -78,6 +97,7 @@ class RenderHelper extends Component {
           this.props.info.info.images.forEach(function(image){images.push(
             {original:assets[image]}
             );});
+          /**
           content = <ImageGallery ref={imageGallery => this.imageGallery = imageGallery} 
                                   items={images} 
                                   showThumbnails={false} 
@@ -86,25 +106,26 @@ class RenderHelper extends Component {
                                   showFullscreenButton={false} 
                                   lazyLoad={true} 
                                   onSlide={this.handleOnSlide}/>
+          **/
           let current = this.props.info.info.images[this.state.image];
-          content = <img src={assets[current]} />
+          content = <img alt="" src={assets[current]} />
           imageThumbnails = <div className="RenderHelper-shortcut">
                               {this.props.info.info.images.map((p, index) => <button className={ "RenderHelper-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>)}
                             </div>
         }
 
         return <div className="RenderHelper">
+                  
                  <Swipeable
-                      onSwiping={this.swiping.bind(this)}
-                      onSwipingLeft={this.swipingLeft.bind(this)}
-                      onSwipingRight={this.swipingRight.bind(this)}
-                      onSwiped={this.swiped.bind(this)}
-                      onSwipedUp={this.swipedUp.bind(this)} 
+                      trackMouse
+                      preventDefaultTouchmoveEvent
+                      onSwipedLeft={()=> this.swiped(LEFT)}
+                      onSwipedRight={()=> this.swiped(RIGHT)}
                       className="RenderHelper-container">
                    {content}
                  </Swipeable>
                  <div className="RenderHelper-aside">
-                   <h1>{this.props.t(this.props.info.info.title)}</h1>
+                   <h1>{this.props.t(this.props.info.info.title) + " " + this.state.image}</h1>
                    {headers}
                    {paragraphs}
                    {imageThumbnails}
