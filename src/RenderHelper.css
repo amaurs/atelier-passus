@@ -13,14 +13,25 @@
   grid-area: gallery;
 }
 
-.RenderHelper-container img{
-  max-width: 100%;
-}
-
-
-
 .RenderHelper-shortcut {
   display: none;
+}
+
+.RenderHelper-thumb {
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 35px;
+  font-family: 'whitney_book';
+  font-size: 13px;
+}
+
+.RenderHelper-thumb.highlight {
+  border-width: 3px;
+  border-style: solid;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  border-radius: 50%; 
 }
 
 .RenderHelper-aside {
@@ -29,11 +40,14 @@
 }
 
 .RenderHelper-aside {
-  padding: 25px;
+  padding: 100px 50px;
 }
 
 .RenderHelper-aside h1{
-  margin: 0px;
+  margin: 10px 0px;
+}
+.RenderHelper-container img{
+  max-width: 100%;
 }
 
 
@@ -46,19 +60,17 @@
 
 @media screen and (min-width: 1000px) {
   .RenderHelper {
-    height: calc(100vh - 200px);
-    grid-template-columns: 40% 60%;
+    height: 100vh;
+    grid-template-columns: 70% 30%;
     grid-template-rows: unset;
     grid-template-areas:  "gallery text"
                           "gallery text";
   }
 
-  .
-
   .RenderHelper-container img{
-    padding: 100px;
     max-height: 100%;
-    
+    max-width: none;
   }
+
 }
 
