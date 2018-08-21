@@ -9,6 +9,10 @@
 
 @media screen and (min-width: 600px) {
   .Logo.main {
-    display: none;
+    position: relative;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    height: 500px !important;
+    width: 500px !important;
   }
 }
