@@ -1,6 +1,10 @@
 .Footer {
+  padding-left:50px;
+  width: 100%;
+  grid-area: "footer";
 }
 
 .Footer p{
- margin:3px;
+  color: black;
+  margin: 3px;
 }

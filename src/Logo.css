@@ -14,7 +14,5 @@
 }
 
 @media screen and (max-width: 600px) {
-  .Logo.active img{
-    filter: invert(1);
-  }
+  
 }

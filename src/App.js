@@ -4,7 +4,6 @@ import { translate } from 'react-i18next';
 import Grid from './Grid.js';
 import Menu from './Menu.js';
 import Header from './Header.js';
-import Footer from './Footer.js';
 import Us from './Us.js';
 import Lost from './Lost.js';
 import RenderHelper from './RenderHelper.js';
@@ -200,7 +199,6 @@ class App extends Component {
               <PropsRoute component={Lost} t={t} />
             </Switch>
           </div>
-          <Footer t={t}/>
           {easterEgg}
         </div>
     );

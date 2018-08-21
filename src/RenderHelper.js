@@ -125,7 +125,7 @@ class RenderHelper extends Component {
                    {content}
                  </Swipeable>
                  <div className="RenderHelper-aside">
-                   <h1>{this.props.t(this.props.info.info.title) + " " + this.state.image}</h1>
+                   <h1>{this.props.t(this.props.info.info.title)}</h1>
                    {headers}
                    {paragraphs}
                    {imageThumbnails}

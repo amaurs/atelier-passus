@@ -17,16 +17,21 @@
   grid-area: "left";
 }
 
-
+.RenderHelper-shortcut {
+  display: none;
+}
 
 .RenderHelper-aside {
   background-color: white;
   grid-area: "right";
+  padding: 10px;
 }
 
-.RenderHelper-shortcut {
-  display: none;
+
+.RenderHelper-aside {
+  
 }
+
 
 @media screen and (min-width: 600px) {
   .RenderHelper-shortcut {
