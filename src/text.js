@@ -11,8 +11,6 @@ const info2 = [{src:"arbolesDeVida",
                               "arbolesDeVidaParagraph0",
                               "arbolesDeVidaParagraph1",
                               "arbolesDeVidaParagraph2",
-                              "arbolesDeVidaParagraph3",
-                              "arbolesDeVidaParagraph4",
                               ],
                       images:[
                               "arbolesDeVida1",

@@ -75,9 +75,9 @@ class RenderHelper extends Component {
     render() {
         const type = this.props.info.type;
         let headers = this.props.info.info.headers.map(
-             (h, index) => <h2 key={index} className="subtitle is-4">{this.props.t(h)}</h2>);
+             (h, index) => <h2 key={index} className="RenderHelper-subtitle">{this.props.t(h)}</h2>);
         let paragraphs = this.props.info.info.paragraphs.map(
-             (p, index) => <p key={index} className="content">{this.props.t(p)}</p>);
+             (p, index) => <p key={index} className="RenderHelper-text">{this.props.t(p)}</p>);
         let content = null;
         let imageThumbnails = null;
 
@@ -124,9 +124,11 @@ class RenderHelper extends Component {
                    {content}
                  </Swipeable>
                  <div className="RenderHelper-aside">
-                   <h1>{this.props.t(this.props.info.info.title)}</h1>
+                   <h1 className="RenderHelper-title">{this.props.t(this.props.info.info.title)}</h1>
                    {headers}
+                   <div className="RenderHelper-description">
                    {paragraphs}
+                   </div>
                    {imageThumbnails}
                  </div>
                </div>;

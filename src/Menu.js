@@ -22,7 +22,7 @@ class Menu extends Component {
                  <aside className="Aside">
                    <NavLink className="Menu-item" to="/#projects" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink>
                    <NavLink className="Menu-item" to="/about" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}</NavLink>
-                   <span><a className="Menu-item" onClick={() => this.handleClick("fr")}>es</a> / <a className="Menu-item" onClick={() => this.handleClick("es")}>fr</a></span>
+                   <span><button onClick={() => this.handleClick("fr")}>es</button><span className="Menu-item inactive">/</span><button onClick={() => this.handleClick("es")}>fr</button></span>
                    <a className="Menu-item" href="https://www.instagram.com/passusatelier/"><img alt="" className="Menu-instagram" src={instagram}/></a>
                  </aside>
                  <Logo isActive={this.props.isActive} 

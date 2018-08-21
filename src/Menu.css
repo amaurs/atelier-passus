@@ -22,6 +22,7 @@
 }
 
 .Menu-item {
+  padding:5px;
   font-size: 2em;
   font-family: 'whitney_book';
   text-transform: uppercase;
@@ -30,16 +31,30 @@
   cursor: pointer;
 }
 
-.Menu-instagram {
-  width: 1em;
-  
+.Menu-item.inactive {
+  cursor: default;
 }
 
-.Menu-instagram:hover {
+.Menu button {
+  border: none;
+  outline: none;
+  font-size: 2em;
+  font-family: 'whitney_book';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.Menu-instagram {
+  width: 1em;
+}
+
+
+.Menu-item:hover .Menu-instagram:hover {
   transform: scale(1.01);
 }
 
-.Menu-item:hover {
+.Menu button {
   transform: scale(1.01);
 }
 
@@ -62,8 +77,8 @@
 
 @media screen and (min-width: 1000px) {
   .Menu {
-    width: 30vw;
-    transform:translateX(30vw);
+    width: 25vw;
+    transform:translateX(25vw);
   }
 }
 

@@ -1,12 +1,33 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 .RenderHelper {
-  
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;  
   grid-template-areas: "gallery" "gallery"
                        "text" "text";
+}
+
+.RenderHelper-title {
+  font-size: 2.1em;
+  text-transform: uppercase;
+}
+
+.RenderHelper-subtitle {
+  text-transform: uppercase;
+  margin:0;
+  font-size: 1.25em;
+}
+
+.RenderHelper-text {
+  font-size: 1em;
+  margin-top:1em;
+  margin-bottom:0;
+  font-weight: bold;
+}
+
+.RenderHelper-text:last-child {
+  margin-bottom:2em;
 }
 
 .RenderHelper-container {
@@ -24,6 +45,7 @@
   width: 35px;
   font-family: 'whitney_book';
   font-size: 13px;
+  text-align: center;
 }
 
 .RenderHelper-thumb.highlight {
@@ -61,7 +83,7 @@
 @media screen and (min-width: 1000px) {
   .RenderHelper {
     height: 100vh;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 75% 25%;
     grid-template-rows: unset;
     grid-template-areas:  "gallery text"
                           "gallery text";
