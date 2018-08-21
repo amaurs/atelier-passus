@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Grid.css';
 import assets from './assets.js';
-
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Hero from './Hero.js';
 
 class Grid extends Component {
@@ -22,8 +22,12 @@ class Grid extends Component {
 
 
         return <div>
-                  <Hero />
-                  <section  className="Grid">{items}</section>
+                  <ScrollableAnchor id={'hero'}>
+                    <Hero />
+                  </ScrollableAnchor>
+                  <ScrollableAnchor id={'projects'}>
+                    <section className="Grid">{items}</section>
+                  </ScrollableAnchor>
                </div>
                 
     }

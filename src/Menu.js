@@ -9,9 +9,9 @@ class Menu extends Component {
     handleClick(language) {
       this.props.handleMenu();
       console.log("Language is: " + language);
-      if(language === "es"){
+      if(language === "es") {
         this.props.changeLanguage("fr");
-      } else if(language === "fr"){
+      } else if(language === "fr") {
         this.props.changeLanguage("es");
       }
     }
@@ -19,7 +19,7 @@ class Menu extends Component {
     render() {
         return <div className={"Menu" + (this.props.isActive?" active":"")}>
                  <aside className="Aside">
-                   <NavLink className="Menu-item" to="/" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink>
+                   <NavLink className="Menu-item" to="/#projects" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}</NavLink>
                    <NavLink className="Menu-item" to="/about" activeClassName="active" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}</NavLink>
                    <span><a className="Menu-item" onClick={() => this.handleClick("fr")}>es</a> / <a className="Menu-item" onClick={() => this.handleClick("es")}>fr</a></span>
                    <a className="Menu-item" href="https://www.instagram.com/passusatelier/"><img alt="" className="Menu-instagram" src={instagram}/></a>

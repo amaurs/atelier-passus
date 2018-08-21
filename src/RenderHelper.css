@@ -3,33 +3,37 @@
 .RenderHelper {
   
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 100%;
-  grid-template-areas: "left" 
-                       "right";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;  
+  grid-template-areas: "gallery" "gallery"
+                       "text" "text";
+}
+
+.RenderHelper-container {
+  grid-area: gallery;
 }
 
 .RenderHelper-container img{
   max-width: 100%;
 }
 
-.RenderHelper-container {
-  grid-area: "left";
-}
+
 
 .RenderHelper-shortcut {
   display: none;
 }
 
 .RenderHelper-aside {
+  grid-area: text;
   background-color: white;
-  grid-area: "right";
-  padding: 10px;
 }
 
-
 .RenderHelper-aside {
-  
+  padding: 25px;
+}
+
+.RenderHelper-aside h1{
+  margin: 0px;
 }
 
 
@@ -43,13 +47,18 @@
 @media screen and (min-width: 1000px) {
   .RenderHelper {
     height: calc(100vh - 200px);
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 100%;
-    grid-template-areas: "left" "right";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: unset;
+    grid-template-areas:  "gallery text"
+                          "gallery text";
   }
 
+  .
+
   .RenderHelper-container img{
+    padding: 100px;
     max-height: 100%;
+    
   }
 }
 

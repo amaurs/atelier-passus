@@ -7,7 +7,7 @@ export default class Logo extends Component {
     render() {
         return (
             <div className={"Logo" + (this.props.isActive?" active":"")} >
-                <NavLink to="/"><img src={logo} alt="Atelier Passus" /></NavLink>
+                <NavLink to="/#hero"><img src={logo} alt="Atelier Passus" /></NavLink>
             </div>
             )
     }
