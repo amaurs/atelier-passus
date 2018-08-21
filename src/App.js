@@ -180,6 +180,7 @@ class App extends Component {
               <PropsRoute path='/aube' component={RenderHelper} info={this.getObjectFromSrc("aube")} t={t} />
               <PropsRoute path='/belaBartok' component={RenderHelper} info={this.getObjectFromSrc("belaBartok")} t={t} />
               <PropsRoute path='/casaFemaria' component={RenderHelper} info={this.getObjectFromSrc("casaFemaria")} t={t} />
+              <PropsRoute path='/elCicloDeLaPiel' component={RenderHelper} info={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
               <PropsRoute path='/cinco' component={RenderHelper} info={this.getObjectFromSrc("cinco")} t={t} />
               <PropsRoute path='/colodionNum13' component={RenderHelper} info={this.getObjectFromSrc("colodionNum13")} t={t} />
               <PropsRoute path='/elAlofonoDeLaVida' component={RenderHelper} info={this.getObjectFromSrc("elAlofonoDeLaVida")} t={t} />

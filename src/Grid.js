@@ -41,9 +41,8 @@ function Cell(props) {
     return (
         <div className="Grid-cell" onClick={()=>props.onClick()}>
           <img alt="" 
-               className="Grid-responsive-image" 
               src={assets[props.image]}/>
-          <p>{props.text}</p>
+          <p dangerouslySetInnerHTML={{__html:props.text}} />
         </div>
     );
 }

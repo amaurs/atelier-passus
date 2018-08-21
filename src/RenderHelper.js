@@ -82,31 +82,17 @@ class RenderHelper extends Component {
         let imageThumbnails = null;
 
         if(type === "video"){
-          let style = {
-            'paddingTop': this.props.info.info.aspect + "%"
-          }
-          content = <div className="Video-player-container" style={style}>
-                       <ReactPlayer className="Video-player"
-                                 url={this.props.info.info.url}
-                                 playing
-                                 muted
-                                 loop 
-                                 /></div>
+          
+          content = <video loop autoPlay muted>
+                      <source src={this.props.info.info.videos[0]} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
         } else if(type === "gallery"){
           let images = [];
           this.props.info.info.images.forEach(function(image){images.push(
             {original:assets[image]}
             );});
-          /**
-          content = <ImageGallery ref={imageGallery => this.imageGallery = imageGallery} 
-                                  items={images} 
-                                  showThumbnails={false} 
-                                  showPlayButton={false} 
-                                  showBullets={false} 
-                                  showFullscreenButton={false} 
-                                  lazyLoad={true} 
-                                  onSlide={this.handleOnSlide}/>
-          **/
+          
           let current = this.props.info.info.images[this.state.image];
           content = <img alt="" src={assets[current]} />
           imageThumbnails = <div className="RenderHelper-shortcut">
