@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Menu.css';
 import Footer from './Footer.js';
+import Logo from './Logo.js';
 import instagram from './images2/instagram.svg';
 
 class Menu extends Component {
@@ -24,6 +25,12 @@ class Menu extends Component {
                    <span><a className="Menu-item" onClick={() => this.handleClick("fr")}>es</a> / <a className="Menu-item" onClick={() => this.handleClick("es")}>fr</a></span>
                    <a className="Menu-item" href="https://www.instagram.com/passusatelier/"><img alt="" className="Menu-instagram" src={instagram}/></a>
                  </aside>
+                 <Logo isActive={this.props.isActive} 
+                       style={ {bottom: "10px", 
+                                right: "10px",
+                                width: "80px",
+                                height: "80px",
+                                zIndex: "50"} }/>
                  <Footer t={this.props.t}/>
                </div>
     }

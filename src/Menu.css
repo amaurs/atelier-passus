@@ -55,6 +55,13 @@
 
 @media screen and (min-width: 600px) {
   .Menu {
+    width: 50vw;
+    transform:translateX(50vw);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Menu {
     width: 30vw;
     transform:translateX(30vw);
   }

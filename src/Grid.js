@@ -26,7 +26,11 @@ class Grid extends Component {
                     <Hero />
                   </ScrollableAnchor>
                   <ScrollableAnchor id={'projects'}>
-                    <section className="Grid">{items}</section>
+                    <section className="Grid-container">
+                      <div className="Grid">
+                        {items}
+                      </div>
+                    </section>
                   </ScrollableAnchor>
                </div>
                 

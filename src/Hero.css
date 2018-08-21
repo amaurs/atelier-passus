@@ -1,9 +1,18 @@
 .Hero {
+  height: calc(100vh - 100px);
 }
 .Hero img {
-  height: calc(100vh - 100px);
+
   display:block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Hero video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  z-index: -1;
 }

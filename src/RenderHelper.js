@@ -115,7 +115,6 @@ class RenderHelper extends Component {
         }
 
         return <div className="RenderHelper">
-                  
                  <Swipeable
                       trackMouse
                       preventDefaultTouchmoveEvent

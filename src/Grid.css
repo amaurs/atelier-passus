@@ -1,10 +1,17 @@
+.Grid-container {
+  width: 100%;
+  background-color: white;
+}
 
 .Grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
+  padding-top: 100px;
 }
 
 .Grid-cell {
-  background-color: white;
   margin: 1rem;
 }
 
@@ -18,17 +25,25 @@
 }
 
 @media screen and (min-width: 600px) {
-  .Grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+
   .Grid-cell {
     width: calc(50% - 2rem);
   }
 }
 
 @media screen and (min-width: 1000px) {
+  
+  .Grid-container {
+    width: 100%;
+    background-color: white;
+  }
+  
+  .Grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
   .Grid-cell {
     width: calc(100% / 3 - 2rem);
   }

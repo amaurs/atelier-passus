@@ -22,9 +22,6 @@
 .Content {
   grid-area: main;
 }
-.Footer {
-  grid-area: footer;
-}
 
 .Body.active {
   overflow: hidden;
