@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './RenderHelper.css';
 import assets from './assets.js';
-import ReactPlayer from 'react-player';
+//import ReactPlayer from 'react-player';
 //import ImageGallery from 'react-image-gallery';
 import Swipeable from 'react-swipeable';
 
@@ -53,19 +53,20 @@ class RenderHelper extends Component {
     }
   
     swiped(direction) {
-      console.log("You Swiped...", direction);
-
-      const currentIndex = this.state.image + direction;
-      const size = this.props.info.info.images.length;
-      let finalIndex;
-      if (currentIndex >= size) {
-        finalIndex = 0;
-      } else if (currentIndex < 0) {
-        finalIndex = size - 1
-      } else {
-        finalIndex = currentIndex;
+      const type = this.props.info.type;
+      if(type === "gallery") {
+        const currentIndex = this.state.image + direction;
+        const size = this.props.info.info.images.length;
+        let finalIndex;
+        if (currentIndex >= size) {
+          finalIndex = 0;
+        } else if (currentIndex < 0) {
+          finalIndex = size - 1
+        } else {
+          finalIndex = currentIndex;
+        }
+        this.setState({ image: finalIndex });
       }
-      this.setState({ image: finalIndex });
     }
   
     swipedUp(e, deltaY, isFlick) {
@@ -82,9 +83,10 @@ class RenderHelper extends Component {
         let imageThumbnails = null;
 
         if(type === "video"){
-          
+          console.log();
+          let current = this.props.info.info.videos[0];
           content = <video loop autoPlay muted>
-                      <source src={this.props.info.info.videos[0]} type="video/mp4" />
+                      <source src={assets[current]} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
         } else if(type === "gallery"){

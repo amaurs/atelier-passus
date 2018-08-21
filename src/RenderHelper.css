@@ -68,8 +68,12 @@
 .RenderHelper-aside h1{
   margin: 10px 0px;
 }
-.RenderHelper-container img{
+.RenderHelper-container img, video {
   max-width: 100%;
+}
+
+.RenderHelper-container {
+  padding-top: 100px;
 }
 
 
@@ -89,9 +93,13 @@
                           "gallery text";
   }
 
-  .RenderHelper-container img video {
+  .RenderHelper-container img, video {
     max-height: 100%;
     max-width: none;
+  }
+
+  .RenderHelper-container {
+    padding-top: 0;
   }
 
 }

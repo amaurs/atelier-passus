@@ -177,9 +177,6 @@ const info2 = [{src:"arbolesDeVida",
                       paragraphs:[
                               "elCicloDeLaPielParagraph0",
                               "elCicloDeLaPielParagraph1",
-                              "elCicloDeLaPielParagraph2",
-                              "elCicloDeLaPielParagraph3",
-                              "elCicloDeLaPielParagraph4",
                               ],
                       videos:[
                               "elCicloDeLaPiel1",
