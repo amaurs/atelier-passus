@@ -2,6 +2,8 @@ build
 exclude.txt
 deploy.sh
 
+*.mp4
+
 # Logs
 logs
 *.log
