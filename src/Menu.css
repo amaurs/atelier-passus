@@ -35,6 +35,14 @@
   cursor: default;
 }
 
+.Menu-item img {
+  width: 50px;
+}
+
+.Menu-item > .Menu-lines:hover img {
+  display: inline; 
+}
+
 .Menu button {
   border: none;
   outline: none;
