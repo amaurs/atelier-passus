@@ -39,9 +39,15 @@
   width: 50px;
 }
 
-.Menu-item > .Menu-lines:hover img {
-  display: inline; 
+.Menu-item .Menu-lines {
+  visibility: hidden; 
 }
+
+.Menu-item:hover .Menu-lines{
+  visibility: visible;
+}
+
+
 
 .Menu button {
   border: none;
