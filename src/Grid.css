@@ -28,7 +28,6 @@
 }
 
 @media screen and (min-width: 600px) {
-
   .Grid-cell {
     width: calc(50% - 2rem);
   }
@@ -49,7 +48,7 @@
 
   .Grid-cell {
     position: relative;
-    width: calc(100% / 3 - 2rem);
+    width: calc(100% / 4 - 2rem);
     
   }
 
