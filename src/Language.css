@@ -1,0 +1,16 @@
+.Language {
+  position:fixed;
+  top: 25px;
+  left: 25px;
+  z-index: 50;
+}
+
+.Language button {
+  font-size: 1em;
+  font-family: 'whitney_book';
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

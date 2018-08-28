@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
-import Menu from './Menu.js';
 import Header from './Header.js';
+import Language from './Language.js';
 import Logo from './Logo.js';
-import Us from './Us.js';
 import Lost from './Lost.js';
+import Menu from './Menu.js';
 import RenderHelper from './RenderHelper.js';
+import Us from './Us.js';
 import text from './text.js';
 import './App.css';
 import assets from './assets.js';
@@ -207,11 +208,7 @@ class App extends Component {
                          width: "50px",
                          zIndex: "50"} }/>
 
-          <div className="Language">
-            <button onClick={() => changeLanguage("es")}>es</button>
-            <span className="Menu-item inactive">/</span>
-            <button onClick={() => changeLanguage("fr")}>fr</button>
-          </div>
+          <Language changeLanguage={changeLanguage} />
           {easterEgg}
           <div className="guide"> </div>
         </div>
