@@ -5,8 +5,7 @@ export default class Footer extends Component {
     render() {
       return ( 
         <div className="Footer">
-          <p>Atelier-Passus</p>
-          <p>{this.props.t("contact-paragraph3")}</p>
+          <p>Atelier-Passus<br />{this.props.t("contact-paragraph3")}</p>
         </div>
       )
     }

@@ -7,11 +7,9 @@
   transition: .5s;
   width: 100vw;
   transform:translateX(100vw);
-  
   display: grid;
-
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 50px;
+  grid-template-rows: 1fr 130px;
   grid-template-areas: "aside"
                        "footer";
   z-index: 50;
@@ -22,8 +20,9 @@
 }
 
 .Menu-item {
-  padding:5px;
-  font-size: 2em;
+  margin:10px;
+  padding:15px;
+  font-size: 1.5em;
   font-family: 'whitney_book';
   text-transform: uppercase;
   text-decoration: none;
@@ -36,48 +35,23 @@
 }
 
 .Menu-item img {
-  width: 50px;
+  width: 25px;
 }
 
-.Menu-item .Menu-lines {
-  visibility: hidden; 
+.Menu-item svg {
+  visibility: hidden;
+  padding-left: 5px;
+  width: 25px;
 }
 
-.Menu-item:hover .Menu-lines{
+.Menu-item:hover svg{
   visibility: visible;
 }
 
-.Menu button {
-  border: none;
-  outline: none;
-  font-size: 2em;
-  font-family: 'whitney_book';
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: white;
-}
-
-
-.Menu-instagram {
-  width: 1em;
-}
-
-
-.Menu-item:hover .Menu-instagram:hover {
-  transform: scale(1.01);
-}
-
-.Menu button {
-  transform: scale(1.01);
-}
-
 .Aside {
-  padding-left: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
   grid-area: "aside";
   display: grid;
-  align-items: center;
+  align-content: center;
 }
 
 
@@ -90,8 +64,8 @@
 
 @media screen and (min-width: 1000px) {
   .Menu {
-    width: 25vw;
-    transform:translateX(25vw);
+    width: 30vw;
+    transform:translateX(30vw);
   }
 }
 
