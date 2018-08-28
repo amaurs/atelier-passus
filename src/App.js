@@ -55,6 +55,7 @@ class App extends Component {
       active: false,
       width: 0,
       height: 0,
+      scroll: 0,
     }
   }
 
@@ -90,11 +91,13 @@ class App extends Component {
     window.removeEventListener("scroll", this.handleScroll.bind(this));
   }
   handleScroll(event) {
+    //console.log(window.scrollY);
     if(this.state.height < window.scrollY){
       this.setState({showGrid: true});
     } else {
       this.setState({showGrid: false});
     }
+    this.setState({scroll: window.scrollY});
   }
 
   getObjectFromSrc(src){
@@ -170,45 +173,116 @@ class App extends Component {
                 isActive={this.state.active} 
                 handleMenu={this.handleMenu.bind(this)} 
                 />
-          <Header t={t} 
+          <Header t={t}
+                  scroll={this.state.scroll}
+                  height={this.state.height}
                   language={this.state.language} 
                   isActive={this.state.active} 
                   handleMenu={this.handleMenu.bind(this)}
                   />
           <div className={"Content"}>
             <Switch>
-              <PropsRoute exact path='/' component={Grid} grid={infoArray} handleMenu={this.handleMenu.bind(this)} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
-              <PropsRoute path='/arbolesDeVida' component={RenderHelper} info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
-              <PropsRoute path='/aube' component={RenderHelper} info={this.getObjectFromSrc("aube")} t={t} />
-              <PropsRoute path='/belaBartok' component={RenderHelper} info={this.getObjectFromSrc("belaBartok")} t={t} />
-              <PropsRoute path='/casaFemaria' component={RenderHelper} info={this.getObjectFromSrc("casaFemaria")} t={t} />
-              <PropsRoute path='/elCicloDeLaPiel' component={RenderHelper} info={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
-              <PropsRoute path='/cinco' component={RenderHelper} info={this.getObjectFromSrc("cinco")} t={t} />
-              <PropsRoute path='/colodionNum13' component={RenderHelper} info={this.getObjectFromSrc("colodionNum13")} t={t} />
-              <PropsRoute path='/elAlofonoDeLaVida' component={RenderHelper} info={this.getObjectFromSrc("elAlofonoDeLaVida")} t={t} />
-              <PropsRoute path='/herakles' component={RenderHelper} info={this.getObjectFromSrc("herakles")} t={t} />
-              <PropsRoute path='/instruccionesParaUnArquitecto' component={RenderHelper} info={this.getObjectFromSrc("instruccionesParaUnArquitecto")} t={t} />
-              <PropsRoute path='/invencibleInvisible' component={RenderHelper} info={this.getObjectFromSrc("invencibleInvisible")} t={t} />
-              <PropsRoute path='/laredo' component={RenderHelper} info={this.getObjectFromSrc("laredo")} t={t} />
-              <PropsRoute path='/liLiane' component={RenderHelper} info={this.getObjectFromSrc("liLiane")} t={t} />
-              <PropsRoute path='/mantonegro' component={RenderHelper} info={this.getObjectFromSrc("mantonegro")} t={t} />
-              <PropsRoute path='/mazatlan' component={RenderHelper} info={this.getObjectFromSrc("mazatlan")} t={t} />
-              <PropsRoute path='/miPiedraMiCamino' component={RenderHelper} info={this.getObjectFromSrc("miPiedraMiCamino")} t={t} />
-              <PropsRoute path='/onora' component={RenderHelper} info={this.getObjectFromSrc("onora")} t={t} />
-              <PropsRoute path='/pentHouse4' component={RenderHelper} info={this.getObjectFromSrc("pentHouse4")} t={t} />
-              <PropsRoute path='/rompehueso' component={RenderHelper} info={this.getObjectFromSrc("rompehueso")} t={t} />
-              <PropsRoute path='/sema' component={RenderHelper} info={this.getObjectFromSrc("sema")} t={t} />
-              <PropsRoute path='/about' component={Us} t={t} />
-              <PropsRoute component={Lost} t={t} />
+              <PropsRoute exact path='/' 
+                          component={Grid} 
+                          grid={infoArray} 
+                          handleMenu={this.handleMenu.bind(this)} 
+                          t={t} 
+                          language={this.state.language} 
+                          show={this.state.showGrid} 
+                          height={this.state.height} />
+              <PropsRoute path='/arbolesDeVida' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
+              <PropsRoute path='/aube' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("aube")} t={t} />
+              <PropsRoute path='/belaBartok' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("belaBartok")} t={t} />
+              <PropsRoute path='/casaFemaria' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("casaFemaria")} t={t} />
+              <PropsRoute path='/elCicloDeLaPiel' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
+              <PropsRoute path='/cinco' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("cinco")} 
+                          t={t} />
+              <PropsRoute path='/colodionNum13' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("colodionNum13")} 
+                          t={t} />
+              <PropsRoute path='/elAlofonoDeLaVida' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("elAlofonoDeLaVida")} 
+                          t={t} />
+              <PropsRoute path='/herakles' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("herakles")} 
+                          t={t} />
+              <PropsRoute path='/instruccionesParaUnArquitecto' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("instruccionesParaUnArquitecto")} 
+                          t={t} />
+              <PropsRoute path='/invencibleInvisible' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("invencibleInvisible")} 
+                          t={t} />
+              <PropsRoute path='/laredo' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("laredo")} 
+                          t={t} />
+              <PropsRoute path='/liLiane' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("liLiane")} 
+                          t={t} />
+              <PropsRoute path='/mantonegro' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("mantonegro")} 
+                          t={t} />
+              <PropsRoute path='/mazatlan' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("mazatlan")} 
+                          t={t} />
+              <PropsRoute path='/miPiedraMiCamino' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("miPiedraMiCamino")} 
+                          t={t} />
+              <PropsRoute path='/onora' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("onora")} 
+                          t={t} />
+              <PropsRoute path='/pentHouse4' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("pentHouse4")} 
+                          t={t} />
+              <PropsRoute path='/rompehueso' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("rompehueso")} 
+                          t={t} />
+              <PropsRoute path='/sema' 
+                          component={RenderHelper} 
+                          info={this.getObjectFromSrc("sema")} 
+                          t={t} />
+              <PropsRoute path='/about' 
+                          component={Us} 
+                          t={t} />
+              <PropsRoute component={Lost} 
+              t={t} />
             </Switch>
           </div>
-          <Logo style={ {position: "fixed",
+          <Logo scroll={this.state.scroll}
+                height={this.state.height}
+                style={ {position: "fixed",
                          bottom: "25px", 
                          right: "25px",
                          width: "50px",
                          zIndex: "50"} }/>
 
-          <Language changeLanguage={changeLanguage} />
+          <Language changeLanguage={changeLanguage} 
+                    scroll={this.state.scroll}
+                    height={this.state.height}/>
           {easterEgg}
           <div className="guide"> </div>
         </div>

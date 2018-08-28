@@ -9,7 +9,9 @@ export default class Menu extends Component {
         return (
             <div className="Header">
               <Hamburger onClick={e => this.props.handleMenu()} 
-                         isActive={this.props.isActive}/>
+                         isActive={this.props.isActive} 
+                         scroll={this.props.scroll} 
+                         height={this.props.height} />
             </div>
         )
     }

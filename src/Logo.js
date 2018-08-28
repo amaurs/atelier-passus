@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
+import './Logo.css';
 
 export default class Logo extends Component {
     render() {
+        let hide = "";
+        let el = document.querySelector('.Logo'),
+            bounds = el && el.getBoundingClientRect();
+        if(this.props.scroll < this.props.height) {
+          hide = " hide";
+        }
         return (
-              <svg style={this.props.style} 
+              <svg className={"Logo" + hide}
+                   style={this.props.style} 
                    xmlns="http://www.w3.org/2000/svg" 
                    viewBox="0 0 63.32 103.29">
                    <path d="M6,34.78H1V2.26H9.22c4,0,6,2,6,6V20.73c0,4-2,6-6,6H6v8ZM8.91,7.19H6V21.91H8.91A1.65,1.65,0,0,0,10.77,20V9.09A1.65,1.65,0,0,0,8.91,7.19Z" transform="translate(-1 -2.21)"/>

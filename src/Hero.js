@@ -8,7 +8,7 @@ export default class Hero extends Component {
     render(){
         return <section className="Hero">
                  <Logo style={ {fill:"white"} }/>
-                 <video loop autoPlay muted>
+                 <video muted loop autoPlay >
                    <source src={video} type="video/mp4" />
                    Your browser does not support the video tag.
                  </video>

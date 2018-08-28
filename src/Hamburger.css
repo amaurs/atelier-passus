@@ -1,4 +1,4 @@
-.Hamburger-icon {
+.Hamburger {
   position: fixed;
   top: 4px;
   right: 10px;
@@ -53,5 +53,9 @@
   transform: rotate(135deg);
   background: black;
   top: 0;
+}
+
+.Hamburger.hide {
+  display: none;
 }
 
