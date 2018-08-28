@@ -8,7 +8,7 @@ export default class Hero extends Component {
 
     render(){
         return <section className="Hero">
-                 <Link to="/#projects">
+                 <Link to="/projects">
                    <Logo additional={"-hero"}
                          style={ {fill:"white"} }/>
                  </Link>
@@ -16,7 +16,7 @@ export default class Hero extends Component {
                    <source src={video} type="video/mp4" />
                    Your browser does not support the video tag.
                  </video>
-                 <Link to="/#projects">
+                 <Link to="/projects">
                    <p>atelier /</p>
                  </Link>
                </section>

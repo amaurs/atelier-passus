@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
 import Header from './Header.js';
+import Hero from './Hero.js';
 import Language from './Language.js';
 import Logo from './Logo.js';
 import Lost from './Lost.js';
@@ -22,11 +23,31 @@ const renderMergedProps = (component, ...rest) => {
   );
 }
 
-const PropsRoute = ({ component, ...rest }) => {
+const HeroRoute = ({ component, ...rest }) => {
   return (
     <Route {...rest} render={routeProps => {
       return renderMergedProps(component, routeProps, rest);
     }}/>
+  );
+}
+
+const PropsRoute = ({ component, ...rest }) => {
+  console.log(rest);
+  return (
+    <div>
+      <Menu {...rest} />
+      <Header {...rest} />
+      <Route {...rest} render={routeProps => {
+        return renderMergedProps(component, routeProps, rest);
+      }}/>
+      <Link to="/">
+        <Logo style={ {position: "fixed",
+                       bottom: "25px", 
+                       right: "25px",
+                       width: "50px"} }/>
+      </Link>
+      <Language changeLanguage={rest.changeLanguage}/>
+    </div>
   );
 }
 
@@ -52,7 +73,7 @@ class App extends Component {
       pos: 0,
       language: this.props.i18n.language,
       showHero: true,
-      active: false,
+      isActive: false,
       width: 0,
       height: 0,
       scroll: 0,
@@ -73,9 +94,9 @@ class App extends Component {
 
   handleMenu(){
     console.log("The button was pressed.");
-    console.log(this.state.active);
-    const isActive = this.state.active;
-    this.setState({active: !isActive});
+    console.log(this.state.isActive);
+    const isActive = this.state.isActive;
+    this.setState({isActive: !isActive});
   }
 
   componentDidMount() {
@@ -167,122 +188,168 @@ class App extends Component {
     }
     return (
         <div className={"Body" + (this.state.active?" active":"")}>
-          <Menu t={t} 
-                language={this.state.language} 
-                changeLanguage={changeLanguage} 
-                isActive={this.state.active} 
-                handleMenu={this.handleMenu.bind(this)} 
-                />
-          <Header t={t}
-                  scroll={this.state.scroll}
-                  height={this.state.height}
-                  language={this.state.language} 
-                  isActive={this.state.active} 
-                  handleMenu={this.handleMenu.bind(this)}
-                  />
           <div className={"Content"}>
             <Switch>
-              <PropsRoute exact path='/' 
+              <HeroRoute exact path='/' 
+                          component={Hero} />
+              <PropsRoute exact path='/projects'
+                          changeLanguage={changeLanguage}
                           component={Grid} 
-                          grid={infoArray} 
+                          grid={infoArray}
+                          isActive={this.state.isActive}
                           handleMenu={this.handleMenu.bind(this)} 
                           t={t} 
                           language={this.state.language} 
                           show={this.state.showHero} 
                           height={this.state.height} />
               <PropsRoute path='/arbolesDeVida' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
               <PropsRoute path='/aube' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("aube")} t={t} />
               <PropsRoute path='/belaBartok' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("belaBartok")} t={t} />
               <PropsRoute path='/casaFemaria' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("casaFemaria")} t={t} />
               <PropsRoute path='/elCicloDeLaPiel' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
               <PropsRoute path='/cinco' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("cinco")} 
                           t={t} />
               <PropsRoute path='/colodionNum13' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("colodionNum13")} 
                           t={t} />
               <PropsRoute path='/elAlofonoDeLaVida' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("elAlofonoDeLaVida")} 
                           t={t} />
               <PropsRoute path='/herakles' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("herakles")} 
                           t={t} />
               <PropsRoute path='/instruccionesParaUnArquitecto' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("instruccionesParaUnArquitecto")} 
                           t={t} />
               <PropsRoute path='/invencibleInvisible' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("invencibleInvisible")} 
                           t={t} />
               <PropsRoute path='/laredo' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("laredo")} 
                           t={t} />
               <PropsRoute path='/liLiane' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("liLiane")} 
                           t={t} />
               <PropsRoute path='/mantonegro' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("mantonegro")} 
                           t={t} />
               <PropsRoute path='/mazatlan' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("mazatlan")} 
                           t={t} />
               <PropsRoute path='/miPiedraMiCamino' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("miPiedraMiCamino")} 
                           t={t} />
               <PropsRoute path='/onora' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("onora")} 
                           t={t} />
               <PropsRoute path='/pentHouse4' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("pentHouse4")} 
                           t={t} />
               <PropsRoute path='/rompehueso' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("rompehueso")} 
                           t={t} />
               <PropsRoute path='/sema' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           info={this.getObjectFromSrc("sema")} 
                           t={t} />
               <PropsRoute path='/about' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
                           component={Us} 
                           t={t} />
               <PropsRoute component={Lost} 
-              t={t} />
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          handleMenu={this.handleMenu.bind(this)} 
+                          t={t} />
             </Switch>
           </div>
-          <Logo scroll={this.state.scroll}
-                hidden
-                height={this.state.height}
-                style={ {position: "fixed",
-                         bottom: "25px", 
-                         right: "25px",
-                         width: "50px"} }/>
-
-          <Language changeLanguage={changeLanguage} 
-                    scroll={this.state.scroll}
-                    height={this.state.height}/>
           {easterEgg}
           <div className="guide"> </div>
         </div>

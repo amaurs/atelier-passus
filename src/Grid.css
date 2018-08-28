@@ -11,7 +11,10 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 75px;
+  margin-left: 25px;
+  margin-right: auto;
+  width: calc(100% - 125px);
 }
 
 .Grid-cell {
@@ -31,6 +34,7 @@
   .Grid-cell {
     width: calc(50% - 2rem);
   }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -49,7 +53,6 @@
   .Grid-cell {
     position: relative;
     width: calc(100% / 4 - 2rem);
-    
   }
 
   .Grid-cell img {
@@ -65,13 +68,13 @@
     margin: 15px;
     text-transform: uppercase;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.25em;
     opacity: 0;
     transition: .5s;
   }
 
   .Grid-cell:hover img {
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   .Grid-cell:hover p {

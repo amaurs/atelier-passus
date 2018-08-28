@@ -21,7 +21,7 @@ class Menu extends Component {
     render() {
         return <div className={"Menu" + (this.props.isActive?" active":"")}>
                  <aside className="Aside">
-                   <Link className="Menu-item" to="/#projects" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}<Lines /></Link>
+                   <Link className="Menu-item" to="/projects" exact onClick={()=>this.props.handleMenu()}>{this.props.t("projects")}<Lines /></Link>
                    <Link className="Menu-item" to="/about" exact onClick={()=>this.props.handleMenu()}>{this.props.t("about")}<Lines /></Link>
                    <a className="Menu-item" href="https://www.instagram.com/passusatelier/"><img alt="" className="Menu-instagram" src={instagram}/></a>
                  </aside>

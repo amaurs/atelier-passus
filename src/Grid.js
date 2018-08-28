@@ -22,7 +22,6 @@ class Grid extends Component {
 
 
         return <div>
-                 <Hero />
                  <section id="projects" className="Grid-container">
                    <div className="Grid">
                      {items}

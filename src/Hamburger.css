@@ -38,18 +38,18 @@
   top: 16px;
 }
 
-.Hamburger-icon.active .Hamburger-hamburger {
+.Hamburger.active .Hamburger-hamburger {
   background: rgba(0,0,0,0);
   box-shadow: 0 2px 5px rgba(0,0,0,0);
 }
 
-.Hamburger-icon.active .Hamburger-hamburger:before {
+.Hamburger.active .Hamburger-hamburger:before {
   transform: rotate(45deg);
   background: black;
   top: 0;
 }
 
-.Hamburger-icon.active .Hamburger-hamburger:after {
+.Hamburger.active .Hamburger-hamburger:after {
   transform: rotate(135deg);
   background: black;
   top: 0;

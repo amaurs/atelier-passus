@@ -6,9 +6,10 @@ import Logo from './Logo.js';
 export default class Menu extends Component {
 
     render() {
+        console.log(this.props);
         return (
             <div className="Header">
-              <Hamburger onClick={e => this.props.handleMenu()} 
+              <Hamburger onClick={this.props.handleMenu} 
                          isActive={this.props.isActive} 
                          scroll={this.props.scroll} 
                          height={this.props.height} />
