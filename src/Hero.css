@@ -1,25 +1,36 @@
 .Hero {
+  position: relative;
   height: 100vh;
   width: 100vw;
 }
-.Hero img {
-  display:block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+
+.Hero p {
+  position: absolute;
+  height: 10px;
+  top: 50%;
+  right: 25px;
+  margin-top: -5px;
+  color: white;
+}
+
+.Hero svg {
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 25px;
+  margin-top: -50px;
 }
 
 .Hero video {
+  position: absolute;
   z-index: -1;
-
   min-width: 100%; 
   min-height: 100%; 
-  
   width: auto;
   height: auto;
-  
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+

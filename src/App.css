@@ -1,5 +1,7 @@
 .Body {
   display: grid;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .EasterEgg {
@@ -35,6 +37,25 @@
   
 }
 
+.Language {
+  position:fixed;
+  top: 25px;
+  left: 25px;
+}
+
+
+.guide {
+  width: calc(100% - 50px) !important;
+  height: calc(100% - 50px) !important;
+  position: fixed;
+  left: 25px;
+  top: 25px;
+  background-color: black;
+  border: red;
+  opacity: .8;
+  z-index: 100;
+  display: none;
+}
 
 
 

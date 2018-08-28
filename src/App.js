@@ -4,6 +4,7 @@ import { translate } from 'react-i18next';
 import Grid from './Grid.js';
 import Menu from './Menu.js';
 import Header from './Header.js';
+import Logo from './Logo.js';
 import Us from './Us.js';
 import Lost from './Lost.js';
 import RenderHelper from './RenderHelper.js';
@@ -200,7 +201,19 @@ class App extends Component {
               <PropsRoute component={Lost} t={t} />
             </Switch>
           </div>
+          <Logo style={ {position: "fixed",
+                         bottom: "25px", 
+                         right: "25px",
+                         width: "50px",
+                         zIndex: "50"} }/>
+
+          <div className="Language">
+            <button onClick={() => changeLanguage("es")}>es</button>
+            <span className="Menu-item inactive">/</span>
+            <button onClick={() => changeLanguage("fr")}>fr</button>
+          </div>
           {easterEgg}
+          <div className="guide"> </div>
         </div>
     );
   }
