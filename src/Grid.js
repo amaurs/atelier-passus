@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Grid.css';
 import assets from './assets.js';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import Hero from './Hero.js';
 
 class Grid extends Component {
@@ -11,7 +10,7 @@ class Grid extends Component {
       this.props.handleMenu();
     }
     render() {
-        console.log(this.props);
+        //console.log(this.props);
         const items = this.props.grid.map((square, index) => 
                 <Cell key={index} 
                       image={square.src} 
@@ -23,16 +22,12 @@ class Grid extends Component {
 
 
         return <div>
-                  <ScrollableAnchor id={'hero'}>
-                    <Hero />
-                  </ScrollableAnchor>
-                  <ScrollableAnchor id={'projects'}>
-                    <section className="Grid-container">
-                      <div className="Grid">
-                        {items}
-                      </div>
-                    </section>
-                  </ScrollableAnchor>
+                 <Hero />
+                 <section id="projects" className="Grid-container">
+                   <div className="Grid">
+                     {items}
+                   </div>
+                 </section>
                </div>
                 
     }

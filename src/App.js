@@ -51,7 +51,7 @@ class App extends Component {
       isLoggedIn: false,
       pos: 0,
       language: this.props.i18n.language,
-      showGrid: false,
+      showHero: true,
       active: false,
       width: 0,
       height: 0,
@@ -93,9 +93,9 @@ class App extends Component {
   handleScroll(event) {
     //console.log(window.scrollY);
     if(this.state.height < window.scrollY){
-      this.setState({showGrid: true});
+      this.setState({showHero: true});
     } else {
-      this.setState({showGrid: false});
+      this.setState({showHero: false});
     }
     this.setState({scroll: window.scrollY});
   }
@@ -188,7 +188,7 @@ class App extends Component {
                           handleMenu={this.handleMenu.bind(this)} 
                           t={t} 
                           language={this.state.language} 
-                          show={this.state.showGrid} 
+                          show={this.state.showHero} 
                           height={this.state.height} />
               <PropsRoute path='/arbolesDeVida' 
                           component={RenderHelper} 
@@ -273,12 +273,12 @@ class App extends Component {
             </Switch>
           </div>
           <Logo scroll={this.state.scroll}
+                hidden
                 height={this.state.height}
                 style={ {position: "fixed",
                          bottom: "25px", 
                          right: "25px",
-                         width: "50px",
-                         zIndex: "50"} }/>
+                         width: "50px"} }/>
 
           <Language changeLanguage={changeLanguage} 
                     scroll={this.state.scroll}

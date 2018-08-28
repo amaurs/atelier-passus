@@ -2,15 +2,10 @@ import React, { Component } from 'react';
 import './Logo.css';
 
 export default class Logo extends Component {
+
     render() {
-        let hide = "";
-        let el = document.querySelector('.Logo'),
-            bounds = el && el.getBoundingClientRect();
-        if(this.props.scroll < this.props.height) {
-          hide = " hide";
-        }
         return (
-              <svg className={"Logo" + hide}
+              <svg className="Logo"
                    style={this.props.style} 
                    xmlns="http://www.w3.org/2000/svg" 
                    viewBox="0 0 63.32 103.29">
