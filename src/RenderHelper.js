@@ -98,7 +98,11 @@ class RenderHelper extends Component {
           let current = this.props.info.info.images[this.state.image];
           content = <img alt="" src={assets[current]} />
           imageThumbnails = <div className="RenderHelper-shortcut">
-                              {this.props.info.info.images.map((p, index) => <button className={ "RenderHelper-thumb " + (index===this.state.image?"highlight":"")} key={index} onClick={()=>this.handleTumbnail(index)}>{index + 1}</button>)}
+                              {this.props.info.info.images.map((p, index) => 
+                                <button className={ "RenderHelper-thumb " + (index===this.state.image?" highlight":"")} 
+                                        key={index} 
+                                        onClick={()=>this.handleTumbnail(index)}>{index + 1}
+                                </button>)}
                             </div>
         }
 
