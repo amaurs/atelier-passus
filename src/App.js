@@ -177,7 +177,7 @@ class App extends Component {
                   />
           <div className={"Content"}>
             <Switch>
-              <PropsRoute exact path='/' component={Grid} grid={infoArray} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
+              <PropsRoute exact path='/' component={Grid} grid={infoArray} handleMenu={this.handleMenu.bind(this)} t={t} language={this.state.language} show={this.state.showGrid} height={this.state.height} />
               <PropsRoute path='/arbolesDeVida' component={RenderHelper} info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
               <PropsRoute path='/aube' component={RenderHelper} info={this.getObjectFromSrc("aube")} t={t} />
               <PropsRoute path='/belaBartok' component={RenderHelper} info={this.getObjectFromSrc("belaBartok")} t={t} />

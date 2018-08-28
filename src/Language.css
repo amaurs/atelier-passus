@@ -13,4 +13,8 @@
   border: none;
   outline: none;
   background-color: transparent;
+  padding: 0;
+}
+.Language span {
+  padding: 2px;
 }

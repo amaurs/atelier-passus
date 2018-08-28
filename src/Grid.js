@@ -7,7 +7,8 @@ import Hero from './Hero.js';
 class Grid extends Component {
 
     handleClick(path) {
-      this.props.history.push('/' + path)
+      this.props.history.push('/' + path);
+      this.props.handleMenu();
     }
     render() {
         console.log(this.props);
