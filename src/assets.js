@@ -206,9 +206,13 @@ import sema8 from './images2/sema/8.jpg';
 import sema9 from './images2/sema/9.jpg';
 import sema10 from './images2/sema/10.jpg';
 
+import video2 from './video/Test2.mp4';
+import video3 from './video/Test3.mp4';
+import video4 from './video/Test4.mp4';
 
 import easterImage from './images/buni.gif';
 
+const videos = [video2, video3, video4];
 
 export default {
 
@@ -419,5 +423,7 @@ sema7,
 sema8,
 sema9,
 sema10,
+
+videos,
 
 };

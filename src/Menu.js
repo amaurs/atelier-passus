@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Menu.css';
 import Footer from './Footer.js';
-import Logo from './Logo.js';
 import Lines from './Lines.js';
 import instagram from './images2/instagram.svg';
 

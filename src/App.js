@@ -357,7 +357,4 @@ class App extends Component {
   }
 }
 
-
-
-
 export default translate('translations')(App);

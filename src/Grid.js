@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Grid.css';
 import assets from './assets.js';
-import Hero from './Hero.js';
 
 class Grid extends Component {
 

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
 import Hamburger from './Hamburger.js';
-import Logo from './Logo.js';
 
 export default class Menu extends Component {
 
