@@ -5,7 +5,6 @@ import Hamburger from './Hamburger.js';
 export default class Menu extends Component {
 
     render() {
-        console.log(this.props);
         return (
             <div className="Header">
               <Hamburger onClick={this.props.handleMenu} 

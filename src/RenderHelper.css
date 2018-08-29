@@ -60,11 +60,12 @@
 
 .RenderHelper-aside {
   grid-area: text;
+  padding: 100px 75px;
   background-color: white;
 }
 
-.RenderHelper-aside {
-  padding: 100px 50px;
+.RenderHelper-aside p {
+  text-align: justify;
 }
 
 .RenderHelper-aside h1{
