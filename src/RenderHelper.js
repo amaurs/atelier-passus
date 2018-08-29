@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './RenderHelper.css';
 import assets from './assets.js';
-//import ReactPlayer from 'react-player';
-//import ImageGallery from 'react-image-gallery';
+import Card from './Card.js';
 import Swipeable from 'react-swipeable';
 
 const LEFT = -1;
@@ -43,10 +42,10 @@ class RenderHelper extends Component {
   }
   
   swiped(direction) {
-    const type = this.props.info.type;
+    const type = this.props.project.type;
     if(type === "gallery") {
       const currentIndex = this.state.image + direction;
-      const size = this.props.info.info.images.length;
+      const size = this.props.project.info.images.length;
       let finalIndex;
       if (currentIndex >= size) {
         finalIndex = 0;
@@ -64,36 +63,23 @@ class RenderHelper extends Component {
   }
 
   render() {
-      const type = this.props.info.type;
-      let headers = this.props.info.info.headers.map(
-           (h, index) => <h2 key={index} className="RenderHelper-subtitle">{this.props.t(h)}</h2>);
-      let paragraphs = this.props.info.info.paragraphs.map(
-           (p, index) => <p key={index} className="RenderHelper-text">{this.props.t(p)}</p>);
+      const type = this.props.project.type;
       let content = null;
-      let imageThumbnails = null;
+      let images = [];
 
       if(type === "video"){
         console.log();
-        let current = this.props.info.info.videos[0];
+        let current = this.props.project.info.videos[0];
         content = <video loop autoPlay muted>
                     <source src={assets[current]} type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
       } else if(type === "gallery"){
-        let images = [];
-        this.props.info.info.images.forEach(function(image){images.push(
-          {original:assets[image]}
-          );});
         
-        let current = this.props.info.info.images[this.state.image];
+        images = this.props.project.info.images;
+        let current = images[this.state.image];
         content = <img alt="" src={assets[current]} />
-        imageThumbnails = <div className="RenderHelper-shortcut">
-                            {this.props.info.info.images.map((p, index) => 
-                              <button className={ "RenderHelper-thumb " + (index===this.state.image?" highlight":"")} 
-                                      key={index} 
-                                      onClick={()=>this.handleOnSlide(index)}>{index + 1}
-                              </button>)}
-                          </div>
+        
       }
 
       return <div className="RenderHelper">
@@ -104,14 +90,13 @@ class RenderHelper extends Component {
                           className="RenderHelper-container">
                  {content}
                </Swipeable>
-               <div className="RenderHelper-aside">
-                 <h1 className="RenderHelper-title">{this.props.t(this.props.info.info.title)}</h1>
-                 {headers}
-                 <div className="RenderHelper-description">
-                 {paragraphs}
-                 </div>
-                 {imageThumbnails}
-               </div>
+               <Card headers={this.props.project.info.headers}
+                     paragraphs={this.props.project.info.paragraphs}
+                     images={images}
+                     handleOnSlide={this.handleOnSlide.bind(this)}
+                     title={this.props.project.info.title}
+                     index={this.state.image}
+                     t={this.props.t} />
              </div>;
   }
 }

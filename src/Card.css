@@ -1,0 +1,68 @@
+.Card {
+  grid-area: text;
+  padding: 100px 75px;
+  background-color: white;
+}
+
+.Card p {
+  text-align: justify;
+}
+
+.Card-description {
+
+}
+
+.Shortcut {
+  display: none;
+}
+
+.Shortcut-thumb {
+  border: 0;
+  padding: 0;
+  font-size: 13px;
+  outline: none;
+  font-family: inherit;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  background-color: white;
+}
+
+.Shortcut-thumb.highlight {
+  border-width: 3px;
+  border-style: solid;
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  border-radius: 50%; 
+}
+
+.Card-title {
+  font-size: 2.1em;
+  margin-bottom:2em;
+  text-transform: uppercase;
+}
+
+.Card-subtitle {
+  text-transform: uppercase;
+  margin:0;
+  font-size: 1.25em;
+}
+
+.Card-text {
+  font-size: 1em;
+  margin-top:1em;
+  margin-bottom:0;
+  font-weight: bold;
+}
+
+.Card-text:last-child {
+  margin-bottom:2em;
+}
+
+@media screen and (min-width: 600px) {
+  
+  .Shortcut {
+    display: inline;
+  }
+
+}

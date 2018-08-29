@@ -8,80 +8,12 @@
                        "text" "text";
 }
 
-.RenderHelper-title {
-  font-size: 2.1em;
-  text-transform: uppercase;
-}
-
-.RenderHelper-subtitle {
-  text-transform: uppercase;
-  margin:0;
-  font-size: 1.25em;
-}
-
-.RenderHelper-text {
-  font-size: 1em;
-  margin-top:1em;
-  margin-bottom:0;
-  font-weight: bold;
-}
-
-.RenderHelper-text:last-child {
-  margin-bottom:2em;
-}
-
 .RenderHelper-container {
   grid-area: gallery;
 }
 
-.RenderHelper-shortcut {
-  display: none;
-}
-
-.RenderHelper-thumb {
-  border: 0;
-  padding: 0;
-  font-size: 13px;
-  outline: none;
-  font-family: inherit;
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  background-color: white;
-}
-
-.RenderHelper-thumb.highlight {
-  border-width: 3px;
-  border-style: solid;
-  -webkit-border-radius: 50%; 
-  -moz-border-radius: 50%; 
-  border-radius: 50%; 
-}
-
-.RenderHelper-aside {
-  grid-area: text;
-  padding: 100px 75px;
-  background-color: white;
-}
-
-.RenderHelper-aside p {
-  text-align: justify;
-}
-
-.RenderHelper-aside h1{
-  margin: 10px 0px;
-}
 .RenderHelper-container img, .RenderHelper-container video {
   max-width: 100%;
-}
-
-
-
-@media screen and (min-width: 600px) {
-  .RenderHelper-shortcut {
-    display: inline;
-  }
-
 }
 
 @media screen and (min-width: 1000px) {
