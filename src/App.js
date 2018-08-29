@@ -92,13 +92,10 @@ class App extends Component {
     console.log("The event was launched.");
   }
 
-  handleMenu(){
-    console.log("The button was pressed.");
-    console.log(this.state.isActive);
-    const isActive = this.state.isActive;
-    this.setState({isActive: !isActive});
+  handleMenu(open){
+    this.setState({isActive: open});
   }
-
+  
   componentDidMount() {
     this.updateDimensions();
     window.addEventListener("resize", this.updateDimensions.bind(this));

@@ -6,7 +6,7 @@ class Grid extends Component {
 
     handleClick(path) {
       this.props.history.push('/' + path);
-      this.props.handleMenu();
+      this.props.handleMenu(false);
     }
     render() {
         //console.log(this.props);
