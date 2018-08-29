@@ -1,7 +1,7 @@
 .Card {
   grid-area: text;
-  padding: 100px 75px;
   background-color: white;
+  padding: 10px 25px 110px 25px;
 }
 
 .Card p {
@@ -38,21 +38,20 @@
 
 .Card-title {
   font-size: 2.1em;
-  margin-bottom:2em;
+  margin-bottom:1em;
   text-transform: uppercase;
 }
 
 .Card-subtitle {
   text-transform: uppercase;
   margin:0;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .Card-text {
   font-size: 1em;
-  margin-top:1em;
-  margin-bottom:0;
-  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .Card-text:last-child {
@@ -60,9 +59,21 @@
 }
 
 @media screen and (min-width: 600px) {
-  
+
   .Shortcut {
     display: inline;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+  .Shortcut {
+    display: inline;
+  }
+
+  .Card {
+    padding: 100px 75px;
   }
 
 }

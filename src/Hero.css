@@ -3,7 +3,6 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  z-index: 20;
 }
 
 .Hero p {
@@ -35,5 +34,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+
 
 

@@ -10,6 +10,7 @@
 
 .RenderHelper-container {
   grid-area: gallery;
+  padding-top: 88px;
 }
 
 .RenderHelper-container img, .RenderHelper-container video {
@@ -20,6 +21,7 @@
   .RenderHelper-container {
     display: grid;
     align-items: center;
+    padding-top: 0;
   }
 
   .RenderHelper {

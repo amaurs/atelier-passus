@@ -18,23 +18,46 @@
 }
 
 .Grid-cell {
-  margin: 1rem;
+  position: relative;
+  margin-bottom: 25px;
 }
 
 .Grid-cell img {
   display: block;
+  opacity: 1;
   width: 100%;
 }
 
+.Grid-mask {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.1;
+}
+
 .Grid-cell p {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
   text-transform: uppercase;
+  text-align: right;
+  font-size: 1em;
 }
 
 @media screen and (min-width: 600px) {
   .Grid-cell {
+    margin: 1rem;
     width: calc(50% - 2rem);
   }
 
+  .Grid-cell p {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -51,7 +74,7 @@
   }
 
   .Grid-cell {
-    position: relative;
+    margin: 1rem;
     width: calc(100% / 4 - 2rem);
   }
 
@@ -62,15 +85,14 @@
     transition: .5s;
   }
   .Grid-cell p {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 15px;
-    text-transform: uppercase;
-    text-align: right;
-    font-size: 1.25em;
+    color: black;
+    font-size: 1em;
     opacity: 0;
     transition: .5s;
+  }
+
+  .Grid-mask {
+    display: none;
   }
 
   .Grid-cell:hover img {

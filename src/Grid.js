@@ -9,7 +9,6 @@ class Grid extends Component {
       this.props.closeMenu();
     }
     render() {
-        //console.log(this.props);
         const items = this.props.grid.map((square, index) => 
                 <Cell key={index} 
                       image={square.src} 
@@ -36,6 +35,7 @@ function Cell(props) {
         <div className="Grid-cell" onClick={()=>props.onClick()}>
           <img alt="" 
               src={assets[props.image]}/>
+          <span className="Grid-mask"></span>
           <p dangerouslySetInnerHTML={{__html:props.text}} />
         </div>
     );
