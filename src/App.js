@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
-import Header from './Header.js';
+import Hamburger from './Hamburger.js';
 import Hero from './Hero.js';
 import Language from './Language.js';
 import Logo from './Logo.js';
@@ -35,7 +35,7 @@ const PropsRoute = ({ component, ...rest }) => {
   return (
     <div>
       <Menu {...rest} />
-      <Header {...rest} />
+      <Hamburger {...rest} />
       <Route {...rest} render={routeProps => {
         return renderMergedProps(component, routeProps, rest);
       }}/>
@@ -191,14 +191,14 @@ class App extends Component {
         <div className={"Body" + (this.state.active?" active":"")}>
           <div className={"Content"}>
             <Switch>
-              <HeroRoute exact path='/' 
-                          component={Hero} />
+              <HeroRoute exact path='/'
+                         component={Hero} />
               <PropsRoute exact path='/projects'
                           changeLanguage={changeLanguage}
                           component={Grid} 
                           grid={infoArray}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)}
+                          onClick={this.handleMenu.bind(this)}
                           closeMenu={this.closeMenu.bind(this)}
                           t={t} 
                           language={this.state.language} 
@@ -207,42 +207,42 @@ class App extends Component {
               <PropsRoute path='/arbolesDeVida' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("arbolesDeVida")} t={t} />
               <PropsRoute path='/aube' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("aube")} t={t} />
               <PropsRoute path='/belaBartok' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("belaBartok")} t={t} />
               <PropsRoute path='/casaFemaria' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("casaFemaria")} t={t} />
               <PropsRoute path='/elCicloDeLaPiel' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
               <PropsRoute path='/cinco' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("cinco")} 
@@ -250,7 +250,7 @@ class App extends Component {
               <PropsRoute path='/colodionNum13' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("colodionNum13")} 
@@ -258,7 +258,7 @@ class App extends Component {
               <PropsRoute path='/elAlofonoDeLaVida' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("elAlofonoDeLaVida")} 
@@ -266,7 +266,7 @@ class App extends Component {
               <PropsRoute path='/herakles' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("herakles")} 
@@ -274,7 +274,7 @@ class App extends Component {
               <PropsRoute path='/instruccionesParaUnArquitecto' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("instruccionesParaUnArquitecto")} 
@@ -282,7 +282,7 @@ class App extends Component {
               <PropsRoute path='/invencibleInvisible' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("invencibleInvisible")} 
@@ -290,7 +290,7 @@ class App extends Component {
               <PropsRoute path='/laredo' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("laredo")} 
@@ -298,7 +298,7 @@ class App extends Component {
               <PropsRoute path='/liLiane' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("liLiane")} 
@@ -306,7 +306,7 @@ class App extends Component {
               <PropsRoute path='/mantonegro' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("mantonegro")} 
@@ -314,7 +314,7 @@ class App extends Component {
               <PropsRoute path='/mazatlan' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("mazatlan")} 
@@ -322,7 +322,7 @@ class App extends Component {
               <PropsRoute path='/miPiedraMiCamino' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("miPiedraMiCamino")} 
@@ -330,7 +330,7 @@ class App extends Component {
               <PropsRoute path='/onora' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("onora")} 
@@ -338,7 +338,7 @@ class App extends Component {
               <PropsRoute path='/pentHouse4' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("pentHouse4")} 
@@ -346,7 +346,7 @@ class App extends Component {
               <PropsRoute path='/rompehueso' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("rompehueso")} 
@@ -354,7 +354,7 @@ class App extends Component {
               <PropsRoute path='/sema' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           info={this.getObjectFromSrc("sema")} 
@@ -362,17 +362,16 @@ class App extends Component {
               <PropsRoute path='/about' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)} 
+                          onClick={this.handleMenu.bind(this)} 
                           component={Us} 
                           closeMenu={this.closeMenu.bind(this)}
                           t={t} />
               <PropsRoute component={Lost} 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
-                          handleMenu={this.handleMenu.bind(this)}
+                          onClick={this.handleMenu.bind(this)}
                           closeMenu={this.closeMenu.bind(this)}
                           t={t} />
-
             </Switch>
           </div>
           {easterEgg}
