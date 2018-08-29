@@ -70,7 +70,7 @@ class RenderHelper extends Component {
       if(type === "video"){
         console.log();
         let current = this.props.project.info.videos[0];
-        content = <video loop autoPlay muted>
+        content = <video loop autoPlay muted playsinline>
                     <source src={assets[current]} type="video/mp4" />
                       Your browser does not support the video tag.
                   </video>
