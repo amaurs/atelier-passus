@@ -169,9 +169,10 @@ class App extends Component {
 
   render() {
     const { t, i18n } = this.props;
+    console.log(i18n);
     const changeLanguage = (lng) => {
+      console.log("Change to " + lng);
       i18n.changeLanguage(lng);
-      this.setState({language:lng});
     }
     const isLoggedIn = this.state.isLoggedIn;
     let easterEgg = null;
@@ -193,8 +194,7 @@ class App extends Component {
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)}
                           closeMenu={this.closeMenu.bind(this)}
-                          t={t} 
-                          language={this.state.language} />
+                          t={t} />
               <PropsRoute path='/arbolesDeVida' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
@@ -302,6 +302,14 @@ class App extends Component {
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("mantonegro")} 
                           t={t} />
+              <PropsRoute path='/mata' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)} 
+                          component={RenderHelper} 
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("mata")} 
+                          t={t} />
               <PropsRoute path='/mazatlan' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
@@ -333,6 +341,14 @@ class App extends Component {
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("pentHouse4")} 
+                          t={t} />
+              <PropsRoute path='/planDeEscape' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)} 
+                          component={RenderHelper} 
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("planDeEscape")} 
                           t={t} />
               <PropsRoute path='/rompehueso' 
                           changeLanguage={changeLanguage}
