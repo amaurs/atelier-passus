@@ -12,10 +12,12 @@ import invencibleInvisible from './images2/iconos/INVENCIBLE-INVISIBLE.jpg';
 import laredo from './images2/iconos/LAREDO.jpg';
 import liLiane from './images2/iconos/LI-LIANE.jpg';
 import mantonegro from './images2/iconos/MANTONEGRO.jpg';
+import mata from './images2/iconos/MATA.jpg';
 import mazatlan from './images2/iconos/MAZATLAN.jpg';
 import miPiedraMiCamino from './images2/iconos/MI-PIEDRA-MI-CAMINO.jpg';
 import onora from './images2/iconos/ONORA.jpg';
 import pentHouse4 from './images2/iconos/PH4.jpg';
+import planDeEscape from './images2/iconos/PLAN-DE-ESCAPE.jpg';
 import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
 import sema from './images2/iconos/SEMA.jpg';
 
@@ -141,6 +143,13 @@ import mantonegro7 from './images2/mantonegro/7.jpg';
 import mantonegro8 from './images2/mantonegro/8.jpg';
 import mantonegro9 from './images2/mantonegro/9.jpg';
 
+import mata1 from './images2/mata/1.jpg';
+import mata2 from './images2/mata/2.jpg';
+import mata3 from './images2/mata/3.jpg';
+import mata4 from './images2/mata/4.jpg';
+import mata5 from './images2/mata/5.jpg';
+import mata6 from './images2/mata/6.jpg';
+
 import mazatlan1 from './images2/mazatlan/1.jpg';
 import mazatlan2 from './images2/mazatlan/2.jpg';
 import mazatlan3 from './images2/mazatlan/3.jpg';
@@ -189,6 +198,15 @@ import pentHouse412 from './images2/pentHouse4/12.jpg';
 import pentHouse413 from './images2/pentHouse4/13.jpg';
 import pentHouse414 from './images2/pentHouse4/14.jpg';
 
+import planDeEscape1 from './images2/plan-de-escape/1.jpg';
+import planDeEscape2 from './images2/plan-de-escape/2.jpg';
+import planDeEscape3 from './images2/plan-de-escape/3.jpg';
+import planDeEscape4 from './images2/plan-de-escape/4.jpg';
+import planDeEscape5 from './images2/plan-de-escape/5.jpg';
+import planDeEscape6 from './images2/plan-de-escape/6.jpg';
+import planDeEscape7 from './images2/plan-de-escape/7.jpg';
+import planDeEscape8 from './images2/plan-de-escape/8.jpg';
+
 import rompehueso1 from './images2/rompehueso/1.jpg';
 import rompehueso2 from './images2/rompehueso/2.jpg';
 import rompehueso3 from './images2/rompehueso/3.jpg';
@@ -230,11 +248,13 @@ instruccionesParaUnArquitecto,
 invencibleInvisible,
 laredo,
 liLiane,
+mata,
 mantonegro,
 mazatlan,
 miPiedraMiCamino,
 onora,
 pentHouse4,
+planDeEscape,
 rompehueso,
 sema,
 
@@ -359,6 +379,13 @@ mantonegro7,
 mantonegro8,
 mantonegro9,
 
+mata1,
+mata2,
+mata3,
+mata4,
+mata5,
+mata6,
+
 mazatlan1,
 mazatlan2,
 mazatlan3,
@@ -406,6 +433,15 @@ pentHouse411,
 pentHouse412,
 pentHouse413,
 pentHouse414,
+
+planDeEscape1,
+planDeEscape2,
+planDeEscape3,
+planDeEscape4,
+planDeEscape5,
+planDeEscape6,
+planDeEscape7,
+planDeEscape8,
 
 rompehueso1,
 rompehueso2,
