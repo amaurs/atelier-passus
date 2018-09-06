@@ -13,9 +13,10 @@
   padding-top: 88px;
 }
 
-.RenderHelper-container img, .RenderHelper-container video {
+.RenderHelper-container img {
   max-width: 100%;
 }
+
 
 @media screen and (min-width: 1000px) {
   .RenderHelper-container {
@@ -32,7 +33,13 @@
                           "gallery text";
   }
 
-  .RenderHelper-container img, .RenderHelper-container video {
+  .RenderHelper-video {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .RenderHelper-container img {
     max-height: calc(100vh - 100px);
     max-width: calc(70vw - 50px);
     margin-left: auto;

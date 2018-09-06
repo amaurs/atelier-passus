@@ -57,7 +57,6 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props.i18n);
     this.state = {
       image: 0,
       index: 0,
@@ -72,11 +71,10 @@ class App extends Component {
   }
 
   updateDimensions(){
+    console.log("Updating dimensions.");
     let update_width  = window.innerWidth;
     let update_height = window.innerHeight;
     this.setState({ width: update_width, height: update_height });
-    console.log("width: " + this.state.width);
-    console.log("height: " + this.state.height);
   }
 
   handleKeys(event){
@@ -162,7 +160,6 @@ class App extends Component {
 
   render() {
     const { t, i18n } = this.props;
-    console.log(i18n);
     const changeLanguage = (lng) => {
       console.log("Change to " + lng);
       i18n.changeLanguage(lng);
@@ -179,9 +176,13 @@ class App extends Component {
           <div className={"Content"}>
             <Switch>
               <HeroRoute exact path='/'
+                         width={this.state.width}
+                         height={this.state.heigh}
                          component={Hero} />
               <PropsRoute exact path='/projects'
                           changeLanguage={changeLanguage}
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={Grid} 
                           grid={infoArray}
                           isActive={this.state.isActive}
@@ -192,6 +193,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("arbolesDeVida")} t={t} />
@@ -199,6 +202,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("aube")} t={t} />
@@ -206,6 +211,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("belaBartok")} t={t} />
@@ -213,6 +220,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("casaFemaria")} t={t} />
@@ -220,6 +229,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
@@ -227,6 +238,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("cinco")} 
@@ -235,6 +248,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("colodionNum13")} 
@@ -243,6 +258,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("elAlofonoDeLaVida")} 
@@ -251,6 +268,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("herakles")} 
@@ -259,6 +278,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("instruccionesParaUnArquitecto")} 
@@ -267,6 +288,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("invencibleInvisible")} 
@@ -275,6 +298,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("laredo")} 
@@ -283,6 +308,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("liLiane")} 
@@ -291,6 +318,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("mantonegro")} 
@@ -299,6 +328,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("mata")} 
@@ -307,6 +338,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("mazatlan")} 
@@ -315,6 +348,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("miPiedraMiCamino")} 
@@ -323,6 +358,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("onora")} 
@@ -331,6 +368,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("pentHouse4")} 
@@ -339,6 +378,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("planDeEscape")} 
@@ -347,6 +388,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("rompehueso")} 
@@ -355,6 +398,8 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("sema")} 
@@ -363,10 +408,14 @@ class App extends Component {
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
                           component={Us} 
                           closeMenu={this.closeMenu.bind(this)}
                           t={t} />
-              <PropsRoute component={Lost} 
+              width={this.state.width}
+              height={this.state.heigh}<PropsRoute 
+              component={Lost} 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)}
@@ -376,7 +425,7 @@ class App extends Component {
           </div>
           {easterEgg}
           <div className={"App-cloud" + (this.state.isActive?" active":"")}
-               onClick={()=>this.handleMenu()}></div>
+               onClick={()=>this.handleMenu()}> </div>
           <div className="guide"> </div>
         </div>
     );

@@ -3,6 +3,7 @@ import './RenderHelper.css';
 import assets from './assets.js';
 import Card from './Card.js';
 import Swipeable from 'react-swipeable';
+import Vimeo from '@u-wave/react-vimeo';
 
 const LEFT = -1;
 const RIGHT = 1;
@@ -44,7 +45,6 @@ class RenderHelper extends Component {
 
   handleImageLoaded(event) {
     if(event.target.width < event.target.height) {
-      console.log('it is vertical');
       this.setState({vertical: true})
     } else {
       this.setState({vertical: false})
@@ -73,24 +73,34 @@ class RenderHelper extends Component {
   }
 
   render() {
-      const type = this.props.project.type;
       let content = null;
       let images = [];
+      images = this.props.project.info.images;
+      console.log(images[this.state.image].type)
+      let current = images[this.state.image];
 
-      if(type === "video"){
-        console.log();
-        let current = this.props.project.info.videos[0];
-        content = <video loop autoPlay muted playsinline>
-                    <source src={assets[current]} type="video/mp4" />
-                      Your browser does not support the video tag.
-                  </video>
-      } else if(type === "gallery"){
-        
-        images = this.props.project.info.images;
-        let current = images[this.state.image];
-        console.log(current);
-        content = <img className={this.state.vertical?"float-right":""} alt="" onLoad={(e)=>this.handleImageLoaded(e)} src={assets[current]} />
-        console.log(content);
+      console.log(this.props)
+      console.log(this.state.width);
+
+      if(current.type === "video"){
+        let width = 800;
+        if(this.props.width < 1000) {
+          width = this.props.width;
+        }
+        let height = width * 3 / 4;
+        console.log("the width should be: " + width);
+        content = <div className="RenderHelper-video">
+                    <iframe src={"https://player.vimeo.com/video/" + current.src}
+                            width={width}
+                            height={height}
+                            frameborder="0"
+                            webkitallowfullscreen
+                            mozallowfullscreen
+                            allowfullscreen>
+                    </iframe>
+                  </div>
+      } else if(current.type === "image"){
+        content = <img className={this.state.vertical?"float-right":""} alt="" onLoad={(e)=>this.handleImageLoaded(e)} src={assets[current.src]} />
       }
 
       return <div className="RenderHelper">
