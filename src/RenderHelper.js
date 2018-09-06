@@ -11,7 +11,8 @@ class RenderHelper extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        image: 0,
+      image: 0,
+      vertical: false,
     }
     this.handleOnSlide = this.handleOnSlide.bind(this);
   }
@@ -39,6 +40,15 @@ class RenderHelper extends Component {
 
   handleOnSlide(index) {
     this.setState({image:index});
+  }
+
+  handleImageLoaded(event) {
+    if(event.target.width < event.target.height) {
+      console.log('it is vertical');
+      this.setState({vertical: true})
+    } else {
+      this.setState({vertical: false})
+    }
   }
   
   swiped(direction) {
@@ -78,8 +88,9 @@ class RenderHelper extends Component {
         
         images = this.props.project.info.images;
         let current = images[this.state.image];
-        content = <img alt="" src={assets[current]} />
-        
+        console.log(current);
+        content = <img className={this.state.vertical?"float-right":""} alt="" onLoad={(e)=>this.handleImageLoaded(e)} src={assets[current]} />
+        console.log(content);
       }
 
       return <div className="RenderHelper">

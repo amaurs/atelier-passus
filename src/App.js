@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { translate } from 'react-i18next';
 import Grid from './Grid.js';
 import Hamburger from './Hamburger.js';
 import Hero from './Hero.js';
 import Language from './Language.js';
-import Logo from './Logo.js';
 import Lost from './Lost.js';
 import Menu from './Menu.js';
 import RenderHelper from './RenderHelper.js';
@@ -39,12 +38,6 @@ const PropsRoute = ({ component, ...rest }) => {
       <Route {...rest} render={routeProps => {
         return renderMergedProps(component, routeProps, rest);
       }}/>
-      <Link to="/">
-        <Logo style={ {position: "fixed",
-                       bottom: "25px", 
-                       right: "25px",
-                       width: "50px"} }/>
-      </Link>
       <Language changeLanguage={rest.changeLanguage}/>
     </div>
   );
@@ -382,6 +375,8 @@ class App extends Component {
             </Switch>
           </div>
           {easterEgg}
+          <div className={"App-cloud" + (this.state.isActive?" active":"")}
+               onClick={()=>this.handleMenu()}></div>
           <div className="guide"> </div>
         </div>
     );

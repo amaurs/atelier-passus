@@ -26,6 +26,21 @@
   position: fixed;
 }
 
+.App-cloud {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.5;
+  display: none;
+}
+
+.App-cloud.active {
+  display: initial;
+}
+
 @media screen and (min-width: 600px) {
   .Body.active {
     overflow: scroll;
@@ -36,6 +51,7 @@
 @media screen and (min-width: 1000px) {
   
 }
+
 
 
 .guide {

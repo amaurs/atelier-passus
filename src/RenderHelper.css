@@ -39,5 +39,9 @@
     margin-right: auto;
     width: auto;
   }
+
+  .float-right {
+    margin-right: 0 !important;
+  }
 }
 

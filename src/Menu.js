@@ -13,12 +13,12 @@ class Menu extends Component {
              <aside className="Aside">
                <Link className="Menu-item" 
                      to="/projects" 
-                     onClick={(toggle)=>this.props.handleMenu()}>{this.props.t("projects")}
+                     onClick={()=>this.props.onClick()}>{this.props.t("projects")}
                      <Lines />
                </Link>
                <Link className="Menu-item" 
                      to="/about" 
-                     onClick={(toggle)=>this.props.handleMenu()}>{this.props.t("about")}
+                     onClick={()=>this.props.onClick()}>{this.props.t("about")}
                      <Lines />
                </Link>
                <a className="Menu-item" 
@@ -28,7 +28,7 @@ class Menu extends Component {
                        src={instagram}/>
                </a>
              </aside>
-             <Footer t={this.props.t}/>
+             <Footer t={this.props.t} onClick={this.props.onClick}/>
            </div>
   }
 
