@@ -61,8 +61,6 @@ import cinco5 from './images2/cinco/5.jpg';
 import cinco6 from './images2/cinco/6.jpg';
 import cinco7 from './images2/cinco/7.jpg';
 
-import elCicloDeLaPiel1 from './video/cycle.mp4';
-
 import colodionNum131 from './images2/colodion-num-13/1.jpg';
 import colodionNum132 from './images2/colodion-num-13/2.jpg';
 import colodionNum133 from './images2/colodion-num-13/3.jpg';
@@ -288,8 +286,6 @@ casaFemaria6,
 casaFemaria7,
 casaFemaria8,
 casaFemaria9,
-
-elCicloDeLaPiel1,
 
 cinco1,
 cinco2,

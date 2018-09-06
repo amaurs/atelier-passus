@@ -12,6 +12,8 @@ const info2 = [{src:"arbolesDeVida",
                               "arbolesDeVidaParagraph2",
                               ],
                       images:[
+                              {type: "video",
+                                src: "288441225"},
                               {type: "image",
                                 src: "arbolesDeVida1"},
                               {type: "image",
@@ -736,6 +738,8 @@ const info2 = [{src:"arbolesDeVida",
                                 src: "sema9"},
                               {type: "image",
                                 src: "sema10"},
+                              {type: "video",
+                                src: "288442260"},
                               ]}},
 ];
 

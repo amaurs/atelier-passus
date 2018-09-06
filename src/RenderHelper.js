@@ -3,7 +3,6 @@ import './RenderHelper.css';
 import assets from './assets.js';
 import Card from './Card.js';
 import Swipeable from 'react-swipeable';
-import Vimeo from '@u-wave/react-vimeo';
 
 const LEFT = -1;
 const RIGHT = 1;
