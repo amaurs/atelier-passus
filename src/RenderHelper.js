@@ -90,6 +90,7 @@ class RenderHelper extends Component {
         console.log("the width should be: " + width);
         content = <div className="RenderHelper-video">
                     <iframe src={"https://player.vimeo.com/video/" + current.src}
+                            title={this.props.project.info.title}
                             width={width}
                             height={height}
                             frameborder="0"

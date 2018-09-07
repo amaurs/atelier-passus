@@ -413,10 +413,12 @@ class App extends Component {
                           component={Us} 
                           closeMenu={this.closeMenu.bind(this)}
                           t={t} />
-              width={this.state.width}
-              height={this.state.heigh}<PropsRoute 
-              component={Lost} 
+            
+              <PropsRoute path='*'
+                          component={Lost} 
                           changeLanguage={changeLanguage}
+                          width={this.state.width}
+                          height={this.state.heigh}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)}
                           closeMenu={this.closeMenu.bind(this)}
