@@ -4,17 +4,26 @@ import Logo from './Logo.js';
 import assets from './assets.js';
 import { HashLink as Link } from 'react-router-hash-link';
 
+const videos = [
+                "288635294", 
+                "288635258", 
+                "288635232",
+               ];
+
 export default class Hero extends Component {
 
-
     render(){
-        let length = assets.videos.length;
+        let length = videos.length;
         let index = Math.floor(Math.random() * length);
         return <section className="Hero">
-                 <video muted loop autoPlay >
-                   <source src={assets.videos[index]} type="video/mp4" />
-                   Your browser does not support the video tag.
-                 </video>
+                 <iframe src={"https://player.vimeo.com/video/" + videos[index] + "?background=1"}
+                         width="100%" 
+                         height="100%" 
+                         frameborder="0" 
+                         webkitAllowFullScreen 
+                         mozAllowFullScreen 
+                         AllowFullScreen>
+                 </iframe>
                  <span style={{
                     position: "absolute",
                     top: "0",
