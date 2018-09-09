@@ -103,22 +103,22 @@ class RenderHelper extends Component {
         content = <img className={this.state.vertical?"float-right":""} alt="" onLoad={(e)=>this.handleImageLoaded(e)} src={assets[current.src]} />
       }
 
-      return <div className="RenderHelper">
-               <Swipeable trackMouse
-                          preventDefaultTouchmoveEvent
-                          onSwipedLeft={()=> this.swiped(RIGHT)}
-                          onSwipedRight={()=> this.swiped(LEFT)}
-                          className="RenderHelper-container">
+      return <Swipeable trackMouse
+                        preventDefaultTouchmoveEvent
+                        onSwipedLeft={()=> this.swiped(RIGHT)}
+                        onSwipedRight={()=> this.swiped(LEFT)} 
+                        className="RenderHelper">
+               <div className="RenderHelper-container">
                  {content}
-                 <Card headers={this.props.project.info.headers}
-                       paragraphs={this.props.project.info.paragraphs}
-                       images={images}
-                       handleOnSlide={this.handleOnSlide.bind(this)}
-                       title={this.props.project.info.title}
-                       index={this.state.image}
-                       t={this.props.t} />
-               </Swipeable>
-             </div>;
+               </div>
+               <Card headers={this.props.project.info.headers}
+                     paragraphs={this.props.project.info.paragraphs}
+                     images={images}
+                     handleOnSlide={this.handleOnSlide.bind(this)}
+                     title={this.props.project.info.title}
+                     index={this.state.image}
+                     t={this.props.t} />
+             </Swipeable>;
   }
 }
 

@@ -19,12 +19,12 @@ export default class Card extends Component {
     
     return (
         <div className="Card">
+          {shortcut}
           <h1 className="Card-title">{this.props.t(this.props.title)}</h1>
           {headers}
           <div className="Card-description">
           {paragraphs}
           </div>
-          {shortcut}
         </div>
       )
   }
@@ -36,7 +36,7 @@ function Shortcut(props) {
         {props.images.map((image, index) => 
         <button className={ "Shortcut-thumb " + (index===props.index?" highlight":"")} 
                 key={index} 
-                onClick={()=>props.handleOnSlide(index)}>{index + 1}
+                onClick={()=>props.handleOnSlide(index)}><span>{index + 1}</span>
         </button>)}
       </div>
     )
