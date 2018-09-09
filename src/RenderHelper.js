@@ -106,18 +106,18 @@ class RenderHelper extends Component {
       return <div className="RenderHelper">
                <Swipeable trackMouse
                           preventDefaultTouchmoveEvent
-                          onSwipedLeft={()=> this.swiped(LEFT)}
-                          onSwipedRight={()=> this.swiped(RIGHT)}
+                          onSwipedLeft={()=> this.swiped(RIGHT)}
+                          onSwipedRight={()=> this.swiped(LEFT)}
                           className="RenderHelper-container">
                  {content}
+                 <Card headers={this.props.project.info.headers}
+                       paragraphs={this.props.project.info.paragraphs}
+                       images={images}
+                       handleOnSlide={this.handleOnSlide.bind(this)}
+                       title={this.props.project.info.title}
+                       index={this.state.image}
+                       t={this.props.t} />
                </Swipeable>
-               <Card headers={this.props.project.info.headers}
-                     paragraphs={this.props.project.info.paragraphs}
-                     images={images}
-                     handleOnSlide={this.handleOnSlide.bind(this)}
-                     title={this.props.project.info.title}
-                     index={this.state.image}
-                     t={this.props.t} />
              </div>;
   }
 }
