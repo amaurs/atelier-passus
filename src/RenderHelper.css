@@ -21,7 +21,6 @@
   .RenderHelper-container {
     display: grid;
     align-items: center;
-    padding-top: 0;
   }
 
   .RenderHelper {
