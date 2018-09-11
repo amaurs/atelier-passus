@@ -2,7 +2,7 @@
   "name": "atelier",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://amaurs.com/atelier",
+  "homepage": "http://www.atelier-passus.com",
   "dependencies": {
     "bulma": "^0.6.2",
     "i18next": "^10.2.2",

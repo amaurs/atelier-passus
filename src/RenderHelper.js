@@ -89,14 +89,14 @@ class RenderHelper extends Component {
         let height = width * 3 / 4;
         console.log("the width should be: " + width);
         content = <div className="RenderHelper-video">
-                    <iframe src={"https://player.vimeo.com/video/" + current.src}
+                    <iframe src={"https://player.vimeo.com/video/" + current.src + "?muted=1&loop=1&autoplay=1"}
                             title={this.props.project.info.title}
                             width={width}
                             height={height}
                             frameborder="0"
-                            webkitallowfullscreen
-                            mozallowfullscreen
-                            allowfullscreen>
+                            webkitallowfullscreen="true"
+                            mozallowfullscreen="true"
+                            allowFullScreen>
                     </iframe>
                   </div>
       } else if(current.type === "image"){
