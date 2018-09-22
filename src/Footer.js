@@ -7,7 +7,7 @@ export default class Footer extends Component {
     render() {
       return ( 
         <div className="Footer">
-          <p>Atelier-Passus<br />{this.props.t("contact-paragraph3")}</p>
+          <p>Atelier-Passus<br />{this.props.t("contact-paragraph2")}<br />{this.props.t("contact-paragraph3")}</p>
           <Link to="/" onClick={()=>this.props.onClick()}>
             <Logo style={ {position: "absolute",
                            bottom: "25px", 
