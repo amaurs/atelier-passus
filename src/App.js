@@ -198,6 +198,15 @@ class App extends Component {
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("arbolesDeVida")} t={t} />
+              <PropsRoute path='/arvant'
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)}
+                          width={this.state.width}
+                          height={this.state.heigh}
+                          component={RenderHelper}
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("arvant")} t={t} />
               <PropsRoute path='/aube' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
@@ -234,7 +243,17 @@ class App extends Component {
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
-              <PropsRoute path='/cinco' 
+              <PropsRoute path='/chaux'
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)}
+                          width={this.state.width}
+                          height={this.state.heigh}
+                          component={RenderHelper}
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("chaux")}
+                          t={t} />
+              <PropsRoute path='/cinco'
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 

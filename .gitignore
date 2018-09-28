@@ -1,3 +1,5 @@
+.idea
+
 build
 exclude.txt
 deploy.sh

@@ -1,7 +1,9 @@
 import arbolesDeVida from './images2/iconos/ARBOLES-DE-VIDA.jpg';
+import arvant from './images2/iconos/ARVANT.jpg'
 import aube from './images2/iconos/AUBE.jpg';
 import belaBartok from './images2/iconos/BELA-BARTOK.jpg';
 import casaFemaria from './images2/iconos/CASA-FEMARIA.jpg';
+import chaux from './images2/iconos/CHAUX.jpg';
 import cinco from './images2/iconos/CINCO.jpg';
 import colodionNum13 from './images2/iconos/COLODION-NUM.13.jpg';
 import elAlofonoDeLaVida from './images2/iconos/EL-ALOFONO-DE-LA-VIDA.jpg';
@@ -28,6 +30,14 @@ import arbolesDeVida3 from './images2/arboles-de-vida/3.jpg';
 import arbolesDeVida4 from './images2/arboles-de-vida/4.jpg';
 import arbolesDeVida5 from './images2/arboles-de-vida/5.jpg';
 
+import arvant1 from './images2/arvant/1.jpg';
+import arvant2 from './images2/arvant/2.jpg';
+import arvant3 from './images2/arvant/3.jpg';
+import arvant4 from './images2/arvant/4.jpg';
+import arvant5 from './images2/arvant/5.jpg';
+import arvant6 from './images2/arvant/6.jpg';
+import arvant7 from './images2/arvant/7.jpg';
+
 import aube1 from './images2/aube/1.jpg';
 import aube2 from './images2/aube/2.jpg';
 import aube3 from './images2/aube/3.jpg';
@@ -43,23 +53,31 @@ import belaBartok7 from './images2/bela-bartok/7.jpg';
 import belaBartok8 from './images2/bela-bartok/8.jpg';
 import belaBartok9 from './images2/bela-bartok/9.jpg';
 
-import casaFemaria1 from './images2/casa-femaria/1.jpg';
-import casaFemaria2 from './images2/casa-femaria/2.jpg';
-import casaFemaria3 from './images2/casa-femaria/3.jpg';
-import casaFemaria4 from './images2/casa-femaria/4.jpg';
-import casaFemaria5 from './images2/casa-femaria/5.jpg';
-import casaFemaria6 from './images2/casa-femaria/6.jpg';
-import casaFemaria7 from './images2/casa-femaria/7.jpg';
-import casaFemaria8 from './images2/casa-femaria/8.jpg';
-import casaFemaria9 from './images2/casa-femaria/9.jpg';
+import casaFemaria1 from './images2/casa-femaria/0.jpg';
+import casaFemaria2 from './images2/casa-femaria/0.1.jpg';
+import casaFemaria3 from './images2/casa-femaria/01.jpg';
+import casaFemaria4 from './images2/casa-femaria/1.jpg';
+import casaFemaria5 from './images2/casa-femaria/2.jpg';
+import casaFemaria6 from './images2/casa-femaria/4.jpg';
+import casaFemaria7 from './images2/casa-femaria/5.jpg';
+import casaFemaria8 from './images2/casa-femaria/6.jpg';
+import casaFemaria9 from './images2/casa-femaria/7.jpg';
+import casaFemaria10 from './images2/casa-femaria/8.jpg';
+
+import chaux1 from './images2/chaux/1.jpg';
+import chaux2 from './images2/chaux/2.jpg';
+import chaux3 from './images2/chaux/3.jpg';
+import chaux4 from './images2/chaux/4.jpg';
+import chaux5 from './images2/chaux/5.jpg';
 
 import cinco1 from './images2/cinco/1.jpg';
 import cinco2 from './images2/cinco/2.jpg';
-import cinco3 from './images2/cinco/3.jpg';
-import cinco4 from './images2/cinco/4.jpg';
-import cinco5 from './images2/cinco/5.jpg';
-import cinco6 from './images2/cinco/6.jpg';
-import cinco7 from './images2/cinco/7.jpg';
+import cinco3 from './images2/cinco/2.1.jpg';
+import cinco4 from './images2/cinco/3.jpg';
+import cinco5 from './images2/cinco/4.jpg';
+import cinco6 from './images2/cinco/5.jpg';
+import cinco7 from './images2/cinco/6.jpg';
+import cinco8 from './images2/cinco/7.jpg';
 
 import colodionNum131 from './images2/colodion-num-13/1.jpg';
 import colodionNum132 from './images2/colodion-num-13/2.jpg';
@@ -133,13 +151,18 @@ import liLiane4 from './images2/li-liane/4.jpg';
 
 import mantonegro1 from './images2/mantonegro/1.jpg';
 import mantonegro2 from './images2/mantonegro/2.jpg';
-import mantonegro3 from './images2/mantonegro/3.jpg';
-import mantonegro4 from './images2/mantonegro/4.jpg';
-import mantonegro5 from './images2/mantonegro/5.jpg';
-import mantonegro6 from './images2/mantonegro/6.jpg';
-import mantonegro7 from './images2/mantonegro/7.jpg';
-import mantonegro8 from './images2/mantonegro/8.jpg';
-import mantonegro9 from './images2/mantonegro/9.jpg';
+import mantonegro3 from './images2/mantonegro/2.1.jpg';
+import mantonegro4 from './images2/mantonegro/3.jpg';
+import mantonegro5 from './images2/mantonegro/3.1.jpg';
+import mantonegro6 from './images2/mantonegro/4.jpg';
+import mantonegro7 from './images2/mantonegro/4.1.jpg';
+import mantonegro8 from './images2/mantonegro/5.jpg';
+import mantonegro9 from './images2/mantonegro/6.jpg';
+import mantonegro10 from './images2/mantonegro/7.jpg';
+import mantonegro11 from './images2/mantonegro/8.jpg';
+import mantonegro12 from './images2/mantonegro/8.1.jpg';
+import mantonegro13 from './images2/mantonegro/9.jpg';
+import mantonegro14 from './images2/mantonegro/10.jpg';
 
 import mata1 from './images2/mata/1.jpg';
 import mata2 from './images2/mata/2.jpg';
@@ -207,9 +230,11 @@ import planDeEscape8 from './images2/plan-de-escape/8.jpg';
 
 import rompehueso1 from './images2/rompehueso/1.jpg';
 import rompehueso2 from './images2/rompehueso/2.jpg';
-import rompehueso3 from './images2/rompehueso/3.jpg';
-import rompehueso4 from './images2/rompehueso/4.jpg';
-import rompehueso5 from './images2/rompehueso/5.jpg';
+import rompehueso3 from './images2/rompehueso/2.1.jpg';
+import rompehueso4 from './images2/rompehueso/2.2.jpg';
+import rompehueso5 from './images2/rompehueso/3.jpg';
+import rompehueso6 from './images2/rompehueso/4.jpg';
+import rompehueso7 from './images2/rompehueso/5.jpg';
 
 import sema1 from './images2/sema/1.jpg';
 import sema2 from './images2/sema/2.jpg';
@@ -228,9 +253,11 @@ export default {
 
 easterImage,
 arbolesDeVida,
+arvant,
 aube,
 belaBartok,
 casaFemaria,
+chaux,
 cinco,
 colodionNum13,
 elAlofonoDeLaVida,
@@ -256,6 +283,14 @@ arbolesDeVida3,
 arbolesDeVida4,
 arbolesDeVida5,
 
+arvant1,
+arvant2,
+arvant3,
+arvant4,
+arvant5,
+arvant6,
+arvant7,
+
 aube1,
 aube2,
 aube3,
@@ -280,6 +315,13 @@ casaFemaria6,
 casaFemaria7,
 casaFemaria8,
 casaFemaria9,
+casaFemaria10,
+
+chaux1,
+chaux2,
+chaux3,
+chaux4,
+chaux5,
 
 cinco1,
 cinco2,
@@ -288,6 +330,7 @@ cinco4,
 cinco5,
 cinco6,
 cinco7,
+cinco8,
 
 colodionNum131,
 colodionNum132,
@@ -368,6 +411,11 @@ mantonegro6,
 mantonegro7,
 mantonegro8,
 mantonegro9,
+mantonegro10,
+mantonegro11,
+mantonegro12,
+mantonegro13,
+mantonegro14,
 
 mata1,
 mata2,
@@ -438,6 +486,8 @@ rompehueso2,
 rompehueso3,
 rompehueso4,
 rompehueso5,
+rompehueso6,
+rompehueso7,
 
 sema1,
 sema2,
