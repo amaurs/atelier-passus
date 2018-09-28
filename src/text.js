@@ -35,6 +35,9 @@ const info2 = [{src:"arbolesDeVida",
                       paragraphs:[
                               "arvantParagraph0",
                               "arvantParagraph1",
+                              "arvantParagraph2",
+                              "arvantParagraph3",
+                              "arvantParagraph4",
                               ],
                       images:[
                               {type: "image",
@@ -161,8 +164,6 @@ const info2 = [{src:"arbolesDeVida",
                               "chauxParagraph0",
                               "chauxParagraph1",
                               "chauxParagraph2",
-                              "chauxParagraph3",
-                              "chauxParagraph4",
                               ],
                       images:[
                               {type: "image",
@@ -294,6 +295,7 @@ const info2 = [{src:"arbolesDeVida",
                       paragraphs:[
                               "elCicloDeLaPielParagraph0",
                               "elCicloDeLaPielParagraph1",
+                              "elCicloDeLaPielParagraph2",
                               ],
                       images:[
                               {type: "video",
@@ -713,7 +715,6 @@ const info2 = [{src:"arbolesDeVida",
                       paragraphs:[
                               "planDeEscapeParagraph0",
                               "planDeEscapeParagraph1",
-                              "planDeEscapeParagraph2",
                               ],
                       images:[
                               {type: "video",
