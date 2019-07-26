@@ -13,7 +13,7 @@ import text from './text.js';
 import './App.css';
 import assets from './assets.js';
 
-const infoArray = text.info2;
+const infoArray = text.info2.sort(function(a, b){ return b.year - a.year; });
 
 const renderMergedProps = (component, ...rest) => {
   const finalProps = Object.assign({}, ...rest);
