@@ -42,6 +42,10 @@ import aube1 from './images2/aube/1.jpg';
 import aube2 from './images2/aube/2.jpg';
 import aube3 from './images2/aube/3.jpg';
 import aube4 from './images2/aube/4.jpg';
+import aube5 from './images2/aube/5.jpg';
+import aube6 from './images2/aube/6.jpg';
+import aube7 from './images2/aube/7.jpg';
+import aube8 from './images2/aube/8.jpg';
 
 import belaBartok1 from './images2/bela-bartok/1.jpg';
 import belaBartok2 from './images2/bela-bartok/2.jpg';
@@ -53,16 +57,38 @@ import belaBartok7 from './images2/bela-bartok/7.jpg';
 import belaBartok8 from './images2/bela-bartok/8.jpg';
 import belaBartok9 from './images2/bela-bartok/9.jpg';
 
-import casaFemaria1 from './images2/casa-femaria/0.jpg';
-import casaFemaria2 from './images2/casa-femaria/0.1.jpg';
-import casaFemaria3 from './images2/casa-femaria/01.jpg';
-import casaFemaria4 from './images2/casa-femaria/1.jpg';
-import casaFemaria5 from './images2/casa-femaria/2.jpg';
-import casaFemaria6 from './images2/casa-femaria/4.jpg';
-import casaFemaria7 from './images2/casa-femaria/5.jpg';
-import casaFemaria8 from './images2/casa-femaria/6.jpg';
-import casaFemaria9 from './images2/casa-femaria/7.jpg';
-import casaFemaria10 from './images2/casa-femaria/8.jpg';
+import casaFemaria1 from './images2/casa-femaria/1.jpg';
+import casaFemaria2 from './images2/casa-femaria/2.jpg';
+import casaFemaria3 from './images2/casa-femaria/3.jpg';
+import casaFemaria4 from './images2/casa-femaria/4.jpg';
+import casaFemaria5 from './images2/casa-femaria/5.jpg';
+import casaFemaria6 from './images2/casa-femaria/6.jpg';
+import casaFemaria7 from './images2/casa-femaria/7.jpg';
+import casaFemaria8 from './images2/casa-femaria/8.jpg';
+import casaFemaria9 from './images2/casa-femaria/9.jpg';
+import casaFemaria10 from './images2/casa-femaria/10.jpg';
+import casaFemaria11 from './images2/casa-femaria/11.jpg';
+import casaFemaria12 from './images2/casa-femaria/12.jpg';
+import casaFemaria13 from './images2/casa-femaria/13.jpg';
+import casaFemaria14 from './images2/casa-femaria/14.jpg';
+import casaFemaria15 from './images2/casa-femaria/15.jpg';
+import casaFemaria16 from './images2/casa-femaria/16.jpg';
+import casaFemaria17 from './images2/casa-femaria/17.jpg';
+import casaFemaria18 from './images2/casa-femaria/18.jpg';
+import casaFemaria19 from './images2/casa-femaria/19.jpg';
+import casaFemaria20 from './images2/casa-femaria/20.jpg';
+import casaFemaria21 from './images2/casa-femaria/21.jpg';
+import casaFemaria22 from './images2/casa-femaria/22.jpg';
+import casaFemaria23 from './images2/casa-femaria/23.jpg';
+import casaFemaria24 from './images2/casa-femaria/24.jpg';
+import casaFemaria25 from './images2/casa-femaria/25.jpg';
+import casaFemaria26 from './images2/casa-femaria/26.jpg';
+import casaFemaria27 from './images2/casa-femaria/27.jpg';
+import casaFemaria28 from './images2/casa-femaria/28.jpg';
+import casaFemaria29 from './images2/casa-femaria/29.jpg';
+import casaFemaria30 from './images2/casa-femaria/30.jpg';
+import casaFemaria31 from './images2/casa-femaria/31.jpg';
+import casaFemaria32 from './images2/casa-femaria/32.jpg';
 
 import chaux1 from './images2/chaux/1.jpg';
 import chaux2 from './images2/chaux/2.jpg';
@@ -108,6 +134,7 @@ import herakles3 from './images2/herakles/3.jpg';
 import herakles4 from './images2/herakles/4.jpg';
 import herakles5 from './images2/herakles/5.jpg';
 import herakles6 from './images2/herakles/6.jpg';
+import herakles7 from './images2/herakles/7.jpg';
 
 import instruccionesParaUnArquitecto1 from './images2/instrucciones-para-un-arquitecto/1.jpg';
 import instruccionesParaUnArquitecto2 from './images2/instrucciones-para-un-arquitecto/2.jpg';
@@ -151,18 +178,18 @@ import liLiane4 from './images2/li-liane/4.jpg';
 
 import mantonegro1 from './images2/mantonegro/1.jpg';
 import mantonegro2 from './images2/mantonegro/2.jpg';
-import mantonegro3 from './images2/mantonegro/2.1.jpg';
-import mantonegro4 from './images2/mantonegro/3.jpg';
-import mantonegro5 from './images2/mantonegro/3.1.jpg';
-import mantonegro6 from './images2/mantonegro/4.jpg';
-import mantonegro7 from './images2/mantonegro/4.1.jpg';
-import mantonegro8 from './images2/mantonegro/5.jpg';
-import mantonegro9 from './images2/mantonegro/6.jpg';
-import mantonegro10 from './images2/mantonegro/7.jpg';
-import mantonegro11 from './images2/mantonegro/8.jpg';
-import mantonegro12 from './images2/mantonegro/8.1.jpg';
-import mantonegro13 from './images2/mantonegro/9.jpg';
-import mantonegro14 from './images2/mantonegro/10.jpg';
+import mantonegro3 from './images2/mantonegro/3.jpg';
+import mantonegro4 from './images2/mantonegro/4.jpg';
+import mantonegro5 from './images2/mantonegro/5.jpg';
+import mantonegro6 from './images2/mantonegro/6.jpg';
+import mantonegro7 from './images2/mantonegro/7.jpg';
+import mantonegro8 from './images2/mantonegro/8.jpg';
+import mantonegro9 from './images2/mantonegro/9.jpg';
+import mantonegro10 from './images2/mantonegro/10.jpg';
+import mantonegro11 from './images2/mantonegro/11.jpg';
+import mantonegro12 from './images2/mantonegro/12.jpg';
+import mantonegro13 from './images2/mantonegro/13.jpg';
+import mantonegro14 from './images2/mantonegro/14.jpg';
 
 import mata1 from './images2/mata/1.jpg';
 import mata2 from './images2/mata/2.jpg';
@@ -230,11 +257,12 @@ import planDeEscape8 from './images2/plan-de-escape/8.jpg';
 
 import rompehueso1 from './images2/rompehueso/1.jpg';
 import rompehueso2 from './images2/rompehueso/2.jpg';
-import rompehueso3 from './images2/rompehueso/2.1.jpg';
-import rompehueso4 from './images2/rompehueso/2.2.jpg';
-import rompehueso5 from './images2/rompehueso/3.jpg';
-import rompehueso6 from './images2/rompehueso/4.jpg';
-import rompehueso7 from './images2/rompehueso/5.jpg';
+import rompehueso3 from './images2/rompehueso/3.jpg';
+import rompehueso4 from './images2/rompehueso/4.jpg';
+import rompehueso5 from './images2/rompehueso/5.jpg';
+import rompehueso6 from './images2/rompehueso/6.jpg';
+import rompehueso7 from './images2/rompehueso/7.jpg';
+import rompehueso8 from './images2/rompehueso/8.jpg';
 
 import sema1 from './images2/sema/1.jpg';
 import sema2 from './images2/sema/2.jpg';
@@ -295,6 +323,10 @@ aube1,
 aube2,
 aube3,
 aube4,
+aube5,
+aube6,
+aube7,
+aube8,
 
 belaBartok1,
 belaBartok2,
@@ -316,6 +348,28 @@ casaFemaria7,
 casaFemaria8,
 casaFemaria9,
 casaFemaria10,
+casaFemaria11,
+casaFemaria12,
+casaFemaria13,
+casaFemaria14,
+casaFemaria15,
+casaFemaria16,
+casaFemaria17,
+casaFemaria18,
+casaFemaria19,
+casaFemaria20,
+casaFemaria21,
+casaFemaria22,
+casaFemaria23,
+casaFemaria24,
+casaFemaria25,
+casaFemaria26,
+casaFemaria27,
+casaFemaria28,
+casaFemaria29,
+casaFemaria30,
+casaFemaria31,
+casaFemaria32,
 
 chaux1,
 chaux2,
@@ -361,6 +415,7 @@ herakles3,
 herakles4,
 herakles5,
 herakles6,
+herakles7,
 
 instruccionesParaUnArquitecto1,
 instruccionesParaUnArquitecto2,
@@ -488,6 +543,7 @@ rompehueso4,
 rompehueso5,
 rompehueso6,
 rompehueso7,
+rompehueso8,
 
 sema1,
 sema2,
