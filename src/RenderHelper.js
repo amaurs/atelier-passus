@@ -100,7 +100,17 @@ class RenderHelper extends Component {
                     </iframe>
                   </div>
       } else if(current.type === "image"){
-        content = <img className={this.state.vertical?"float-right":""} alt="" onLoad={(e)=>this.handleImageLoaded(e)} src={assets[current.src]} />
+        content = <div>
+                    <button className="RenderHelper-navigation RenderHelper-left"
+                            onClick={()=> this.swiped(LEFT)}><i class="arrow left"></i></button>
+                    
+                    <img className={this.state.vertical?"float-right":""} 
+                       alt="" 
+                       onLoad={(e)=>this.handleImageLoaded(e)} 
+                       src={assets[current.src]} />
+                    <button className="RenderHelper-navigation RenderHelper-right"
+                            onClick={()=> this.swiped(RIGHT)}><i class="arrow right"></i></button>
+                  </div>
       }
 
       return <Swipeable trackMouse
