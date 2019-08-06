@@ -10,6 +10,7 @@ class Menu extends Component {
   render() {
     let isActive = this.props.isActive;
     return <div className={"Menu" + (isActive?" active":"")}>
+             <div className="White"></div>
              <aside className="Aside">
                <Link className="Menu-item" 
                      to="/projects" 

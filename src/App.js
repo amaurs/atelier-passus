@@ -175,6 +175,10 @@ class App extends Component {
         <div className={"Body" + (this.state.active?" active":"")}>
           <div className={"Content"}>
             <Switch>
+              <HeroRoute exact path='/index.html'
+                         width={this.state.width}
+                         height={this.state.heigh}
+                         component={Hero} />
               <HeroRoute exact path='/'
                          width={this.state.width}
                          height={this.state.heigh}
@@ -422,6 +426,16 @@ class App extends Component {
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("sema")} 
+                          t={t} />
+              <PropsRoute path='/sillaTirasavia' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
+                          component={RenderHelper} 
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("sillaTirasavia")} 
                           t={t} />
               <PropsRoute path='/about' 
                           changeLanguage={changeLanguage}

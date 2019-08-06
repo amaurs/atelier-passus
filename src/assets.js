@@ -22,6 +22,7 @@ import pentHouse4 from './images2/iconos/PH4.jpg';
 import planDeEscape from './images2/iconos/PLAN-DE-ESCAPE.jpg';
 import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
 import sema from './images2/iconos/SEMA.jpg';
+import sillaTirasavia from './images2/iconos/SILLA-TIRASAVIA.jpg';
 
 
 import arbolesDeVida1 from './images2/arboles-de-vida/1.jpg';
@@ -192,27 +193,52 @@ import mantonegro13 from './images2/mantonegro/13.jpg';
 import mantonegro14 from './images2/mantonegro/14.jpg';
 
 import mata1 from './images2/mata/1.jpg';
-import mata2 from './images2/mata/2.jpg';
-import mata3 from './images2/mata/3.jpg';
-import mata4 from './images2/mata/4.jpg';
-import mata5 from './images2/mata/5.jpg';
-import mata6 from './images2/mata/6.jpg';
+import mata2 from './images2/mata/2.1.jpg';
+import mata3 from './images2/mata/2.jpg';
+import mata4 from './images2/mata/3.jpg';
+import mata5 from './images2/mata/4.jpg';
+import mata6 from './images2/mata/5.jpg';
+import mata7 from './images2/mata/6.jpg';
+import mata8 from './images2/mata/7.jpg';
+import mata9 from './images2/mata/8.jpg';
+import mata10 from './images2/mata/9.1.jpg';
+import mata11 from './images2/mata/9.jpg';
+import mata12 from './images2/mata/10.jpg';
+import mata13 from './images2/mata/11.jpg';
+import mata14 from './images2/mata/12.jpg';
 
-import mazatlan1 from './images2/mazatlan/1.jpg';
-import mazatlan2 from './images2/mazatlan/2.jpg';
-import mazatlan3 from './images2/mazatlan/3.jpg';
-import mazatlan4 from './images2/mazatlan/4.jpg';
-import mazatlan5 from './images2/mazatlan/5.jpg';
-import mazatlan6 from './images2/mazatlan/6.jpg';
-import mazatlan7 from './images2/mazatlan/7.jpg';
-import mazatlan8 from './images2/mazatlan/8.jpg';
-import mazatlan9 from './images2/mazatlan/9.jpg';
-import mazatlan10 from './images2/mazatlan/10.jpg';
-import mazatlan11 from './images2/mazatlan/11.jpg';
-import mazatlan12 from './images2/mazatlan/12.jpg';
-import mazatlan13 from './images2/mazatlan/13.jpg';
-import mazatlan14 from './images2/mazatlan/14.jpg';
-import mazatlan15 from './images2/mazatlan/15.jpg';
+import mazatlan1 from './images2/mazatlan/0.jpg';
+import mazatlan2 from './images2/mazatlan/1.jpg';
+import mazatlan3 from './images2/mazatlan/2.jpg';
+import mazatlan4 from './images2/mazatlan/3.jpg';
+import mazatlan5 from './images2/mazatlan/4.jpg';
+import mazatlan6 from './images2/mazatlan/5.jpg';
+import mazatlan7 from './images2/mazatlan/6.jpg';
+import mazatlan8 from './images2/mazatlan/7.jpg';
+import mazatlan9 from './images2/mazatlan/8.jpg';
+import mazatlan10 from './images2/mazatlan/9.1.jpg';
+import mazatlan11 from './images2/mazatlan/9.jpg';
+import mazatlan12 from './images2/mazatlan/10.jpg';
+import mazatlan13 from './images2/mazatlan/11.jpg';
+import mazatlan14 from './images2/mazatlan/12.jpg';
+import mazatlan15 from './images2/mazatlan/13.jpg';
+import mazatlan16 from './images2/mazatlan/14.jpg';
+import mazatlan17 from './images2/mazatlan/15.jpg';
+import mazatlan18 from './images2/mazatlan/16.jpg';
+import mazatlan19 from './images2/mazatlan/17.jpg';
+import mazatlan20 from './images2/mazatlan/18.jpg';
+import mazatlan21 from './images2/mazatlan/19.jpg';
+import mazatlan22 from './images2/mazatlan/20.jpg';
+import mazatlan23 from './images2/mazatlan/21.jpg';
+import mazatlan24 from './images2/mazatlan/22.jpg';
+import mazatlan25 from './images2/mazatlan/23.jpg';
+import mazatlan26 from './images2/mazatlan/24.jpg';
+import mazatlan27 from './images2/mazatlan/25.jpg';
+import mazatlan28 from './images2/mazatlan/26.jpg';
+import mazatlan29 from './images2/mazatlan/27.jpg';
+import mazatlan30 from './images2/mazatlan/28.jpg';
+import mazatlan31 from './images2/mazatlan/29.jpg';
+import mazatlan32 from './images2/mazatlan/30.jpg';
 
 import miPiedraMiCamino1 from './images2/mi-piedra-mi-camino/1.jpg';
 import miPiedraMiCamino2 from './images2/mi-piedra-mi-camino/2.jpg';
@@ -275,6 +301,18 @@ import sema8 from './images2/sema/8.jpg';
 import sema9 from './images2/sema/9.jpg';
 import sema10 from './images2/sema/10.jpg';
 
+
+import sillaTirasavia1 from './images2/silla-tirasavia/1.jpg';
+import sillaTirasavia2 from './images2/silla-tirasavia/2.jpg';
+import sillaTirasavia3 from './images2/silla-tirasavia/3.jpg';
+import sillaTirasavia4 from './images2/silla-tirasavia/4.jpg';
+import sillaTirasavia5 from './images2/silla-tirasavia/5.jpg';
+import sillaTirasavia6 from './images2/silla-tirasavia/6.jpg';
+import sillaTirasavia7 from './images2/silla-tirasavia/7.jpg';
+import sillaTirasavia8 from './images2/silla-tirasavia/8.jpg';
+import sillaTirasavia9 from './images2/silla-tirasavia/9.jpg';
+import sillaTirasavia10 from './images2/silla-tirasavia/10.jpg';
+
 import easterImage from './images/buni.gif';
 
 export default {
@@ -304,6 +342,7 @@ pentHouse4,
 planDeEscape,
 rompehueso,
 sema,
+sillaTirasavia,
 
 arbolesDeVida1,
 arbolesDeVida2,
@@ -478,6 +517,14 @@ mata3,
 mata4,
 mata5,
 mata6,
+mata7,
+mata8,
+mata9,
+mata10,
+mata11,
+mata12,
+mata13,
+mata14,
 
 mazatlan1,
 mazatlan2,
@@ -494,6 +541,23 @@ mazatlan12,
 mazatlan13,
 mazatlan14,
 mazatlan15,
+mazatlan16,
+mazatlan17,
+mazatlan18,
+mazatlan19,
+mazatlan20,
+mazatlan21,
+mazatlan22,
+mazatlan23,
+mazatlan24,
+mazatlan25,
+mazatlan26,
+mazatlan27,
+mazatlan28,
+mazatlan29,
+mazatlan30,
+mazatlan31,
+mazatlan32,
 
 miPiedraMiCamino1,
 miPiedraMiCamino2,
@@ -555,5 +619,16 @@ sema7,
 sema8,
 sema9,
 sema10,
+
+sillaTirasavia1,
+sillaTirasavia2,
+sillaTirasavia3,
+sillaTirasavia4,
+sillaTirasavia5,
+sillaTirasavia6,
+sillaTirasavia7,
+sillaTirasavia8,
+sillaTirasavia9,
+sillaTirasavia10,
 
 };

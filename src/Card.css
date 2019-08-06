@@ -2,6 +2,7 @@
   grid-area: text;
   background-color: white;
   padding: 10px 25px 110px 25px;
+  overflow: scroll;
 }
 
 .Card p {

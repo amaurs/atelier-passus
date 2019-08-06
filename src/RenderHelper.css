@@ -10,7 +10,7 @@
 
 .RenderHelper-container {
   grid-area: gallery;
-  padding-top: 88px;
+  padding-top: 60px;
 }
 
 .RenderHelper-container div, .RenderHelper-container {
@@ -18,36 +18,45 @@
   position: relative;
 }
 
+.RenderHelper-image {
+  max-width: 100%;
+}
+
 .RenderHelper-navigation {
   color: #ddd;
-  width: 50px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
   position: absolute;
   top: 50%;
   transform: translate(0%, -50%);
-  background-color: Transparent;
+  background-color: rgba(255,255,255,.3);
   background-repeat:no-repeat;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
   overflow: hidden;
   outline:none;
 }
 
+.RenderHelper-navigation:hover{
+  background-color: rgba(255,255,255,.6);
+}
+
 .RenderHelper-left {
-  left: 0;
+  left: 10px;
 }
 .RenderHelper-right {
-  right: 0;
+  right: 10px;
 }
 
 .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  transform: translate(-1px, 0) rotate(-45deg);
+  -webkit-transform: translate(-1px, 0) rotate(-45deg);
 }
 
 .left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  transform: translate(1px, 0) rotate(135deg) ;
+  -webkit-transform: translate(1px, 0) rotate(135deg) ;
 }
 
 i {
@@ -55,6 +64,7 @@ i {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
+  
 }
 
 @media screen and (min-width: 1000px) {
@@ -71,7 +81,15 @@ i {
                           "gallery text";
   }
 
-  .RenderHelper-container img, .RenderHelper-container {
+  .RenderHelper-image .RenderHelper-container img, .RenderHelper-container {
+    max-height: calc(100vh - 100px);
+    max-width: calc(70vw - 50px);
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  .RenderHelper-image {
     max-height: calc(100vh - 100px);
     max-width: calc(70vw - 50px);
     margin-left: auto;

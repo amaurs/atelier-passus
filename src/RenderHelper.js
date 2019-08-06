@@ -104,7 +104,7 @@ class RenderHelper extends Component {
                     <button className="RenderHelper-navigation RenderHelper-left"
                             onClick={()=> this.swiped(LEFT)}><i class="arrow left"></i></button>
                     
-                    <img className={this.state.vertical?"float-right":""} 
+                    <img className={"RenderHelper-image " + (this.state.vertical?"float-right":"")} 
                        alt="" 
                        onLoad={(e)=>this.handleImageLoaded(e)} 
                        src={assets[current.src]} />

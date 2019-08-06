@@ -1,6 +1,6 @@
 .Footer {
   width: 100%;
-  grid-area: "footer";
+  grid-area: footer;
   display: grid;
   align-items: center;
   font-size: .75em;
