@@ -313,9 +313,15 @@ import sillaTirasavia8 from './images2/silla-tirasavia/8.jpg';
 import sillaTirasavia9 from './images2/silla-tirasavia/9.jpg';
 import sillaTirasavia10 from './images2/silla-tirasavia/10.jpg';
 
+import us from './images2/us.jpg';
+import studio from './images2/studio.jpg';
+
 import easterImage from './images/buni.gif';
 
 export default {
+
+us,
+studio,
 
 easterImage,
 arbolesDeVida,

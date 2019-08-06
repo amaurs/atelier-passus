@@ -22,6 +22,11 @@ class Menu extends Component {
                      onClick={()=>this.props.onClick()}>{this.props.t("about")}
                      <Lines />
                </Link>
+               <Link className="Menu-item" 
+                     to="/studio" 
+                     onClick={()=>this.props.onClick()}>{this.props.t("studio")}
+                     <Lines />
+               </Link>
                <a className="Menu-item" 
                   href="https://www.instagram.com/passusatelier/">
                   <img alt="" 

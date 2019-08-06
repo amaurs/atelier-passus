@@ -1,0 +1,14 @@
+.Studio {
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  font-size: .75em;
+  margin-left: 25px;
+  margin-right: 30vw;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .Studio {
+    margin-left: 25px;
+  }
+}
