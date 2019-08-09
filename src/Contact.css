@@ -1,0 +1,8 @@
+.leaflet-control-container {
+    display: none;
+}
+
+.Contact-Map {
+    position: fixed;
+    left: 0;
+}

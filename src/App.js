@@ -9,6 +9,7 @@ import Lost from './Lost.js';
 import Menu from './Menu.js';
 import RenderHelper from './RenderHelper.js';
 import Us from './Us.js';
+import Contact from './Contact.js';
 import Studio from './Studio.js';
 import text from './text.js';
 import './App.css';
@@ -445,6 +446,15 @@ class App extends Component {
                           width={this.state.width}
                           height={this.state.heigh}
                           component={Us} 
+                          closeMenu={this.closeMenu.bind(this)}
+                          t={t} />
+              <PropsRoute path='/contact' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
+                          component={Contact} 
                           closeMenu={this.closeMenu.bind(this)}
                           t={t} />
               <PropsRoute path='/us' 
