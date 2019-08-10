@@ -23,7 +23,7 @@ import planDeEscape from './images2/iconos/PLAN-DE-ESCAPE.jpg';
 import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
 import sema from './images2/iconos/SEMA.jpg';
 import sillaTirasavia from './images2/iconos/SILLA-TIRASAVIA.jpg';
-import spa from './images2/iconos/SPA.jpg';
+import canalDeNado from './images2/iconos/SPA.jpg';
 
 
 import arbolesDeVida1 from './images2/arboles-de-vida/1.jpg';
@@ -314,11 +314,11 @@ import sillaTirasavia8 from './images2/silla-tirasavia/8.jpg';
 import sillaTirasavia9 from './images2/silla-tirasavia/9.jpg';
 import sillaTirasavia10 from './images2/silla-tirasavia/10.jpg';
 
-import spa1 from './images2/spa/1.jpg';
-import spa2 from './images2/spa/2.jpg';
-import spa3 from './images2/spa/3.jpg';
-import spa4 from './images2/spa/4.jpg';
-import spa5 from './images2/spa/5.jpg';
+import canalDeNado1 from './images2/canalDeNado/1.jpg';
+import canalDeNado2 from './images2/canalDeNado/2.jpg';
+import canalDeNado3 from './images2/canalDeNado/3.jpg';
+import canalDeNado4 from './images2/canalDeNado/4.jpg';
+import canalDeNado5 from './images2/canalDeNado/5.jpg';
 
 import us from './images2/us.jpg';
 import studio1 from './images2/studio1.jpg';
@@ -358,7 +358,7 @@ planDeEscape,
 rompehueso,
 sema,
 sillaTirasavia,
-spa,
+canalDeNado,
 
 arbolesDeVida1,
 arbolesDeVida2,
@@ -647,10 +647,10 @@ sillaTirasavia8,
 sillaTirasavia9,
 sillaTirasavia10,
 
-spa1,
-spa2,
-spa3,
-spa4,
-spa5,
+canalDeNado1,
+canalDeNado2,
+canalDeNado3,
+canalDeNado4,
+canalDeNado5,
 
 };

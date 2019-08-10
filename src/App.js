@@ -440,7 +440,7 @@ class App extends Component {
                           project={this.getObjectFromSrc("sillaTirasavia")} 
                           t={t} />
 
-              <PropsRoute path='/spa' 
+              <PropsRoute path='/canalDeNado' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
@@ -448,7 +448,7 @@ class App extends Component {
                           height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("spa")} 
+                          project={this.getObjectFromSrc("canalDeNado")} 
                           t={t} />
               <PropsRoute path='/about' 
                           changeLanguage={changeLanguage}
