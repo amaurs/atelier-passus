@@ -100,11 +100,11 @@ class RenderHelper extends Component {
                     </iframe>
                   </div>
       } else if(current.type === "image"){
-        content = <div>
+        content = <div className={"RenderHelper-content " + (this.state.vertical?"vertical":"")}>
                     <button className="RenderHelper-navigation RenderHelper-left"
                             onClick={()=> this.swiped(LEFT)}><i class="arrow left"></i></button>
                     
-                    <img className={"RenderHelper-image " + (this.state.vertical?"float-right":"")} 
+                    <img className={"RenderHelper-image "} 
                        alt="" 
                        onLoad={(e)=>this.handleImageLoaded(e)} 
                        src={assets[current.src]} />
@@ -118,8 +118,10 @@ class RenderHelper extends Component {
                         onSwipedLeft={()=> this.swiped(RIGHT)}
                         onSwipedRight={()=> this.swiped(LEFT)} 
                         className="RenderHelper">
-               <div className="RenderHelper-container">
-                 {content}
+               <div className={"RenderHelper-container "}>
+                 <div className="RenderHelper-content-wrapper">
+                    {content}
+                 </div>
                </div>
                <Card headers={this.props.project.info.headers}
                      paragraphs={this.props.project.info.paragraphs}

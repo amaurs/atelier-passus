@@ -10,7 +10,7 @@
 
 .RenderHelper-container {
   grid-area: gallery;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .RenderHelper-container div, .RenderHelper-container {
@@ -19,7 +19,7 @@
 }
 
 .RenderHelper-image {
-  max-width: 100%;
+    width: 100%;
 }
 
 .RenderHelper-navigation {
@@ -36,6 +36,15 @@
   cursor: pointer;
   overflow: hidden;
   outline:none;
+  z-index: 10;
+}
+
+.RenderHelper-content {
+    position: absolute
+}
+
+.RenderHelper-content-wrapper {
+    width: 100%;
 }
 
 .RenderHelper-navigation:hover{
@@ -71,7 +80,18 @@ i {
   .RenderHelper-container {
     display: grid;
     align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
   }
+
+  .RenderHelper-content {
+    max-width: 80%;
+  }
+
 
   .RenderHelper {
     height: 100vh;
@@ -82,23 +102,16 @@ i {
   }
 
   .RenderHelper-image .RenderHelper-container img, .RenderHelper-container {
-    max-height: calc(100vh - 100px);
-    max-width: calc(70vw - 50px);
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
+    
   }
 
   .RenderHelper-image {
-    max-height: calc(100vh - 100px);
-    max-width: calc(70vw - 50px);
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
+    width: 100%;
+    height: auto;
   }
 
-  .float-right {
-    margin-right: 0 !important;
+  .RenderHelper-content.vertical {
+    max-width: 70%;
   }
 }
 
