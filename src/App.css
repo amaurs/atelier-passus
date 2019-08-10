@@ -37,6 +37,71 @@
   display: none;
 }
 
+.App-controls {
+    display: inline;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+}
+
+.App-controls li{
+    display: inline;
+}
+
+.App-projects {
+    position: relative;
+    padding: 0px;
+    right: 150px;
+    font-size: 1em;
+    font-family: 'whitney_book';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    top: 25px;
+}
+
+.App-projects span {
+    
+}
+
+.App-projects:hover svg{
+    visibility: visible;
+}
+
+.App-projects.inactive {
+  cursor: default;
+}
+
+.App-projects img {
+  width: 25px;
+}
+
+.App-projects svg {
+    display: inline;
+    visibility: hidden;
+    padding-right: 10px;
+    width: 15px;
+}
+
+.Language {
+    position: absolute;
+    right: 80px;
+    top: 25px;
+    width: 50px;
+}
+
+.Hamburger {
+  position: absolute;
+  top: -4px;
+  right: 3px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+
 .App-cloud.active {
   display: initial;
 }

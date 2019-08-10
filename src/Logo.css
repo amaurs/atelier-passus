@@ -1,3 +1,7 @@
 .Logo {
   z-index: 10;
 }
+
+.Logo:hover .garments {
+    fill-opacity: 0;
+}

@@ -14,6 +14,9 @@ import Studio from './Studio.js';
 import text from './text.js';
 import './App.css';
 import assets from './assets.js';
+import { HashLink as Link } from 'react-router-hash-link';
+import Lines from './Lines.js';
+
 
 const infoArray = text.info2.sort(function(a, b){ return b.year - a.year; });
 
@@ -33,14 +36,30 @@ const HeroRoute = ({ component, ...rest }) => {
 }
 
 const PropsRoute = ({ component, ...rest }) => {
+  
+  let conditionalLink = null;
+  if(!rest.isGallery) {
+    conditionalLink = <Link className="App-projects" 
+                     to="/projects" >
+                     <Lines />
+                     {rest.t("projects")}
+               </Link>
+  }
+  
+
   return (
     <div>
       <Menu {...rest} />
-      <Hamburger {...rest} />
+      <div className="App-controls">
+          <Language changeLanguage={rest.changeLanguage}/>
+          {conditionalLink}
+          <Hamburger {...rest} />
+          
+      </div>
       <Route {...rest} render={routeProps => {
         return renderMergedProps(component, routeProps, rest);
       }}/>
-      <Language changeLanguage={rest.changeLanguage}/>
+      
     </div>
   );
 }
@@ -194,6 +213,7 @@ class App extends Component {
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)}
                           closeMenu={this.closeMenu.bind(this)}
+                          isGallery={true}
                           t={t} />
               <PropsRoute path='/arbolesDeVida' 
                           changeLanguage={changeLanguage}

@@ -18,13 +18,18 @@ class Menu extends Component {
                      <Lines />
                </Link>
                <Link className="Menu-item" 
+                     to="/studio" 
+                     onClick={()=>this.props.onClick()}>{this.props.t("studio")}
+                     <Lines />
+               </Link>
+               <Link className="Menu-item" 
                      to="/about" 
                      onClick={()=>this.props.onClick()}>{this.props.t("about")}
                      <Lines />
                </Link>
                <Link className="Menu-item" 
-                     to="/studio" 
-                     onClick={()=>this.props.onClick()}>{this.props.t("studio")}
+                     to="/contact" 
+                     onClick={()=>this.props.onClick()}>{this.props.t("contact")}
                      <Lines />
                </Link>
                <a className="Menu-item" 

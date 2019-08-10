@@ -224,9 +224,12 @@
 "semaParagraph2":"SEMA, inicia creando una serie de talleres de diversas disciplinas (fotografía, cine, osteopatia, audiovisual, arquitectura) que sirven un objetivo común: la  co-producción, entre normo-visuales e invidentes, de nuevas herramientas de lectura y análisis del espacio.",
 "semaParagraph3":"Formato: Libro",
 "semaParagraph4":"Cliente: Trabajo personal",
+
+
 "contact-title":"Contacto",
 "contact-paragraph2":"Tokio 84-5, Colonia Juárez, Ciudad de México, 06600",
 "contact-paragraph3":"contact[at]atelier-passus.com",
+
 "about-paragraph0":"Somos un taller de arte, arquitectura y diseño que encauza el continuo estudio en las artes y oficios que perduran hoy en nuestro entorno. Decidimos que sus usos, y funciones se vuelvan parte de cada uno de los proyectos que desarrollamos dentro del taller, instintivamente apelamos a la unión del arte con la arquitectura cómo nuestra formula de acoger a nuevos proyectos en el porvenir de preguntas nos permiten activar el inicio del diseño arquitectónico a través del proceso artístico.",
 "about-paragraph1":"Nuestra práctica está basada en el regreso de la arquitectura al arte, así es como conmemoramos el oficio de los artesanos que son parte indispensable del desarrollo de nuestros diseños, esta voluntad nace desde nuestra experiencia académica, dónde los estudios de historia del arte, arquitectura, urbanismo, fotografía, y diseño industrial permiten una ética de trabajo dentro de nuestro taller.",
 "about-paragraph2":"Siendo representantes de diseño y arquitectura, somos responsables de una estética que trascienda cómo un símbolo de calidad de vida. La práctica de arte y arquitectura nos revela lo sustancial de saber envejecer.",
@@ -237,6 +240,7 @@
 "about-paragraph7":"",
 "about-paragraph8":"",
 
+"studio-title":"Estudio",
 "studio-paragraph0":"Somos un taller de arte, arquitectura y diseño que encauza el continuo estudio en las artes y oficios que perduran hoy en nuestro entorno. Decidimos que sus usos, y funciones se vuelvan parte de cada uno de los proyectos que desarrollamos dentro del taller, instintivamente apelamos a la unión del arte con la arquitectura cómo nuestra formula de acoger a nuevos proyectos en el porvenir de preguntas nos permiten activar el inicio del diseño arquitectónico a través del proceso artístico.",
 "studio-paragraph1":"Nuestra práctica está basada en el regreso de la arquitectura al arte, así es como conmemoramos el oficio de los artesanos que son parte indispensable del desarrollo de nuestros diseños, esta voluntad nace desde nuestra experiencia académica, dónde los estudios de historia del arte, arquitectura, urbanismo, fotografía, y diseño industrial permiten una ética de trabajo dentro de nuestro taller.",
 "studio-paragraph2":"Siendo representantes de diseño y arquitectura, somos responsables de una estética que trascienda cómo un símbolo de calidad de vida. La práctica de arte y arquitectura nos revela lo sustancial de saber envejecer.",
@@ -251,6 +255,7 @@
 "four-oh-four-header0":"Página no encontrada.",
 "about":"Nosotros",
 "contact":"Contacto",
+"studio":"Estudio",
 "projects":"Proyectos",
 "language":"Francés"
 }

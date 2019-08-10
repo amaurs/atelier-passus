@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+
 import './Contact.css';
 
 type State = {
@@ -18,6 +19,7 @@ export default class SimpleExample extends Component<{}, State> {
   render() {
     const position = [this.state.lat, this.state.lng]
     return (
+        <div>
       <Map className="Contact-map" center={position} zoom={this.state.zoom}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -29,6 +31,8 @@ export default class SimpleExample extends Component<{}, State> {
           </Popup>
         </Marker>
       </Map>
+      <p>Atelier-Passus<br />{this.props.t("contact-paragraph2")}<br />{this.props.t("contact-paragraph3")}</p>
+      </div>
     )
   }
 }

@@ -33,7 +33,7 @@ export default class Hero extends Component {
                  }}></span>
                  <Link to="/projects">
                    <Logo additional={"-hero"}
-                         style={ {fill:"white"} }/>
+                         style={ {fill:"white"} } />
                  </Link>
                  <Link to="/projects">
                    <p>atelier /</p>
