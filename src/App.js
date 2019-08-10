@@ -439,6 +439,17 @@ class App extends Component {
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("sillaTirasavia")} 
                           t={t} />
+
+              <PropsRoute path='/spa' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
+                          component={RenderHelper} 
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("spa")} 
+                          t={t} />
               <PropsRoute path='/about' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
