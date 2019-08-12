@@ -10,7 +10,6 @@ class Menu extends Component {
   render() {
     let isActive = this.props.isActive;
     return <div className={"Menu" + (isActive?" active":"")}>
-             <div className="White"></div>
              <aside className="Aside">
                <Link className="Menu-item" 
                      to="/projects" 
@@ -23,8 +22,8 @@ class Menu extends Component {
                      <Lines />
                </Link>
                <Link className="Menu-item" 
-                     to="/about" 
-                     onClick={()=>this.props.onClick()}>{this.props.t("about")}
+                     to="/us" 
+                     onClick={()=>this.props.onClick()}>{this.props.t("us")}
                      <Lines />
                </Link>
                <Link className="Menu-item" 

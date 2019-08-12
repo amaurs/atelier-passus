@@ -11,7 +11,7 @@ export default class Footer extends Component {
             <Logo style={ {position: "absolute",
                            bottom: "25px", 
                            right: "25px",
-                           width: "100px"} }/>
+                           width: "75px"} }/>
           </Link>
         </div>
       )

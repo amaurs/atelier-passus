@@ -56,6 +56,12 @@
   margin-bottom: 0;
 }
 
+.Card-footer p {
+  text-align: right;
+  margin-top: .5em;
+}
+
+
 .Card-text:last-child {
   margin-bottom:2em;
 }

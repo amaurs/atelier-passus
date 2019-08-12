@@ -1000,6 +1000,73 @@ const info2 = [{src:"arbolesDeVida",
                               {type: "video",
                                 src: "288442260"},
                               ]}},
+               {src:"us",
+                type:"gallery",
+                card:"usCard",
+                info:{title:"usTitle",
+                      headers:[
+                              ],
+                      paragraphs:[
+                              "usParagraph2",
+                              "usParagraph3",
+                              "usParagraph4",
+                              "usParagraph5",
+                              "usParagraph6",
+                              "usParagraph7",
+                              "usParagraph8",
+                              ],
+                      footer:[
+                              "usFooter1",
+                              "usFooter2",
+                              "usFooter3",
+                              "usFooter4",
+                              "usFooter5",
+                              "usFooter6",
+                              "usFooter7",
+                              "usFooter8",
+                              ],
+                      images:[
+                              {type: "image",
+                                src: "us1"}
+                              ]}},
+               {src:"contact",
+                type:"gallery",
+                card:"contactCard",
+                info:{title:"contactTitle",
+                      headers:[
+                              ],
+                      paragraphs:[
+                              "contactParagraph1",
+                              "contactParagraph2",
+                              "contactParagraph3",
+                              "contactParagraph4",
+                              "contactParagraph5",
+                              "contactParagraph6",
+                              ],
+                      images:[
+                              {type: "image",
+                                src: "contact1"}
+                              ]}},
+               {src:"studio",
+                type:"gallery",
+                card:"studioCard",
+                info:{title:"studioTitle",
+                      headers:[
+                              ],
+                      paragraphs:[
+                              "studioParagraph0",
+                              "studioParagraph1",
+                              "studioParagraph2",
+                              "studioParagraph3",
+                              ],
+                      images:[
+                              {type: "image",
+                                src: "studio1"},
+                              {type: "image",
+                                src: "studio2"},
+                              {type: "image",
+                                src: "studio3"}
+                              ]}},
 ];
 
 export default { info2 };

@@ -36,7 +36,10 @@
   cursor: pointer;
   overflow: hidden;
   outline:none;
-  z-index: 10;
+  z-index: 4;
+}
+.hide {
+    display: none;
 }
 
 .RenderHelper-content {
@@ -76,7 +79,14 @@ i {
   
 }
 
+.Navigate {
+    display: none;
+}
+
 @media screen and (min-width: 1000px) {
+  .RenderHelper-navigation {
+    visibility: hidden;
+  }
   .RenderHelper-container {
     display: grid;
     align-items: center;
@@ -92,6 +102,22 @@ i {
     max-width: 80%;
   }
 
+  .Navigate {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: block;
+  }
+
+  .Navigate.navright {
+    right: 0;
+    cursor: e-resize;
+  }
+
+  .Navigate.navleft {
+    left: 0;
+    cursor: w-resize;
+  }
 
   .RenderHelper {
     height: 100vh;

@@ -7,7 +7,7 @@ export default class Studio extends Component {
       return ( 
         <div className="Studio">
 
-          <img className={"Studio-image"}
+          <img alt="studio" className={"Studio-image"}
                        src={assets.studio1} />
           <p>{this.props.t("studio-paragraph0")}</p>
           <p>{this.props.t("studio-paragraph1")}</p>

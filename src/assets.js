@@ -320,17 +320,25 @@ import canalDeNado3 from './images2/canalDeNado/3.jpg';
 import canalDeNado4 from './images2/canalDeNado/4.jpg';
 import canalDeNado5 from './images2/canalDeNado/5.jpg';
 
-import us from './images2/us.jpg';
+import us1 from './images2/us.jpg';
+
 import studio1 from './images2/studio1.jpg';
 import studio2 from './images2/studio2.jpg';
+import studio3 from './images2/studio3.jpg';
+
+import contact1 from './images2/map.png';
 
 import easterImage from './images/buni.gif';
 
 export default {
 
-us,
+us1,
+
 studio1,
 studio2,
+studio3,
+
+contact1,
 
 easterImage,
 arbolesDeVida,

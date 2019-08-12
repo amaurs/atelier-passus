@@ -3,6 +3,13 @@
 }
 
 .Contact-Map {
+    height: 100vw !important;
+    width: 100vh !important;
     position: fixed;
-    left: 0;
+}
+
+
+.leaflet-marker-pane img {
+    width: 50px !important;
+    height: 50px !important;
 }

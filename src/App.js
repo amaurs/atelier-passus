@@ -38,7 +38,7 @@ const HeroRoute = ({ component, ...rest }) => {
 const PropsRoute = ({ component, ...rest }) => {
   
   let conditionalLink = null;
-  if(!rest.isGallery) {
+  if(!rest.isGallery && !rest.isActive) {
     conditionalLink = <Link className="App-projects" 
                      to="/projects" >
                      <Lines />
@@ -51,9 +51,9 @@ const PropsRoute = ({ component, ...rest }) => {
     <div>
       <Menu {...rest} />
       <div className="App-controls">
+          <Hamburger {...rest} />
           <Language changeLanguage={rest.changeLanguage}/>
           {conditionalLink}
-          <Hamburger {...rest} />
           
       </div>
       <Route {...rest} render={routeProps => {
@@ -470,23 +470,16 @@ class App extends Component {
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("canalDeNado")} 
                           t={t} />
-              <PropsRoute path='/about' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={Us} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          t={t} />
+
               <PropsRoute path='/contact' 
                           changeLanguage={changeLanguage}
                           isActive={this.state.isActive}
                           onClick={this.handleMenu.bind(this)} 
                           width={this.state.width}
                           height={this.state.heigh}
-                          component={Contact} 
+                          component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("contact")} 
                           t={t} />
               <PropsRoute path='/us' 
                           changeLanguage={changeLanguage}
@@ -494,8 +487,10 @@ class App extends Component {
                           onClick={this.handleMenu.bind(this)} 
                           width={this.state.width}
                           height={this.state.heigh}
-                          component={Us} 
+                          component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("us")} 
+
                           t={t} />
               <PropsRoute path='/studio' 
                           changeLanguage={changeLanguage}
@@ -503,8 +498,9 @@ class App extends Component {
                           onClick={this.handleMenu.bind(this)} 
                           width={this.state.width}
                           height={this.state.heigh}
-                          component={Studio} 
+                          component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("studio")} 
                           t={t} />
             
               <PropsRoute path='*'

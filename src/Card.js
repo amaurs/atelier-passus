@@ -9,9 +9,23 @@ export default class Card extends Component {
     let paragraphs = this.props.paragraphs.map(
          (p, index) => <p key={index} 
                           className="Card-text">{this.props.t(p)}</p>);
+
+
+
+    let footer = null;
+
+    if(this.props.footer != undefined) {
+        footer = this.props.footer.map(
+         (p, index) => <p key={index} 
+                          className="Card-text">{this.props.t(p)}</p>);
+    }
+
+
+    
+
     let shortcut = null;
 
-    if(this.props.images.length > 0) {
+    if(this.props.images.length > 1) {
       shortcut = <Shortcut images={this.props.images}
                            index={this.props.index}
                            handleOnSlide={this.props.handleOnSlide}/>
@@ -24,6 +38,9 @@ export default class Card extends Component {
           {headers}
           <div className="Card-description">
           {paragraphs}
+          </div>
+          <div className="Card-footer">
+          {footer}
           </div>
         </div>
       )

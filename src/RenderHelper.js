@@ -75,6 +75,8 @@ class RenderHelper extends Component {
       let content = null;
       let images = [];
       images = this.props.project.info.images;
+
+      let drawHelper = (images.length > 1);
       console.log(images[this.state.image].type)
       let current = images[this.state.image];
 
@@ -101,14 +103,16 @@ class RenderHelper extends Component {
                   </div>
       } else if(current.type === "image"){
         content = <div className={"RenderHelper-content " + (this.state.vertical?"vertical":"")}>
-                    <button className="RenderHelper-navigation RenderHelper-left"
+                    <span onClick={()=> this.swiped(LEFT)} className="Navigate navleft"> </span>
+                    <span onClick={()=> this.swiped(LEFT)} className="Navigate navright"> </span>
+                    <button className={"RenderHelper-navigation RenderHelper-left " + (drawHelper?"":"hide")}
                             onClick={()=> this.swiped(LEFT)}><i class="arrow left"></i></button>
                     
                     <img className={"RenderHelper-image "} 
                        alt="" 
                        onLoad={(e)=>this.handleImageLoaded(e)} 
                        src={assets[current.src]} />
-                    <button className="RenderHelper-navigation RenderHelper-right"
+                    <button className={"RenderHelper-navigation RenderHelper-right " + (drawHelper?"":"hide")}
                             onClick={()=> this.swiped(RIGHT)}><i class="arrow right"></i></button>
                   </div>
       }
@@ -125,6 +129,7 @@ class RenderHelper extends Component {
                </div>
                <Card headers={this.props.project.info.headers}
                      paragraphs={this.props.project.info.paragraphs}
+                     footer={this.props.project.info.footer}
                      images={images}
                      handleOnSlide={this.handleOnSlide.bind(this)}
                      title={this.props.project.info.title}

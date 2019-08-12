@@ -7,7 +7,7 @@ export default class Us extends Component {
       return ( 
         <div className="Us">
 
-          <img className={"Us-image"}
+          <img alt="studio" className={"Us-image"}
                        src={assets.us} />
           <p>{this.props.t("about-paragraph0")}</p>
           <p>{this.props.t("about-paragraph1")}</p>
