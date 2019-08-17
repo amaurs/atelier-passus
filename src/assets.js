@@ -106,6 +106,33 @@ import cinco5 from './images2/cinco/4.jpg';
 import cinco6 from './images2/cinco/5.jpg';
 import cinco7 from './images2/cinco/6.jpg';
 import cinco8 from './images2/cinco/7.jpg';
+import cinco9 from './images2/cinco/8.jpg';
+import cinco10 from './images2/cinco/9.jpg';
+import cinco11 from './images2/cinco/10.jpg';
+import cinco12 from './images2/cinco/11.jpg';
+import cinco13 from './images2/cinco/12.jpg';
+import cinco14 from './images2/cinco/13.jpg';
+import cinco15 from './images2/cinco/14.jpg';
+import cinco16 from './images2/cinco/15.jpg';
+import cinco17 from './images2/cinco/16.jpg';
+import cinco18 from './images2/cinco/17.jpg';
+import cinco19 from './images2/cinco/18.jpg';
+import cinco20 from './images2/cinco/19.jpg';
+import cinco21 from './images2/cinco/20.jpg';
+import cinco22 from './images2/cinco/21.jpg';
+import cinco23 from './images2/cinco/22.jpg';
+import cinco24 from './images2/cinco/23.jpg';
+import cinco25 from './images2/cinco/24.jpg';
+import cinco26 from './images2/cinco/25.jpg';
+import cinco27 from './images2/cinco/26.jpg';
+import cinco28 from './images2/cinco/27.jpg';
+import cinco29 from './images2/cinco/28.jpg';
+import cinco30 from './images2/cinco/29.jpg';
+import cinco31 from './images2/cinco/30.jpg';
+import cinco32 from './images2/cinco/31.jpg';
+import cinco33 from './images2/cinco/32.jpg';
+import cinco34 from './images2/cinco/33.jpg';
+import cinco35 from './images2/cinco/34.jpg';
 
 import colodionNum131 from './images2/colodion-num-13/1.jpg';
 import colodionNum132 from './images2/colodion-num-13/2.jpg';
@@ -192,6 +219,8 @@ import mantonegro11 from './images2/mantonegro/11.jpg';
 import mantonegro12 from './images2/mantonegro/12.jpg';
 import mantonegro13 from './images2/mantonegro/13.jpg';
 import mantonegro14 from './images2/mantonegro/14.jpg';
+import mantonegro15 from './images2/mantonegro/15.jpg';
+import mantonegro16 from './images2/mantonegro/16.jpg';
 
 import mata1 from './images2/mata/1.jpg';
 import mata2 from './images2/mata/2.1.jpg';
@@ -290,6 +319,8 @@ import rompehueso5 from './images2/rompehueso/5.jpg';
 import rompehueso6 from './images2/rompehueso/6.jpg';
 import rompehueso7 from './images2/rompehueso/7.jpg';
 import rompehueso8 from './images2/rompehueso/8.jpg';
+import rompehueso9 from './images2/rompehueso/10.jpg';
+import rompehueso10 from './images2/rompehueso/11.jpg';
 
 import sema1 from './images2/sema/1.jpg';
 import sema2 from './images2/sema/2.jpg';
@@ -448,6 +479,33 @@ cinco5,
 cinco6,
 cinco7,
 cinco8,
+cinco9,
+cinco10,
+cinco11,
+cinco12,
+cinco13,
+cinco14,
+cinco15,
+cinco16,
+cinco17,
+cinco18,
+cinco19,
+cinco20,
+cinco21,
+cinco22,
+cinco23,
+cinco24,
+cinco25,
+cinco26,
+cinco27,
+cinco28,
+cinco29,
+cinco30,
+cinco31,
+cinco32,
+cinco33,
+cinco34,
+cinco35,
 
 colodionNum131,
 colodionNum132,
@@ -534,6 +592,8 @@ mantonegro11,
 mantonegro12,
 mantonegro13,
 mantonegro14,
+mantonegro15,
+mantonegro16,
 
 mata1,
 mata2,
@@ -632,6 +692,8 @@ rompehueso5,
 rompehueso6,
 rompehueso7,
 rompehueso8,
+rompehueso9,
+rompehueso10,
 
 sema1,
 sema2,
