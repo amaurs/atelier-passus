@@ -1,14 +1,36 @@
 .Us {
-  height: calc(100vh - 100px);
-  padding-top: 100px;
-  font-size: .75em;
-  margin-left: 25px;
-  margin-right: 30vw;
+    height: 90%;
 }
 
 
 @media screen and (min-width: 1000px) {
   .Us {
-    margin-left: 25px;
+    position: relative;
+  }
+  .Us-image-container{
+    width: 50%;
+    float: left;
+  }
+  .Us-image-container img{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Us-content h2{
+    width: 50%;
+    float: right;
+  }
+
+  .Us-colabs h2, p {
+    font-size: 1em;
+  }
+  .Us-litany {
+    margin-top: 50px;
+  }
+  .Us-litany p{
+
+    padding-top: 0;
+    margin: 0;
+    font-style: oblique;
   }
 }

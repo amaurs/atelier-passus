@@ -10,7 +10,7 @@ export default class Footer extends Component {
           <Link to="/" onClick={()=>this.props.onClick()}>
             <Logo style={ {position: "absolute",
                            bottom: "25px", 
-                           right: "25px",
+                           left: "25px",
                            width: "75px"} }/>
           </Link>
         </div>

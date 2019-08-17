@@ -30,15 +30,50 @@ export default class Card extends Component {
                            index={this.props.index}
                            handleOnSlide={this.props.handleOnSlide}/>
     }
+
+    let conditionalContent = null;
+
+    if(this.props.id == "Us") {
+        conditionalContent = <div className="Card-colabs">
+                              <h2>{this.props.t("usFooter1")}</h2>
+                              <p>{this.props.t("usFooter2")}</p>
+                              <p>{this.props.t("usFooter3")}</p>
+                              <p>{this.props.t("usFooter4")}</p>
+                              <h2>{this.props.t("usFooter5")}</h2>
+                              <p>{this.props.t("usFooter6")}</p>
+                              <p>{this.props.t("usFooter7")}</p>
+                              <p>{this.props.t("usFooter8")}</p>
+                              <h2>{this.props.t("usFooter9")}</h2>
+                              <p>{this.props.t("usFooter10")}</p>
+                      </div>
+    }else if(this.props.id == "Contact") {
+        conditionalContent = <div className="Card-contact">
+                              <p>{this.props.t("contactParagraph1")}</p>
+                              <p>{this.props.t("contactParagraph2")}</p>
+                              <p>{this.props.t("contactParagraph3")}</p>
+                              <p>{this.props.t("contactParagraph4")}</p>
+                              <p>{this.props.t("contactParagraph5")}</p>
+                              <p>{this.props.t("contactParagraph6")}</p>
+                             </div>
+    }
+    else {
+        conditionalContent = <div className="Card-description">
+                               {paragraphs}
+                             </div>
+    }
+
+    let title = null;
+
+    if(this.props.title) {
+        title = <h1 className="Card-title">{this.props.t(this.props.title)}</h1>
+    }
     
     return (
         <div className="Card">
           {shortcut}
-          <h1 className="Card-title">{this.props.t(this.props.title)}</h1>
+          {title}
           {headers}
-          <div className="Card-description">
-          {paragraphs}
-          </div>
+          {conditionalContent}
           <div className="Card-footer">
           {footer}
           </div>

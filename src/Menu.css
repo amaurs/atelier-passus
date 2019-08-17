@@ -7,7 +7,7 @@
   transition: .5s;
   width: 100vw;
   transform:translateX(100vw);
-
+  box-sizing: border-box;
   z-index: 5;
 }
 
@@ -18,9 +18,10 @@
 .Menu-item {
   margin:10px;
   padding:15px;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-family: 'whitney_book';
   text-transform: uppercase;
+  text-align: right; 
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -31,12 +32,13 @@
 }
 
 .Menu-item img {
+    transform: translateY(4px);
   width: 25px;
 }
 
 .Menu-item svg {
   visibility: hidden;
-  padding-left: 10px;
+  padding-right: 10px;
   width: 25px;
 }
 
@@ -55,6 +57,7 @@
   .Menu {
     width: 50vw;
     transform:translateX(50vw);
+    border-left: 3px solid black;
   }
 }
 
@@ -62,6 +65,7 @@
   .Menu {
     width: 30vw;
     transform:translateX(30vw);
+    border-left: 3px solid black;
   }
   .Menu-item:hover svg{
     visibility: visible;

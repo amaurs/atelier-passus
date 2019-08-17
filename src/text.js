@@ -1065,19 +1065,11 @@ const info2 = [{src:"arbolesDeVida",
                {src:"us",
                 type:"gallery",
                 card:"usCard",
-                info:{title:"usTitle",
+                info:{
+                      id:"Us",
                       headers:[
                               ],
                       paragraphs:[
-                              "usParagraph2",
-                              "usParagraph3",
-                              "usParagraph4",
-                              "usParagraph5",
-                              "usParagraph6",
-                              "usParagraph7",
-                              "usParagraph8",
-                              ],
-                      footer:[
                               "usFooter1",
                               "usFooter2",
                               "usFooter3",
@@ -1086,15 +1078,26 @@ const info2 = [{src:"arbolesDeVida",
                               "usFooter6",
                               "usFooter7",
                               "usFooter8",
+                              "usFooter9",
+                              "usFooter10",
+                              ],
+                      footer:[
+                              "usParagraph2",
+                              "usParagraph3",
+                              "usParagraph4",
+                              "usParagraph5",
+                              "usParagraph6",
+                              "usParagraph7",
+                              "usParagraph8",
                               ],
                       images:[
                               {type: "image",
-                                src: "us1"}
+                                src: "studio2"}
                               ]}},
                {src:"contact",
                 type:"gallery",
                 card:"contactCard",
-                info:{title:"contactTitle",
+                info:{id:"Contact",
                       headers:[
                               ],
                       paragraphs:[
@@ -1112,7 +1115,7 @@ const info2 = [{src:"arbolesDeVida",
                {src:"studio",
                 type:"gallery",
                 card:"studioCard",
-                info:{title:"studioTitle",
+                info:{
                       headers:[
                               ],
                       paragraphs:[
@@ -1122,10 +1125,6 @@ const info2 = [{src:"arbolesDeVida",
                               "studioParagraph3",
                               ],
                       images:[
-                              {type: "image",
-                                src: "studio1"},
-                              {type: "image",
-                                src: "studio2"},
                               {type: "image",
                                 src: "studio3"}
                               ]}},

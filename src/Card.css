@@ -56,9 +56,34 @@
   margin-bottom: 0;
 }
 
+.Card-footer {
+    margin-top: 5em;
+}
+
 .Card-footer p {
-  text-align: right;
-  margin-top: .5em;
+  font-style: oblique;
+  font-size: .6em;
+  text-align: left;
+  margin-top: .3em;
+}
+
+.Card-colabs h2{
+    font-weight: bold;
+    font-size: 1em;
+}
+
+  .Card-contact {
+    margin-top: 5em;
+  }
+
+.Card-colabs p {
+    font-size: .75em;
+    margin-top: .5em;
+}
+
+.Card-contact p {
+    font-size: .75em;
+    margin-top: .5em;
 }
 
 
@@ -78,6 +103,10 @@
 
   .Shortcut {
     display: inline;
+  }
+
+  .Card-contact {
+    margin-top: 25em;
   }
 
   .Card {

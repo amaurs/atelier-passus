@@ -38,23 +38,26 @@ const HeroRoute = ({ component, ...rest }) => {
 const PropsRoute = ({ component, ...rest }) => {
   
   let conditionalLink = null;
+  let conditionalHyphen = null;
   if(!rest.isGallery && !rest.isActive) {
     conditionalLink = <Link className="App-projects" 
                      to="/projects" >
                      <Lines />
                      {rest.t("projects")}
                </Link>
+
+    conditionalHyphen = <span className="App-controls-separator">-</span>;
   }
   
 
   return (
     <div>
       <Menu {...rest} />
-      <div className="App-controls">
+      <div className={"App-controls" + (rest.isActive?" solid-backgorund":"")}>
           <Hamburger {...rest} />
           <Language changeLanguage={rest.changeLanguage}/>
+          {conditionalHyphen}
           {conditionalLink}
-          
       </div>
       <Route {...rest} render={routeProps => {
         return renderMergedProps(component, routeProps, rest);
@@ -490,7 +493,16 @@ class App extends Component {
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
                           project={this.getObjectFromSrc("us")} 
-
+                          t={t} />
+              <PropsRoute path='/us2' 
+                          changeLanguage={changeLanguage}
+                          isActive={this.state.isActive}
+                          onClick={this.handleMenu.bind(this)} 
+                          width={this.state.width}
+                          height={this.state.heigh}
+                          component={Us} 
+                          closeMenu={this.closeMenu.bind(this)}
+                          project={this.getObjectFromSrc("us")} 
                           t={t} />
               <PropsRoute path='/studio' 
                           changeLanguage={changeLanguage}

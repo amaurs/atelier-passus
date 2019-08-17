@@ -134,6 +134,7 @@ class RenderHelper extends Component {
                      handleOnSlide={this.handleOnSlide.bind(this)}
                      title={this.props.project.info.title}
                      index={this.state.image}
+                     id={this.props.project.info.id}
                      t={this.props.t} />
              </Swipeable>;
   }

@@ -13,27 +13,24 @@ class Menu extends Component {
              <aside className="Aside">
                <Link className="Menu-item" 
                      to="/projects" 
-                     onClick={()=>this.props.onClick()}>{this.props.t("projects")}
-                     <Lines />
+                     onClick={()=>this.props.onClick()}><Lines />{this.props.t("projects")}
                </Link>
                <Link className="Menu-item" 
                      to="/studio" 
-                     onClick={()=>this.props.onClick()}>{this.props.t("studio")}
-                     <Lines />
+                     onClick={()=>this.props.onClick()}><Lines />{this.props.t("studio")}
                </Link>
                <Link className="Menu-item" 
                      to="/us" 
-                     onClick={()=>this.props.onClick()}>{this.props.t("us")}
-                     <Lines />
+                     onClick={()=>this.props.onClick()}><Lines />{this.props.t("us")}
+                     
                </Link>
                <Link className="Menu-item" 
                      to="/contact" 
-                     onClick={()=>this.props.onClick()}>{this.props.t("contact")}
-                     <Lines />
+                     onClick={()=>this.props.onClick()}><Lines />{this.props.t("contact")}
                </Link>
                <a className="Menu-item" 
                   href="https://www.instagram.com/passusatelier/">
-                  <img alt="" 
+                  <Lines /><img alt="" 
                        className="Menu-instagram" 
                        src={instagram}/>
                </a>
