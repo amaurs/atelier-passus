@@ -15,7 +15,8 @@ class Grid extends Component {
                 <Cell key={index} 
                       image={square.src}
                       text={this.props.t(square.card)} 
-                      onClick={()=>this.handleClick(square.src)}/>
+                      onClick={()=>this.handleClick(square.src)}
+                      isVisited={this.props.visited.includes(square.src)}/>
                 
             );
 
@@ -40,7 +41,7 @@ class Grid extends Component {
 
 function Cell(props) {
     return (
-        <div className="Grid-cell" onClick={()=>props.onClick()}>
+        <div className={"Grid-cell" + (props.isVisited? " cross": "")} onClick={()=>props.onClick()}>
           <img alt="" 
               src={assets[props.image]}/>
           <span className="Grid-mask"></span>

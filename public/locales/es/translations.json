@@ -201,12 +201,13 @@
 "rompehuesoParagraph4":"Mobiliario: Madera de tornillo, lana, liana.",
 "rompehuesoParagraph5":"Superficie total de construcción: 260m2",
 "rompehuesoParagraph6":"Cliente: Privado",
-"sillaTirasaviaCard":"Tirasavia",
-"sillaTirasaviaTitle":"Tirasavia",
-"sillaTirasaviaHeader0":"México",
-"sillaTirasaviaHeader1":"2019 / Finalisée",
-"sillaTirasaviaParagraph0":"La silla TIRASAVIA reduce la escala de diseño un 10%,  con dos propósitos : El primero, crear una escala pensada en personas de baja estatura, el segundo crear una silla que consuma menor cantidad de madera.",
-"sillaTirasaviaParagraph1":"Así la silla TIRASAVIA ejerce una industrialización de bajo costo. Un silla pensada para habitar una cafetería.",
+
+"sillaSaviaCard":"Savia",
+"sillaSaviaTitle":"Savia",
+"sillaSaviaHeader0":"México",
+"sillaSaviaHeader1":"2019 / Finalisée",
+"sillaSaviaParagraph0":"La silla SAVIA reduce la escala de diseño un 10%,  con dos propósitos : El primero, crear una escala pensada en personas de baja estatura, el segundo crear una silla que consuma menor cantidad de madera.",
+"sillaSaviaParagraph1":"Así la silla SAVIA ejerce una industrialización de bajo costo. Un silla pensada para habitar una cafetería.",
 
 "canalDeNadoCard":"Canal de Nado",
 "canalDeNadoTitle":"Canal de Nado",
@@ -224,6 +225,24 @@
 "semaParagraph2":"SEMA, inicia creando una serie de talleres de diversas disciplinas (fotografía, cine, osteopatia, audiovisual, arquitectura) que sirven un objetivo común: la  co-producción, entre normo-visuales e invidentes, de nuevas herramientas de lectura y análisis del espacio.",
 "semaParagraph3":"Formato: Libro",
 "semaParagraph4":"Cliente: Trabajo personal",
+
+
+"senderosCard":"Senderos",
+"senderosTitle":"Senderos",
+"senderosHeader0":"Documental",
+"senderosHeader1":"2014 / Finalizado",
+"senderosHeader1":"Colaboración con Oscar Pichardo Isaak",
+
+"senderosHeader1":"2014 / Finalizado",
+
+
+
+"senderosParagraph0":"Pieza audiovisual que relata el recorrido a través de la maninata de un grupo de más de foscientas personas.",
+"senderosParagraph1":"Los peregrinos viajan a pie desde la CDMX hasta el estado de Jalisco por más de trinta días.",
+"senderosParagraph2":"Su acto de fe deja una serie de huellas y trazos urbanos en todo su recorrido.",
+"senderosParagraph3":"Formato: HD 18 minutos",
+"senderosParagraph4":"Cliente: Trabajo personal",
+
 
 
 "contactTitle":"Contacto",

@@ -4,16 +4,23 @@ import Logo from './Logo.js';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const videos = [
-                "288635294", 
-                "288635258", 
+                "288635294",
                 "288635232",
+                "356267330",
+                "288635258",
                ];
 
 export default class Hero extends Component {
 
+    daysIntoYear(){
+        let date = new Date();
+        return (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
+    }
+
     render(){
         let length = videos.length;
-        let index = Math.floor(Math.random() * length);
+        let index = this.daysIntoYear() % length;
+
         return <section className="Hero">
                  <iframe src={"https://player.vimeo.com/video/" + videos[index] + "?background=1&muted=1&loop=1&autoplay=1&quality=720p&transparent=0&portrait=0&title=0"}
                          title="Atelier-Passus"

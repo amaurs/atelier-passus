@@ -50,6 +50,29 @@
 }
 
 
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  background: white;
+}
+
+.cross:before {
+    left: 50%;
+    width: 1%;
+    margin-left: -.5%;
+    height: 100%;
+}
+
+.cross:after {
+  top: 50%;
+  height: 1%;
+  margin-top: -.5%;
+  width: 100%;
+}
+
+
+
 @media screen and (min-width: 600px) {
   .Grid-cell {
     margin: 1rem;

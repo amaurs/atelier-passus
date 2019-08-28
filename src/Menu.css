@@ -16,8 +16,9 @@
 }
 
 .Menu-item {
-  margin:10px;
-  padding:15px;
+  margin: 10px;
+  margin-right: 32.5px;
+  padding: 0px;
   font-size: 1.75em;
   font-family: 'whitney_book';
   text-transform: uppercase;

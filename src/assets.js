@@ -22,8 +22,9 @@ import pentHouse4 from './images2/iconos/PH4.jpg';
 import planDeEscape from './images2/iconos/PLAN-DE-ESCAPE.jpg';
 import rompehueso from './images2/iconos/ROMPEHUESO.jpg';
 import sema from './images2/iconos/SEMA.jpg';
-import sillaTirasavia from './images2/iconos/SILLA-TIRASAVIA.jpg';
+import sillaSavia from './images2/iconos/SILLA-TIRASAVIA.jpg';
 import canalDeNado from './images2/iconos/SPA.jpg';
+import senderos from './images2/iconos/SENDEROS.jpg';
 
 
 import arbolesDeVida1 from './images2/arboles-de-vida/1.jpg';
@@ -334,16 +335,15 @@ import sema9 from './images2/sema/9.jpg';
 import sema10 from './images2/sema/10.jpg';
 
 
-import sillaTirasavia1 from './images2/silla-tirasavia/1.jpg';
-import sillaTirasavia2 from './images2/silla-tirasavia/2.jpg';
-import sillaTirasavia3 from './images2/silla-tirasavia/3.jpg';
-import sillaTirasavia4 from './images2/silla-tirasavia/4.jpg';
-import sillaTirasavia5 from './images2/silla-tirasavia/5.jpg';
-import sillaTirasavia6 from './images2/silla-tirasavia/6.jpg';
-import sillaTirasavia7 from './images2/silla-tirasavia/7.jpg';
-import sillaTirasavia8 from './images2/silla-tirasavia/8.jpg';
-import sillaTirasavia9 from './images2/silla-tirasavia/9.jpg';
-import sillaTirasavia10 from './images2/silla-tirasavia/10.jpg';
+import sillaSavia1 from './images2/silla-tirasavia/1.jpg';
+import sillaSavia2 from './images2/silla-tirasavia/2.jpg';
+import sillaSavia3 from './images2/silla-tirasavia/3.jpg';
+import sillaSavia4 from './images2/silla-tirasavia/4.jpg';
+import sillaSavia5 from './images2/silla-tirasavia/5.jpg';
+import sillaSavia6 from './images2/silla-tirasavia/6.jpg';
+import sillaSavia7 from './images2/silla-tirasavia/7.jpg';
+import sillaSavia8 from './images2/silla-tirasavia/8.jpg';
+import sillaSavia9 from './images2/silla-tirasavia/9.jpg';
 
 import canalDeNado1 from './images2/canalDeNado/1.jpg';
 import canalDeNado2 from './images2/canalDeNado/2.jpg';
@@ -396,7 +396,8 @@ pentHouse4,
 planDeEscape,
 rompehueso,
 sema,
-sillaTirasavia,
+senderos,
+sillaSavia,
 canalDeNado,
 
 arbolesDeVida1,
@@ -706,16 +707,15 @@ sema8,
 sema9,
 sema10,
 
-sillaTirasavia1,
-sillaTirasavia2,
-sillaTirasavia3,
-sillaTirasavia4,
-sillaTirasavia5,
-sillaTirasavia6,
-sillaTirasavia7,
-sillaTirasavia8,
-sillaTirasavia9,
-sillaTirasavia10,
+sillaSavia1,
+sillaSavia2,
+sillaSavia3,
+sillaSavia4,
+sillaSavia5,
+sillaSavia6,
+sillaSavia7,
+sillaSavia8,
+sillaSavia9,
 
 canalDeNado1,
 canalDeNado2,

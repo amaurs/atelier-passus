@@ -15,6 +15,8 @@ class RenderHelper extends Component {
       vertical: false,
     }
     this.handleOnSlide = this.handleOnSlide.bind(this);
+
+    this.props.visit(this.props.project.src)
   }
 
   componentDidMount() {
@@ -95,7 +97,7 @@ class RenderHelper extends Component {
                             title={this.props.project.info.title}
                             width={width}
                             height={height}
-                            frameborder="0"
+                            frameBorder="0"
                             webkitallowfullscreen="true"
                             mozallowfullscreen="true"
                             allowFullScreen>
@@ -106,14 +108,14 @@ class RenderHelper extends Component {
                     <span onClick={()=> this.swiped(LEFT)} className="Navigate navleft"> </span>
                     <span onClick={()=> this.swiped(LEFT)} className="Navigate navright"> </span>
                     <button className={"RenderHelper-navigation RenderHelper-left " + (drawHelper?"":"hide")}
-                            onClick={()=> this.swiped(LEFT)}><i class="arrow left"></i></button>
+                            onClick={()=> this.swiped(LEFT)}><i className="arrow left"></i></button>
                     
                     <img className={"RenderHelper-image "} 
                        alt="" 
                        onLoad={(e)=>this.handleImageLoaded(e)} 
                        src={assets[current.src]} />
                     <button className={"RenderHelper-navigation RenderHelper-right " + (drawHelper?"":"hide")}
-                            onClick={()=> this.swiped(RIGHT)}><i class="arrow right"></i></button>
+                            onClick={()=> this.swiped(RIGHT)}><i className="arrow right"></i></button>
                   </div>
       }
 

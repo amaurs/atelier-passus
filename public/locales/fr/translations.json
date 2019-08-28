@@ -203,12 +203,12 @@
 "rompehuesoParagraph5":"Superficie de construction: 260m2",
 "rompehuesoParagraph6":"Client: Privé",
 
-"sillaTirasaviaCard":"Tirasavia",
-"sillaTirasaviaTitle":"Tirasavia",
-"sillaTirasaviaHeader0":"Méxique",
-"sillaTirasaviaHeader1":"2019 / Finalisée",
-"sillaTirasaviaParagraph0":"La chaise TIRASAVIA réduit l’échelle de design de 10%, avec deux objectifs: la première est de créer une balance conçue pour les personnes de petite taille, la seconde de créer une chaise qui consomme moins de bois.",
-"sillaTirasaviaParagraph1":"Ainsi, la chaise TIRASAVIA exerce une industrialisation à faible coût. Une chaise conçue pour habiter un café.",
+"sillaSaviaCard":"Savia",
+"sillaSaviaTitle":"Savia",
+"sillaSaviaHeader0":"Méxique",
+"sillaSaviaHeader1":"2019 / Finalisée",
+"sillaSaviaParagraph0":"La chaise SAVIA réduit l’échelle de design de 10%, avec deux objectifs: la première est de créer une balance conçue pour les personnes de petite taille, la seconde de créer une chaise qui consomme moins de bois.",
+"sillaSaviaParagraph1":"Ainsi, la chaise SAVIA exerce une industrialisation à faible coût. Une chaise conçue pour habiter un café.",
 
 
 
@@ -228,6 +228,19 @@
 "semaParagraph2":"SEMA initie en créant une série d'exercices de diverses disciplines (photographie, ostéopathie, audiovisuel, architecture) qui servent un objectif commun : la co-production entre non-voyants et voyants d'un nouvel outil de lecture et analyse de l'espace.",
 "semaParagraph3":"Format : Livre.",
 "semaParagraph4":"Client: Travail personnel",
+
+"senderosCard":"Senderos",
+"senderosTitle":"Senderos",
+"senderosHeader0":"Documental",
+"senderosHeader1":"2014 / Finalizado",
+"senderosHeader1":"Colaboración con Oscar Pichardo Isaak",
+"senderosHeader1":"2014 / Finalizado",
+"senderosParagraph0":"Pieza audiovisual que relata el recorrido a través de la maninata de un grupo de más de foscientas personas.",
+"senderosParagraph1":"Los peregrinos viajan a pie desde la CDMX hasta el estado de Jalisco por más de trinta días.",
+"senderosParagraph2":"Su acto de fe deja una serie de huellas y trazos urbanos en todo su recorrido.",
+"senderosParagraph3":"Formato: HD 18 minutos",
+"senderosParagraph4":"Cliente: Trabajo personal",
+
 
 "contactTitle":"Contact",
 "contactParagraph1":"Bucarleli 108",

@@ -14,7 +14,7 @@ export default class Card extends Component {
 
     let footer = null;
 
-    if(this.props.footer != undefined) {
+    if(this.props.footer !== undefined) {
         footer = this.props.footer.map(
          (p, index) => <p key={index} 
                           className="Card-text">{this.props.t(p)}</p>);
@@ -33,7 +33,7 @@ export default class Card extends Component {
 
     let conditionalContent = null;
 
-    if(this.props.id == "Us") {
+    if(this.props.id === "Us") {
         conditionalContent = <div className="Card-colabs">
                               <h2>{this.props.t("usFooter1")}</h2>
                               <p>{this.props.t("usFooter2")}</p>
@@ -46,7 +46,7 @@ export default class Card extends Component {
                               <h2>{this.props.t("usFooter9")}</h2>
                               <p>{this.props.t("usFooter10")}</p>
                       </div>
-    }else if(this.props.id == "Contact") {
+    }else if(this.props.id === "Contact") {
         conditionalContent = <div className="Card-contact">
                               <p>{this.props.t("contactParagraph1")}</p>
                               <p>{this.props.t("contactParagraph2")}</p>
