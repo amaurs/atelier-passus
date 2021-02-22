@@ -59,9 +59,9 @@ class RenderHelper extends Component {
       const size = this.props.project.info.images.length;
       let finalIndex;
       if (currentIndex >= size) {
-        finalIndex = 0;
+        finalIndex = size - 1;
       } else if (currentIndex < 0) {
-        finalIndex = size - 1
+        finalIndex = 0;
       } else {
         finalIndex = currentIndex;
       }
@@ -105,8 +105,8 @@ class RenderHelper extends Component {
                   </div>
       } else if(current.type === "image"){
         content = <div className={"RenderHelper-content " + (this.state.vertical?"vertical":"")}>
-                    <span onClick={()=> this.swiped(LEFT)} className="Navigate navleft"> </span>
-                    <span onClick={()=> this.swiped(LEFT)} className="Navigate navright"> </span>
+                    <span onClick={()=> this.swiped(LEFT)} className={"Navigate navleft" + (this.state.image>0?" decorationleft":"")}> </span>
+                    <span onClick={()=> this.swiped(RIGHT)} className={"Navigate navright" + (this.state.image<this.props.project.info.images.length-1?" decorationright":"")}> </span>
                     <button className={"RenderHelper-navigation RenderHelper-left " + (drawHelper?"":"hide")}
                             onClick={()=> this.swiped(LEFT)}><i className="arrow left"></i></button>
                     

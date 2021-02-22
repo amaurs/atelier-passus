@@ -17,10 +17,6 @@ export default class Us extends Component {
               <p>{this.props.t("usFooter2")}</p>
               <p>{this.props.t("usFooter3")}</p>
               <p>{this.props.t("usFooter4")}</p>
-              <h2>{this.props.t("usFooter5")}</h2>
-              <p>{this.props.t("usFooter6")}</p>
-              <p>{this.props.t("usFooter7")}</p>
-              <p>{this.props.t("usFooter8")}</p>
               <h2>{this.props.t("usFooter9")}</h2>
               <p>{this.props.t("usFooter10")}</p>
             </div>

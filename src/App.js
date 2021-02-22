@@ -141,7 +141,9 @@ class App extends Component {
 
   visit(page){
     let visited = this.state.visited;
-    visited.push(page);
+    if(!visited.includes(page)) {
+        visited.push(page);
+    }
     this.setState({visited: visited});
   }
 
@@ -504,7 +506,8 @@ class App extends Component {
                           height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("contact")} 
+                          project={this.getObjectFromSrc("contact")}
+                          visit={this.visit.bind(this)}
                           t={t} />
               <PropsRoute path='/us' 
                           changeLanguage={changeLanguage}
@@ -514,7 +517,8 @@ class App extends Component {
                           height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("us")} 
+                          project={this.getObjectFromSrc("us")}
+                          visit={this.visit.bind(this)}
                           t={t} />
               <PropsRoute path='/us2' 
                           changeLanguage={changeLanguage}
@@ -524,7 +528,8 @@ class App extends Component {
                           height={this.state.heigh}
                           component={Us} 
                           closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("us")} 
+                          project={this.getObjectFromSrc("us")}
+                          visit={this.visit.bind(this)}
                           t={t} />
               <PropsRoute path='/studio' 
                           changeLanguage={changeLanguage}
@@ -534,7 +539,8 @@ class App extends Component {
                           height={this.state.heigh}
                           component={RenderHelper} 
                           closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("studio")} 
+                          project={this.getObjectFromSrc("studio")}
+                          visit={this.visit.bind(this)}
                           t={t} />
             
               <PropsRoute path='*'
