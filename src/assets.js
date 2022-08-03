@@ -357,7 +357,6 @@ import studio1 from './images2/studio1.jpg';
 import studio2 from './images2/studio2.jpg';
 import studio3 from './images2/studio3.jpg';
 
-import contact1 from './images2/map.png';
 
 import easterImage from './images/buni.gif';
 
@@ -369,7 +368,6 @@ studio1,
 studio2,
 studio3,
 
-contact1,
 
 easterImage,
 arbolesDeVida,
