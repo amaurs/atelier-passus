@@ -1048,69 +1048,68 @@ const info2 = [{src:"arbolesDeVida",
                               {type: "video",
                                 src: "289150581"},
                               ]}},
-               {src:"us",
-                type:"gallery",
-                card:"usCard",
-                info:{
-                      id:"Us",
-                      headers:[
-                              ],
-                      paragraphs:[
-                              "usFooter1",
-                              "usFooter2",
-                              "usFooter3",
-                              "usFooter4",
-                              "usFooter9",
-                              "usFooter10",
-                              ],
-                      footer:[
-                              "usParagraph2",
-                              "usParagraph3",
-                              "usParagraph4",
-                              "usParagraph5",
-                              "usParagraph6",
-                              "usParagraph7",
-                              "usParagraph8",
-                              ],
-                      images:[
-                              {type: "image",
-                                src: "studio2"}
-                              ]}},
-               {src:"contact",
-                type:"gallery",
-                card:"contactCard",
-                info:{id:"Contact",
-                      headers:[
-                              ],
-                      paragraphs:[
-                              "contactParagraph1",
-                              "contactParagraph2",
-                              "contactParagraph3",
-                              "contactParagraph4",
-                              "contactParagraph5",
-                              "contactParagraph6",
-                              ],
-                      images:[
-                              {type: "image",
-                                src: "contact1"}
-                              ]}},
-               {src:"studio",
-                type:"gallery",
-                card:"studioCard",
-                info:{
-                      headers:[
-                              ],
-                      paragraphs:[
-                              "studioParagraph0",
-                              "studioParagraph1",
-                              "studioParagraph2",
-                              "studioParagraph3",
-                              ],
-                      images:[
-                              {type: "image",
-                                src: "studio3"}
-                              ]}},
-];
+                                             {src:"us",
+                                              type:"gallery",
+                                              card:"usCard",
+                                              info:{
+                                                    id:"Us",
+                                                    headers:[
+                                                            ],
+                                                    paragraphs:[
+                                                            "usFooter1",
+                                                            "usFooter2",
+                                                            "usFooter3",
+                                                            "usFooter4",
+                                                            "usFooter9",
+                                                            "usFooter10",
+                                                            ],
+                                                    footer:[
+                                                            "usParagraph2",
+                                                            "usParagraph3",
+                                                            "usParagraph4",
+                                                            "usParagraph5",
+                                                            "usParagraph6",
+                                                            "usParagraph7",
+                                                            "usParagraph8",
+                                                            ],
+                                                    images:[
+                                                            {type: "image",
+                                                              src: "studio2"}
+                                                            ]}},
+                                             {src:"contact",
+                                              type:"gallery",
+                                              card:"contactCard",
+                                              info:{id:"Contact",
+                                                    headers:[
+                                                            ],
+                                                    paragraphs:[
+                                                            "contactParagraph1",
+                                                            "contactParagraph2",
+                                                            "contactParagraph3",
+                                                            "contactParagraph4",
+                                                            "contactParagraph5",
+                                                            "contactParagraph6",
+                                                            ],
+                                                    images:[
+                                                            {type: "image",
+                                                              src: "contact1"}
+                                                            ]}},
+                                             {src:"studio",
+                                              type:"gallery",
+                                              card:"studioCard",
+                                              info:{
+                                                    headers:[
+                                                            ],
+                                                    paragraphs:[
+                                                            "studioParagraph0",
+                                                            "studioParagraph1",
+                                                            "studioParagraph2",
+                                                            "studioParagraph3",
+                                                            ],
+                                                    images:[
+                                                            {type: "image",
+                                                              src: "studio3"}
+                                                            ]}},];
 
 export default { info2 };
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { translate } from 'react-i18next';
+import { Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 import Grid from './Grid.js';
 import Hamburger from './Hamburger.js';
 import Hero from './Hero.js';
@@ -16,54 +16,42 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Lines from './Lines.js';
 
 
-const infoArray = text.info2.sort(function(a, b){ return b.year - a.year; });
+const infoArray = [...text.info2].sort(function(a, b){
+  const yearA = a.year || 0;
+  const yearB = b.year || 0;
+  return yearB - yearA;
+});
 
-const renderMergedProps = (component, ...rest) => {
-  const finalProps = Object.assign({}, ...rest);
-  return (
-    React.createElement(component, finalProps)
-  );
-}
-
-const HeroRoute = ({ component, ...rest }) => {
-  return (
-    <Route {...rest} render={routeProps => {
-      return renderMergedProps(component, routeProps, rest);
-    }}/>
-  );
-}
-
-const PropsRoute = ({ component, ...rest }) => {
-  
+const AppLayout = (props) => {
+  const location = useLocation();
+  const isGallery = location.pathname === '/projects';
+  const { t, changeLanguage, isActive, onClick, closeMenu } = props;
   let conditionalLink = null;
   let conditionalHyphen = null;
-  if(!rest.isGallery && !rest.isActive) {
-    conditionalLink = <Link className="App-projects" 
+  if(!isGallery && !isActive) {
+    conditionalLink = <Link className="App-projects"
                      to="/projects" >
                      <Lines />
-                     {rest.t("projects")}
+                     {t("projects")}
                </Link>
 
     conditionalHyphen = <span className="App-controls-separator">-</span>;
   }
-  
 
   return (
     <div>
-      <Menu {...rest} />
-      <div className={"App-controls" + (rest.isActive?" solid-backgorund":"")}>
-          <Hamburger {...rest} />
-          <Language changeLanguage={rest.changeLanguage}/>
+      <Menu {...props} />
+      <div className={"App-controls" + (isActive?" solid-backgorund":"")}>
+          <Hamburger {...props} />
+          <Language changeLanguage={changeLanguage}/>
           {conditionalHyphen}
           {conditionalLink}
       </div>
-      <Route {...rest} render={routeProps => {
-        return renderMergedProps(component, routeProps, rest);
-      }}/>
-      
+      <Outlet />
     </div>
   );
 }
+
 
 function EasterEgg(props){
   let easterStyle = {
@@ -119,7 +107,7 @@ class App extends Component {
     window.addEventListener("keydown", this.add.bind(this));
     window.addEventListener("scroll", this.handleScroll.bind(this));
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateDimensions.bind(this));
     window.removeEventListener("keydown", this.add.bind(this));
@@ -179,7 +167,7 @@ class App extends Component {
         clearInterval(this.timerID);
         this.setState({pos:0});
         this.timerID = setInterval(
-            () => this.tick(), 
+            () => this.tick(),
             17
         );
       }
@@ -205,354 +193,45 @@ class App extends Component {
     return (
         <div className={"Body" + (this.state.active?" active":"")}>
           <div className={"Content"}>
-            <Switch>
-              <HeroRoute exact path='/index.html'
-                         width={this.state.width}
-                         height={this.state.heigh}
-                         component={Hero} />
-              <HeroRoute exact path='/'
-                         width={this.state.width}
-                         height={this.state.heigh}
-                         component={Hero} />
-              <PropsRoute exact path='/projects'
-                          changeLanguage={changeLanguage}
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={Grid}
-                          visited={this.state.visited}
-                          grid={infoArray}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)}
-                          closeMenu={this.closeMenu.bind(this)}
-                          isGallery={true}
-                          t={t} />
-              <PropsRoute path='/arbolesDeVida' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("arbolesDeVida")} t={t} />
-              <PropsRoute path='/arvant'
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)}
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper}
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("arvant")} t={t} />
-              <PropsRoute path='/aube' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("aube")} t={t} />
-              <PropsRoute path='/belaBartok' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("belaBartok")} t={t} />
-              <PropsRoute path='/casaFemaria' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("casaFemaria")} t={t} />
-              <PropsRoute path='/elCicloDeLaPiel' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("elCicloDeLaPiel")} t={t} />
+            <Routes>
+              <Route exact path='/' element={<Hero {...this.props} {...this.state} />} />
+              <Route exact path='/index.html' element={<Hero {...this.props} {...this.state} />} />
 
-              <PropsRoute path='/cinco'
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("cinco")} 
-                          visit={this.visit.bind(this)}
-                          t={t} />
-              <PropsRoute path='/colodionNum13' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("colodionNum13")} 
-                          visit={this.visit.bind(this)}
-                          t={t} />
-              <PropsRoute path='/elAlofonoDeLaVida' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("elAlofonoDeLaVida")} 
-                          t={t} />
-              <PropsRoute path='/herakles' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("herakles")} 
-                          t={t} />
-              <PropsRoute path='/instruccionesParaUnArquitecto' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("instruccionesParaUnArquitecto")} 
-                          t={t} />
-              <PropsRoute path='/invencibleInvisible' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("invencibleInvisible")} 
-                          t={t} />
-              <PropsRoute path='/laredo' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("laredo")} 
-                          t={t} />
-              <PropsRoute path='/liLiane' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("liLiane")} 
-                          t={t} />
-              <PropsRoute path='/mantonegro' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("mantonegro")} 
-                          t={t} />
-              <PropsRoute path='/mata' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("mata")} 
-                          t={t} />
-              <PropsRoute path='/mazatlan' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("mazatlan")} 
-                          t={t} />
-              <PropsRoute path='/onora' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("onora")} 
-                          t={t} />
-              <PropsRoute path='/pentHouse4' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("pentHouse4")} 
-                          t={t} />
-              <PropsRoute path='/planDeEscape' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("planDeEscape")} 
-                          t={t} />
-              <PropsRoute path='/rompehueso' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("rompehueso")} 
-                          t={t} />
-              <PropsRoute path='/sema' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("sema")} 
-                          t={t} />
-              <PropsRoute path='/senderos' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("senderos")} 
-                          t={t} />
-              <PropsRoute path='/sillaSavia' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("sillaSavia")} 
-                          t={t} />
+              <Route element={<AppLayout {...this.props} {...this.state} changeLanguage={changeLanguage} onClick={this.handleMenu.bind(this)} closeMenu={this.closeMenu.bind(this)} />}>
+                <Route exact path='/projects' element={<Grid t={t} grid={infoArray} isGallery={true} visited={this.state.visited} closeMenu={this.closeMenu.bind(this)} />} />
+                <Route path='/arbolesDeVida' element={<RenderHelper t={t} project={this.getObjectFromSrc("arbolesDeVida")} visit={this.visit.bind(this)} />} />
+                <Route path='/arvant' element={<RenderHelper t={t} project={this.getObjectFromSrc("arvant")} visit={this.visit.bind(this)} />} />
+                <Route path='/aube' element={<RenderHelper t={t} project={this.getObjectFromSrc("aube")} visit={this.visit.bind(this)} />} />
+                <Route path='/belaBartok' element={<RenderHelper t={t} project={this.getObjectFromSrc("belaBartok")} visit={this.visit.bind(this)} />} />
+                <Route path='/casaFemaria' element={<RenderHelper t={t} project={this.getObjectFromSrc("casaFemaria")} visit={this.visit.bind(this)} />} />
+                <Route path='/elCicloDeLaPiel' element={<RenderHelper t={t} project={this.getObjectFromSrc("elCicloDeLaPiel")} visit={this.visit.bind(this)} />} />
+                <Route path='/cinco' element={<RenderHelper t={t} project={this.getObjectFromSrc("cinco")} visit={this.visit.bind(this)} />} />
+                <Route path='/colodionNum13' element={<RenderHelper t={t} project={this.getObjectFromSrc("colodionNum13")} visit={this.visit.bind(this)} />} />
+                <Route path='/elAlofonoDeLaVida' element={<RenderHelper t={t} project={this.getObjectFromSrc("elAlofonoDeLaVida")} visit={this.visit.bind(this)} />} />
+                <Route path='/herakles' element={<RenderHelper t={t} project={this.getObjectFromSrc("herakles")} visit={this.visit.bind(this)} />} />
+                <Route path='/instruccionesParaUnArquitecto' element={<RenderHelper t={t} project={this.getObjectFromSrc("instruccionesParaUnArquitecto")} visit={this.visit.bind(this)} />} />
+                <Route path='/invencibleInvisible' element={<RenderHelper t={t} project={this.getObjectFromSrc("invencibleInvisible")} visit={this.visit.bind(this)} />} />
+                <Route path='/laredo' element={<RenderHelper t={t} project={this.getObjectFromSrc("laredo")} visit={this.visit.bind(this)} />} />
+                <Route path='/liLiane' element={<RenderHelper t={t} project={this.getObjectFromSrc("liLiane")} visit={this.visit.bind(this)} />} />
+                <Route path='/mantonegro' element={<RenderHelper t={t} project={this.getObjectFromSrc("mantonegro")} visit={this.visit.bind(this)} />} />
+                <Route path='/mata' element={<RenderHelper t={t} project={this.getObjectFromSrc("mata")} visit={this.visit.bind(this)} />} />
+                <Route path='/mazatlan' element={<RenderHelper t={t} project={this.getObjectFromSrc("mazatlan")} visit={this.visit.bind(this)} />} />
+                <Route path='/onora' element={<RenderHelper t={t} project={this.getObjectFromSrc("onora")} visit={this.visit.bind(this)} />} />
+                <Route path='/pentHouse4' element={<RenderHelper t={t} project={this.getObjectFromSrc("pentHouse4")} visit={this.visit.bind(this)} />} />
+                <Route path='/planDeEscape' element={<RenderHelper t={t} project={this.getObjectFromSrc("planDeEscape")} visit={this.visit.bind(this)} />} />
+                <Route path='/rompehueso' element={<RenderHelper t={t} project={this.getObjectFromSrc("rompehueso")} visit={this.visit.bind(this)} />} />
+                <Route path='/sema' element={<RenderHelper t={t} project={this.getObjectFromSrc("sema")} visit={this.visit.bind(this)} />} />
+                <Route path='/senderos' element={<RenderHelper t={t} project={this.getObjectFromSrc("senderos")} visit={this.visit.bind(this)} />} />
+                <Route path='/sillaSavia' element={<RenderHelper t={t} project={this.getObjectFromSrc("sillaSavia")} visit={this.visit.bind(this)} />} />
+                <Route path='/canalDeNado' element={<RenderHelper t={t} project={this.getObjectFromSrc("canalDeNado")} visit={this.visit.bind(this)} />} />
+                <Route path='/contact' element={<RenderHelper t={t} project={this.getObjectFromSrc("contact")} visit={this.visit.bind(this)} />} />
+                <Route path='/us' element={<RenderHelper t={t} project={this.getObjectFromSrc("us")} visit={this.visit.bind(this)} />} />
+                <Route path='/us2' element={<Us t={t} />} />
+                <Route path='/studio' element={<RenderHelper t={t} project={this.getObjectFromSrc("studio")} visit={this.visit.bind(this)} />} />
+              </Route>
 
-              <PropsRoute path='/canalDeNado' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          visit={this.visit.bind(this)}
-                          project={this.getObjectFromSrc("canalDeNado")} 
-                          t={t} />
-
-              <PropsRoute path='/contact' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("contact")}
-                          visit={this.visit.bind(this)}
-                          t={t} />
-              <PropsRoute path='/us' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("us")}
-                          visit={this.visit.bind(this)}
-                          t={t} />
-              <PropsRoute path='/us2' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={Us} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("us")}
-                          visit={this.visit.bind(this)}
-                          t={t} />
-              <PropsRoute path='/studio' 
-                          changeLanguage={changeLanguage}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)} 
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          component={RenderHelper} 
-                          closeMenu={this.closeMenu.bind(this)}
-                          project={this.getObjectFromSrc("studio")}
-                          visit={this.visit.bind(this)}
-                          t={t} />
-            
-              <PropsRoute path='*'
-                          component={Lost} 
-                          changeLanguage={changeLanguage}
-                          width={this.state.width}
-                          height={this.state.heigh}
-                          isActive={this.state.isActive}
-                          onClick={this.handleMenu.bind(this)}
-                          closeMenu={this.closeMenu.bind(this)}
-                          t={t} />
-            </Switch>
+              <Route path='*' element={<Lost {...this.props} {...this.state} t={t} />} />
+            </Routes>
           </div>
           {easterEgg}
           <div className={"App-cloud" + (this.state.isActive?" active":"")}
@@ -563,4 +242,5 @@ class App extends Component {
   }
 }
 
-export default translate('translations')(App);
+export default withTranslation('translations')(App);
+

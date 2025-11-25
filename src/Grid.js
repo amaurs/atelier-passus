@@ -1,42 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Grid.css';
 import assets from './assets.js';
 import Logo from './Logo.js';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-class Grid extends Component {
+function Grid(props) {
+    const navigate = useNavigate();
 
-    handleClick(path) {
-      this.props.history.push('/' + path);
-      this.props.closeMenu();
+    function handleClick(path) {
+      navigate('/' + path);
+      props.closeMenu();
     }
-    render() {
-        const items = this.props.grid.map((square, index) => 
-                <Cell key={index} 
-                      image={square.src}
-                      text={this.props.t(square.card)} 
-                      onClick={()=>this.handleClick(square.src)}
-                      isVisited={this.props.visited.includes(square.src)}/>
-                
-            );
+
+    const items = props.grid.map((square, index) => 
+            <Cell key={index} 
+                  image={square.src}
+                  text={props.t(square.card)} 
+                  onClick={()=>handleClick(square.src)}
+                  isVisited={props.visited.includes(square.src)}/>
+            
+        );
 
 
-        return <div>
-                 <section id="projects" className="Grid-container">
-                   <div className="Grid">
-                     {items}
-                   </div>
-                 </section>
-                 <Link to="/">
-                   <Logo style={ {position: "fixed",
-                                  bottom: "25px", 
-                                  right: "25px",
-                                  width: "50px",
-                                  zIndex: "4"} }/>
-                 </Link>
+    return <div>
+             <section id="projects" className="Grid-container">
+               <div className="Grid">
+                 {items}
                </div>
-                
-    }
+             </section>
+             <Link to="/">
+               <Logo style={ {position: "fixed",
+                              bottom: "25px", 
+                              right: "25px",
+                              width: "50px",
+                              zIndex: "4"} }/>
+             </Link>
+           </div>
 }
 
 function Cell(props) {
