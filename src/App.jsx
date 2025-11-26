@@ -106,6 +106,15 @@ class App extends Component {
     window.addEventListener("resize", this.updateDimensions.bind(this));
     window.addEventListener("keydown", this.add.bind(this));
     window.addEventListener("scroll", this.handleScroll.bind(this));
+    
+    // Set the lang attribute on component mount
+    document.documentElement.lang = this.props.i18n.language;
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.i18n.language !== this.props.i18n.language) {
+      document.documentElement.lang = this.props.i18n.language;
+    }
   }
 
   componentWillUnmount() {

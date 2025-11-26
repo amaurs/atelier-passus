@@ -100,7 +100,7 @@ const RenderHelper = (props) => {
                         onClick={()=> swiped(LEFT)}><i className="arrow left"></i></button>
                 
                 <img className={"RenderHelper-image "} 
-                   alt="" 
+                   alt={props.project.info.title} 
                    onLoad={(e)=>handleImageLoaded(e)} 
                    src={assets[current.src]} />
                 <button className={"RenderHelper-navigation RenderHelper-right " + (drawHelper?"":"hide")}

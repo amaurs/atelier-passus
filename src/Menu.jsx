@@ -30,7 +30,7 @@ class Menu extends Component {
                </Link>
                <a className="Menu-item" 
                   href="https://www.instagram.com/passusatelier/">
-                  <Lines /><img alt="" 
+                  <Lines /><img alt="Instagram" 
                        className="Menu-instagram" 
                        src={instagram}/>
                </a>

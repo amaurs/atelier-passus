@@ -41,7 +41,7 @@ function Grid(props) {
 function Cell(props) {
     return (
         <div className={"Grid-cell" + (props.isVisited? " cross": "")} onClick={()=>props.onClick()}>
-          <img alt="" 
+          <img alt={props.text} 
               src={assets[props.image]}/>
           <span className="Grid-mask"></span>
           <p dangerouslySetInnerHTML={{__html:props.text}} />
