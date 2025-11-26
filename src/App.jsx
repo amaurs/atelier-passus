@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-import Grid from './Grid.js';
-import Hamburger from './Hamburger.js';
-import Hero from './Hero.js';
-import Language from './Language.js';
-import Lost from './Lost.js';
-import Menu from './Menu.js';
-import RenderHelper from './RenderHelper.js';
-import Us from './Us.js';
+import Grid from './Grid.jsx';
+import Hamburger from './Hamburger.jsx';
+import Hero from './Hero.jsx';
+import Language from './Language.jsx';
+import Lost from './Lost.jsx';
+import Menu from './Menu.jsx';
+import RenderHelper from './RenderHelper.jsx';
+import Us from './Us.jsx';
 import text from './text.js';
 import './App.css';
 import assets from './assets.js';
 import { HashLink as Link } from 'react-router-hash-link';
-import Lines from './Lines.js';
+import Lines from './Lines.jsx';
 
 
 const infoArray = [...text.info2].sort(function(a, b){

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Menu.css';
-import Footer from './Footer.js';
-import Lines from './Lines.js';
+import Footer from './Footer.jsx';
+import Lines from './Lines.jsx';
 import instagram from './images2/instagram.svg';
 
 class Menu extends Component {

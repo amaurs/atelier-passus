@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Hero.css';
-import Logo from './Logo.js';
+import Logo from './Logo.jsx';
 import { HashLink as Link } from 'react-router-hash-link';
 
 const videos = [

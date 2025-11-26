@@ -24,7 +24,7 @@ const options = {
   },
 
   backend: {
-      loadPath: process.env.PUBLIC_URL + '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     }
 
 };

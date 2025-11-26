@@ -1,7 +1,7 @@
 import React from 'react';
 import './Grid.css';
 import assets from './assets.js';
-import Logo from './Logo.js';
+import Logo from './Logo.jsx';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Grid(props) {
