@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import XHR from 'i18next-xhr-backend';
+import Backend from 'i18next-http-backend';
 
 const options = {
 
@@ -32,7 +32,7 @@ const options = {
 
 export default () => {
   i18n
-    .use(XHR)
+    .use(Backend)
     .use(LanguageDetector)
     .init(options);
   return i18n;
