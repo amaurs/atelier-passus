@@ -97,6 +97,7 @@ const RenderHelper = (props) => {
                 <span onClick={()=> swiped(LEFT)} className={"Navigate navleft" + (image>0?" decorationleft":"")}> </span>
                 <span onClick={()=> swiped(RIGHT)} className={"Navigate navright" + (image<props.project.info.images.length-1?" decorationright":"")}> </span>
                 <button className={"RenderHelper-navigation RenderHelper-left " + (drawHelper?"":"hide")}
+                        aria-label="Previous image"
                         onClick={()=> swiped(LEFT)}><i className="arrow left"></i></button>
                 
                 <img className={"RenderHelper-image "} 
@@ -104,6 +105,7 @@ const RenderHelper = (props) => {
                    onLoad={(e)=>handleImageLoaded(e)} 
                    src={assets[current.src]} />
                 <button className={"RenderHelper-navigation RenderHelper-right " + (drawHelper?"":"hide")}
+                        aria-label="Next image"
                         onClick={()=> swiped(RIGHT)}><i className="arrow right"></i></button>
               </div>
   }
