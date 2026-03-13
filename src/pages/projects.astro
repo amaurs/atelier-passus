@@ -4,11 +4,12 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 import Menu from '../components/Menu.tsx';
-import { t, defaultLocale } from '../i18n';
+import { t } from '../i18n';
+import type { Locale } from '../i18n';
 import '../styles/grid.css';
 import '../styles/menu.css';
 
-const locale = defaultLocale;
+const locale: Locale = 'es';
 const allProjects = await getCollection('projects');
 const projects = allProjects
   .filter(p => p.data.year !== null)
@@ -24,7 +25,7 @@ function getIcon(cardIcon: string | null) {
 }
 ---
 <Base title="Atelier Passus — Projects">
-  <Menu client:load isGallery={true} />
+  <Menu client:load isGallery={true} locale={locale} currentPath="/projects" />
   <section id="projects" class="Grid-container">
     <div class="Grid">
       {projects.map(p => {

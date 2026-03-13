@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ImageGallery from '../../components/ImageGallery.tsx';
+import Menu from '../../components/Menu.tsx';
+import { t } from '../../i18n';
+import type { Locale } from '../../i18n';
+import '../../styles/renderhelper.css';
+import '../../styles/card.css';
+import '../../styles/menu.css';
+
+export async function getStaticPaths() {
+  const allProjects = await getCollection('projects');
+  return allProjects.map(p => ({ params: { slug: p.data.src }, props: { project: p.data } }));
+}
+
+const { project } = Astro.props;
+const locale: Locale = 'fr';
+
+const allImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{jpg,jpeg,png,gif}', { eager: true });
+
+const imageData = project.images.map((img: any, i: number) => {
+  if (img.type === 'video') {
+    return { type: 'video' as const, vimeoId: img.vimeoId!, index: i };
+  }
+  const key = `/src/assets/images/${img.path}`;
+  const resolved = allImages[key]?.default;
+  return { type: 'image' as const, src: resolved?.src ?? '', width: resolved?.width ?? 0, height: resolved?.height ?? 0, index: i };
+});
+
+const title = t(project.title, locale);
+const headers = project.headers.map((h: string) => t(h, locale));
+const paragraphs = project.paragraphs.map((p: string) => t(p, locale));
+---
+<Base title={title ? `Atelier Passus — ${title}` : 'Atelier Passus'} lang="fr">
+  <Menu client:load locale={locale} currentPath={`/${project.src}`} />
+  <ImageGallery
+    client:load
+    images={imageData}
+    title={title}
+    headers={headers}
+    paragraphs={paragraphs}
+  />
+</Base>

@@ -127,3 +127,18 @@
 - Git committed
 - Checkpoint 4.3 (Language switcher) is partially done — UI rendered, wiring deferred to Phase 5 i18n
 - Next step needed: 4.4 verification is effectively covered. Move to Phase 5: 5.1 — Set up Astro i18n routing with /es/ and /fr/ prefixes
+
+## Iteration 11 - Checkpoint 5.1+5.2: Set up i18n translation system and wire to pages
+- Copied `es/translations.json` and `fr/translations.json` from source to `src/i18n/es.json` and `src/i18n/fr.json`
+- Created `src/i18n/index.ts` with: `t(key, locale)` function, `getLocaleFromUrl()`, `localePath()`, type exports
+- Updated `[slug].astro` to resolve translation keys via `t()` — title, headers, paragraphs now render actual Spanish text instead of raw keys like "aubeTitle"
+- Updated `projects.astro` to resolve card text via `t()` — grid cells show translated card names
+- Build succeeds (31 pages), verified: `arbolesDeVida` page contains "Árboles de Vida", "Pieza Audiovisual", "Video-carta dirigida" (actual Spanish text)
+- Grid page verified: contains "Árboles" translated card text
+- Removed stray duplicate `utils.ts`
+- Git committed
+- Key learnings:
+  - Translation keys in JSON data files (e.g., "aubeTitle") map to flat key-value pairs in translation JSONs
+  - `t()` falls back to default locale (es) then to raw key if not found
+  - `prefixDefaultLocale: false` means Spanish pages have no prefix, French gets `/fr/`
+- Next step needed: 5.3 — Create French locale pages (`/fr/`, `/fr/projects`, `/fr/[slug]`) that render French translations
