@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ImageGallery from '../components/ImageGallery.tsx';
 import Menu from '../components/Menu.tsx';
+import { t, defaultLocale } from '../i18n';
 import '../styles/renderhelper.css';
 import '../styles/card.css';
 import '../styles/menu.css';
@@ -13,11 +14,10 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
+const locale = defaultLocale;
 
-// Eagerly load all project images for Astro optimization
 const allImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{jpg,jpeg,png,gif}', { eager: true });
 
-// Build image data array for the React island
 const imageData = project.images.map((img, i) => {
   if (img.type === 'video') {
     return { type: 'video' as const, vimeoId: img.vimeoId!, index: i };
@@ -26,14 +26,18 @@ const imageData = project.images.map((img, i) => {
   const resolved = allImages[key]?.default;
   return { type: 'image' as const, src: resolved?.src ?? '', width: resolved?.width ?? 0, height: resolved?.height ?? 0, index: i };
 });
+
+const title = t(project.title, locale);
+const headers = project.headers.map(h => t(h, locale));
+const paragraphs = project.paragraphs.map(p => t(p, locale));
 ---
-<Base title={project.title ? `Atelier Passus — ${project.title}` : 'Atelier Passus'}>
+<Base title={title ? `Atelier Passus — ${title}` : 'Atelier Passus'}>
   <Menu client:load />
   <ImageGallery
     client:load
     images={imageData}
-    title={project.title ?? ''}
-    headers={project.headers}
-    paragraphs={project.paragraphs}
+    title={title}
+    headers={headers}
+    paragraphs={paragraphs}
   />
 </Base>

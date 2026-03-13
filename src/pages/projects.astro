@@ -4,9 +4,11 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 import Menu from '../components/Menu.tsx';
+import { t, defaultLocale } from '../i18n';
 import '../styles/grid.css';
 import '../styles/menu.css';
 
+const locale = defaultLocale;
 const allProjects = await getCollection('projects');
 const projects = allProjects
   .filter(p => p.data.year !== null)
@@ -27,11 +29,12 @@ function getIcon(cardIcon: string | null) {
     <div class="Grid">
       {projects.map(p => {
         const icon = getIcon(p.data.cardIcon);
+        const card = t(p.data.card, locale);
         return (
           <a href={`/${p.data.src}`} class="Grid-cell">
-            {icon && <Image src={icon} alt={p.data.card} widths={[300, 600]} sizes="(min-width: 1000px) 25vw, (min-width: 600px) 50vw, 100vw" />}
+            {icon && <Image src={icon} alt={card} widths={[300, 600]} sizes="(min-width: 1000px) 25vw, (min-width: 600px) 50vw, 100vw" />}
             <span class="Grid-mask"></span>
-            <p set:html={p.data.card} />
+            <p set:html={card} />
           </a>
         );
       })}

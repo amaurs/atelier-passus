@@ -107,3 +107,23 @@
 - Verified: laredo page has astro-island with 16 images, elCicloDeLaPiel has vimeoId
 - Git committed
 - Next step needed: 4.2 — Port Hamburger menu + Menu overlay as React island
+
+## Iteration 10 - Checkpoint 4.2: Port Hamburger menu + Menu overlay as React island
+- Created `src/components/Menu.tsx` — single React island combining Hamburger, Menu slide-in, Language switcher, cloud overlay, and footer logo
+  - `useState` for active/inactive toggle
+  - Hamburger click toggles menu open/close
+  - Cloud overlay click also closes menu
+  - Menu items: projects, studio, us, contact, Instagram link
+  - Footer with simplified Logo SVG linking to home
+  - Lines SVG inline component for menu item decorations
+  - `isGallery` prop hides "projects" shortcut link in controls bar (used on Grid page)
+- Created `src/styles/menu.css` — combined styles from source: Menu.css, Hamburger.css, Language.css, Footer.css, Lines.css, plus App-controls/App-projects from App.css
+- Copied `instagram.svg` to `public/images/` for menu Instagram link
+- Integrated `<Menu client:load />` into `projects.astro` (with `isGallery={true}`) and `[slug].astro`
+- Hero page intentionally has NO menu (matches source behavior)
+- Language switcher buttons rendered but not yet wired to i18n (deferred to Phase 5)
+- Build succeeds: 31 pages, Menu component SSR'd with all elements, hydrates on client
+- Verified: projects page has Hamburger + Language + cloud overlay, no "projects" link; laredo page has all controls including "projects" link; hero page has no menu
+- Git committed
+- Checkpoint 4.3 (Language switcher) is partially done — UI rendered, wiring deferred to Phase 5 i18n
+- Next step needed: 4.4 verification is effectively covered. Move to Phase 5: 5.1 — Set up Astro i18n routing with /es/ and /fr/ prefixes
