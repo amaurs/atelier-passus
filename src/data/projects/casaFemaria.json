@@ -1,0 +1,214 @@
+{
+  "src": "casaFemaria",
+  "type": "gallery",
+  "year": 2018,
+  "card": "casaFemariaCard",
+  "title": "casaFemariaTitle",
+  "headers": [
+    "casaFemariaHeader0",
+    "casaFemariaHeader1"
+  ],
+  "paragraphs": [
+    "casaFemariaParagraph0",
+    "casaFemariaParagraph1",
+    "casaFemariaParagraph2",
+    "casaFemariaParagraph3",
+    "casaFemariaParagraph4",
+    "casaFemariaParagraph5"
+  ],
+  "cardIcon": "iconos/CASA-FEMARIA.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "casaFemaria1",
+      "path": "casa-femaria/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria2",
+      "path": "casa-femaria/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria3",
+      "path": "casa-femaria/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria4",
+      "path": "casa-femaria/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria5",
+      "path": "casa-femaria/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria6",
+      "path": "casa-femaria/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria7",
+      "path": "casa-femaria/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria8",
+      "path": "casa-femaria/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria9",
+      "path": "casa-femaria/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria10",
+      "path": "casa-femaria/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria11",
+      "path": "casa-femaria/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria12",
+      "path": "casa-femaria/12.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria13",
+      "path": "casa-femaria/13.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria14",
+      "path": "casa-femaria/14.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria15",
+      "path": "casa-femaria/15.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria16",
+      "path": "casa-femaria/16.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria17",
+      "path": "casa-femaria/17.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria18",
+      "path": "casa-femaria/18.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria19",
+      "path": "casa-femaria/19.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria20",
+      "path": "casa-femaria/20.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria21",
+      "path": "casa-femaria/21.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria22",
+      "path": "casa-femaria/22.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria23",
+      "path": "casa-femaria/23.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria24",
+      "path": "casa-femaria/24.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria25",
+      "path": "casa-femaria/25.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria26",
+      "path": "casa-femaria/26.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria27",
+      "path": "casa-femaria/27.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria28",
+      "path": "casa-femaria/28.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria29",
+      "path": "casa-femaria/29.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria30",
+      "path": "casa-femaria/30.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria31",
+      "path": "casa-femaria/31.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "casaFemaria32",
+      "path": "casa-femaria/32.jpg",
+      "vimeoId": null
+    }
+  ]
+}

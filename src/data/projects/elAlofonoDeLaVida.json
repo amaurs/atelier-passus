@@ -1,0 +1,74 @@
+{
+  "src": "elAlofonoDeLaVida",
+  "type": "gallery",
+  "year": 2010,
+  "card": "elAlofonoDeLaVidaCard",
+  "title": "elAlofonoDeLaVidaTitle",
+  "headers": [
+    "elAlofonoDeLaVidaHeader0",
+    "elAlofonoDeLaVidaHeader1"
+  ],
+  "paragraphs": [
+    "elAlofonoDeLaVidaParagraph0",
+    "elAlofonoDeLaVidaParagraph1",
+    "elAlofonoDeLaVidaParagraph2",
+    "elAlofonoDeLaVidaParagraph3"
+  ],
+  "cardIcon": "iconos/EL-ALOFONO-DE-LA-VIDA.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida1",
+      "path": "el-alofono-de-la-vida/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida2",
+      "path": "el-alofono-de-la-vida/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida3",
+      "path": "el-alofono-de-la-vida/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida4",
+      "path": "el-alofono-de-la-vida/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida5",
+      "path": "el-alofono-de-la-vida/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida6",
+      "path": "el-alofono-de-la-vida/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida7",
+      "path": "el-alofono-de-la-vida/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida8",
+      "path": "el-alofono-de-la-vida/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "elAlofonoDeLaVida9",
+      "path": "el-alofono-de-la-vida/9.jpg",
+      "vimeoId": null
+    }
+  ]
+}

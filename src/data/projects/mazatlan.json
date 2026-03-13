@@ -1,0 +1,217 @@
+{
+  "src": "mazatlan",
+  "type": "gallery",
+  "year": 2016,
+  "card": "mazatlanCard",
+  "title": "mazatlanTitle",
+  "headers": [
+    "mazatlanHeader0",
+    "mazatlanHeader1"
+  ],
+  "paragraphs": [
+    "mazatlanParagraph0",
+    "mazatlanParagraph1",
+    "mazatlanParagraph2",
+    "mazatlanParagraph3",
+    "mazatlanParagraph4",
+    "mazatlanParagraph5",
+    "mazatlanParagraph6",
+    "mazatlanParagraph7",
+    "mazatlanParagraph8"
+  ],
+  "cardIcon": "iconos/MAZATLAN.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "mazatlan1",
+      "path": "mazatlan/0.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan2",
+      "path": "mazatlan/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan3",
+      "path": "mazatlan/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan4",
+      "path": "mazatlan/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan5",
+      "path": "mazatlan/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan6",
+      "path": "mazatlan/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan7",
+      "path": "mazatlan/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan8",
+      "path": "mazatlan/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan9",
+      "path": "mazatlan/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan10",
+      "path": "mazatlan/9.1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan11",
+      "path": "mazatlan/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan12",
+      "path": "mazatlan/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan13",
+      "path": "mazatlan/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan14",
+      "path": "mazatlan/12.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan15",
+      "path": "mazatlan/13.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan16",
+      "path": "mazatlan/14.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan17",
+      "path": "mazatlan/15.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan18",
+      "path": "mazatlan/16.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan19",
+      "path": "mazatlan/17.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan20",
+      "path": "mazatlan/18.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan21",
+      "path": "mazatlan/19.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan22",
+      "path": "mazatlan/20.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan23",
+      "path": "mazatlan/21.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan24",
+      "path": "mazatlan/22.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan25",
+      "path": "mazatlan/23.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan26",
+      "path": "mazatlan/24.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan27",
+      "path": "mazatlan/25.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan28",
+      "path": "mazatlan/26.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan29",
+      "path": "mazatlan/27.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan30",
+      "path": "mazatlan/28.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan31",
+      "path": "mazatlan/29.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mazatlan32",
+      "path": "mazatlan/30.jpg",
+      "vimeoId": null
+    }
+  ]
+}

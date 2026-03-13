@@ -21,3 +21,13 @@
 - Build succeeds, output HTML has: `lang="es"`, inlined global CSS with font-face declarations, `.Body` wrapper div, font files in `dist/fonts/`
 - Git committed
 - Next step needed: 1.3 — Port the SVG Logo component (Logo.jsx → components/Logo.astro)
+
+## Iteration 3 - Checkpoint 1.3: Port SVG Logo component
+- Created `src/components/Logo.astro` — pure Astro component with inline SVG (no React needed)
+- Created `src/styles/logo.css` with `.Logo` z-index and `.garments` hover effect
+- Updated `index.astro` to render Logo component
+- Build succeeds, output HTML contains SVG with Logo class, garments class, and viewBox
+- Converted React `className` → Astro `class` attributes
+- Git committed
+- Checkpoint 1.4 (verify base layout + logo) is effectively done: build succeeds, logo SVG renders in output HTML
+- Next step needed: 2.1 — Parse project data from source and create content collection

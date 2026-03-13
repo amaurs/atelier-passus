@@ -1,0 +1,119 @@
+{
+  "src": "mantonegro",
+  "type": "gallery",
+  "year": 2018,
+  "card": "mantonegroCard",
+  "title": "mantonegroTitle",
+  "headers": [
+    "mantonegroHeader0",
+    "mantonegroHeader1"
+  ],
+  "paragraphs": [
+    "mantonegroParagraph0",
+    "mantonegroParagraph1",
+    "mantonegroParagraph2",
+    "mantonegroParagraph3",
+    "mantonegroParagraph4",
+    "mantonegroParagraph5",
+    "mantonegroParagraph6"
+  ],
+  "cardIcon": "iconos/MANTONEGRO.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "mantonegro1",
+      "path": "mantonegro/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro2",
+      "path": "mantonegro/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro3",
+      "path": "mantonegro/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro4",
+      "path": "mantonegro/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro5",
+      "path": "mantonegro/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro6",
+      "path": "mantonegro/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro7",
+      "path": "mantonegro/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro8",
+      "path": "mantonegro/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro9",
+      "path": "mantonegro/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro10",
+      "path": "mantonegro/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro11",
+      "path": "mantonegro/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro12",
+      "path": "mantonegro/12.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro13",
+      "path": "mantonegro/13.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro14",
+      "path": "mantonegro/14.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro15",
+      "path": "mantonegro/15.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mantonegro16",
+      "path": "mantonegro/16.jpg",
+      "vimeoId": null
+    }
+  ]
+}

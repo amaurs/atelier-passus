@@ -1,0 +1,44 @@
+{
+  "src": "liLiane",
+  "type": "gallery",
+  "year": 2013,
+  "card": "liLianeCard",
+  "title": "liLianeTitle",
+  "headers": [
+    "liLianeHeader0",
+    "liLianeHeader1"
+  ],
+  "paragraphs": [
+    "liLianeParagraph0",
+    "liLianeParagraph1",
+    "liLianeParagraph2",
+    "liLianeParagraph3"
+  ],
+  "cardIcon": "iconos/LI-LIANE.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "liLiane1",
+      "path": "li-liane/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "liLiane2",
+      "path": "li-liane/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "liLiane3",
+      "path": "li-liane/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "liLiane4",
+      "path": "li-liane/4.jpg",
+      "vimeoId": null
+    }
+  ]
+}

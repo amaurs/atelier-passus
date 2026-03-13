@@ -1,0 +1,105 @@
+{
+  "src": "mata",
+  "type": "gallery",
+  "year": 2018,
+  "card": "mataCard",
+  "title": "mataTitle",
+  "headers": [
+    "mataHeader0",
+    "mataHeader1"
+  ],
+  "paragraphs": [
+    "mataParagraph0",
+    "mataParagraph1",
+    "mataParagraph2",
+    "mataParagraph3",
+    "mataParagraph4"
+  ],
+  "cardIcon": "iconos/MATA.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "mata1",
+      "path": "mata/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata2",
+      "path": "mata/2.1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata3",
+      "path": "mata/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata4",
+      "path": "mata/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata5",
+      "path": "mata/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata6",
+      "path": "mata/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata7",
+      "path": "mata/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata8",
+      "path": "mata/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata9",
+      "path": "mata/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata10",
+      "path": "mata/9.1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata11",
+      "path": "mata/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata12",
+      "path": "mata/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata13",
+      "path": "mata/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "mata14",
+      "path": "mata/12.jpg",
+      "vimeoId": null
+    }
+  ]
+}

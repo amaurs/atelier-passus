@@ -1,0 +1,70 @@
+{
+  "src": "onora",
+  "type": "gallery",
+  "year": 2013,
+  "card": "onoraCard",
+  "title": "onoraTitle",
+  "headers": [
+    "onoraHeader0",
+    "onoraHeader1",
+    "onoraHeader2"
+  ],
+  "paragraphs": [
+    "onoraParagraph0",
+    "onoraParagraph1",
+    "onoraParagraph2",
+    "onoraParagraph3",
+    "onoraParagraph4"
+  ],
+  "cardIcon": "iconos/ONORA.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "onora1",
+      "path": "onora/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora2",
+      "path": "onora/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora3",
+      "path": "onora/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora4",
+      "path": "onora/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora5",
+      "path": "onora/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora6",
+      "path": "onora/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora7",
+      "path": "onora/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "onora8",
+      "path": "onora/8.jpg",
+      "vimeoId": null
+    }
+  ]
+}

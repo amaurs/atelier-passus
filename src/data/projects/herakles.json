@@ -1,0 +1,62 @@
+{
+  "src": "herakles",
+  "type": "gallery",
+  "year": 2016,
+  "card": "heraklesCard",
+  "title": "heraklesTitle",
+  "headers": [
+    "heraklesHeader0",
+    "heraklesHeader1"
+  ],
+  "paragraphs": [
+    "heraklesParagraph0",
+    "heraklesParagraph1",
+    "heraklesParagraph2",
+    "heraklesParagraph3"
+  ],
+  "cardIcon": "iconos/HERAKLES.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "herakles1",
+      "path": "herakles/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "herakles2",
+      "path": "herakles/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "herakles3",
+      "path": "herakles/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "herakles4",
+      "path": "herakles/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "herakles5",
+      "path": "herakles/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "herakles6",
+      "path": "herakles/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "herakles7",
+      "path": "herakles/7.jpg",
+      "vimeoId": null
+    }
+  ]
+}

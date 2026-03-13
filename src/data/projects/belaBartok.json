@@ -1,0 +1,75 @@
+{
+  "src": "belaBartok",
+  "type": "gallery",
+  "year": 2016,
+  "card": "belaBartokCard",
+  "title": "belaBartokTitle",
+  "headers": [
+    "belaBartokHeader0",
+    "belaBartokHeader1",
+    "belaBartokHeader2"
+  ],
+  "paragraphs": [
+    "belaBartokParagraph0",
+    "belaBartokParagraph1",
+    "belaBartokParagraph2",
+    "belaBartokParagraph3"
+  ],
+  "cardIcon": "iconos/BELA-BARTOK.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "belaBartok1",
+      "path": "bela-bartok/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok2",
+      "path": "bela-bartok/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok3",
+      "path": "bela-bartok/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok4",
+      "path": "bela-bartok/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok5",
+      "path": "bela-bartok/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok6",
+      "path": "bela-bartok/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok7",
+      "path": "bela-bartok/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok8",
+      "path": "bela-bartok/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "belaBartok9",
+      "path": "bela-bartok/9.jpg",
+      "vimeoId": null
+    }
+  ]
+}

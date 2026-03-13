@@ -1,0 +1,25 @@
+{
+  "src": "elCicloDeLaPiel",
+  "type": "gallery",
+  "year": 2010,
+  "card": "elCicloDeLaPielCard",
+  "title": "elCicloDeLaPielTitle",
+  "headers": [
+    "elCicloDeLaPielHeader0",
+    "elCicloDeLaPielHeader1"
+  ],
+  "paragraphs": [
+    "elCicloDeLaPielParagraph0",
+    "elCicloDeLaPielParagraph1",
+    "elCicloDeLaPielParagraph2"
+  ],
+  "cardIcon": "iconos/LOS-CICLOS-DE-LA-PIEL.jpg",
+  "images": [
+    {
+      "type": "video",
+      "src": "288891264",
+      "path": null,
+      "vimeoId": "288891264"
+    }
+  ]
+}

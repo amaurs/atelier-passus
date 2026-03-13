@@ -1,0 +1,83 @@
+{
+  "src": "rompehueso",
+  "type": "gallery",
+  "year": 2018,
+  "card": "rompehuesoCard",
+  "title": "rompehuesoTitle",
+  "headers": [
+    "rompehuesoHeader0",
+    "rompehuesoHeader1"
+  ],
+  "paragraphs": [
+    "rompehuesoParagraph0",
+    "rompehuesoParagraph1",
+    "rompehuesoParagraph2",
+    "rompehuesoParagraph3",
+    "rompehuesoParagraph4",
+    "rompehuesoParagraph5",
+    "rompehuesoParagraph6"
+  ],
+  "cardIcon": "iconos/ROMPEHUESO.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "rompehueso1",
+      "path": "rompehueso/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso2",
+      "path": "rompehueso/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso3",
+      "path": "rompehueso/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso4",
+      "path": "rompehueso/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso5",
+      "path": "rompehueso/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso6",
+      "path": "rompehueso/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso7",
+      "path": "rompehueso/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso8",
+      "path": "rompehueso/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso9",
+      "path": "rompehueso/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "rompehueso10",
+      "path": "rompehueso/11.jpg",
+      "vimeoId": null
+    }
+  ]
+}

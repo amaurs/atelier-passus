@@ -1,0 +1,69 @@
+{
+  "src": "aube",
+  "type": "gallery",
+  "year": 2017,
+  "card": "aubeCard",
+  "title": "aubeTitle",
+  "headers": [
+    "aubeHeader0",
+    "aubeHeader1"
+  ],
+  "paragraphs": [
+    "aubeParagraph0",
+    "aubeParagraph1",
+    "aubeParagraph2",
+    "aubeParagraph3",
+    "aubeParagraph4"
+  ],
+  "cardIcon": "iconos/AUBE.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "aube1",
+      "path": "aube/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube2",
+      "path": "aube/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube3",
+      "path": "aube/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube4",
+      "path": "aube/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube5",
+      "path": "aube/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube6",
+      "path": "aube/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube7",
+      "path": "aube/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "aube8",
+      "path": "aube/8.jpg",
+      "vimeoId": null
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "src": "instruccionesParaUnArquitecto",
+  "type": "gallery",
+  "year": 2013,
+  "card": "instruccionesParaUnArquitectoCard",
+  "title": "instruccionesParaUnArquitectoTitle",
+  "headers": [
+    "instruccionesParaUnArquitectoHeader0",
+    "instruccionesParaUnArquitectoHeader1"
+  ],
+  "paragraphs": [
+    "instruccionesParaUnArquitectoParagraph0",
+    "instruccionesParaUnArquitectoParagraph1",
+    "instruccionesParaUnArquitectoParagraph2",
+    "instruccionesParaUnArquitectoParagraph3"
+  ],
+  "cardIcon": "iconos/INSTRUCCIONES-PARA-UN-ARQUITECTO.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto1",
+      "path": "instrucciones-para-un-arquitecto/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto2",
+      "path": "instrucciones-para-un-arquitecto/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto3",
+      "path": "instrucciones-para-un-arquitecto/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto4",
+      "path": "instrucciones-para-un-arquitecto/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto5",
+      "path": "instrucciones-para-un-arquitecto/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto6",
+      "path": "instrucciones-para-un-arquitecto/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto7",
+      "path": "instrucciones-para-un-arquitecto/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto8",
+      "path": "instrucciones-para-un-arquitecto/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto9",
+      "path": "instrucciones-para-un-arquitecto/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto10",
+      "path": "instrucciones-para-un-arquitecto/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto11",
+      "path": "instrucciones-para-un-arquitecto/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "instruccionesParaUnArquitecto12",
+      "path": "instrucciones-para-un-arquitecto/12.jpg",
+      "vimeoId": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "src": "us",
+  "type": "gallery",
+  "year": null,
+  "card": "usCard",
+  "title": null,
+  "headers": [],
+  "paragraphs": [
+    "usFooter1",
+    "usFooter2",
+    "usFooter3",
+    "usFooter4",
+    "usFooter9",
+    "usFooter10"
+  ],
+  "cardIcon": null,
+  "images": [
+    {
+      "type": "image",
+      "src": "studio2",
+      "path": "studio2.jpg",
+      "vimeoId": null
+    }
+  ]
+}

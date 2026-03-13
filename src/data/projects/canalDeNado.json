@@ -1,0 +1,48 @@
+{
+  "src": "canalDeNado",
+  "type": "gallery",
+  "year": 2019,
+  "card": "canalDeNadoCard",
+  "title": "canalDeNadoTitle",
+  "headers": [
+    "canalDeNadoHeader0",
+    "canalDeNadoHeader1"
+  ],
+  "paragraphs": [
+    "canalDeNadoParagraph0",
+    "canalDeNadoParagraph1"
+  ],
+  "cardIcon": "iconos/SPA.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "canalDeNado1",
+      "path": "canalDeNado/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "canalDeNado2",
+      "path": "canalDeNado/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "canalDeNado3",
+      "path": "canalDeNado/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "canalDeNado4",
+      "path": "canalDeNado/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "canalDeNado5",
+      "path": "canalDeNado/5.jpg",
+      "vimeoId": null
+    }
+  ]
+}

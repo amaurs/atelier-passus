@@ -1,0 +1,54 @@
+{
+  "src": "arbolesDeVida",
+  "type": "gallery",
+  "year": 2016,
+  "card": "arbolesDeVidaCard",
+  "title": "arbolesDeVidaTitle",
+  "headers": [
+    "arbolesDeVidaHeader0",
+    "arbolesDeVidaHeader1"
+  ],
+  "paragraphs": [
+    "arbolesDeVidaParagraph0",
+    "arbolesDeVidaParagraph1"
+  ],
+  "cardIcon": "iconos/ARBOLES-DE-VIDA.jpg",
+  "images": [
+    {
+      "type": "video",
+      "src": "288441225",
+      "path": null,
+      "vimeoId": "288441225"
+    },
+    {
+      "type": "image",
+      "src": "arbolesDeVida1",
+      "path": "arboles-de-vida/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arbolesDeVida2",
+      "path": "arboles-de-vida/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arbolesDeVida3",
+      "path": "arboles-de-vida/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arbolesDeVida4",
+      "path": "arboles-de-vida/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arbolesDeVida5",
+      "path": "arboles-de-vida/5.jpg",
+      "vimeoId": null
+    }
+  ]
+}

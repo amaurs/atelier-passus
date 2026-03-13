@@ -1,0 +1,23 @@
+{
+  "src": "studio",
+  "type": "gallery",
+  "year": null,
+  "card": "studioCard",
+  "title": null,
+  "headers": [],
+  "paragraphs": [
+    "studioParagraph0",
+    "studioParagraph1",
+    "studioParagraph2",
+    "studioParagraph3"
+  ],
+  "cardIcon": null,
+  "images": [
+    {
+      "type": "image",
+      "src": "studio3",
+      "path": "studio3.jpg",
+      "vimeoId": null
+    }
+  ]
+}

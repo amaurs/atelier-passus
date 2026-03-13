@@ -1,0 +1,92 @@
+{
+  "src": "colodionNum13",
+  "type": "gallery",
+  "year": 2013,
+  "card": "colodionNum13Card",
+  "title": "colodionNum13Title",
+  "headers": [
+    "colodionNum13Header0",
+    "colodionNum13Header1"
+  ],
+  "paragraphs": [
+    "colodionNum13Paragraph0",
+    "colodionNum13Paragraph1",
+    "colodionNum13Paragraph2",
+    "colodionNum13Paragraph3"
+  ],
+  "cardIcon": "iconos/COLODION-NUM.13.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "colodionNum131",
+      "path": "colodion-num-13/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum132",
+      "path": "colodion-num-13/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum133",
+      "path": "colodion-num-13/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum134",
+      "path": "colodion-num-13/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum135",
+      "path": "colodion-num-13/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum136",
+      "path": "colodion-num-13/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum137",
+      "path": "colodion-num-13/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum138",
+      "path": "colodion-num-13/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum139",
+      "path": "colodion-num-13/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum1310",
+      "path": "colodion-num-13/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum1311",
+      "path": "colodion-num-13/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "colodionNum1312",
+      "path": "colodion-num-13/12.jpg",
+      "vimeoId": null
+    }
+  ]
+}

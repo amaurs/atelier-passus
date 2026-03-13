@@ -1,0 +1,118 @@
+{
+  "src": "laredo",
+  "type": "gallery",
+  "year": 2015,
+  "card": "laredoCard",
+  "title": "laredoTitle",
+  "headers": [
+    "laredoHeader0",
+    "laredoHeader1"
+  ],
+  "paragraphs": [
+    "laredoParagraph0",
+    "laredoParagraph1",
+    "laredoParagraph2",
+    "laredoParagraph3",
+    "laredoParagraph4",
+    "laredoParagraph5"
+  ],
+  "cardIcon": "iconos/LAREDO.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "laredo1",
+      "path": "laredo/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo2",
+      "path": "laredo/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo3",
+      "path": "laredo/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo4",
+      "path": "laredo/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo5",
+      "path": "laredo/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo6",
+      "path": "laredo/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo7",
+      "path": "laredo/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo8",
+      "path": "laredo/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo9",
+      "path": "laredo/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo10",
+      "path": "laredo/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo11",
+      "path": "laredo/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo12",
+      "path": "laredo/12.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo13",
+      "path": "laredo/13.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo14",
+      "path": "laredo/14.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo15",
+      "path": "laredo/15.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "laredo16",
+      "path": "laredo/16.jpg",
+      "vimeoId": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "src": "contact",
+  "type": "gallery",
+  "year": null,
+  "card": "contactCard",
+  "title": null,
+  "headers": [],
+  "paragraphs": [
+    "contactParagraph1",
+    "contactParagraph2",
+    "contactParagraph3",
+    "contactParagraph4",
+    "contactParagraph5",
+    "contactParagraph6"
+  ],
+  "cardIcon": null,
+  "images": [
+    {
+      "type": "image",
+      "src": "contact1",
+      "path": null,
+      "vimeoId": null
+    }
+  ]
+}

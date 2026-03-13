@@ -1,0 +1,62 @@
+{
+  "src": "arvant",
+  "type": "gallery",
+  "year": 2018,
+  "card": "arvantCard",
+  "title": "arvantTitle",
+  "headers": [
+    "arvantHeader0",
+    "arvantHeader1"
+  ],
+  "paragraphs": [
+    "arvantParagraph1",
+    "arvantParagraph2",
+    "arvantParagraph3",
+    "arvantParagraph4"
+  ],
+  "cardIcon": "iconos/ARVANT.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "arvant1",
+      "path": "arvant/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arvant2",
+      "path": "arvant/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arvant3",
+      "path": "arvant/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arvant4",
+      "path": "arvant/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arvant5",
+      "path": "arvant/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arvant6",
+      "path": "arvant/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "arvant7",
+      "path": "arvant/7.jpg",
+      "vimeoId": null
+    }
+  ]
+}

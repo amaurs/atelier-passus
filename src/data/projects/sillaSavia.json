@@ -1,0 +1,74 @@
+{
+  "src": "sillaSavia",
+  "type": "gallery",
+  "year": 2019,
+  "card": "sillaSaviaCard",
+  "title": "sillaSaviaTitle",
+  "headers": [
+    "sillaSaviaHeader0",
+    "sillaSaviaHeader1"
+  ],
+  "paragraphs": [
+    "sillaSaviaParagraph0",
+    "sillaSaviaParagraph1",
+    "sillaSaviaParagraph2",
+    "sillaSaviaParagraph3"
+  ],
+  "cardIcon": "iconos/SILLA-TIRASAVIA.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "sillaSavia1",
+      "path": "silla-tirasavia/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia2",
+      "path": "silla-tirasavia/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia3",
+      "path": "silla-tirasavia/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia4",
+      "path": "silla-tirasavia/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia5",
+      "path": "silla-tirasavia/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia6",
+      "path": "silla-tirasavia/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia7",
+      "path": "silla-tirasavia/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia8",
+      "path": "silla-tirasavia/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "sillaSavia9",
+      "path": "silla-tirasavia/9.jpg",
+      "vimeoId": null
+    }
+  ]
+}

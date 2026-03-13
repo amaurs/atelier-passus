@@ -1,0 +1,72 @@
+{
+  "src": "planDeEscape",
+  "type": "gallery",
+  "year": 2009,
+  "card": "planDeEscapeCard",
+  "title": "planDeEscapeTitle",
+  "headers": [
+    "planDeEscapeHeader0",
+    "planDeEscapeHeader1"
+  ],
+  "paragraphs": [
+    "planDeEscapeParagraph0",
+    "planDeEscapeParagraph1"
+  ],
+  "cardIcon": "iconos/PLAN-DE-ESCAPE.jpg",
+  "images": [
+    {
+      "type": "video",
+      "src": "288629358",
+      "path": null,
+      "vimeoId": "288629358"
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape1",
+      "path": "plan-de-escape/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape2",
+      "path": "plan-de-escape/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape3",
+      "path": "plan-de-escape/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape4",
+      "path": "plan-de-escape/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape5",
+      "path": "plan-de-escape/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape6",
+      "path": "plan-de-escape/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape7",
+      "path": "plan-de-escape/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "planDeEscape8",
+      "path": "plan-de-escape/8.jpg",
+      "vimeoId": null
+    }
+  ]
+}

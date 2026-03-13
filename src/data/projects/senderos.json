@@ -1,0 +1,25 @@
+{
+  "src": "senderos",
+  "type": "gallery",
+  "year": 2014,
+  "card": "senderosCard",
+  "title": "senderosTitle",
+  "headers": [
+    "senderosHeader0",
+    "senderosHeader1"
+  ],
+  "paragraphs": [
+    "senderosParagraph0",
+    "senderosParagraph1",
+    "senderosParagraph2"
+  ],
+  "cardIcon": "iconos/SENDEROS.jpg",
+  "images": [
+    {
+      "type": "video",
+      "src": "289150581",
+      "path": null,
+      "vimeoId": "289150581"
+    }
+  ]
+}

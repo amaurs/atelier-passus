@@ -1,0 +1,106 @@
+{
+  "src": "pentHouse4",
+  "type": "gallery",
+  "year": 2017,
+  "card": "pentHouse4Card",
+  "title": "pentHouse4Title",
+  "headers": [
+    "pentHouse4Header0",
+    "pentHouse4Header1"
+  ],
+  "paragraphs": [
+    "pentHouse4Paragraph0",
+    "pentHouse4Paragraph1",
+    "pentHouse4Paragraph2",
+    "pentHouse4Paragraph3",
+    "pentHouse4Paragraph4",
+    "pentHouse4Paragraph5"
+  ],
+  "cardIcon": "iconos/PH4.jpg",
+  "images": [
+    {
+      "type": "image",
+      "src": "pentHouse41",
+      "path": "pentHouse4/1.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse42",
+      "path": "pentHouse4/2.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse43",
+      "path": "pentHouse4/3.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse44",
+      "path": "pentHouse4/4.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse45",
+      "path": "pentHouse4/5.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse46",
+      "path": "pentHouse4/6.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse47",
+      "path": "pentHouse4/7.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse48",
+      "path": "pentHouse4/8.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse49",
+      "path": "pentHouse4/9.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse410",
+      "path": "pentHouse4/10.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse411",
+      "path": "pentHouse4/11.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse412",
+      "path": "pentHouse4/12.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse413",
+      "path": "pentHouse4/13.jpg",
+      "vimeoId": null
+    },
+    {
+      "type": "image",
+      "src": "pentHouse414",
+      "path": "pentHouse4/14.jpg",
+      "vimeoId": null
+    }
+  ]
+}
