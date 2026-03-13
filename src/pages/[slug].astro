@@ -2,8 +2,10 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import ImageGallery from '../components/ImageGallery.tsx';
+import Menu from '../components/Menu.tsx';
 import '../styles/renderhelper.css';
 import '../styles/card.css';
+import '../styles/menu.css';
 
 export async function getStaticPaths() {
   const allProjects = await getCollection('projects');
@@ -26,6 +28,7 @@ const imageData = project.images.map((img, i) => {
 });
 ---
 <Base title={project.title ? `Atelier Passus — ${project.title}` : 'Atelier Passus'}>
+  <Menu client:load />
   <ImageGallery
     client:load
     images={imageData}

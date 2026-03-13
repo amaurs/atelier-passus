@@ -3,7 +3,9 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
+import Menu from '../components/Menu.tsx';
 import '../styles/grid.css';
+import '../styles/menu.css';
 
 const allProjects = await getCollection('projects');
 const projects = allProjects
@@ -20,6 +22,7 @@ function getIcon(cardIcon: string | null) {
 }
 ---
 <Base title="Atelier Passus — Projects">
+  <Menu client:load isGallery={true} />
   <section id="projects" class="Grid-container">
     <div class="Grid">
       {projects.map(p => {

@@ -87,3 +87,23 @@
 - Checkpoint 3.4 (static pages: contact, us, studio) is effectively done — they use the same [slug].astro dynamic route
 - Git committed
 - Next step needed: 3.5 verification is effectively done (all slugs resolve, images load, text renders). Move to Phase 4: 4.1 — Port image gallery as React island
+
+## Iteration 9 - Checkpoint 4.1: Port image gallery as React island
+- Created `src/components/ImageGallery.tsx` — full React island with:
+  - `react-swipeable` for touch/mouse swipe (left=next, right=prev)
+  - Keyboard navigation (ArrowLeft/ArrowRight)
+  - Image index state with boundary clamping (0 to length-1)
+  - Vertical image detection (sets `.vertical` class when height > width)
+  - Shortcut dot/number buttons to jump to any image
+  - Video support (Vimeo iframe with autoplay/loop/muted)
+  - Navigate spans with custom cursor decorations (decorationleft/decorationright)
+  - Mobile arrow buttons (RenderHelper-navigation)
+  - Card section with title, headers, paragraphs inline
+- Updated `[slug].astro` to use `<ImageGallery client:load />` instead of static HTML
+  - Passes resolved image URLs (from Astro image pipeline) as props
+  - Passes title, headers, paragraphs as props
+  - Much simpler template — all interactivity delegated to React
+- Build succeeds: 31 pages, ImageGallery.js bundle generated, React client runtime included
+- Verified: laredo page has astro-island with 16 images, elCicloDeLaPiel has vimeoId
+- Git committed
+- Next step needed: 4.2 — Port Hamburger menu + Menu overlay as React island
