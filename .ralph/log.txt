@@ -159,3 +159,18 @@
 - Git committed
 - Phase 5 complete (5.1 routing ✓, 5.2 translations wired ✓, 5.3 language switcher ✓, 5.4 verified ✓)
 - Next step needed: Phase 6: 6.1 — Verify all CSS files are ported (most already done in previous phases), then 6.3 — Port 404 page
+
+## Iteration 13 - Checkpoint 6.1+6.3: Port remaining CSS files and create 404 page
+- Created `src/styles/content.css` — ported from `Content.css` (RenderHelper-aside, Card-title, subtitle, thumb button styles)
+- Created `src/styles/us.css` — ported from `Us.css` (Us page layout, responsive image/text columns)
+- Created `src/styles/studio.css` — ported from `Studio.css` (Studio page layout)
+- Created `src/styles/lost.css` — ported from `Lost.css` (404 page height)
+- Created `src/pages/404.astro` — matches `Lost.jsx`: Menu component + translated "Página no encontrada." text
+- Added `content.css` import to `[slug].astro` and `fr/[slug].astro` (needed for Card-title, subtitle, thumb classes used by ImageGallery)
+- Skipped `Contact.css` — it's Leaflet map-specific styles, not needed since we're not using Leaflet
+- CSS porting status: App.css ✓, index.css ✓, Hero.css ✓, Grid.css ✓, Card.css ✓, RenderHelper.css ✓, Menu.css ✓, Hamburger.css ✓, Language.css ✓, Footer.css ✓, Lines.css ✓, Logo.css ✓, Content.css ✓, Us.css ✓, Studio.css ✓, Lost.css ✓, Contact.css (skipped/Leaflet)
+- Build succeeds: 62 pages (31 es + 30 fr + 1 404)
+- Verified: 404.html contains "Página no encontrada.", Lost class, Menu with language switcher
+- Git committed
+- Checkpoint 6.1 (all CSS ported) ✓, Checkpoint 6.3 (404 page) ✓
+- Next step needed: 6.4 — Port Easter egg (Konami code) as a client-side script
