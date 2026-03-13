@@ -44,3 +44,11 @@
 - Git committed
 - Checkpoint 2.4 (verify content collection) is effectively done via the test page
 - Next step needed: 2.2 — Copy images2/ to src/assets/images/ for Astro image pipeline
+
+## Iteration 5 - Checkpoint 2.2+2.3: Copy images and icons to src/assets/
+- Copied 313 image files from `src/images2/` → `src/assets/images/` (26 project folders + 4 loose files: us.jpg, studio1-3.jpg, instagram.svg)
+- Copied 28 icon files from `src/images2/iconos/` → `src/assets/icons/`
+- Build succeeds with images in place
+- Git committed
+- Phase 2 is now complete (2.1 content collection ✓, 2.2 images ✓, 2.3 icons ✓, 2.4 verification ✓)
+- Next step needed: 3.1 — Build Hero page (pages/index.astro) with Vimeo background, logo overlay, link to projects

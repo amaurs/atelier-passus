@@ -1,0 +1,51 @@
+.Hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.Hero p {
+  position: fixed;
+  height: 10px;
+  top: 50px;
+  left: 50px;
+  margin-top: -5px;
+  color: white;
+  z-index: 0;
+}
+
+.Hero svg {
+  position: fixed;
+  height: 150px;
+  bottom: 50px;
+  right: 50px;
+  z-index: 0;
+}
+
+.Hero iframe {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1000px) {
+  .Hero svg {
+    height: 200px;
+    bottom: 100px;
+    right: 100px;
+  }
+
+  .Hero p {
+    top: 100px;
+    left: 100px;
+  }
+}
