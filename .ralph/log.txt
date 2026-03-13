@@ -174,3 +174,16 @@
 - Git committed
 - Checkpoint 6.1 (all CSS ported) ✓, Checkpoint 6.3 (404 page) ✓
 - Next step needed: 6.4 — Port Easter egg (Konami code) as a client-side script
+
+## Iteration 14 - Checkpoint 6.4: Port Easter egg (Konami code)
+- Copied `buni.gif` from source `src/images/` to `public/images/buni.gif`
+- Created `public/scripts/easter-egg.js` — vanilla JS IIFE that:
+  - Listens for Konami code sequence (↑↑↓↓←→←→AB)
+  - On activation: creates `.EasterEgg` div with buni.gif, animates it across screen at 3px/17ms, removes when off-screen
+  - Matches source behavior: `clearInterval` + `pos += 3` tick loop
+- Added `<script src="/scripts/easter-egg.js" is:inline>` to `Base.astro` layout (needed `is:inline` for public/ assets in Astro)
+- `.EasterEgg` CSS was already in `global.css` from iteration 2 (position:fixed, bottom:0, left:0, z-index:100)
+- Build succeeds: 62 pages, script included in all pages, buni.gif in dist/images/
+- Git committed
+- Phase 6 complete (6.1 CSS ✓, 6.3 404 ✓, 6.4 Easter egg ✓). Checkpoint 6.2 (responsive testing) and 6.5 (visual parity) are manual verification tasks.
+- Next step needed: Phase 7: 7.1+7.2 — Verify static output config and run final build verification
