@@ -72,3 +72,18 @@
 - Astro image pipeline automatically generates 2 sizes per icon (300w, 600w) with srcset
 - Git committed
 - Next step needed: 3.3 — Build dynamic project pages (pages/[slug].astro) with image gallery + text card
+
+## Iteration 8 - Checkpoint 3.3: Build dynamic project pages ([slug].astro)
+- Created `src/pages/[slug].astro` using `getStaticPaths()` — generates a page for every entry in the content collection (28 total: 25 projects + us/contact/studio)
+- Ported `RenderHelper.css` → `src/styles/renderhelper.css` (gallery grid layout, navigation arrows, responsive desktop 70/30 split, custom cursor SVGs for left/right navigation)
+- Ported `Card.css` → `src/styles/card.css` (text card styling, shortcut thumbnails, footer, responsive breakpoints)
+- Page structure: `.RenderHelper` grid with gallery area (image or Vimeo iframe) + `.Card` text area (title, headers, paragraphs, shortcut dots)
+- First image rendered statically with Astro `<Image>` optimization (widths 600/1200, webp conversion)
+- Video projects render Vimeo iframe with autoplay/loop/muted
+- Gallery shortcut buttons rendered (first highlighted) — interactivity deferred to Phase 4 React island
+- `data-images` JSON attribute on `.RenderHelper` div stores all image data for future React hydration
+- Build succeeds: 31 pages built, all 28 slugs generate correct HTML
+- Verified: laredo has 16 shortcut buttons, 2 subtitles, 6 paragraphs, optimized image; elCicloDeLaPiel has Vimeo embed; contact/us/studio have correct paragraph counts
+- Checkpoint 3.4 (static pages: contact, us, studio) is effectively done — they use the same [slug].astro dynamic route
+- Git committed
+- Next step needed: 3.5 verification is effectively done (all slugs resolve, images load, text renders). Move to Phase 4: 4.1 — Port image gallery as React island
