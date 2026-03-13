@@ -12,3 +12,12 @@
   - Astro 6.x requires Node >=22.12.0, Astro 5.x works with 22.7.0
   - i18n routing configured with `prefixDefaultLocale: false` (Spanish has no prefix, French gets `/fr/`)
 - Next step needed: 1.2 — Create base layout matching current site styles
+
+## Iteration 2 - Checkpoint 1.2: Create base layout with global styles
+- Created `src/layouts/Base.astro` with props for `title` and `lang` (defaults: 'Atelier Passus', 'es')
+- Created `src/styles/global.css` combining `index.css` (fonts, body reset) and `App.css` (Body grid, controls, cloud overlay, easter egg positioning, responsive rules)
+- Copied `whitney_book.ttf` and `whitney_bold.ttf` to `public/fonts/`
+- Updated `index.astro` to use the Base layout
+- Build succeeds, output HTML has: `lang="es"`, inlined global CSS with font-face declarations, `.Body` wrapper div, font files in `dist/fonts/`
+- Git committed
+- Next step needed: 1.3 — Port the SVG Logo component (Logo.jsx → components/Logo.astro)
