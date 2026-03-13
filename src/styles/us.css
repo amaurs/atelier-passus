@@ -1,0 +1,33 @@
+.Us {
+  height: 90%;
+}
+
+@media screen and (min-width: 1000px) {
+  .Us {
+    position: relative;
+  }
+  .Us-image-container {
+    width: 50%;
+    float: left;
+  }
+  .Us-image-container img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Us-content h2 {
+    width: 50%;
+    float: right;
+  }
+  .Us-colabs h2, p {
+    font-size: 2em;
+  }
+  .Us-litany {
+    margin-top: 50px;
+  }
+  .Us-litany p {
+    padding-top: 0;
+    margin: 0;
+    font-style: oblique;
+  }
+}

@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Menu from '../components/Menu.tsx';
+import { t } from '../i18n';
+import '../styles/lost.css';
+import '../styles/menu.css';
+---
+<Base title="404 — Atelier Passus">
+  <Menu client:load locale="es" currentPath="/404" />
+  <div class="Lost">
+    <p>{t('four-oh-four-header0')}</p>
+  </div>
+</Base>

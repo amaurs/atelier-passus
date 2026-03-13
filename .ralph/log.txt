@@ -142,3 +142,20 @@
   - `t()` falls back to default locale (es) then to raw key if not found
   - `prefixDefaultLocale: false` means Spanish pages have no prefix, French gets `/fr/`
 - Next step needed: 5.3 — Create French locale pages (`/fr/`, `/fr/projects`, `/fr/[slug]`) that render French translations
+
+## Iteration 12 - Checkpoint 5.1+5.2+5.3: French locale pages and language switcher
+- Created `src/pages/fr/index.astro` — French Hero page with `/fr/projects` links, `lang="fr"`
+- Created `src/pages/fr/projects.astro` — French Grid page with `locale='fr'`, all card text translated (e.g., "Arbres" instead of "Árboles"), links prefixed with `/fr/`
+- Created `src/pages/fr/[slug].astro` — French project pages with `locale='fr'`, all titles/headers/paragraphs translated (e.g., "Arbres de vie", "Réhabilitation et extension...")
+- Updated `Menu.tsx` to be locale-aware:
+  - Accepts `locale` and `currentPath` props
+  - Language switcher buttons are now `<a>` links navigating between `/path` (es) and `/fr/path` (fr)
+  - Menu items use locale-prefixed hrefs and translated labels (proyectos/projets, nosotros/nous, etc.)
+  - Footer logo links to `/` (es) or `/fr` (fr)
+- Updated existing Spanish pages (`projects.astro`, `[slug].astro`) to pass `locale` and `currentPath` to Menu
+- Build succeeds: 61 pages (31 Spanish + 30 French), up from 31
+- Verified: French pages have correct translations, `lang="fr"` attribute, language switcher links work bidirectionally
+- Checkpoint 5.4 (verify language switching) is effectively done: `/fr/projects` shows French text, `/projects` shows Spanish, switcher navigates between them
+- Git committed
+- Phase 5 complete (5.1 routing ✓, 5.2 translations wired ✓, 5.3 language switcher ✓, 5.4 verified ✓)
+- Next step needed: Phase 6: 6.1 — Verify all CSS files are ported (most already done in previous phases), then 6.3 — Port 404 page
