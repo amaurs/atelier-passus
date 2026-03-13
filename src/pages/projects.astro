@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Logo from '../components/Logo.astro';
+import '../styles/grid.css';
+
+const allProjects = await getCollection('projects');
+const projects = allProjects
+  .filter(p => p.data.year !== null)
+  .sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+
+const icons = import.meta.glob<{ default: ImageMetadata }>('/src/assets/icons/*.jpg', { eager: true });
+
+function getIcon(cardIcon: string | null) {
+  if (!cardIcon) return null;
+  const filename = cardIcon.replace('iconos/', '');
+  const key = `/src/assets/icons/${filename}`;
+  return icons[key]?.default ?? null;
+}
+---
+<Base title="Atelier Passus — Projects">
+  <section id="projects" class="Grid-container">
+    <div class="Grid">
+      {projects.map(p => {
+        const icon = getIcon(p.data.cardIcon);
+        return (
+          <a href={`/${p.data.src}`} class="Grid-cell">
+            {icon && <Image src={icon} alt={p.data.card} widths={[300, 600]} sizes="(min-width: 1000px) 25vw, (min-width: 600px) 50vw, 100vw" />}
+            <span class="Grid-mask"></span>
+            <p set:html={p.data.card} />
+          </a>
+        );
+      })}
+    </div>
+  </section>
+  <a href="/">
+    <Logo style="position:fixed;bottom:25px;right:25px;width:50px;z-index:4" />
+  </a>
+</Base>

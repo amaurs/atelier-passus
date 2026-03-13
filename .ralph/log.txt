@@ -52,3 +52,12 @@
 - Git committed
 - Phase 2 is now complete (2.1 content collection ✓, 2.2 images ✓, 2.3 icons ✓, 2.4 verification ✓)
 - Next step needed: 3.1 — Build Hero page (pages/index.astro) with Vimeo background, logo overlay, link to projects
+
+## Iteration 6 - Checkpoint 3.1: Build Hero page
+- Created `src/styles/hero.css` — ported directly from source `Hero.css` (fixed positioning, Vimeo iframe 16:9 cover, responsive logo/text positioning)
+- Rebuilt `src/pages/index.astro` as Hero page with: Vimeo background iframe (video rotates by day-of-year), dark overlay span, Logo with white fill linking to `/projects`, "atelier /" text linking to `/projects`
+- Updated `src/components/Logo.astro` to accept optional `style` prop (needed for `fill:white` in Hero)
+- Video selection logic runs at build time (static generation) — picks one of 4 Vimeo IDs based on day of year
+- Build succeeds, output HTML contains all Hero elements: `.Hero` section, iframe with Vimeo URL, Logo SVG with fill:white, "atelier /" text, all wrapped in links to `/projects`
+- Git committed
+- Next step needed: 3.2 — Build Grid page (pages/projects.astro) with thumbnail grid of all projects
