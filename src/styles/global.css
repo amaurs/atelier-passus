@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+
+@font-face {
+  font-family: 'whitney_book';
+  src: local('whitney_book'), url('/fonts/whitney_book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'whitney_bold';
+  src: local('whitney_bold'), url('/fonts/whitney_bold.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'whitney_book', sans-serif !important;
+}
+
+.Body {
+  display: grid;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.Body.active {
+  overflow: hidden;
+  position: fixed;
+}
+
+.App-controls {
+  width: 100%;
+  margin: 0px;
+  height: 50px;
+  display: inline;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+
+.solid-background {
+  background-color: white;
+}
+
+.App-cloud {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.5;
+  display: none;
+}
+
+.App-cloud.active {
+  display: initial;
+}
+
+.EasterEgg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+@media screen and (min-width: 600px) {
+  .Body.active {
+    overflow: scroll;
+    position: relative;
+  }
+}

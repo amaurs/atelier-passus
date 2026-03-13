@@ -1,0 +1,14 @@
+# Atelier Passus — Astro Migration Log
+
+## Iteration 1 - Checkpoint 1.1: Initialize Astro project
+- Created Astro project in target directory using minimal template
+- Initially got Astro 6.x which requires Node >=22.12.0, but system has Node 22.7.0
+- Downgraded to Astro 5.x (installed 5.18.1) which works with Node 22.7.0
+- Configured `astro.config.mjs` with: `output: 'static'`, `@astrojs/react` integration, i18n (es default, fr)
+- Added dependencies: react, react-dom, react-swipeable, @astrojs/react
+- `npm run build` succeeds, generates `dist/index.html`
+- Git initialized and committed
+- Key learnings:
+  - Astro 6.x requires Node >=22.12.0, Astro 5.x works with 22.7.0
+  - i18n routing configured with `prefixDefaultLocale: false` (Spanish has no prefix, French gets `/fr/`)
+- Next step needed: 1.2 — Create base layout matching current site styles
