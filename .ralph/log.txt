@@ -61,3 +61,14 @@
 - Build succeeds, output HTML contains all Hero elements: `.Hero` section, iframe with Vimeo URL, Logo SVG with fill:white, "atelier /" text, all wrapped in links to `/projects`
 - Git committed
 - Next step needed: 3.2 — Build Grid page (pages/projects.astro) with thumbnail grid of all projects
+
+## Iteration 7 - Checkpoint 3.2: Build Grid page (pages/projects.astro)
+- Created `src/styles/grid.css` — ported directly from source `Grid.css` (flex grid, responsive 1/2/4 columns, hover effects, visited cross overlay)
+- Created `src/pages/projects.astro` — loads content collection, filters to projects with year (excludes us/contact/studio), sorts by year descending
+- Used `import.meta.glob` to eagerly load all icon images from `src/assets/icons/` for Astro image optimization
+- Each grid cell is an `<a>` tag (not div+onClick like React) linking to `/{src}` with: optimized `<Image>` with responsive `widths`/`sizes`, `.Grid-mask` overlay, card text via `set:html`
+- Logo component rendered fixed at bottom-right linking to `/`
+- Build succeeds: 25 project cells generated, all with icon images (optimized to webp, 50 image variants), correct links, mask overlays
+- Astro image pipeline automatically generates 2 sizes per icon (300w, 600w) with srcset
+- Git committed
+- Next step needed: 3.3 — Build dynamic project pages (pages/[slug].astro) with image gallery + text card

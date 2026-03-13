@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import '../styles/renderhelper.css';
+import '../styles/card.css';
+
+export async function getStaticPaths() {
+  const allProjects = await getCollection('projects');
+  return allProjects.map(p => ({ params: { slug: p.data.src }, props: { project: p.data } }));
+}
+
+const { project } = Astro.props;
+const images = project.images;
+const first = images[0];
+const hasGallery = images.length > 1;
+
+// Eagerly load all project images for Astro optimization
+const allImages = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{jpg,jpeg,png,gif}', { eager: true });
+
+function getImage(path: string | null) {
+  if (!path) return null;
+  const key = `/src/assets/images/${path}`;
+  return allImages[key]?.default ?? null;
+}
+
+// Build image data array for the React island (Phase 4)
+const imageData = images.map((img, i) => {
+  if (img.type === 'video') {
+    return { type: 'video' as const, vimeoId: img.vimeoId!, index: i };
+  }
+  const resolved = getImage(img.path);
+  return { type: 'image' as const, src: resolved?.src ?? '', width: resolved?.width ?? 0, height: resolved?.height ?? 0, index: i };
+});
+---
+<Base title={project.title ? `Atelier Passus — ${project.title}` : 'Atelier Passus'}>
+  <div class="RenderHelper" data-images={JSON.stringify(imageData)}>
+    <div class="RenderHelper-container">
+      <div class="RenderHelper-content-wrapper">
+        {first.type === 'video' ? (
+          <div class="RenderHelper-video">
+            <iframe
+              src={`https://player.vimeo.com/video/${first.vimeoId}?muted=1&loop=1&autoplay=1`}
+              title={project.title ?? ''}
+              width="800"
+              height="600"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        ) : (
+          <div class="RenderHelper-content">
+            <span class="Navigate navleft"></span>
+            <span class={"Navigate navright" + (images.length > 1 ? " decorationright" : "")}></span>
+            {getImage(first.path) ? (
+              <Image
+                class="RenderHelper-image"
+                src={getImage(first.path)!}
+                alt={project.title ?? ''}
+                widths={[600, 1200]}
+                sizes="(min-width: 1000px) 70vw, 100vw"
+              />
+            ) : (
+              <div class="RenderHelper-image" />
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+    <div class="Card">
+      {hasGallery && (
+        <div class="Shortcut">
+          {images.map((_, i) => (
+            <button class={"Shortcut-thumb" + (i === 0 ? " highlight" : "")}>
+              <span>{i + 1}</span>
+            </button>
+          ))}
+        </div>
+      )}
+      {project.title && <h1 class="Card-title">{project.title}</h1>}
+      {project.headers.map(h => <h2 class="Card-subtitle">{h}</h2>)}
+      <div class="Card-description">
+        {project.paragraphs.map(p => <p class="Card-text">{p}</p>)}
+      </div>
+    </div>
+  </div>
+</Base>
