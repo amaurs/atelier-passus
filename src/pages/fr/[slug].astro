@@ -33,7 +33,7 @@ const title = t(project.title, locale);
 const headers = project.headers.map((h: string) => t(h, locale));
 const paragraphs = project.paragraphs.map((p: string) => t(p, locale));
 ---
-<Base title={title ? `Atelier Passus — ${title}` : 'Atelier Passus'} lang="fr">
+<Base title={title ? `PASSUS — ${title}` : 'PASSUS'} lang="fr">
   <Menu client:load locale={locale} currentPath={`/${project.src}`} />
   <ImageGallery
     client:load

@@ -27,6 +27,8 @@
   display: block;
   opacity: 1;
   width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .Grid-mask {
@@ -103,6 +105,8 @@
     opacity: 1;
     display: block;
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     transition: .5s;
   }
 

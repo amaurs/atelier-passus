@@ -116,7 +116,8 @@
   margin-top: 40px;
 }
 
-.Language button {
+.Language button,
+.Language a {
   font-size: 1em;
   font-family: 'whitney_book';
   text-transform: uppercase;
@@ -125,6 +126,8 @@
   outline: none;
   background-color: transparent;
   padding: 0;
+  color: black;
+  text-decoration: none;
 }
 
 .Language span {

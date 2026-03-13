@@ -94,11 +94,6 @@ export default function ImageGallery({ images, title, headers, paragraphs }: Pro
         </div>
       </div>
       <div className="Card">
-        {title && <h1 className="Card-title">{title}</h1>}
-        {headers.map((h, i) => <h2 key={i} className="Card-subtitle">{h}</h2>)}
-        <div className="Card-description">
-          {paragraphs.map((p, i) => <p key={i} className="Card-text">{p}</p>)}
-        </div>
         {hasGallery && (
           <div className="Shortcut">
             {images.map((_, i) => (
@@ -112,6 +107,11 @@ export default function ImageGallery({ images, title, headers, paragraphs }: Pro
             ))}
           </div>
         )}
+        {title && <h1 className="Card-title">{title}</h1>}
+        {headers.map((h, i) => <h2 key={i} className="Card-subtitle">{h}</h2>)}
+        <div className="Card-description">
+          {paragraphs.map((p, i) => <p key={i} className="Card-text">{p}</p>)}
+        </div>
       </div>
     </div>
   );
