@@ -31,3 +31,16 @@
 - Git committed
 - Checkpoint 1.4 (verify base layout + logo) is effectively done: build succeeds, logo SVG renders in output HTML
 - Next step needed: 2.1 — Parse project data from source and create content collection
+
+## Iteration 4 - Checkpoint 2.1: Parse project data into content collection
+- Parsed `text.js` (28 entries in info2 array) and `assets.js` (image path mappings) from source React app
+- Generated 28 individual JSON files in `src/data/projects/` — 25 actual projects (with year) + 3 static pages (us, contact, studio)
+- Created `src/content.config.ts` using Astro 5.x Content Layer API with `glob` loader and Zod schema
+- Each JSON file contains: src, type, year, card, title, headers, paragraphs, cardIcon path, images array (with type/src/path/vimeoId)
+- Created `src/pages/test.astro` that loads collection and lists all 25 projects — verified in build output
+- Discovered: `chaux` (Rècolte) is commented out in text.js, `miPiedraMiCamino` exists in assets/translations but not in text.js — both excluded from active projects
+- Image path mapping preserved: camelCase asset keys → kebab-case folder paths (e.g., arbolesDeVida1 → arboles-de-vida/1.jpg)
+- Build succeeds, test page shows "Projects (25)" with all titles and image counts
+- Git committed
+- Checkpoint 2.4 (verify content collection) is effectively done via the test page
+- Next step needed: 2.2 — Copy images2/ to src/assets/images/ for Astro image pipeline
